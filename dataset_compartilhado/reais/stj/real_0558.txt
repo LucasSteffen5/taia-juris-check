@@ -1,0 +1,27 @@
+SUPERIOR TRIBUNAL DE JUSTIÇA
+AgInt no CC 211197 / SC
+AGRAVO INTERNO NO CONFLITO DE COMPETÊNCIA
+2025/0031894-3
+RELATOR: Ministro JOÃO OTÁVIO DE NORONHA (1123)
+============================================================
+
+EMENTA:
+DIREITO EMPRESARIAL E PROCESSUAL CIVIL. AGRAVO INTERNO EM CONFLITO POSITIVO DE COMPETÊNCIA. RECUPERAÇÃO JUDICIAL. NATUREZA DO CRÉDITO EXEQUENDO. ENCERRAMENTO SEM TRÂNSITO EM JULGADO. ESSENCIALIDADE DO BEM. COMPETÊNCIA DO JUÍZO DA RECUPERAÇÃO. AGRAVO INTERNO DESPROVIDO. I. CASO EM EXAME
+1. Agravo interno interposto pelo Banco Nacional de Desenvolvimento Econômico e Social (BNDES) contra decisão que, ao conhecer de conflito positivo de competência suscitado pelas empresas PLASC - Plásticos Santa Catarina Ltda. e ANS Administração de Bens e Participações Societárias Ltda., ambas em recuperação judicial, declarou a competência do Juízo da Vara Regional de Recuperações Judiciais, Falências e Concordatas de Florianópolis (SC) para deliberar sobre a natureza do crédito exequendo e sobre atos constritivos incidentes sobre o patrimônio das recuperandas. A decisão agravada também julgou prejudicado agravo interno anterior contra medida liminar que suspendera os atos constritivos determinados pelo Juízo Federal da 4ª Vara de Florianópolis/SC, no âmbito de ação de busca e apreensão. II. QUESTÃO EM DISCUSSÃO
+2. Há três questões em discussão: (i) saber se a existência de interesse processual das recuperandas, diante do encerramento da recuperação judicial; (ii) saber se o crédito exequendo possui natureza concursal ou extraconcursal; (iii) saber se, mesmo após o encerramento da recuperação judicial por sentença não transitada em julgado, subsiste a competência do juízo da recuperação para deliberar sobre atos constritivos. III. RAZÕES DE DECIDIR
+3. A jurisprudência do STJ estabelece que, até o trânsito em julgado da sentença de encerramento da recuperação judicial, permanece a competência do juízo da recuperação para deliberar sobre a sujeição dos créditos e a prática de atos constritivos sobre o patrimônio da empresa recuperanda.
+4. Compete ao juízo da recuperação judicial, com exclusividade, deliberar sobre a natureza do crédito - se concursal ou extraconcursal -, bem como sobre a essencialidade dos bens que garantem obrigações fiduciárias.
+5. A existência de sentença transitada em julgado nos autos de impugnação de crédito, reconhecendo a natureza concursal (quirografária) do crédito do BNDES, afasta a alegação de extraconcursalidade e vincula todos os juízos, impedindo a prática de atos constritivos fundados em premissa contrária.
+6. O Juízo Federal da 4ª Vara de Florianópolis, ao autorizar constrição sem observância da autoridade do juízo da recuperação e em desrespeito à coisa julgada, incorreu em usurpação de competência.
+7. O precedente citado pelo agravante (CC n. 196.846/RN) não é aplicável à hipótese dos autos, por tratar de crédito já reconhecido como extraconcursal e em fase processual distinta, com recuperação judicial já encerrada e transitada em julgado.
+8. Ainda que a sentença de encerramento da recuperação tenha sido proferida em 30/1/2025, a ausência de trânsito em julgado impõe a manutenção da jurisdição recuperacional para controle de atos constritivos, nos termos da Lei n. 11.101/2005 e da jurisprudência desta Corte. IV. DISPOSITIVO E TESE
+9. Agravo interno desprovido.
+Tese de julgamento: "1. A competência do juízo da recuperação judicial para deliberar sobre atos constritivos persiste até o trânsito em julgado da sentença de encerramento da recuperação. 2.
+Compete ao juízo da recuperação judicial decidir, originariamente, sobre a natureza concursal ou extraconcursal do crédito exequendo, bem como sobre a essencialidade do bem objeto de constrição. 3. A prática de atos constritivos com fundamento em premissa incompatível com decisão transitada em julgado configura usurpação da competência do juízo da recuperação judicial."
+Dispositivos relevantes citados: Lei n. 11.101/2005, arts. 6º, caput e §§ 4º e 7º-A, art. 49, § 3º; CPC/2015, art. 505.
+Jurisprudência relevante citada: STJ, AgInt no CC n. 179.176/AL, relator Ministro Moura Ribeiro, Segunda Seção, julgado em 30.11.2021; STJ, AgInt no CC n. 162.066/CE, relator Ministro Luis Felipe Salomão, Segunda Seção, julgado em 8.5.2019; STJ, AgInt no CC n. 170.595/MT, relator Ministro Antonio Carlos Ferreira, Segunda Seção, julgado em 11.11.2020; STJ, CC 196.846/RN, relator Ministro Marco Aurélio Bellizze, Segunda Seção, julgado em 10.4.2024.
+
+ACÓRDÃO:
+Vistos e relatados estes autos em que são partes as acima indicadas, acordam os Ministros da SEGUNDA SEÇÃO do Superior Tribunal de Justiça, em Sessão Virtual de 07/08/2025 a 13/08/2025, por unanimidade, negar provimento ao recurso, nos termos do voto do Sr. Ministro Relator.
+Os Srs. Ministros Nancy Andrighi, Humberto Martins, Raul Araújo, Maria Isabel Gallotti, Antonio Carlos Ferreira, Marco Buzzi, Moura Ribeiro e Daniela Teixeira votaram com o Sr. Ministro Relator.
+Presidiu o julgamento o Sr. Ministro Ricardo Villas Bôas Cueva.

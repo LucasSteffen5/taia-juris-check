@@ -1,0 +1,30 @@
+SUPERIOR TRIBUNAL DE JUSTIÇA
+AR 6297 / SE
+AÇÃO RESCISÓRIA
+2018/0172493-5
+RELATOR: 
+============================================================
+
+EMENTA:
+Ementa. Processo civil. Ação Rescisória. Erro de fato. Procedência da ação rescisória. Improcedência do pedido na ação original.
+I. Caso em exame
+1. Ação rescisória em que se alega erros de fato e de direito.
+II. Questão em discussão
+2. Saber se houve erro na decisão rescindenda.
+III. Razões de decidir
+3. Erro de fato: o exame dos autos permite constatar que o acórdão rescindendo admitiu como provada a hipótese fática que embasava o pedido inicial, amparando-se em elementos que nada tinham a ver com a controvérsia deduzida em juízo e que não representavam o ponto controvertido.
+4. A ANP reconheceu administrativamente o direito a royalties de petróleo e gás, em relação a city gates que não eram objeto da ação judicial e que foram instalados no curso da ação.
+5. O reconhecimento administrativo do direito, que era para outros city gates, foi erroneamente considerado a comprovação de que a instalação que deu causa à disputa era um city gate.
+6. O erro não residiu na valoração da prova. Não se tratou de uma conclusão tomada sobre elementos probatórios que apontavam em direções opostas. Uma assertiva fática - caracterização da instalação que deu causa à controvérsia como city gate - foi assumida como verdadeira, em razão de um fato absolutamente não correlato e sobre o qual as partes não controvertiam. Estão presentes os requisitos do art. 966, § 1º do CPC.
+7. Tutela de urgência deferida liminarmente pela Primeira Seção, a ser tornada definitiva no julgamento do mérito.
+8. Em juízo rescisório, o recurso especial não é admissível, por demandar o reexame de fatos e de provas e por buscar amparo em parâmetro infralegal.
+IV. Dispositivo e tese
+9. Julgado procedente o pedido para desconstituir a decisão da Primeira Turma do Superior Tribunal de Justiça no agravo interno no REsp n. 1.592.995 e, em consequência, dar provimento ao agravo interno, para não conhecer do recurso especial e, em consequência, manter o acórdão que julgou improcedente o pedido na ação de rito ordinário 0000470-22.2007.4.05.8500.
+10. Tese de julgamento: Ao considerar que o reconhecimento administrativo do direito a royalties em decorrência de city gates posteriormente instalados comprovava a assertiva fática da parte autora - de que a instalação que deu causa à ação era um city gate -, o acórdão rescindendo incorreu em erro.
+______
+Dispositivos relevantes citados: art. 966, V, VIII e § 1º do CPC.
+
+ACÓRDÃO:
+Vistos e relatados estes autos em que são partes as acima indicadas, acordam os Ministros da PRIMEIRA SEÇÃO, por unanimidade, julgar procedente o pedido, nos termos do voto da Sra. Ministra Relatora.
+Os Srs. Ministros Benedito Gonçalves, Marco Aurélio Bellizze, Sérgio Kukina, Gurgel de Faria, Paulo Sérgio Domingues, Teodoro Silva Santos e Afrânio Vilela votaram com a Sra. Ministra Relatora.
+Impedido o Sr. Ministro Francisco Falcão.

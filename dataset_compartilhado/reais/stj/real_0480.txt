@@ -1,0 +1,25 @@
+SUPERIOR TRIBUNAL DE JUSTIÇA
+AgInt no AREsp 2852669 / GO
+AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL
+2025/0042233-0
+RELATOR: Ministro JOÃO OTÁVIO DE NORONHA (1123)
+============================================================
+
+EMENTA:
+DIREITO CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. RESPONSABILIDADE CIVIL. VIOLAÇÃO DOS ARTS. 489, II, E 1.022, II, DO CPC. AUSÊNCIA. INFECÇÃO HOSPITALAR. PERDA DA VISÃO. RESPONSABILIDADE OBJETIVA. NEXO CAUSAL COMPROVADO. PERICIA. CAUSA DETERMINANTE. QUANTUM INDENIZATÓRIO. REVISÃO. REEXAME DE PROVAS DOS AUTOS, IMPOSSIBIIDADE. SÚMULA N. 7 DO STJ. AGRAVO DESPROVIDO. I. CASO EM EXAME
+1. Agravo interno interposto contra decisão que negou provimento a agravo em recurso especial, mantendo a responsabilidade objetiva de hospital por infecção hospitalar que resultou em danos ao paciente.
+2. O Tribunal de Justiça do Estado de Goiás concluiu que o paciente contraiu infecção em curto espaço de tempo após cirurgia ocular, atraindo a responsabilidade objetiva do hospital pelos danos causados, com base no laudo pericial e na ausência de comprovação de medidas adequadas de controle de infecção. II. QUESTÃO EM DISCUSSÃO
+3. As questões em discussão consistem em: (i) saber se há nexo de causalidade entre a infecção hospitalar e o procedimento cirúrgico realizado, considerando a responsabilidade objetiva do hospital e a necessidade de comprovação do nexo causal; e (ii) é possível a revisão do quantum indenizatório fixado a título de danos morais, materiais e estéticos, considerando a alegação de enriquecimento ilícito do paciente. III. RAZÕES DE DECIDIR
+4. A responsabilidade dos hospitais é objetiva, dispensando a comprovação de culpa, mas exigindo a comprovação do nexo causal entre o dano e o serviço prestado.
+5. O Tribunal de Justiça do Estado de Goiás estabeleceu o nexo causal com base no curto intervalo entre a cirurgia e o diagnóstico da infecção, além da ausência de comprovação de medidas adequadas de controle de infecção pelo hospital.
+6. A revisão do quantum indenizatório é inviável, pois o valor fixado não se mostra irrisório ou exorbitante, respeitando a proporcionalidade entre a gravidade da ofensa e o porte socioeconômico do causador do dano.
+7. Não há ofensa aos arts. 1.022 e 489 do CPC quando o tribunal de origem decide, de modo claro, objetivo e fundamentado, as questões essenciais ao deslinde da controvérsia, embora sem acolher a tese do insurgente. IV. DISPOSITIVO E TESE
+8. Agravo desprovido.
+Tese de julgamento: "1. A responsabilidade dos hospitais por infecção hospitalar é objetiva, exigindo apenas a comprovação do nexo causal. 2. A revisão do quantum indenizatório é inviável quando o valor fixado respeita a proporcionalidade e não se mostra irrisório ou exorbitante. 3. Não há ofensa aos arts. 489 e 1.022 do CPC quando o tribunal de origem decide, de modo claro, objetivo e fundamentado, as questões essenciais ao deslinde da controvérsia, embora sem acolher a tese do insurgente".
+Dispositivos relevantes citados: CPC, arts. 489, II, 1.022, II; Lei n. 9.431/1997, art. 1º, § 2º; Portaria ANVISA n. 2.616/1998, CDC, 14, § 3º, I; CC do art. 944, parágrafo único. Jurisprudência relevante citada: STJ, AgInt no REsp n. 1.653.046/DF, relator Ministro Marco Buzzi, Quarta Turma, julgado em 15/5/2018; STJ, REsp n. 1.787.026/RJ, relator Ministro Paulo de Tarso Sanseverino, Terceira Turma, julgado em 26/10/2021.
+
+ACÓRDÃO:
+Vistos e relatados estes autos em que são partes as acima indicadas, acordam os Ministros da QUARTA TURMA, por unanimidade, negar provimento ao agravo interno, nos termos do voto do Sr. Ministro João Otávio de Noronha.
+Os Srs. Ministros Raul Araújo, Antonio Carlos Ferreira e Marco Buzzi votaram com o Sr. Ministro Relator.
+Presidiu o julgamento o Sr. Ministro João Otávio de Noronha.
+Ausente, justificadamente, a Sra. Ministra Maria Isabel Gallotti.

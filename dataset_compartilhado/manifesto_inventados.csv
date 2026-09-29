@@ -1,0 +1,1501 @@
+id,subdiretorio,caminho_relativo,area_direito,tipo_peca,ruido_ocr,tamanho_bytes
+inventado_001,inventados/consumidor,inventados/consumidor/inventado_001.txt,Consumidor,Petição / Parecer Jurídico,Não,4091
+inventado_002,inventados/consumidor,inventados/consumidor/inventado_002.txt,Consumidor,Petição / Parecer Jurídico,Não,4111
+inventado_003,inventados/consumidor,inventados/consumidor/inventado_003.txt,Consumidor,Petição / Parecer Jurídico,Não,4075
+inventado_004,inventados/consumidor,inventados/consumidor/inventado_004.txt,Consumidor,Petição / Parecer Jurídico,Não,4059
+inventado_005,inventados/consumidor,inventados/consumidor/inventado_005.txt,Consumidor,Petição / Parecer Jurídico,Não,4086
+inventado_006,inventados/consumidor,inventados/consumidor/inventado_006.txt,Consumidor,Petição / Parecer Jurídico,Não,4073
+inventado_007,inventados/consumidor,inventados/consumidor/inventado_007.txt,Consumidor,Petição / Parecer Jurídico,Não,4060
+inventado_00701,inventados/consumidor,inventados/consumidor/inventado_00701.txt,Consumidor,Contestação,Não,2415
+inventado_00702,inventados/tributario,inventados/tributario/inventado_00702.txt,Tributario,Recurso de Apelação,Não,2373
+inventado_00703,inventados/trabalhista,inventados/trabalhista/inventado_00703.txt,Trabalhista,Agravo de Instrumento,Sim,2402
+inventado_00704,inventados/administrativo,inventados/administrativo/inventado_00704.txt,Administrativo,Parecer Consultivo,Não,2419
+inventado_00705,inventados/penal,inventados/penal/inventado_00705.txt,Penal,Memorando Técnico,Não,2409
+inventado_00706,inventados/ambiental,inventados/ambiental/inventado_00706.txt,Ambiental,Nota Técnica Jurídica,Sim,2428
+inventado_00707,inventados/empresarial,inventados/empresarial/inventado_00707.txt,Empresarial,Alegações Finais,Não,2415
+inventado_00708,inventados/civel,inventados/civel/inventado_00708.txt,Civel,Embargos de Declaração,Não,2450
+inventado_00709,inventados/consumidor,inventados/consumidor/inventado_00709.txt,Consumidor,Mandado de Segurança,Sim,2443
+inventado_00710,inventados/tributario,inventados/tributario/inventado_00710.txt,Tributario,Petição Inicial,Não,2366
+inventado_00711,inventados/trabalhista,inventados/trabalhista/inventado_00711.txt,Trabalhista,Contestação,Não,2420
+inventado_00712,inventados/administrativo,inventados/administrativo/inventado_00712.txt,Administrativo,Recurso de Apelação,Sim,2379
+inventado_00713,inventados/penal,inventados/penal/inventado_00713.txt,Penal,Agravo de Instrumento,Não,2402
+inventado_00714,inventados/ambiental,inventados/ambiental/inventado_00714.txt,Ambiental,Parecer Consultivo,Não,2406
+inventado_00715,inventados/empresarial,inventados/empresarial/inventado_00715.txt,Empresarial,Memorando Técnico,Sim,2408
+inventado_00716,inventados/civel,inventados/civel/inventado_00716.txt,Civel,Nota Técnica Jurídica,Não,2423
+inventado_00717,inventados/consumidor,inventados/consumidor/inventado_00717.txt,Consumidor,Alegações Finais,Não,2434
+inventado_00718,inventados/tributario,inventados/tributario/inventado_00718.txt,Tributario,Embargos de Declaração,Sim,2421
+inventado_00719,inventados/trabalhista,inventados/trabalhista/inventado_00719.txt,Trabalhista,Mandado de Segurança,Não,2434
+inventado_00720,inventados/administrativo,inventados/administrativo/inventado_00720.txt,Administrativo,Petição Inicial,Não,2385
+inventado_00721,inventados/penal,inventados/penal/inventado_00721.txt,Penal,Contestação,Sim,2430
+inventado_00722,inventados/ambiental,inventados/ambiental/inventado_00722.txt,Ambiental,Recurso de Apelação,Não,2379
+inventado_00723,inventados/empresarial,inventados/empresarial/inventado_00723.txt,Empresarial,Agravo de Instrumento,Não,2414
+inventado_00724,inventados/civel,inventados/civel/inventado_00724.txt,Civel,Parecer Consultivo,Sim,2412
+inventado_00725,inventados/consumidor,inventados/consumidor/inventado_00725.txt,Consumidor,Memorando Técnico,Não,2407
+inventado_00726,inventados/tributario,inventados/tributario/inventado_00726.txt,Tributario,Nota Técnica Jurídica,Não,2440
+inventado_00727,inventados/trabalhista,inventados/trabalhista/inventado_00727.txt,Trabalhista,Alegações Finais,Sim,2396
+inventado_00728,inventados/administrativo,inventados/administrativo/inventado_00728.txt,Administrativo,Embargos de Declaração,Não,2434
+inventado_00729,inventados/penal,inventados/penal/inventado_00729.txt,Penal,Mandado de Segurança,Não,2458
+inventado_00730,inventados/ambiental,inventados/ambiental/inventado_00730.txt,Ambiental,Petição Inicial,Sim,2381
+inventado_00731,inventados/empresarial,inventados/empresarial/inventado_00731.txt,Empresarial,Contestação,Não,2416
+inventado_00732,inventados/civel,inventados/civel/inventado_00732.txt,Civel,Recurso de Apelação,Não,2374
+inventado_00733,inventados/consumidor,inventados/consumidor/inventado_00733.txt,Consumidor,Agravo de Instrumento,Sim,2410
+inventado_00734,inventados/tributario,inventados/tributario/inventado_00734.txt,Tributario,Parecer Consultivo,Não,2413
+inventado_00735,inventados/trabalhista,inventados/trabalhista/inventado_00735.txt,Trabalhista,Memorando Técnico,Não,2427
+inventado_00736,inventados/administrativo,inventados/administrativo/inventado_00736.txt,Administrativo,Nota Técnica Jurídica,Sim,2408
+inventado_00737,inventados/penal,inventados/penal/inventado_00737.txt,Penal,Alegações Finais,Não,2392
+inventado_00738,inventados/ambiental,inventados/ambiental/inventado_00738.txt,Ambiental,Embargos de Declaração,Não,2430
+inventado_00739,inventados/empresarial,inventados/empresarial/inventado_00739.txt,Empresarial,Mandado de Segurança,Sim,2454
+inventado_00740,inventados/civel,inventados/civel/inventado_00740.txt,Civel,Petição Inicial,Não,2384
+inventado_00741,inventados/consumidor,inventados/consumidor/inventado_00741.txt,Consumidor,Contestação,Não,2446
+inventado_00742,inventados/tributario,inventados/tributario/inventado_00742.txt,Tributario,Recurso de Apelação,Sim,2380
+inventado_00743,inventados/trabalhista,inventados/trabalhista/inventado_00743.txt,Trabalhista,Agravo de Instrumento,Não,2406
+inventado_00744,inventados/administrativo,inventados/administrativo/inventado_00744.txt,Administrativo,Parecer Consultivo,Não,2428
+inventado_00745,inventados/penal,inventados/penal/inventado_00745.txt,Penal,Memorando Técnico,Sim,2382
+inventado_00746,inventados/ambiental,inventados/ambiental/inventado_00746.txt,Ambiental,Nota Técnica Jurídica,Não,2413
+inventado_00747,inventados/empresarial,inventados/empresarial/inventado_00747.txt,Empresarial,Alegações Finais,Não,2416
+inventado_00748,inventados/civel,inventados/civel/inventado_00748.txt,Civel,Embargos de Declaração,Sim,2442
+inventado_00749,inventados/consumidor,inventados/consumidor/inventado_00749.txt,Consumidor,Mandado de Segurança,Não,2458
+inventado_00750,inventados/tributario,inventados/tributario/inventado_00750.txt,Tributario,Petição Inicial,Não,2385
+inventado_00751,inventados/trabalhista,inventados/trabalhista/inventado_00751.txt,Trabalhista,Contestação,Sim,2418
+inventado_00752,inventados/administrativo,inventados/administrativo/inventado_00752.txt,Administrativo,Recurso de Apelação,Não,2386
+inventado_00753,inventados/penal,inventados/penal/inventado_00753.txt,Penal,Agravo de Instrumento,Não,2423
+inventado_00754,inventados/ambiental,inventados/ambiental/inventado_00754.txt,Ambiental,Parecer Consultivo,Sim,2389
+inventado_00755,inventados/empresarial,inventados/empresarial/inventado_00755.txt,Empresarial,Memorando Técnico,Não,2390
+inventado_00756,inventados/civel,inventados/civel/inventado_00756.txt,Civel,Nota Técnica Jurídica,Não,2411
+inventado_00757,inventados/consumidor,inventados/consumidor/inventado_00757.txt,Consumidor,Alegações Finais,Sim,2416
+inventado_00758,inventados/tributario,inventados/tributario/inventado_00758.txt,Tributario,Embargos de Declaração,Não,2439
+inventado_00759,inventados/trabalhista,inventados/trabalhista/inventado_00759.txt,Trabalhista,Mandado de Segurança,Não,2464
+inventado_00760,inventados/administrativo,inventados/administrativo/inventado_00760.txt,Administrativo,Petição Inicial,Sim,2391
+inventado_00761,inventados/penal,inventados/penal/inventado_00761.txt,Penal,Contestação,Não,2433
+inventado_00762,inventados/ambiental,inventados/ambiental/inventado_00762.txt,Ambiental,Recurso de Apelação,Não,2387
+inventado_00763,inventados/empresarial,inventados/empresarial/inventado_00763.txt,Empresarial,Agravo de Instrumento,Sim,2386
+inventado_00764,inventados/civel,inventados/civel/inventado_00764.txt,Civel,Parecer Consultivo,Não,2395
+inventado_00765,inventados/consumidor,inventados/consumidor/inventado_00765.txt,Consumidor,Memorando Técnico,Não,2407
+inventado_00766,inventados/tributario,inventados/tributario/inventado_00766.txt,Tributario,Nota Técnica Jurídica,Sim,2431
+inventado_00767,inventados/trabalhista,inventados/trabalhista/inventado_00767.txt,Trabalhista,Alegações Finais,Não,2411
+inventado_00768,inventados/administrativo,inventados/administrativo/inventado_00768.txt,Administrativo,Embargos de Declaração,Não,2452
+inventado_00769,inventados/penal,inventados/penal/inventado_00769.txt,Penal,Mandado de Segurança,Sim,2456
+inventado_00770,inventados/ambiental,inventados/ambiental/inventado_00770.txt,Ambiental,Petição Inicial,Não,2387
+inventado_00771,inventados/empresarial,inventados/empresarial/inventado_00771.txt,Empresarial,Contestação,Não,2436
+inventado_00772,inventados/civel,inventados/civel/inventado_00772.txt,Civel,Recurso de Apelação,Sim,2355
+inventado_00773,inventados/consumidor,inventados/consumidor/inventado_00773.txt,Consumidor,Agravo de Instrumento,Não,2391
+inventado_00774,inventados/tributario,inventados/tributario/inventado_00774.txt,Tributario,Parecer Consultivo,Não,2401
+inventado_00775,inventados/trabalhista,inventados/trabalhista/inventado_00775.txt,Trabalhista,Memorando Técnico,Sim,2409
+inventado_00776,inventados/administrativo,inventados/administrativo/inventado_00776.txt,Administrativo,Nota Técnica Jurídica,Não,2426
+inventado_00777,inventados/penal,inventados/penal/inventado_00777.txt,Penal,Alegações Finais,Não,2422
+inventado_00778,inventados/ambiental,inventados/ambiental/inventado_00778.txt,Ambiental,Embargos de Declaração,Sim,2436
+inventado_00779,inventados/empresarial,inventados/empresarial/inventado_00779.txt,Empresarial,Mandado de Segurança,Não,2456
+inventado_00780,inventados/civel,inventados/civel/inventado_00780.txt,Civel,Petição Inicial,Não,2392
+inventado_00781,inventados/consumidor,inventados/consumidor/inventado_00781.txt,Consumidor,Contestação,Sim,2418
+inventado_00782,inventados/tributario,inventados/tributario/inventado_00782.txt,Tributario,Recurso de Apelação,Não,2364
+inventado_00783,inventados/trabalhista,inventados/trabalhista/inventado_00783.txt,Trabalhista,Agravo de Instrumento,Não,2406
+inventado_00784,inventados/administrativo,inventados/administrativo/inventado_00784.txt,Administrativo,Parecer Consultivo,Sim,2420
+inventado_00785,inventados/penal,inventados/penal/inventado_00785.txt,Penal,Memorando Técnico,Não,2397
+inventado_00786,inventados/ambiental,inventados/ambiental/inventado_00786.txt,Ambiental,Nota Técnica Jurídica,Não,2431
+inventado_00787,inventados/empresarial,inventados/empresarial/inventado_00787.txt,Empresarial,Alegações Finais,Sim,2413
+inventado_00788,inventados/civel,inventados/civel/inventado_00788.txt,Civel,Embargos de Declaração,Não,2448
+inventado_00789,inventados/consumidor,inventados/consumidor/inventado_00789.txt,Consumidor,Mandado de Segurança,Não,2478
+inventado_00790,inventados/tributario,inventados/tributario/inventado_00790.txt,Tributario,Petição Inicial,Sim,2366
+inventado_00791,inventados/trabalhista,inventados/trabalhista/inventado_00791.txt,Trabalhista,Contestação,Não,2399
+inventado_00792,inventados/administrativo,inventados/administrativo/inventado_00792.txt,Administrativo,Recurso de Apelação,Não,2374
+inventado_00793,inventados/penal,inventados/penal/inventado_00793.txt,Penal,Agravo de Instrumento,Sim,2405
+inventado_00794,inventados/ambiental,inventados/ambiental/inventado_00794.txt,Ambiental,Parecer Consultivo,Não,2406
+inventado_00795,inventados/empresarial,inventados/empresarial/inventado_00795.txt,Empresarial,Memorando Técnico,Não,2420
+inventado_00796,inventados/civel,inventados/civel/inventado_00796.txt,Civel,Nota Técnica Jurídica,Sim,2417
+inventado_00797,inventados/consumidor,inventados/consumidor/inventado_00797.txt,Consumidor,Alegações Finais,Não,2419
+inventado_00798,inventados/tributario,inventados/tributario/inventado_00798.txt,Tributario,Embargos de Declaração,Não,2447
+inventado_00799,inventados/trabalhista,inventados/trabalhista/inventado_00799.txt,Trabalhista,Mandado de Segurança,Sim,2437
+inventado_008,inventados/consumidor,inventados/consumidor/inventado_008.txt,Consumidor,Petição / Parecer Jurídico,Não,4086
+inventado_00800,inventados/administrativo,inventados/administrativo/inventado_00800.txt,Administrativo,Petição Inicial,Não,2375
+inventado_00801,inventados/penal,inventados/penal/inventado_00801.txt,Penal,Contestação,Não,2433
+inventado_00802,inventados/ambiental,inventados/ambiental/inventado_00802.txt,Ambiental,Recurso de Apelação,Sim,2378
+inventado_00803,inventados/empresarial,inventados/empresarial/inventado_00803.txt,Empresarial,Agravo de Instrumento,Não,2401
+inventado_00804,inventados/civel,inventados/civel/inventado_00804.txt,Civel,Parecer Consultivo,Não,2413
+inventado_00805,inventados/consumidor,inventados/consumidor/inventado_00805.txt,Consumidor,Memorando Técnico,Sim,2404
+inventado_00806,inventados/tributario,inventados/tributario/inventado_00806.txt,Tributario,Nota Técnica Jurídica,Não,2437
+inventado_00807,inventados/trabalhista,inventados/trabalhista/inventado_00807.txt,Trabalhista,Alegações Finais,Não,2431
+inventado_00808,inventados/administrativo,inventados/administrativo/inventado_00808.txt,Administrativo,Embargos de Declaração,Sim,2433
+inventado_00809,inventados/penal,inventados/penal/inventado_00809.txt,Penal,Mandado de Segurança,Não,2436
+inventado_00810,inventados/ambiental,inventados/ambiental/inventado_00810.txt,Ambiental,Petição Inicial,Não,2375
+inventado_00811,inventados/empresarial,inventados/empresarial/inventado_00811.txt,Empresarial,Contestação,Sim,2418
+inventado_00812,inventados/civel,inventados/civel/inventado_00812.txt,Civel,Recurso de Apelação,Não,2373
+inventado_00813,inventados/consumidor,inventados/consumidor/inventado_00813.txt,Consumidor,Agravo de Instrumento,Não,2421
+inventado_00814,inventados/tributario,inventados/tributario/inventado_00814.txt,Tributario,Parecer Consultivo,Sim,2408
+inventado_00815,inventados/trabalhista,inventados/trabalhista/inventado_00815.txt,Trabalhista,Memorando Técnico,Não,2412
+inventado_00816,inventados/administrativo,inventados/administrativo/inventado_00816.txt,Administrativo,Nota Técnica Jurídica,Não,2434
+inventado_00817,inventados/penal,inventados/penal/inventado_00817.txt,Penal,Alegações Finais,Sim,2394
+inventado_00818,inventados/ambiental,inventados/ambiental/inventado_00818.txt,Ambiental,Embargos de Declaração,Não,2420
+inventado_00819,inventados/empresarial,inventados/empresarial/inventado_00819.txt,Empresarial,Mandado de Segurança,Não,2456
+inventado_00820,inventados/civel,inventados/civel/inventado_00820.txt,Civel,Petição Inicial,Sim,2383
+inventado_00821,inventados/consumidor,inventados/consumidor/inventado_00821.txt,Consumidor,Contestação,Não,2433
+inventado_00822,inventados/tributario,inventados/tributario/inventado_00822.txt,Tributario,Recurso de Apelação,Não,2382
+inventado_00823,inventados/trabalhista,inventados/trabalhista/inventado_00823.txt,Trabalhista,Agravo de Instrumento,Sim,2403
+inventado_00824,inventados/administrativo,inventados/administrativo/inventado_00824.txt,Administrativo,Parecer Consultivo,Não,2425
+inventado_00825,inventados/penal,inventados/penal/inventado_00825.txt,Penal,Memorando Técnico,Não,2417
+inventado_00826,inventados/ambiental,inventados/ambiental/inventado_00826.txt,Ambiental,Nota Técnica Jurídica,Sim,2412
+inventado_00827,inventados/empresarial,inventados/empresarial/inventado_00827.txt,Empresarial,Alegações Finais,Não,2394
+inventado_00828,inventados/civel,inventados/civel/inventado_00828.txt,Civel,Embargos de Declaração,Não,2436
+inventado_00829,inventados/consumidor,inventados/consumidor/inventado_00829.txt,Consumidor,Mandado de Segurança,Sim,2461
+inventado_00830,inventados/tributario,inventados/tributario/inventado_00830.txt,Tributario,Petição Inicial,Não,2384
+inventado_00831,inventados/trabalhista,inventados/trabalhista/inventado_00831.txt,Trabalhista,Contestação,Não,2429
+inventado_00832,inventados/administrativo,inventados/administrativo/inventado_00832.txt,Administrativo,Recurso de Apelação,Sim,2380
+inventado_00833,inventados/penal,inventados/penal/inventado_00833.txt,Penal,Agravo de Instrumento,Não,2408
+inventado_00834,inventados/ambiental,inventados/ambiental/inventado_00834.txt,Ambiental,Parecer Consultivo,Não,2414
+inventado_00835,inventados/empresarial,inventados/empresarial/inventado_00835.txt,Empresarial,Memorando Técnico,Sim,2392
+inventado_00836,inventados/civel,inventados/civel/inventado_00836.txt,Civel,Nota Técnica Jurídica,Não,2401
+inventado_00837,inventados/consumidor,inventados/consumidor/inventado_00837.txt,Consumidor,Alegações Finais,Não,2419
+inventado_00838,inventados/tributario,inventados/tributario/inventado_00838.txt,Tributario,Embargos de Declaração,Sim,2438
+inventado_00839,inventados/trabalhista,inventados/trabalhista/inventado_00839.txt,Trabalhista,Mandado de Segurança,Não,2451
+inventado_00840,inventados/administrativo,inventados/administrativo/inventado_00840.txt,Administrativo,Petição Inicial,Não,2393
+inventado_00841,inventados/penal,inventados/penal/inventado_00841.txt,Penal,Contestação,Sim,2430
+inventado_00842,inventados/ambiental,inventados/ambiental/inventado_00842.txt,Ambiental,Recurso de Apelação,Não,2384
+inventado_00843,inventados/empresarial,inventados/empresarial/inventado_00843.txt,Empresarial,Agravo de Instrumento,Não,2421
+inventado_00844,inventados/civel,inventados/civel/inventado_00844.txt,Civel,Parecer Consultivo,Sim,2395
+inventado_00845,inventados/consumidor,inventados/consumidor/inventado_00845.txt,Consumidor,Memorando Técnico,Não,2385
+inventado_00846,inventados/tributario,inventados/tributario/inventado_00846.txt,Tributario,Nota Técnica Jurídica,Não,2425
+inventado_00847,inventados/trabalhista,inventados/trabalhista/inventado_00847.txt,Trabalhista,Alegações Finais,Sim,2413
+inventado_00848,inventados/administrativo,inventados/administrativo/inventado_00848.txt,Administrativo,Embargos de Declaração,Não,2451
+inventado_00849,inventados/penal,inventados/penal/inventado_00849.txt,Penal,Mandado de Segurança,Não,2466
+inventado_00850,inventados/ambiental,inventados/ambiental/inventado_00850.txt,Ambiental,Petição Inicial,Sim,2381
+inventado_00851,inventados/empresarial,inventados/empresarial/inventado_00851.txt,Empresarial,Contestação,Não,2421
+inventado_00852,inventados/civel,inventados/civel/inventado_00852.txt,Civel,Recurso de Apelação,Não,2381
+inventado_00853,inventados/consumidor,inventados/consumidor/inventado_00853.txt,Consumidor,Agravo de Instrumento,Sim,2393
+inventado_00854,inventados/tributario,inventados/tributario/inventado_00854.txt,Tributario,Parecer Consultivo,Não,2391
+inventado_00855,inventados/trabalhista,inventados/trabalhista/inventado_00855.txt,Trabalhista,Memorando Técnico,Não,2412
+inventado_00856,inventados/administrativo,inventados/administrativo/inventado_00856.txt,Administrativo,Nota Técnica Jurídica,Sim,2425
+inventado_00857,inventados/penal,inventados/penal/inventado_00857.txt,Penal,Alegações Finais,Não,2409
+inventado_00858,inventados/ambiental,inventados/ambiental/inventado_00858.txt,Ambiental,Embargos de Declaração,Não,2438
+inventado_00859,inventados/empresarial,inventados/empresarial/inventado_00859.txt,Empresarial,Mandado de Segurança,Sim,2454
+inventado_00860,inventados/civel,inventados/civel/inventado_00860.txt,Civel,Petição Inicial,Não,2389
+inventado_00861,inventados/consumidor,inventados/consumidor/inventado_00861.txt,Consumidor,Contestação,Não,2453
+inventado_00862,inventados/tributario,inventados/tributario/inventado_00862.txt,Tributario,Recurso de Apelação,Sim,2363
+inventado_00863,inventados/trabalhista,inventados/trabalhista/inventado_00863.txt,Trabalhista,Agravo de Instrumento,Não,2384
+inventado_00864,inventados/administrativo,inventados/administrativo/inventado_00864.txt,Administrativo,Parecer Consultivo,Não,2413
+inventado_00865,inventados/penal,inventados/penal/inventado_00865.txt,Penal,Memorando Técnico,Sim,2399
+inventado_00866,inventados/ambiental,inventados/ambiental/inventado_00866.txt,Ambiental,Nota Técnica Jurídica,Não,2430
+inventado_00867,inventados/empresarial,inventados/empresarial/inventado_00867.txt,Empresarial,Alegações Finais,Não,2424
+inventado_00868,inventados/civel,inventados/civel/inventado_00868.txt,Civel,Embargos de Declaração,Sim,2442
+inventado_00869,inventados/consumidor,inventados/consumidor/inventado_00869.txt,Consumidor,Mandado de Segurança,Não,2463
+inventado_00870,inventados/tributario,inventados/tributario/inventado_00870.txt,Tributario,Petição Inicial,Não,2392
+inventado_00871,inventados/trabalhista,inventados/trabalhista/inventado_00871.txt,Trabalhista,Contestação,Sim,2401
+inventado_00872,inventados/administrativo,inventados/administrativo/inventado_00872.txt,Administrativo,Recurso de Apelação,Não,2364
+inventado_00873,inventados/penal,inventados/penal/inventado_00873.txt,Penal,Agravo de Instrumento,Não,2408
+inventado_00874,inventados/ambiental,inventados/ambiental/inventado_00874.txt,Ambiental,Parecer Consultivo,Sim,2406
+inventado_00875,inventados/empresarial,inventados/empresarial/inventado_00875.txt,Empresarial,Memorando Técnico,Não,2407
+inventado_00876,inventados/civel,inventados/civel/inventado_00876.txt,Civel,Nota Técnica Jurídica,Não,2419
+inventado_00877,inventados/consumidor,inventados/consumidor/inventado_00877.txt,Consumidor,Alegações Finais,Sim,2416
+inventado_00878,inventados/tributario,inventados/tributario/inventado_00878.txt,Tributario,Embargos de Declaração,Não,2444
+inventado_00879,inventados/trabalhista,inventados/trabalhista/inventado_00879.txt,Trabalhista,Mandado de Segurança,Não,2471
+inventado_00880,inventados/administrativo,inventados/administrativo/inventado_00880.txt,Administrativo,Petição Inicial,Sim,2374
+inventado_00881,inventados/penal,inventados/penal/inventado_00881.txt,Penal,Contestação,Não,2411
+inventado_00882,inventados/ambiental,inventados/ambiental/inventado_00882.txt,Ambiental,Recurso de Apelação,Não,2372
+inventado_00883,inventados/empresarial,inventados/empresarial/inventado_00883.txt,Empresarial,Agravo de Instrumento,Sim,2403
+inventado_00884,inventados/civel,inventados/civel/inventado_00884.txt,Civel,Parecer Consultivo,Não,2412
+inventado_00885,inventados/consumidor,inventados/consumidor/inventado_00885.txt,Consumidor,Memorando Técnico,Não,2415
+inventado_00886,inventados/tributario,inventados/tributario/inventado_00886.txt,Tributario,Nota Técnica Jurídica,Sim,2431
+inventado_00887,inventados/trabalhista,inventados/trabalhista/inventado_00887.txt,Trabalhista,Alegações Finais,Não,2416
+inventado_00888,inventados/administrativo,inventados/administrativo/inventado_00888.txt,Administrativo,Embargos de Declaração,Não,2459
+inventado_00889,inventados/penal,inventados/penal/inventado_00889.txt,Penal,Mandado de Segurança,Sim,2439
+inventado_00890,inventados/ambiental,inventados/ambiental/inventado_00890.txt,Ambiental,Petição Inicial,Não,2365
+inventado_00891,inventados/empresarial,inventados/empresarial/inventado_00891.txt,Empresarial,Contestação,Não,2421
+inventado_00892,inventados/civel,inventados/civel/inventado_00892.txt,Civel,Recurso de Apelação,Sim,2372
+inventado_00893,inventados/consumidor,inventados/consumidor/inventado_00893.txt,Consumidor,Agravo de Instrumento,Não,2408
+inventado_00894,inventados/tributario,inventados/tributario/inventado_00894.txt,Tributario,Parecer Consultivo,Não,2409
+inventado_00895,inventados/trabalhista,inventados/trabalhista/inventado_00895.txt,Trabalhista,Memorando Técnico,Sim,2409
+inventado_00896,inventados/administrativo,inventados/administrativo/inventado_00896.txt,Administrativo,Nota Técnica Jurídica,Não,2431
+inventado_00897,inventados/penal,inventados/penal/inventado_00897.txt,Penal,Alegações Finais,Não,2429
+inventado_00898,inventados/ambiental,inventados/ambiental/inventado_00898.txt,Ambiental,Embargos de Declaração,Sim,2419
+inventado_00899,inventados/empresarial,inventados/empresarial/inventado_00899.txt,Empresarial,Mandado de Segurança,Não,2434
+inventado_009,inventados/consumidor,inventados/consumidor/inventado_009.txt,Consumidor,Petição / Parecer Jurídico,Não,4052
+inventado_00900,inventados/civel,inventados/civel/inventado_00900.txt,Civel,Petição Inicial,Não,2377
+inventado_00901,inventados/consumidor,inventados/consumidor/inventado_00901.txt,Consumidor,Contestação,Sim,2435
+inventado_00902,inventados/tributario,inventados/tributario/inventado_00902.txt,Tributario,Recurso de Apelação,Não,2381
+inventado_00903,inventados/trabalhista,inventados/trabalhista/inventado_00903.txt,Trabalhista,Agravo de Instrumento,Não,2414
+inventado_00904,inventados/administrativo,inventados/administrativo/inventado_00904.txt,Administrativo,Parecer Consultivo,Sim,2420
+inventado_00905,inventados/penal,inventados/penal/inventado_00905.txt,Penal,Memorando Técnico,Não,2402
+inventado_00906,inventados/ambiental,inventados/ambiental/inventado_00906.txt,Ambiental,Nota Técnica Jurídica,Não,2438
+inventado_00907,inventados/empresarial,inventados/empresarial/inventado_00907.txt,Empresarial,Alegações Finais,Sim,2396
+inventado_00908,inventados/civel,inventados/civel/inventado_00908.txt,Civel,Embargos de Declaração,Não,2426
+inventado_00909,inventados/consumidor,inventados/consumidor/inventado_00909.txt,Consumidor,Mandado de Segurança,Não,2463
+inventado_00910,inventados/tributario,inventados/tributario/inventado_00910.txt,Tributario,Petição Inicial,Sim,2383
+inventado_00911,inventados/trabalhista,inventados/trabalhista/inventado_00911.txt,Trabalhista,Contestação,Não,2416
+inventado_00912,inventados/administrativo,inventados/administrativo/inventado_00912.txt,Administrativo,Recurso de Apelação,Não,2382
+inventado_00913,inventados/penal,inventados/penal/inventado_00913.txt,Penal,Agravo de Instrumento,Sim,2405
+inventado_00914,inventados/ambiental,inventados/ambiental/inventado_00914.txt,Ambiental,Parecer Consultivo,Não,2411
+inventado_00915,inventados/empresarial,inventados/empresarial/inventado_00915.txt,Empresarial,Memorando Técnico,Não,2427
+inventado_00916,inventados/civel,inventados/civel/inventado_00916.txt,Civel,Nota Técnica Jurídica,Sim,2400
+inventado_00917,inventados/consumidor,inventados/consumidor/inventado_00917.txt,Consumidor,Alegações Finais,Não,2397
+inventado_00918,inventados/tributario,inventados/tributario/inventado_00918.txt,Tributario,Embargos de Declaração,Não,2432
+inventado_00919,inventados/trabalhista,inventados/trabalhista/inventado_00919.txt,Trabalhista,Mandado de Segurança,Sim,2454
+inventado_00920,inventados/administrativo,inventados/administrativo/inventado_00920.txt,Administrativo,Petição Inicial,Não,2392
+inventado_00921,inventados/penal,inventados/penal/inventado_00921.txt,Penal,Contestação,Não,2441
+inventado_00922,inventados/ambiental,inventados/ambiental/inventado_00922.txt,Ambiental,Recurso de Apelação,Sim,2378
+inventado_00923,inventados/empresarial,inventados/empresarial/inventado_00923.txt,Empresarial,Agravo de Instrumento,Não,2406
+inventado_00924,inventados/civel,inventados/civel/inventado_00924.txt,Civel,Parecer Consultivo,Não,2420
+inventado_00925,inventados/consumidor,inventados/consumidor/inventado_00925.txt,Consumidor,Memorando Técnico,Sim,2387
+inventado_00926,inventados/tributario,inventados/tributario/inventado_00926.txt,Tributario,Nota Técnica Jurídica,Não,2415
+inventado_00927,inventados/trabalhista,inventados/trabalhista/inventado_00927.txt,Trabalhista,Alegações Finais,Não,2416
+inventado_00928,inventados/administrativo,inventados/administrativo/inventado_00928.txt,Administrativo,Embargos de Declaração,Sim,2450
+inventado_00929,inventados/penal,inventados/penal/inventado_00929.txt,Penal,Mandado de Segurança,Não,2453
+inventado_00930,inventados/ambiental,inventados/ambiental/inventado_00930.txt,Ambiental,Petição Inicial,Não,2384
+inventado_00931,inventados/empresarial,inventados/empresarial/inventado_00931.txt,Empresarial,Contestação,Sim,2419
+inventado_00932,inventados/civel,inventados/civel/inventado_00932.txt,Civel,Recurso de Apelação,Não,2379
+inventado_00933,inventados/consumidor,inventados/consumidor/inventado_00933.txt,Consumidor,Agravo de Instrumento,Não,2429
+inventado_00934,inventados/tributario,inventados/tributario/inventado_00934.txt,Tributario,Parecer Consultivo,Sim,2392
+inventado_00935,inventados/trabalhista,inventados/trabalhista/inventado_00935.txt,Trabalhista,Memorando Técnico,Não,2391
+inventado_00936,inventados/administrativo,inventados/administrativo/inventado_00936.txt,Administrativo,Nota Técnica Jurídica,Não,2420
+inventado_00937,inventados/penal,inventados/penal/inventado_00937.txt,Penal,Alegações Finais,Sim,2412
+inventado_00938,inventados/ambiental,inventados/ambiental/inventado_00938.txt,Ambiental,Embargos de Declaração,Não,2438
+inventado_00939,inventados/empresarial,inventados/empresarial/inventado_00939.txt,Empresarial,Mandado de Segurança,Não,2465
+inventado_00940,inventados/civel,inventados/civel/inventado_00940.txt,Civel,Petição Inicial,Sim,2384
+inventado_00941,inventados/consumidor,inventados/consumidor/inventado_00941.txt,Consumidor,Contestação,Não,2439
+inventado_00942,inventados/tributario,inventados/tributario/inventado_00942.txt,Tributario,Recurso de Apelação,Não,2390
+inventado_00943,inventados/trabalhista,inventados/trabalhista/inventado_00943.txt,Trabalhista,Agravo de Instrumento,Sim,2387
+inventado_00944,inventados/administrativo,inventados/administrativo/inventado_00944.txt,Administrativo,Parecer Consultivo,Não,2404
+inventado_00945,inventados/penal,inventados/penal/inventado_00945.txt,Penal,Memorando Técnico,Não,2403
+inventado_00946,inventados/ambiental,inventados/ambiental/inventado_00946.txt,Ambiental,Nota Técnica Jurídica,Sim,2430
+inventado_00947,inventados/empresarial,inventados/empresarial/inventado_00947.txt,Empresarial,Alegações Finais,Não,2412
+inventado_00948,inventados/civel,inventados/civel/inventado_00948.txt,Civel,Embargos de Declaração,Não,2445
+inventado_00949,inventados/consumidor,inventados/consumidor/inventado_00949.txt,Consumidor,Mandado de Segurança,Sim,2462
+inventado_00950,inventados/tributario,inventados/tributario/inventado_00950.txt,Tributario,Petição Inicial,Não,2390
+inventado_00951,inventados/trabalhista,inventados/trabalhista/inventado_00951.txt,Trabalhista,Contestação,Não,2437
+inventado_00952,inventados/administrativo,inventados/administrativo/inventado_00952.txt,Administrativo,Recurso de Apelação,Sim,2364
+inventado_00953,inventados/penal,inventados/penal/inventado_00953.txt,Penal,Agravo de Instrumento,Não,2387
+inventado_00954,inventados/ambiental,inventados/ambiental/inventado_00954.txt,Ambiental,Parecer Consultivo,Não,2400
+inventado_00955,inventados/empresarial,inventados/empresarial/inventado_00955.txt,Empresarial,Memorando Técnico,Sim,2410
+inventado_00956,inventados/civel,inventados/civel/inventado_00956.txt,Civel,Nota Técnica Jurídica,Não,2419
+inventado_00957,inventados/consumidor,inventados/consumidor/inventado_00957.txt,Consumidor,Alegações Finais,Não,2428
+inventado_00958,inventados/tributario,inventados/tributario/inventado_00958.txt,Tributario,Embargos de Declaração,Sim,2439
+inventado_00959,inventados/trabalhista,inventados/trabalhista/inventado_00959.txt,Trabalhista,Mandado de Segurança,Não,2457
+inventado_00960,inventados/administrativo,inventados/administrativo/inventado_00960.txt,Administrativo,Petição Inicial,Não,2401
+inventado_00961,inventados/penal,inventados/penal/inventado_00961.txt,Penal,Contestação,Sim,2414
+inventado_00962,inventados/ambiental,inventados/ambiental/inventado_00962.txt,Ambiental,Recurso de Apelação,Não,2363
+inventado_00963,inventados/empresarial,inventados/empresarial/inventado_00963.txt,Empresarial,Agravo de Instrumento,Não,2407
+inventado_00964,inventados/civel,inventados/civel/inventado_00964.txt,Civel,Parecer Consultivo,Sim,2413
+inventado_00965,inventados/consumidor,inventados/consumidor/inventado_00965.txt,Consumidor,Memorando Técnico,Não,2403
+inventado_00966,inventados/tributario,inventados/tributario/inventado_00966.txt,Tributario,Nota Técnica Jurídica,Não,2434
+inventado_00967,inventados/trabalhista,inventados/trabalhista/inventado_00967.txt,Trabalhista,Alegações Finais,Sim,2414
+inventado_00968,inventados/administrativo,inventados/administrativo/inventado_00968.txt,Administrativo,Embargos de Declaração,Não,2457
+inventado_00969,inventados/penal,inventados/penal/inventado_00969.txt,Penal,Mandado de Segurança,Não,2474
+inventado_00970,inventados/ambiental,inventados/ambiental/inventado_00970.txt,Ambiental,Petição Inicial,Sim,2365
+inventado_00971,inventados/empresarial,inventados/empresarial/inventado_00971.txt,Empresarial,Contestação,Não,2400
+inventado_00972,inventados/civel,inventados/civel/inventado_00972.txt,Civel,Recurso de Apelação,Não,2367
+inventado_00973,inventados/consumidor,inventados/consumidor/inventado_00973.txt,Consumidor,Agravo de Instrumento,Sim,2411
+inventado_00974,inventados/tributario,inventados/tributario/inventado_00974.txt,Tributario,Parecer Consultivo,Não,2409
+inventado_00975,inventados/trabalhista,inventados/trabalhista/inventado_00975.txt,Trabalhista,Memorando Técnico,Não,2421
+inventado_00976,inventados/administrativo,inventados/administrativo/inventado_00976.txt,Administrativo,Nota Técnica Jurídica,Sim,2426
+inventado_00977,inventados/penal,inventados/penal/inventado_00977.txt,Penal,Alegações Finais,Não,2415
+inventado_00978,inventados/ambiental,inventados/ambiental/inventado_00978.txt,Ambiental,Embargos de Declaração,Não,2446
+inventado_00979,inventados/empresarial,inventados/empresarial/inventado_00979.txt,Empresarial,Mandado de Segurança,Sim,2438
+inventado_00980,inventados/civel,inventados/civel/inventado_00980.txt,Civel,Petição Inicial,Não,2368
+inventado_00981,inventados/consumidor,inventados/consumidor/inventado_00981.txt,Consumidor,Contestação,Não,2439
+inventado_00982,inventados/tributario,inventados/tributario/inventado_00982.txt,Tributario,Recurso de Apelação,Sim,2381
+inventado_00983,inventados/trabalhista,inventados/trabalhista/inventado_00983.txt,Trabalhista,Agravo de Instrumento,Não,2402
+inventado_00984,inventados/administrativo,inventados/administrativo/inventado_00984.txt,Administrativo,Parecer Consultivo,Não,2422
+inventado_00985,inventados/penal,inventados/penal/inventado_00985.txt,Penal,Memorando Técnico,Sim,2400
+inventado_00986,inventados/ambiental,inventados/ambiental/inventado_00986.txt,Ambiental,Nota Técnica Jurídica,Não,2436
+inventado_00987,inventados/empresarial,inventados/empresarial/inventado_00987.txt,Empresarial,Alegações Finais,Não,2432
+inventado_00988,inventados/civel,inventados/civel/inventado_00988.txt,Civel,Embargos de Declaração,Sim,2426
+inventado_00989,inventados/consumidor,inventados/consumidor/inventado_00989.txt,Consumidor,Mandado de Segurança,Não,2442
+inventado_00990,inventados/tributario,inventados/tributario/inventado_00990.txt,Tributario,Petição Inicial,Não,2378
+inventado_00991,inventados/trabalhista,inventados/trabalhista/inventado_00991.txt,Trabalhista,Contestação,Sim,2419
+inventado_00992,inventados/administrativo,inventados/administrativo/inventado_00992.txt,Administrativo,Recurso de Apelação,Não,2382
+inventado_00993,inventados/penal,inventados/penal/inventado_00993.txt,Penal,Agravo de Instrumento,Não,2417
+inventado_00994,inventados/ambiental,inventados/ambiental/inventado_00994.txt,Ambiental,Parecer Consultivo,Sim,2407
+inventado_00995,inventados/empresarial,inventados/empresarial/inventado_00995.txt,Empresarial,Memorando Técnico,Não,2413
+inventado_00996,inventados/civel,inventados/civel/inventado_00996.txt,Civel,Nota Técnica Jurídica,Não,2427
+inventado_00997,inventados/consumidor,inventados/consumidor/inventado_00997.txt,Consumidor,Alegações Finais,Sim,2400
+inventado_00998,inventados/tributario,inventados/tributario/inventado_00998.txt,Tributario,Embargos de Declaração,Não,2423
+inventado_00999,inventados/trabalhista,inventados/trabalhista/inventado_00999.txt,Trabalhista,Mandado de Segurança,Não,2457
+inventado_010,inventados/consumidor,inventados/consumidor/inventado_010.txt,Consumidor,Petição / Parecer Jurídico,Não,4083
+inventado_01000,inventados/administrativo,inventados/administrativo/inventado_01000.txt,Administrativo,Petição Inicial,Sim,2392
+inventado_01001,inventados/penal,inventados/penal/inventado_01001.txt,Penal,Contestação,Não,2429
+inventado_01002,inventados/ambiental,inventados/ambiental/inventado_01002.txt,Ambiental,Recurso de Apelação,Não,2381
+inventado_01003,inventados/empresarial,inventados/empresarial/inventado_01003.txt,Empresarial,Agravo de Instrumento,Sim,2404
+inventado_01004,inventados/civel,inventados/civel/inventado_01004.txt,Civel,Parecer Consultivo,Não,2418
+inventado_01005,inventados/consumidor,inventados/consumidor/inventado_01005.txt,Consumidor,Memorando Técnico,Não,2423
+inventado_01006,inventados/tributario,inventados/tributario/inventado_01006.txt,Tributario,Nota Técnica Jurídica,Sim,2415
+inventado_01007,inventados/trabalhista,inventados/trabalhista/inventado_01007.txt,Trabalhista,Alegações Finais,Não,2395
+inventado_01008,inventados/administrativo,inventados/administrativo/inventado_01008.txt,Administrativo,Embargos de Declaração,Não,2445
+inventado_01009,inventados/penal,inventados/penal/inventado_01009.txt,Penal,Mandado de Segurança,Sim,2457
+inventado_01010,inventados/ambiental,inventados/ambiental/inventado_01010.txt,Ambiental,Petição Inicial,Não,2383
+inventado_01011,inventados/empresarial,inventados/empresarial/inventado_01011.txt,Empresarial,Contestação,Não,2430
+inventado_01012,inventados/civel,inventados/civel/inventado_01012.txt,Civel,Recurso de Apelação,Sim,2373
+inventado_01013,inventados/consumidor,inventados/consumidor/inventado_01013.txt,Consumidor,Agravo de Instrumento,Não,2414
+inventado_01014,inventados/tributario,inventados/tributario/inventado_01014.txt,Tributario,Parecer Consultivo,Não,2417
+inventado_01015,inventados/trabalhista,inventados/trabalhista/inventado_01015.txt,Trabalhista,Memorando Técnico,Sim,2393
+inventado_01016,inventados/administrativo,inventados/administrativo/inventado_01016.txt,Administrativo,Nota Técnica Jurídica,Não,2410
+inventado_01017,inventados/penal,inventados/penal/inventado_01017.txt,Penal,Alegações Finais,Não,2415
+inventado_01018,inventados/ambiental,inventados/ambiental/inventado_01018.txt,Ambiental,Embargos de Declaração,Sim,2437
+inventado_01019,inventados/empresarial,inventados/empresarial/inventado_01019.txt,Empresarial,Mandado de Segurança,Não,2452
+inventado_01020,inventados/civel,inventados/civel/inventado_01020.txt,Civel,Petição Inicial,Não,2386
+inventado_01021,inventados/consumidor,inventados/consumidor/inventado_01021.txt,Consumidor,Contestação,Sim,2436
+inventado_01022,inventados/tributario,inventados/tributario/inventado_01022.txt,Tributario,Recurso de Apelação,Não,2387
+inventado_01023,inventados/trabalhista,inventados/trabalhista/inventado_01023.txt,Trabalhista,Agravo de Instrumento,Não,2422
+inventado_01024,inventados/administrativo,inventados/administrativo/inventado_01024.txt,Administrativo,Parecer Consultivo,Sim,2404
+inventado_01025,inventados/penal,inventados/penal/inventado_01025.txt,Penal,Memorando Técnico,Não,2381
+inventado_01026,inventados/ambiental,inventados/ambiental/inventado_01026.txt,Ambiental,Nota Técnica Jurídica,Não,2424
+inventado_01027,inventados/empresarial,inventados/empresarial/inventado_01027.txt,Empresarial,Alegações Finais,Sim,2414
+inventado_01028,inventados/civel,inventados/civel/inventado_01028.txt,Civel,Embargos de Declaração,Não,2444
+inventado_01029,inventados/consumidor,inventados/consumidor/inventado_01029.txt,Consumidor,Mandado de Segurança,Não,2472
+inventado_01030,inventados/tributario,inventados/tributario/inventado_01030.txt,Tributario,Petição Inicial,Sim,2384
+inventado_01031,inventados/trabalhista,inventados/trabalhista/inventado_01031.txt,Trabalhista,Contestação,Não,2422
+inventado_01032,inventados/administrativo,inventados/administrativo/inventado_01032.txt,Administrativo,Recurso de Apelação,Não,2390
+inventado_01033,inventados/penal,inventados/penal/inventado_01033.txt,Penal,Agravo de Instrumento,Sim,2389
+inventado_01034,inventados/ambiental,inventados/ambiental/inventado_01034.txt,Ambiental,Parecer Consultivo,Não,2390
+inventado_01035,inventados/empresarial,inventados/empresarial/inventado_01035.txt,Empresarial,Memorando Técnico,Não,2413
+inventado_01036,inventados/civel,inventados/civel/inventado_01036.txt,Civel,Nota Técnica Jurídica,Sim,2418
+inventado_01037,inventados/consumidor,inventados/consumidor/inventado_01037.txt,Consumidor,Alegações Finais,Não,2415
+inventado_01038,inventados/tributario,inventados/tributario/inventado_01038.txt,Tributario,Embargos de Declaração,Não,2441
+inventado_01039,inventados/trabalhista,inventados/trabalhista/inventado_01039.txt,Trabalhista,Mandado de Segurança,Sim,2455
+inventado_01040,inventados/administrativo,inventados/administrativo/inventado_01040.txt,Administrativo,Petição Inicial,Não,2398
+inventado_01041,inventados/penal,inventados/penal/inventado_01041.txt,Penal,Contestação,Não,2449
+inventado_01042,inventados/ambiental,inventados/ambiental/inventado_01042.txt,Ambiental,Recurso de Apelação,Sim,2362
+inventado_01043,inventados/empresarial,inventados/empresarial/inventado_01043.txt,Empresarial,Agravo de Instrumento,Não,2385
+inventado_01044,inventados/civel,inventados/civel/inventado_01044.txt,Civel,Parecer Consultivo,Não,2406
+inventado_01045,inventados/consumidor,inventados/consumidor/inventado_01045.txt,Consumidor,Memorando Técnico,Sim,2405
+inventado_01046,inventados/tributario,inventados/tributario/inventado_01046.txt,Tributario,Nota Técnica Jurídica,Não,2433
+inventado_01047,inventados/trabalhista,inventados/trabalhista/inventado_01047.txt,Trabalhista,Alegações Finais,Não,2425
+inventado_01048,inventados/administrativo,inventados/administrativo/inventado_01048.txt,Administrativo,Embargos de Declaração,Sim,2451
+inventado_01049,inventados/penal,inventados/penal/inventado_01049.txt,Penal,Mandado de Segurança,Não,2459
+inventado_01050,inventados/ambiental,inventados/ambiental/inventado_01050.txt,Ambiental,Petição Inicial,Não,2391
+inventado_01051,inventados/empresarial,inventados/empresarial/inventado_01051.txt,Empresarial,Contestação,Sim,2402
+inventado_01052,inventados/civel,inventados/civel/inventado_01052.txt,Civel,Recurso de Apelação,Não,2357
+inventado_01053,inventados/consumidor,inventados/consumidor/inventado_01053.txt,Consumidor,Agravo de Instrumento,Não,2414
+inventado_01054,inventados/tributario,inventados/tributario/inventado_01054.txt,Tributario,Parecer Consultivo,Sim,2409
+inventado_01055,inventados/trabalhista,inventados/trabalhista/inventado_01055.txt,Trabalhista,Memorando Técnico,Não,2408
+inventado_01056,inventados/administrativo,inventados/administrativo/inventado_01056.txt,Administrativo,Nota Técnica Jurídica,Não,2428
+inventado_01057,inventados/penal,inventados/penal/inventado_01057.txt,Penal,Alegações Finais,Sim,2412
+inventado_01058,inventados/ambiental,inventados/ambiental/inventado_01058.txt,Ambiental,Embargos de Declaração,Não,2443
+inventado_01059,inventados/empresarial,inventados/empresarial/inventado_01059.txt,Empresarial,Mandado de Segurança,Não,2472
+inventado_01060,inventados/civel,inventados/civel/inventado_01060.txt,Civel,Petição Inicial,Sim,2367
+inventado_01061,inventados/consumidor,inventados/consumidor/inventado_01061.txt,Consumidor,Contestação,Não,2417
+inventado_01062,inventados/tributario,inventados/tributario/inventado_01062.txt,Tributario,Recurso de Apelação,Não,2375
+inventado_01063,inventados/trabalhista,inventados/trabalhista/inventado_01063.txt,Trabalhista,Agravo de Instrumento,Sim,2404
+inventado_01064,inventados/administrativo,inventados/administrativo/inventado_01064.txt,Administrativo,Parecer Consultivo,Não,2421
+inventado_01065,inventados/penal,inventados/penal/inventado_01065.txt,Penal,Memorando Técnico,Não,2411
+inventado_01066,inventados/ambiental,inventados/ambiental/inventado_01066.txt,Ambiental,Nota Técnica Jurídica,Sim,2430
+inventado_01067,inventados/empresarial,inventados/empresarial/inventado_01067.txt,Empresarial,Alegações Finais,Não,2417
+inventado_01068,inventados/civel,inventados/civel/inventado_01068.txt,Civel,Embargos de Declaração,Não,2452
+inventado_01069,inventados/consumidor,inventados/consumidor/inventado_01069.txt,Consumidor,Mandado de Segurança,Sim,2445
+inventado_01070,inventados/tributario,inventados/tributario/inventado_01070.txt,Tributario,Petição Inicial,Não,2368
+inventado_01071,inventados/trabalhista,inventados/trabalhista/inventado_01071.txt,Trabalhista,Contestação,Não,2422
+inventado_01072,inventados/administrativo,inventados/administrativo/inventado_01072.txt,Administrativo,Recurso de Apelação,Sim,2381
+inventado_01073,inventados/penal,inventados/penal/inventado_01073.txt,Penal,Agravo de Instrumento,Não,2404
+inventado_01074,inventados/ambiental,inventados/ambiental/inventado_01074.txt,Ambiental,Parecer Consultivo,Não,2408
+inventado_01075,inventados/empresarial,inventados/empresarial/inventado_01075.txt,Empresarial,Memorando Técnico,Sim,2410
+inventado_01076,inventados/civel,inventados/civel/inventado_01076.txt,Civel,Nota Técnica Jurídica,Não,2424
+inventado_01077,inventados/consumidor,inventados/consumidor/inventado_01077.txt,Consumidor,Alegações Finais,Não,2435
+inventado_01078,inventados/tributario,inventados/tributario/inventado_01078.txt,Tributario,Embargos de Declaração,Sim,2422
+inventado_01079,inventados/trabalhista,inventados/trabalhista/inventado_01079.txt,Trabalhista,Mandado de Segurança,Não,2435
+inventado_01080,inventados/administrativo,inventados/administrativo/inventado_01080.txt,Administrativo,Petição Inicial,Não,2386
+inventado_01081,inventados/penal,inventados/penal/inventado_01081.txt,Penal,Contestação,Sim,2431
+inventado_01082,inventados/ambiental,inventados/ambiental/inventado_01082.txt,Ambiental,Recurso de Apelação,Não,2380
+inventado_01083,inventados/empresarial,inventados/empresarial/inventado_01083.txt,Empresarial,Agravo de Instrumento,Não,2415
+inventado_01084,inventados/civel,inventados/civel/inventado_01084.txt,Civel,Parecer Consultivo,Sim,2413
+inventado_01085,inventados/consumidor,inventados/consumidor/inventado_01085.txt,Consumidor,Memorando Técnico,Não,2408
+inventado_01086,inventados/tributario,inventados/tributario/inventado_01086.txt,Tributario,Nota Técnica Jurídica,Não,2441
+inventado_01087,inventados/trabalhista,inventados/trabalhista/inventado_01087.txt,Trabalhista,Alegações Finais,Sim,2397
+inventado_01088,inventados/administrativo,inventados/administrativo/inventado_01088.txt,Administrativo,Embargos de Declaração,Não,2435
+inventado_01089,inventados/penal,inventados/penal/inventado_01089.txt,Penal,Mandado de Segurança,Não,2459
+inventado_01090,inventados/ambiental,inventados/ambiental/inventado_01090.txt,Ambiental,Petição Inicial,Sim,2382
+inventado_01091,inventados/empresarial,inventados/empresarial/inventado_01091.txt,Empresarial,Contestação,Não,2417
+inventado_01092,inventados/civel,inventados/civel/inventado_01092.txt,Civel,Recurso de Apelação,Não,2375
+inventado_01093,inventados/consumidor,inventados/consumidor/inventado_01093.txt,Consumidor,Agravo de Instrumento,Sim,2411
+inventado_01094,inventados/tributario,inventados/tributario/inventado_01094.txt,Tributario,Parecer Consultivo,Não,2414
+inventado_01095,inventados/trabalhista,inventados/trabalhista/inventado_01095.txt,Trabalhista,Memorando Técnico,Não,2428
+inventado_01096,inventados/administrativo,inventados/administrativo/inventado_01096.txt,Administrativo,Nota Técnica Jurídica,Sim,2409
+inventado_01097,inventados/penal,inventados/penal/inventado_01097.txt,Penal,Alegações Finais,Não,2393
+inventado_01098,inventados/ambiental,inventados/ambiental/inventado_01098.txt,Ambiental,Embargos de Declaração,Não,2431
+inventado_01099,inventados/empresarial,inventados/empresarial/inventado_01099.txt,Empresarial,Mandado de Segurança,Sim,2455
+inventado_011,inventados/consumidor,inventados/consumidor/inventado_011.txt,Consumidor,Petição / Parecer Jurídico,Não,4096
+inventado_01100,inventados/civel,inventados/civel/inventado_01100.txt,Civel,Petição Inicial,Não,2385
+inventado_01101,inventados/consumidor,inventados/consumidor/inventado_01101.txt,Consumidor,Contestação,Não,2447
+inventado_01102,inventados/tributario,inventados/tributario/inventado_01102.txt,Tributario,Recurso de Apelação,Sim,2381
+inventado_01103,inventados/trabalhista,inventados/trabalhista/inventado_01103.txt,Trabalhista,Agravo de Instrumento,Não,2407
+inventado_01104,inventados/administrativo,inventados/administrativo/inventado_01104.txt,Administrativo,Parecer Consultivo,Não,2429
+inventado_01105,inventados/penal,inventados/penal/inventado_01105.txt,Penal,Memorando Técnico,Sim,2383
+inventado_01106,inventados/ambiental,inventados/ambiental/inventado_01106.txt,Ambiental,Nota Técnica Jurídica,Não,2414
+inventado_01107,inventados/empresarial,inventados/empresarial/inventado_01107.txt,Empresarial,Alegações Finais,Não,2417
+inventado_01108,inventados/civel,inventados/civel/inventado_01108.txt,Civel,Embargos de Declaração,Sim,2443
+inventado_01109,inventados/consumidor,inventados/consumidor/inventado_01109.txt,Consumidor,Mandado de Segurança,Não,2459
+inventado_01110,inventados/tributario,inventados/tributario/inventado_01110.txt,Tributario,Petição Inicial,Não,2386
+inventado_01111,inventados/trabalhista,inventados/trabalhista/inventado_01111.txt,Trabalhista,Contestação,Sim,2419
+inventado_01112,inventados/administrativo,inventados/administrativo/inventado_01112.txt,Administrativo,Recurso de Apelação,Não,2387
+inventado_01113,inventados/penal,inventados/penal/inventado_01113.txt,Penal,Agravo de Instrumento,Não,2424
+inventado_01114,inventados/ambiental,inventados/ambiental/inventado_01114.txt,Ambiental,Parecer Consultivo,Sim,2390
+inventado_01115,inventados/empresarial,inventados/empresarial/inventado_01115.txt,Empresarial,Memorando Técnico,Não,2391
+inventado_01116,inventados/civel,inventados/civel/inventado_01116.txt,Civel,Nota Técnica Jurídica,Não,2412
+inventado_01117,inventados/consumidor,inventados/consumidor/inventado_01117.txt,Consumidor,Alegações Finais,Sim,2417
+inventado_01118,inventados/tributario,inventados/tributario/inventado_01118.txt,Tributario,Embargos de Declaração,Não,2440
+inventado_01119,inventados/trabalhista,inventados/trabalhista/inventado_01119.txt,Trabalhista,Mandado de Segurança,Não,2465
+inventado_01120,inventados/administrativo,inventados/administrativo/inventado_01120.txt,Administrativo,Petição Inicial,Sim,2392
+inventado_01121,inventados/penal,inventados/penal/inventado_01121.txt,Penal,Contestação,Não,2434
+inventado_01122,inventados/ambiental,inventados/ambiental/inventado_01122.txt,Ambiental,Recurso de Apelação,Não,2388
+inventado_01123,inventados/empresarial,inventados/empresarial/inventado_01123.txt,Empresarial,Agravo de Instrumento,Sim,2387
+inventado_01124,inventados/civel,inventados/civel/inventado_01124.txt,Civel,Parecer Consultivo,Não,2396
+inventado_01125,inventados/consumidor,inventados/consumidor/inventado_01125.txt,Consumidor,Memorando Técnico,Não,2408
+inventado_01126,inventados/tributario,inventados/tributario/inventado_01126.txt,Tributario,Nota Técnica Jurídica,Sim,2432
+inventado_01127,inventados/trabalhista,inventados/trabalhista/inventado_01127.txt,Trabalhista,Alegações Finais,Não,2412
+inventado_01128,inventados/administrativo,inventados/administrativo/inventado_01128.txt,Administrativo,Embargos de Declaração,Não,2453
+inventado_01129,inventados/penal,inventados/penal/inventado_01129.txt,Penal,Mandado de Segurança,Sim,2457
+inventado_01130,inventados/ambiental,inventados/ambiental/inventado_01130.txt,Ambiental,Petição Inicial,Não,2388
+inventado_01131,inventados/empresarial,inventados/empresarial/inventado_01131.txt,Empresarial,Contestação,Não,2437
+inventado_01132,inventados/civel,inventados/civel/inventado_01132.txt,Civel,Recurso de Apelação,Sim,2356
+inventado_01133,inventados/consumidor,inventados/consumidor/inventado_01133.txt,Consumidor,Agravo de Instrumento,Não,2392
+inventado_01134,inventados/tributario,inventados/tributario/inventado_01134.txt,Tributario,Parecer Consultivo,Não,2402
+inventado_01135,inventados/trabalhista,inventados/trabalhista/inventado_01135.txt,Trabalhista,Memorando Técnico,Sim,2410
+inventado_01136,inventados/administrativo,inventados/administrativo/inventado_01136.txt,Administrativo,Nota Técnica Jurídica,Não,2427
+inventado_01137,inventados/penal,inventados/penal/inventado_01137.txt,Penal,Alegações Finais,Não,2423
+inventado_01138,inventados/ambiental,inventados/ambiental/inventado_01138.txt,Ambiental,Embargos de Declaração,Sim,2437
+inventado_01139,inventados/empresarial,inventados/empresarial/inventado_01139.txt,Empresarial,Mandado de Segurança,Não,2457
+inventado_01140,inventados/civel,inventados/civel/inventado_01140.txt,Civel,Petição Inicial,Não,2393
+inventado_01141,inventados/consumidor,inventados/consumidor/inventado_01141.txt,Consumidor,Contestação,Sim,2419
+inventado_01142,inventados/tributario,inventados/tributario/inventado_01142.txt,Tributario,Recurso de Apelação,Não,2365
+inventado_01143,inventados/trabalhista,inventados/trabalhista/inventado_01143.txt,Trabalhista,Agravo de Instrumento,Não,2407
+inventado_01144,inventados/administrativo,inventados/administrativo/inventado_01144.txt,Administrativo,Parecer Consultivo,Sim,2421
+inventado_01145,inventados/penal,inventados/penal/inventado_01145.txt,Penal,Memorando Técnico,Não,2398
+inventado_01146,inventados/ambiental,inventados/ambiental/inventado_01146.txt,Ambiental,Nota Técnica Jurídica,Não,2432
+inventado_01147,inventados/empresarial,inventados/empresarial/inventado_01147.txt,Empresarial,Alegações Finais,Sim,2414
+inventado_01148,inventados/civel,inventados/civel/inventado_01148.txt,Civel,Embargos de Declaração,Não,2449
+inventado_01149,inventados/consumidor,inventados/consumidor/inventado_01149.txt,Consumidor,Mandado de Segurança,Não,2479
+inventado_01150,inventados/tributario,inventados/tributario/inventado_01150.txt,Tributario,Petição Inicial,Sim,2367
+inventado_01151,inventados/trabalhista,inventados/trabalhista/inventado_01151.txt,Trabalhista,Contestação,Não,2400
+inventado_01152,inventados/administrativo,inventados/administrativo/inventado_01152.txt,Administrativo,Recurso de Apelação,Não,2375
+inventado_01153,inventados/penal,inventados/penal/inventado_01153.txt,Penal,Agravo de Instrumento,Sim,2406
+inventado_01154,inventados/ambiental,inventados/ambiental/inventado_01154.txt,Ambiental,Parecer Consultivo,Não,2407
+inventado_01155,inventados/empresarial,inventados/empresarial/inventado_01155.txt,Empresarial,Memorando Técnico,Não,2421
+inventado_01156,inventados/civel,inventados/civel/inventado_01156.txt,Civel,Nota Técnica Jurídica,Sim,2418
+inventado_01157,inventados/consumidor,inventados/consumidor/inventado_01157.txt,Consumidor,Alegações Finais,Não,2420
+inventado_01158,inventados/tributario,inventados/tributario/inventado_01158.txt,Tributario,Embargos de Declaração,Não,2448
+inventado_01159,inventados/trabalhista,inventados/trabalhista/inventado_01159.txt,Trabalhista,Mandado de Segurança,Sim,2438
+inventado_01160,inventados/administrativo,inventados/administrativo/inventado_01160.txt,Administrativo,Petição Inicial,Não,2376
+inventado_01161,inventados/penal,inventados/penal/inventado_01161.txt,Penal,Contestação,Não,2434
+inventado_01162,inventados/ambiental,inventados/ambiental/inventado_01162.txt,Ambiental,Recurso de Apelação,Sim,2379
+inventado_01163,inventados/empresarial,inventados/empresarial/inventado_01163.txt,Empresarial,Agravo de Instrumento,Não,2402
+inventado_01164,inventados/civel,inventados/civel/inventado_01164.txt,Civel,Parecer Consultivo,Não,2414
+inventado_01165,inventados/consumidor,inventados/consumidor/inventado_01165.txt,Consumidor,Memorando Técnico,Sim,2405
+inventado_01166,inventados/tributario,inventados/tributario/inventado_01166.txt,Tributario,Nota Técnica Jurídica,Não,2438
+inventado_01167,inventados/trabalhista,inventados/trabalhista/inventado_01167.txt,Trabalhista,Alegações Finais,Não,2432
+inventado_01168,inventados/administrativo,inventados/administrativo/inventado_01168.txt,Administrativo,Embargos de Declaração,Sim,2434
+inventado_01169,inventados/penal,inventados/penal/inventado_01169.txt,Penal,Mandado de Segurança,Não,2437
+inventado_01170,inventados/ambiental,inventados/ambiental/inventado_01170.txt,Ambiental,Petição Inicial,Não,2376
+inventado_01171,inventados/empresarial,inventados/empresarial/inventado_01171.txt,Empresarial,Contestação,Sim,2419
+inventado_01172,inventados/civel,inventados/civel/inventado_01172.txt,Civel,Recurso de Apelação,Não,2374
+inventado_01173,inventados/consumidor,inventados/consumidor/inventado_01173.txt,Consumidor,Agravo de Instrumento,Não,2422
+inventado_01174,inventados/tributario,inventados/tributario/inventado_01174.txt,Tributario,Parecer Consultivo,Sim,2409
+inventado_01175,inventados/trabalhista,inventados/trabalhista/inventado_01175.txt,Trabalhista,Memorando Técnico,Não,2413
+inventado_01176,inventados/administrativo,inventados/administrativo/inventado_01176.txt,Administrativo,Nota Técnica Jurídica,Não,2435
+inventado_01177,inventados/penal,inventados/penal/inventado_01177.txt,Penal,Alegações Finais,Sim,2395
+inventado_01178,inventados/ambiental,inventados/ambiental/inventado_01178.txt,Ambiental,Embargos de Declaração,Não,2421
+inventado_01179,inventados/empresarial,inventados/empresarial/inventado_01179.txt,Empresarial,Mandado de Segurança,Não,2457
+inventado_01180,inventados/civel,inventados/civel/inventado_01180.txt,Civel,Petição Inicial,Sim,2384
+inventado_01181,inventados/consumidor,inventados/consumidor/inventado_01181.txt,Consumidor,Contestação,Não,2434
+inventado_01182,inventados/tributario,inventados/tributario/inventado_01182.txt,Tributario,Recurso de Apelação,Não,2383
+inventado_01183,inventados/trabalhista,inventados/trabalhista/inventado_01183.txt,Trabalhista,Agravo de Instrumento,Sim,2404
+inventado_01184,inventados/administrativo,inventados/administrativo/inventado_01184.txt,Administrativo,Parecer Consultivo,Não,2426
+inventado_01185,inventados/penal,inventados/penal/inventado_01185.txt,Penal,Memorando Técnico,Não,2418
+inventado_01186,inventados/ambiental,inventados/ambiental/inventado_01186.txt,Ambiental,Nota Técnica Jurídica,Sim,2413
+inventado_01187,inventados/empresarial,inventados/empresarial/inventado_01187.txt,Empresarial,Alegações Finais,Não,2395
+inventado_01188,inventados/civel,inventados/civel/inventado_01188.txt,Civel,Embargos de Declaração,Não,2437
+inventado_01189,inventados/consumidor,inventados/consumidor/inventado_01189.txt,Consumidor,Mandado de Segurança,Sim,2462
+inventado_01190,inventados/tributario,inventados/tributario/inventado_01190.txt,Tributario,Petição Inicial,Não,2385
+inventado_01191,inventados/trabalhista,inventados/trabalhista/inventado_01191.txt,Trabalhista,Contestação,Não,2430
+inventado_01192,inventados/administrativo,inventados/administrativo/inventado_01192.txt,Administrativo,Recurso de Apelação,Sim,2381
+inventado_01193,inventados/penal,inventados/penal/inventado_01193.txt,Penal,Agravo de Instrumento,Não,2409
+inventado_01194,inventados/ambiental,inventados/ambiental/inventado_01194.txt,Ambiental,Parecer Consultivo,Não,2415
+inventado_01195,inventados/empresarial,inventados/empresarial/inventado_01195.txt,Empresarial,Memorando Técnico,Sim,2393
+inventado_01196,inventados/civel,inventados/civel/inventado_01196.txt,Civel,Nota Técnica Jurídica,Não,2402
+inventado_01197,inventados/consumidor,inventados/consumidor/inventado_01197.txt,Consumidor,Alegações Finais,Não,2420
+inventado_01198,inventados/tributario,inventados/tributario/inventado_01198.txt,Tributario,Embargos de Declaração,Sim,2439
+inventado_01199,inventados/trabalhista,inventados/trabalhista/inventado_01199.txt,Trabalhista,Mandado de Segurança,Não,2452
+inventado_012,inventados/consumidor,inventados/consumidor/inventado_012.txt,Consumidor,Petição / Parecer Jurídico,Não,4101
+inventado_01200,inventados/administrativo,inventados/administrativo/inventado_01200.txt,Administrativo,Petição Inicial,Não,2394
+inventado_01201,inventados/penal,inventados/penal/inventado_01201.txt,Penal,Contestação,Sim,2431
+inventado_01202,inventados/ambiental,inventados/ambiental/inventado_01202.txt,Ambiental,Recurso de Apelação,Não,2385
+inventado_01203,inventados/empresarial,inventados/empresarial/inventado_01203.txt,Empresarial,Agravo de Instrumento,Não,2422
+inventado_01204,inventados/civel,inventados/civel/inventado_01204.txt,Civel,Parecer Consultivo,Sim,2396
+inventado_01205,inventados/consumidor,inventados/consumidor/inventado_01205.txt,Consumidor,Memorando Técnico,Não,2386
+inventado_01206,inventados/tributario,inventados/tributario/inventado_01206.txt,Tributario,Nota Técnica Jurídica,Não,2426
+inventado_01207,inventados/trabalhista,inventados/trabalhista/inventado_01207.txt,Trabalhista,Alegações Finais,Sim,2414
+inventado_01208,inventados/administrativo,inventados/administrativo/inventado_01208.txt,Administrativo,Embargos de Declaração,Não,2452
+inventado_01209,inventados/penal,inventados/penal/inventado_01209.txt,Penal,Mandado de Segurança,Não,2467
+inventado_01210,inventados/ambiental,inventados/ambiental/inventado_01210.txt,Ambiental,Petição Inicial,Sim,2382
+inventado_01211,inventados/empresarial,inventados/empresarial/inventado_01211.txt,Empresarial,Contestação,Não,2422
+inventado_01212,inventados/civel,inventados/civel/inventado_01212.txt,Civel,Recurso de Apelação,Não,2382
+inventado_01213,inventados/consumidor,inventados/consumidor/inventado_01213.txt,Consumidor,Agravo de Instrumento,Sim,2394
+inventado_01214,inventados/tributario,inventados/tributario/inventado_01214.txt,Tributario,Parecer Consultivo,Não,2392
+inventado_01215,inventados/trabalhista,inventados/trabalhista/inventado_01215.txt,Trabalhista,Memorando Técnico,Não,2413
+inventado_01216,inventados/administrativo,inventados/administrativo/inventado_01216.txt,Administrativo,Nota Técnica Jurídica,Sim,2426
+inventado_01217,inventados/penal,inventados/penal/inventado_01217.txt,Penal,Alegações Finais,Não,2410
+inventado_01218,inventados/ambiental,inventados/ambiental/inventado_01218.txt,Ambiental,Embargos de Declaração,Não,2439
+inventado_01219,inventados/empresarial,inventados/empresarial/inventado_01219.txt,Empresarial,Mandado de Segurança,Sim,2455
+inventado_01220,inventados/civel,inventados/civel/inventado_01220.txt,Civel,Petição Inicial,Não,2390
+inventado_01221,inventados/consumidor,inventados/consumidor/inventado_01221.txt,Consumidor,Contestação,Não,2454
+inventado_01222,inventados/tributario,inventados/tributario/inventado_01222.txt,Tributario,Recurso de Apelação,Sim,2364
+inventado_01223,inventados/trabalhista,inventados/trabalhista/inventado_01223.txt,Trabalhista,Agravo de Instrumento,Não,2385
+inventado_01224,inventados/administrativo,inventados/administrativo/inventado_01224.txt,Administrativo,Parecer Consultivo,Não,2414
+inventado_01225,inventados/penal,inventados/penal/inventado_01225.txt,Penal,Memorando Técnico,Sim,2400
+inventado_01226,inventados/ambiental,inventados/ambiental/inventado_01226.txt,Ambiental,Nota Técnica Jurídica,Não,2431
+inventado_01227,inventados/empresarial,inventados/empresarial/inventado_01227.txt,Empresarial,Alegações Finais,Não,2425
+inventado_01228,inventados/civel,inventados/civel/inventado_01228.txt,Civel,Embargos de Declaração,Sim,2443
+inventado_01229,inventados/consumidor,inventados/consumidor/inventado_01229.txt,Consumidor,Mandado de Segurança,Não,2464
+inventado_01230,inventados/tributario,inventados/tributario/inventado_01230.txt,Tributario,Petição Inicial,Não,2393
+inventado_01231,inventados/trabalhista,inventados/trabalhista/inventado_01231.txt,Trabalhista,Contestação,Sim,2402
+inventado_01232,inventados/administrativo,inventados/administrativo/inventado_01232.txt,Administrativo,Recurso de Apelação,Não,2365
+inventado_01233,inventados/penal,inventados/penal/inventado_01233.txt,Penal,Agravo de Instrumento,Não,2409
+inventado_01234,inventados/ambiental,inventados/ambiental/inventado_01234.txt,Ambiental,Parecer Consultivo,Sim,2407
+inventado_01235,inventados/empresarial,inventados/empresarial/inventado_01235.txt,Empresarial,Memorando Técnico,Não,2408
+inventado_01236,inventados/civel,inventados/civel/inventado_01236.txt,Civel,Nota Técnica Jurídica,Não,2420
+inventado_01237,inventados/consumidor,inventados/consumidor/inventado_01237.txt,Consumidor,Alegações Finais,Sim,2417
+inventado_01238,inventados/tributario,inventados/tributario/inventado_01238.txt,Tributario,Embargos de Declaração,Não,2445
+inventado_01239,inventados/trabalhista,inventados/trabalhista/inventado_01239.txt,Trabalhista,Mandado de Segurança,Não,2472
+inventado_01240,inventados/administrativo,inventados/administrativo/inventado_01240.txt,Administrativo,Petição Inicial,Sim,2375
+inventado_01241,inventados/penal,inventados/penal/inventado_01241.txt,Penal,Contestação,Não,2412
+inventado_01242,inventados/ambiental,inventados/ambiental/inventado_01242.txt,Ambiental,Recurso de Apelação,Não,2373
+inventado_01243,inventados/empresarial,inventados/empresarial/inventado_01243.txt,Empresarial,Agravo de Instrumento,Sim,2404
+inventado_01244,inventados/civel,inventados/civel/inventado_01244.txt,Civel,Parecer Consultivo,Não,2413
+inventado_01245,inventados/consumidor,inventados/consumidor/inventado_01245.txt,Consumidor,Memorando Técnico,Não,2416
+inventado_01246,inventados/tributario,inventados/tributario/inventado_01246.txt,Tributario,Nota Técnica Jurídica,Sim,2432
+inventado_01247,inventados/trabalhista,inventados/trabalhista/inventado_01247.txt,Trabalhista,Alegações Finais,Não,2417
+inventado_01248,inventados/administrativo,inventados/administrativo/inventado_01248.txt,Administrativo,Embargos de Declaração,Não,2460
+inventado_01249,inventados/penal,inventados/penal/inventado_01249.txt,Penal,Mandado de Segurança,Sim,2440
+inventado_01250,inventados/ambiental,inventados/ambiental/inventado_01250.txt,Ambiental,Petição Inicial,Não,2366
+inventado_01251,inventados/empresarial,inventados/empresarial/inventado_01251.txt,Empresarial,Contestação,Não,2422
+inventado_01252,inventados/civel,inventados/civel/inventado_01252.txt,Civel,Recurso de Apelação,Sim,2373
+inventado_01253,inventados/consumidor,inventados/consumidor/inventado_01253.txt,Consumidor,Agravo de Instrumento,Não,2409
+inventado_01254,inventados/tributario,inventados/tributario/inventado_01254.txt,Tributario,Parecer Consultivo,Não,2410
+inventado_01255,inventados/trabalhista,inventados/trabalhista/inventado_01255.txt,Trabalhista,Memorando Técnico,Sim,2410
+inventado_01256,inventados/administrativo,inventados/administrativo/inventado_01256.txt,Administrativo,Nota Técnica Jurídica,Não,2432
+inventado_01257,inventados/penal,inventados/penal/inventado_01257.txt,Penal,Alegações Finais,Não,2430
+inventado_01258,inventados/ambiental,inventados/ambiental/inventado_01258.txt,Ambiental,Embargos de Declaração,Sim,2420
+inventado_01259,inventados/empresarial,inventados/empresarial/inventado_01259.txt,Empresarial,Mandado de Segurança,Não,2435
+inventado_01260,inventados/civel,inventados/civel/inventado_01260.txt,Civel,Petição Inicial,Não,2378
+inventado_01261,inventados/consumidor,inventados/consumidor/inventado_01261.txt,Consumidor,Contestação,Sim,2436
+inventado_01262,inventados/tributario,inventados/tributario/inventado_01262.txt,Tributario,Recurso de Apelação,Não,2382
+inventado_01263,inventados/trabalhista,inventados/trabalhista/inventado_01263.txt,Trabalhista,Agravo de Instrumento,Não,2415
+inventado_01264,inventados/administrativo,inventados/administrativo/inventado_01264.txt,Administrativo,Parecer Consultivo,Sim,2421
+inventado_01265,inventados/penal,inventados/penal/inventado_01265.txt,Penal,Memorando Técnico,Não,2403
+inventado_01266,inventados/ambiental,inventados/ambiental/inventado_01266.txt,Ambiental,Nota Técnica Jurídica,Não,2439
+inventado_01267,inventados/empresarial,inventados/empresarial/inventado_01267.txt,Empresarial,Alegações Finais,Sim,2397
+inventado_01268,inventados/civel,inventados/civel/inventado_01268.txt,Civel,Embargos de Declaração,Não,2427
+inventado_01269,inventados/consumidor,inventados/consumidor/inventado_01269.txt,Consumidor,Mandado de Segurança,Não,2464
+inventado_01270,inventados/tributario,inventados/tributario/inventado_01270.txt,Tributario,Petição Inicial,Sim,2384
+inventado_01271,inventados/trabalhista,inventados/trabalhista/inventado_01271.txt,Trabalhista,Contestação,Não,2417
+inventado_01272,inventados/administrativo,inventados/administrativo/inventado_01272.txt,Administrativo,Recurso de Apelação,Não,2383
+inventado_01273,inventados/penal,inventados/penal/inventado_01273.txt,Penal,Agravo de Instrumento,Sim,2406
+inventado_01274,inventados/ambiental,inventados/ambiental/inventado_01274.txt,Ambiental,Parecer Consultivo,Não,2412
+inventado_01275,inventados/empresarial,inventados/empresarial/inventado_01275.txt,Empresarial,Memorando Técnico,Não,2428
+inventado_01276,inventados/civel,inventados/civel/inventado_01276.txt,Civel,Nota Técnica Jurídica,Sim,2401
+inventado_01277,inventados/consumidor,inventados/consumidor/inventado_01277.txt,Consumidor,Alegações Finais,Não,2398
+inventado_01278,inventados/tributario,inventados/tributario/inventado_01278.txt,Tributario,Embargos de Declaração,Não,2433
+inventado_01279,inventados/trabalhista,inventados/trabalhista/inventado_01279.txt,Trabalhista,Mandado de Segurança,Sim,2455
+inventado_01280,inventados/administrativo,inventados/administrativo/inventado_01280.txt,Administrativo,Petição Inicial,Não,2393
+inventado_01281,inventados/penal,inventados/penal/inventado_01281.txt,Penal,Contestação,Não,2442
+inventado_01282,inventados/ambiental,inventados/ambiental/inventado_01282.txt,Ambiental,Recurso de Apelação,Sim,2379
+inventado_01283,inventados/empresarial,inventados/empresarial/inventado_01283.txt,Empresarial,Agravo de Instrumento,Não,2407
+inventado_01284,inventados/civel,inventados/civel/inventado_01284.txt,Civel,Parecer Consultivo,Não,2421
+inventado_01285,inventados/consumidor,inventados/consumidor/inventado_01285.txt,Consumidor,Memorando Técnico,Sim,2388
+inventado_01286,inventados/tributario,inventados/tributario/inventado_01286.txt,Tributario,Nota Técnica Jurídica,Não,2416
+inventado_01287,inventados/trabalhista,inventados/trabalhista/inventado_01287.txt,Trabalhista,Alegações Finais,Não,2417
+inventado_01288,inventados/administrativo,inventados/administrativo/inventado_01288.txt,Administrativo,Embargos de Declaração,Sim,2451
+inventado_01289,inventados/penal,inventados/penal/inventado_01289.txt,Penal,Mandado de Segurança,Não,2454
+inventado_01290,inventados/ambiental,inventados/ambiental/inventado_01290.txt,Ambiental,Petição Inicial,Não,2384
+inventado_01291,inventados/empresarial,inventados/empresarial/inventado_01291.txt,Empresarial,Contestação,Sim,2419
+inventado_01292,inventados/civel,inventados/civel/inventado_01292.txt,Civel,Recurso de Apelação,Não,2379
+inventado_01293,inventados/consumidor,inventados/consumidor/inventado_01293.txt,Consumidor,Agravo de Instrumento,Não,2429
+inventado_01294,inventados/tributario,inventados/tributario/inventado_01294.txt,Tributario,Parecer Consultivo,Sim,2392
+inventado_01295,inventados/trabalhista,inventados/trabalhista/inventado_01295.txt,Trabalhista,Memorando Técnico,Não,2391
+inventado_01296,inventados/administrativo,inventados/administrativo/inventado_01296.txt,Administrativo,Nota Técnica Jurídica,Não,2420
+inventado_01297,inventados/penal,inventados/penal/inventado_01297.txt,Penal,Alegações Finais,Sim,2412
+inventado_01298,inventados/ambiental,inventados/ambiental/inventado_01298.txt,Ambiental,Embargos de Declaração,Não,2438
+inventado_01299,inventados/empresarial,inventados/empresarial/inventado_01299.txt,Empresarial,Mandado de Segurança,Não,2465
+inventado_013,inventados/consumidor,inventados/consumidor/inventado_013.txt,Consumidor,Petição / Parecer Jurídico,Não,4075
+inventado_01300,inventados/civel,inventados/civel/inventado_01300.txt,Civel,Petição Inicial,Sim,2384
+inventado_01301,inventados/consumidor,inventados/consumidor/inventado_01301.txt,Consumidor,Contestação,Não,2439
+inventado_01302,inventados/tributario,inventados/tributario/inventado_01302.txt,Tributario,Recurso de Apelação,Não,2390
+inventado_01303,inventados/trabalhista,inventados/trabalhista/inventado_01303.txt,Trabalhista,Agravo de Instrumento,Sim,2387
+inventado_01304,inventados/administrativo,inventados/administrativo/inventado_01304.txt,Administrativo,Parecer Consultivo,Não,2404
+inventado_01305,inventados/penal,inventados/penal/inventado_01305.txt,Penal,Memorando Técnico,Não,2403
+inventado_01306,inventados/ambiental,inventados/ambiental/inventado_01306.txt,Ambiental,Nota Técnica Jurídica,Sim,2430
+inventado_01307,inventados/empresarial,inventados/empresarial/inventado_01307.txt,Empresarial,Alegações Finais,Não,2412
+inventado_01308,inventados/civel,inventados/civel/inventado_01308.txt,Civel,Embargos de Declaração,Não,2445
+inventado_01309,inventados/consumidor,inventados/consumidor/inventado_01309.txt,Consumidor,Mandado de Segurança,Sim,2462
+inventado_01310,inventados/tributario,inventados/tributario/inventado_01310.txt,Tributario,Petição Inicial,Não,2390
+inventado_01311,inventados/trabalhista,inventados/trabalhista/inventado_01311.txt,Trabalhista,Contestação,Não,2437
+inventado_01312,inventados/administrativo,inventados/administrativo/inventado_01312.txt,Administrativo,Recurso de Apelação,Sim,2364
+inventado_01313,inventados/penal,inventados/penal/inventado_01313.txt,Penal,Agravo de Instrumento,Não,2387
+inventado_01314,inventados/ambiental,inventados/ambiental/inventado_01314.txt,Ambiental,Parecer Consultivo,Não,2400
+inventado_01315,inventados/empresarial,inventados/empresarial/inventado_01315.txt,Empresarial,Memorando Técnico,Sim,2410
+inventado_01316,inventados/civel,inventados/civel/inventado_01316.txt,Civel,Nota Técnica Jurídica,Não,2419
+inventado_01317,inventados/consumidor,inventados/consumidor/inventado_01317.txt,Consumidor,Alegações Finais,Não,2428
+inventado_01318,inventados/tributario,inventados/tributario/inventado_01318.txt,Tributario,Embargos de Declaração,Sim,2439
+inventado_01319,inventados/trabalhista,inventados/trabalhista/inventado_01319.txt,Trabalhista,Mandado de Segurança,Não,2457
+inventado_01320,inventados/administrativo,inventados/administrativo/inventado_01320.txt,Administrativo,Petição Inicial,Não,2401
+inventado_01321,inventados/penal,inventados/penal/inventado_01321.txt,Penal,Contestação,Sim,2414
+inventado_01322,inventados/ambiental,inventados/ambiental/inventado_01322.txt,Ambiental,Recurso de Apelação,Não,2363
+inventado_01323,inventados/empresarial,inventados/empresarial/inventado_01323.txt,Empresarial,Agravo de Instrumento,Não,2407
+inventado_01324,inventados/civel,inventados/civel/inventado_01324.txt,Civel,Parecer Consultivo,Sim,2413
+inventado_01325,inventados/consumidor,inventados/consumidor/inventado_01325.txt,Consumidor,Memorando Técnico,Não,2403
+inventado_01326,inventados/tributario,inventados/tributario/inventado_01326.txt,Tributario,Nota Técnica Jurídica,Não,2434
+inventado_01327,inventados/trabalhista,inventados/trabalhista/inventado_01327.txt,Trabalhista,Alegações Finais,Sim,2414
+inventado_01328,inventados/administrativo,inventados/administrativo/inventado_01328.txt,Administrativo,Embargos de Declaração,Não,2457
+inventado_01329,inventados/penal,inventados/penal/inventado_01329.txt,Penal,Mandado de Segurança,Não,2474
+inventado_01330,inventados/ambiental,inventados/ambiental/inventado_01330.txt,Ambiental,Petição Inicial,Sim,2365
+inventado_01331,inventados/empresarial,inventados/empresarial/inventado_01331.txt,Empresarial,Contestação,Não,2400
+inventado_01332,inventados/civel,inventados/civel/inventado_01332.txt,Civel,Recurso de Apelação,Não,2367
+inventado_01333,inventados/consumidor,inventados/consumidor/inventado_01333.txt,Consumidor,Agravo de Instrumento,Sim,2411
+inventado_01334,inventados/tributario,inventados/tributario/inventado_01334.txt,Tributario,Parecer Consultivo,Não,2409
+inventado_01335,inventados/trabalhista,inventados/trabalhista/inventado_01335.txt,Trabalhista,Memorando Técnico,Não,2421
+inventado_01336,inventados/administrativo,inventados/administrativo/inventado_01336.txt,Administrativo,Nota Técnica Jurídica,Sim,2426
+inventado_01337,inventados/penal,inventados/penal/inventado_01337.txt,Penal,Alegações Finais,Não,2415
+inventado_01338,inventados/ambiental,inventados/ambiental/inventado_01338.txt,Ambiental,Embargos de Declaração,Não,2446
+inventado_01339,inventados/empresarial,inventados/empresarial/inventado_01339.txt,Empresarial,Mandado de Segurança,Sim,2438
+inventado_01340,inventados/civel,inventados/civel/inventado_01340.txt,Civel,Petição Inicial,Não,2368
+inventado_01341,inventados/consumidor,inventados/consumidor/inventado_01341.txt,Consumidor,Contestação,Não,2439
+inventado_01342,inventados/tributario,inventados/tributario/inventado_01342.txt,Tributario,Recurso de Apelação,Sim,2381
+inventado_01343,inventados/trabalhista,inventados/trabalhista/inventado_01343.txt,Trabalhista,Agravo de Instrumento,Não,2402
+inventado_01344,inventados/administrativo,inventados/administrativo/inventado_01344.txt,Administrativo,Parecer Consultivo,Não,2422
+inventado_01345,inventados/penal,inventados/penal/inventado_01345.txt,Penal,Memorando Técnico,Sim,2400
+inventado_01346,inventados/ambiental,inventados/ambiental/inventado_01346.txt,Ambiental,Nota Técnica Jurídica,Não,2436
+inventado_01347,inventados/empresarial,inventados/empresarial/inventado_01347.txt,Empresarial,Alegações Finais,Não,2432
+inventado_01348,inventados/civel,inventados/civel/inventado_01348.txt,Civel,Embargos de Declaração,Sim,2426
+inventado_01349,inventados/consumidor,inventados/consumidor/inventado_01349.txt,Consumidor,Mandado de Segurança,Não,2442
+inventado_01350,inventados/tributario,inventados/tributario/inventado_01350.txt,Tributario,Petição Inicial,Não,2378
+inventado_01351,inventados/trabalhista,inventados/trabalhista/inventado_01351.txt,Trabalhista,Contestação,Sim,2419
+inventado_01352,inventados/administrativo,inventados/administrativo/inventado_01352.txt,Administrativo,Recurso de Apelação,Não,2382
+inventado_01353,inventados/penal,inventados/penal/inventado_01353.txt,Penal,Agravo de Instrumento,Não,2417
+inventado_01354,inventados/ambiental,inventados/ambiental/inventado_01354.txt,Ambiental,Parecer Consultivo,Sim,2407
+inventado_01355,inventados/empresarial,inventados/empresarial/inventado_01355.txt,Empresarial,Memorando Técnico,Não,2413
+inventado_01356,inventados/civel,inventados/civel/inventado_01356.txt,Civel,Nota Técnica Jurídica,Não,2427
+inventado_01357,inventados/consumidor,inventados/consumidor/inventado_01357.txt,Consumidor,Alegações Finais,Sim,2400
+inventado_01358,inventados/tributario,inventados/tributario/inventado_01358.txt,Tributario,Embargos de Declaração,Não,2423
+inventado_01359,inventados/trabalhista,inventados/trabalhista/inventado_01359.txt,Trabalhista,Mandado de Segurança,Não,2457
+inventado_01360,inventados/administrativo,inventados/administrativo/inventado_01360.txt,Administrativo,Petição Inicial,Sim,2392
+inventado_01361,inventados/penal,inventados/penal/inventado_01361.txt,Penal,Contestação,Não,2429
+inventado_01362,inventados/ambiental,inventados/ambiental/inventado_01362.txt,Ambiental,Recurso de Apelação,Não,2381
+inventado_01363,inventados/empresarial,inventados/empresarial/inventado_01363.txt,Empresarial,Agravo de Instrumento,Sim,2404
+inventado_01364,inventados/civel,inventados/civel/inventado_01364.txt,Civel,Parecer Consultivo,Não,2418
+inventado_01365,inventados/consumidor,inventados/consumidor/inventado_01365.txt,Consumidor,Memorando Técnico,Não,2423
+inventado_01366,inventados/tributario,inventados/tributario/inventado_01366.txt,Tributario,Nota Técnica Jurídica,Sim,2415
+inventado_01367,inventados/trabalhista,inventados/trabalhista/inventado_01367.txt,Trabalhista,Alegações Finais,Não,2395
+inventado_01368,inventados/administrativo,inventados/administrativo/inventado_01368.txt,Administrativo,Embargos de Declaração,Não,2445
+inventado_01369,inventados/penal,inventados/penal/inventado_01369.txt,Penal,Mandado de Segurança,Sim,2457
+inventado_01370,inventados/ambiental,inventados/ambiental/inventado_01370.txt,Ambiental,Petição Inicial,Não,2383
+inventado_01371,inventados/empresarial,inventados/empresarial/inventado_01371.txt,Empresarial,Contestação,Não,2430
+inventado_01372,inventados/civel,inventados/civel/inventado_01372.txt,Civel,Recurso de Apelação,Sim,2373
+inventado_01373,inventados/consumidor,inventados/consumidor/inventado_01373.txt,Consumidor,Agravo de Instrumento,Não,2414
+inventado_01374,inventados/tributario,inventados/tributario/inventado_01374.txt,Tributario,Parecer Consultivo,Não,2417
+inventado_01375,inventados/trabalhista,inventados/trabalhista/inventado_01375.txt,Trabalhista,Memorando Técnico,Sim,2393
+inventado_01376,inventados/administrativo,inventados/administrativo/inventado_01376.txt,Administrativo,Nota Técnica Jurídica,Não,2410
+inventado_01377,inventados/penal,inventados/penal/inventado_01377.txt,Penal,Alegações Finais,Não,2415
+inventado_01378,inventados/ambiental,inventados/ambiental/inventado_01378.txt,Ambiental,Embargos de Declaração,Sim,2437
+inventado_01379,inventados/empresarial,inventados/empresarial/inventado_01379.txt,Empresarial,Mandado de Segurança,Não,2452
+inventado_01380,inventados/civel,inventados/civel/inventado_01380.txt,Civel,Petição Inicial,Não,2386
+inventado_01381,inventados/consumidor,inventados/consumidor/inventado_01381.txt,Consumidor,Contestação,Sim,2436
+inventado_01382,inventados/tributario,inventados/tributario/inventado_01382.txt,Tributario,Recurso de Apelação,Não,2387
+inventado_01383,inventados/trabalhista,inventados/trabalhista/inventado_01383.txt,Trabalhista,Agravo de Instrumento,Não,2422
+inventado_01384,inventados/administrativo,inventados/administrativo/inventado_01384.txt,Administrativo,Parecer Consultivo,Sim,2404
+inventado_01385,inventados/penal,inventados/penal/inventado_01385.txt,Penal,Memorando Técnico,Não,2381
+inventado_01386,inventados/ambiental,inventados/ambiental/inventado_01386.txt,Ambiental,Nota Técnica Jurídica,Não,2424
+inventado_01387,inventados/empresarial,inventados/empresarial/inventado_01387.txt,Empresarial,Alegações Finais,Sim,2414
+inventado_01388,inventados/civel,inventados/civel/inventado_01388.txt,Civel,Embargos de Declaração,Não,2444
+inventado_01389,inventados/consumidor,inventados/consumidor/inventado_01389.txt,Consumidor,Mandado de Segurança,Não,2472
+inventado_01390,inventados/tributario,inventados/tributario/inventado_01390.txt,Tributario,Petição Inicial,Sim,2384
+inventado_01391,inventados/trabalhista,inventados/trabalhista/inventado_01391.txt,Trabalhista,Contestação,Não,2422
+inventado_01392,inventados/administrativo,inventados/administrativo/inventado_01392.txt,Administrativo,Recurso de Apelação,Não,2390
+inventado_01393,inventados/penal,inventados/penal/inventado_01393.txt,Penal,Agravo de Instrumento,Sim,2389
+inventado_01394,inventados/ambiental,inventados/ambiental/inventado_01394.txt,Ambiental,Parecer Consultivo,Não,2390
+inventado_01395,inventados/empresarial,inventados/empresarial/inventado_01395.txt,Empresarial,Memorando Técnico,Não,2413
+inventado_01396,inventados/civel,inventados/civel/inventado_01396.txt,Civel,Nota Técnica Jurídica,Sim,2418
+inventado_01397,inventados/consumidor,inventados/consumidor/inventado_01397.txt,Consumidor,Alegações Finais,Não,2415
+inventado_01398,inventados/tributario,inventados/tributario/inventado_01398.txt,Tributario,Embargos de Declaração,Não,2441
+inventado_01399,inventados/trabalhista,inventados/trabalhista/inventado_01399.txt,Trabalhista,Mandado de Segurança,Sim,2455
+inventado_014,inventados/consumidor,inventados/consumidor/inventado_014.txt,Consumidor,Petição / Parecer Jurídico,Não,4067
+inventado_01400,inventados/administrativo,inventados/administrativo/inventado_01400.txt,Administrativo,Petição Inicial,Não,2398
+inventado_01401,inventados/penal,inventados/penal/inventado_01401.txt,Penal,Contestação,Não,2449
+inventado_01402,inventados/ambiental,inventados/ambiental/inventado_01402.txt,Ambiental,Recurso de Apelação,Sim,2362
+inventado_01403,inventados/empresarial,inventados/empresarial/inventado_01403.txt,Empresarial,Agravo de Instrumento,Não,2385
+inventado_01404,inventados/civel,inventados/civel/inventado_01404.txt,Civel,Parecer Consultivo,Não,2406
+inventado_01405,inventados/consumidor,inventados/consumidor/inventado_01405.txt,Consumidor,Memorando Técnico,Sim,2405
+inventado_01406,inventados/tributario,inventados/tributario/inventado_01406.txt,Tributario,Nota Técnica Jurídica,Não,2433
+inventado_01407,inventados/trabalhista,inventados/trabalhista/inventado_01407.txt,Trabalhista,Alegações Finais,Não,2425
+inventado_01408,inventados/administrativo,inventados/administrativo/inventado_01408.txt,Administrativo,Embargos de Declaração,Sim,2451
+inventado_01409,inventados/penal,inventados/penal/inventado_01409.txt,Penal,Mandado de Segurança,Não,2459
+inventado_01410,inventados/ambiental,inventados/ambiental/inventado_01410.txt,Ambiental,Petição Inicial,Não,2391
+inventado_01411,inventados/empresarial,inventados/empresarial/inventado_01411.txt,Empresarial,Contestação,Sim,2402
+inventado_01412,inventados/civel,inventados/civel/inventado_01412.txt,Civel,Recurso de Apelação,Não,2357
+inventado_01413,inventados/consumidor,inventados/consumidor/inventado_01413.txt,Consumidor,Agravo de Instrumento,Não,2414
+inventado_01414,inventados/tributario,inventados/tributario/inventado_01414.txt,Tributario,Parecer Consultivo,Sim,2409
+inventado_01415,inventados/trabalhista,inventados/trabalhista/inventado_01415.txt,Trabalhista,Memorando Técnico,Não,2408
+inventado_01416,inventados/administrativo,inventados/administrativo/inventado_01416.txt,Administrativo,Nota Técnica Jurídica,Não,2428
+inventado_01417,inventados/penal,inventados/penal/inventado_01417.txt,Penal,Alegações Finais,Sim,2412
+inventado_01418,inventados/ambiental,inventados/ambiental/inventado_01418.txt,Ambiental,Embargos de Declaração,Não,2443
+inventado_01419,inventados/empresarial,inventados/empresarial/inventado_01419.txt,Empresarial,Mandado de Segurança,Não,2472
+inventado_01420,inventados/civel,inventados/civel/inventado_01420.txt,Civel,Petição Inicial,Sim,2367
+inventado_01421,inventados/consumidor,inventados/consumidor/inventado_01421.txt,Consumidor,Contestação,Não,2417
+inventado_01422,inventados/tributario,inventados/tributario/inventado_01422.txt,Tributario,Recurso de Apelação,Não,2375
+inventado_01423,inventados/trabalhista,inventados/trabalhista/inventado_01423.txt,Trabalhista,Agravo de Instrumento,Sim,2404
+inventado_01424,inventados/administrativo,inventados/administrativo/inventado_01424.txt,Administrativo,Parecer Consultivo,Não,2421
+inventado_01425,inventados/penal,inventados/penal/inventado_01425.txt,Penal,Memorando Técnico,Não,2411
+inventado_01426,inventados/ambiental,inventados/ambiental/inventado_01426.txt,Ambiental,Nota Técnica Jurídica,Sim,2430
+inventado_01427,inventados/empresarial,inventados/empresarial/inventado_01427.txt,Empresarial,Alegações Finais,Não,2417
+inventado_01428,inventados/civel,inventados/civel/inventado_01428.txt,Civel,Embargos de Declaração,Não,2452
+inventado_01429,inventados/consumidor,inventados/consumidor/inventado_01429.txt,Consumidor,Mandado de Segurança,Sim,2445
+inventado_01430,inventados/tributario,inventados/tributario/inventado_01430.txt,Tributario,Petição Inicial,Não,2368
+inventado_01431,inventados/trabalhista,inventados/trabalhista/inventado_01431.txt,Trabalhista,Contestação,Não,2422
+inventado_01432,inventados/administrativo,inventados/administrativo/inventado_01432.txt,Administrativo,Recurso de Apelação,Sim,2381
+inventado_01433,inventados/penal,inventados/penal/inventado_01433.txt,Penal,Agravo de Instrumento,Não,2404
+inventado_01434,inventados/ambiental,inventados/ambiental/inventado_01434.txt,Ambiental,Parecer Consultivo,Não,2408
+inventado_01435,inventados/empresarial,inventados/empresarial/inventado_01435.txt,Empresarial,Memorando Técnico,Sim,2410
+inventado_01436,inventados/civel,inventados/civel/inventado_01436.txt,Civel,Nota Técnica Jurídica,Não,2424
+inventado_01437,inventados/consumidor,inventados/consumidor/inventado_01437.txt,Consumidor,Alegações Finais,Não,2435
+inventado_01438,inventados/tributario,inventados/tributario/inventado_01438.txt,Tributario,Embargos de Declaração,Sim,2422
+inventado_01439,inventados/trabalhista,inventados/trabalhista/inventado_01439.txt,Trabalhista,Mandado de Segurança,Não,2435
+inventado_01440,inventados/administrativo,inventados/administrativo/inventado_01440.txt,Administrativo,Petição Inicial,Não,2386
+inventado_01441,inventados/penal,inventados/penal/inventado_01441.txt,Penal,Contestação,Sim,2431
+inventado_01442,inventados/ambiental,inventados/ambiental/inventado_01442.txt,Ambiental,Recurso de Apelação,Não,2380
+inventado_01443,inventados/empresarial,inventados/empresarial/inventado_01443.txt,Empresarial,Agravo de Instrumento,Não,2415
+inventado_01444,inventados/civel,inventados/civel/inventado_01444.txt,Civel,Parecer Consultivo,Sim,2413
+inventado_01445,inventados/consumidor,inventados/consumidor/inventado_01445.txt,Consumidor,Memorando Técnico,Não,2408
+inventado_01446,inventados/tributario,inventados/tributario/inventado_01446.txt,Tributario,Nota Técnica Jurídica,Não,2441
+inventado_01447,inventados/trabalhista,inventados/trabalhista/inventado_01447.txt,Trabalhista,Alegações Finais,Sim,2397
+inventado_01448,inventados/administrativo,inventados/administrativo/inventado_01448.txt,Administrativo,Embargos de Declaração,Não,2435
+inventado_01449,inventados/penal,inventados/penal/inventado_01449.txt,Penal,Mandado de Segurança,Não,2459
+inventado_01450,inventados/ambiental,inventados/ambiental/inventado_01450.txt,Ambiental,Petição Inicial,Sim,2382
+inventado_01451,inventados/empresarial,inventados/empresarial/inventado_01451.txt,Empresarial,Contestação,Não,2417
+inventado_01452,inventados/civel,inventados/civel/inventado_01452.txt,Civel,Recurso de Apelação,Não,2375
+inventado_01453,inventados/consumidor,inventados/consumidor/inventado_01453.txt,Consumidor,Agravo de Instrumento,Sim,2411
+inventado_01454,inventados/tributario,inventados/tributario/inventado_01454.txt,Tributario,Parecer Consultivo,Não,2414
+inventado_01455,inventados/trabalhista,inventados/trabalhista/inventado_01455.txt,Trabalhista,Memorando Técnico,Não,2428
+inventado_01456,inventados/administrativo,inventados/administrativo/inventado_01456.txt,Administrativo,Nota Técnica Jurídica,Sim,2409
+inventado_01457,inventados/penal,inventados/penal/inventado_01457.txt,Penal,Alegações Finais,Não,2393
+inventado_01458,inventados/ambiental,inventados/ambiental/inventado_01458.txt,Ambiental,Embargos de Declaração,Não,2431
+inventado_01459,inventados/empresarial,inventados/empresarial/inventado_01459.txt,Empresarial,Mandado de Segurança,Sim,2455
+inventado_01460,inventados/civel,inventados/civel/inventado_01460.txt,Civel,Petição Inicial,Não,2385
+inventado_01461,inventados/consumidor,inventados/consumidor/inventado_01461.txt,Consumidor,Contestação,Não,2447
+inventado_01462,inventados/tributario,inventados/tributario/inventado_01462.txt,Tributario,Recurso de Apelação,Sim,2381
+inventado_01463,inventados/trabalhista,inventados/trabalhista/inventado_01463.txt,Trabalhista,Agravo de Instrumento,Não,2407
+inventado_01464,inventados/administrativo,inventados/administrativo/inventado_01464.txt,Administrativo,Parecer Consultivo,Não,2429
+inventado_01465,inventados/penal,inventados/penal/inventado_01465.txt,Penal,Memorando Técnico,Sim,2383
+inventado_01466,inventados/ambiental,inventados/ambiental/inventado_01466.txt,Ambiental,Nota Técnica Jurídica,Não,2414
+inventado_01467,inventados/empresarial,inventados/empresarial/inventado_01467.txt,Empresarial,Alegações Finais,Não,2417
+inventado_01468,inventados/civel,inventados/civel/inventado_01468.txt,Civel,Embargos de Declaração,Sim,2443
+inventado_01469,inventados/consumidor,inventados/consumidor/inventado_01469.txt,Consumidor,Mandado de Segurança,Não,2459
+inventado_01470,inventados/tributario,inventados/tributario/inventado_01470.txt,Tributario,Petição Inicial,Não,2386
+inventado_01471,inventados/trabalhista,inventados/trabalhista/inventado_01471.txt,Trabalhista,Contestação,Sim,2419
+inventado_01472,inventados/administrativo,inventados/administrativo/inventado_01472.txt,Administrativo,Recurso de Apelação,Não,2387
+inventado_01473,inventados/penal,inventados/penal/inventado_01473.txt,Penal,Agravo de Instrumento,Não,2424
+inventado_01474,inventados/ambiental,inventados/ambiental/inventado_01474.txt,Ambiental,Parecer Consultivo,Sim,2390
+inventado_01475,inventados/empresarial,inventados/empresarial/inventado_01475.txt,Empresarial,Memorando Técnico,Não,2391
+inventado_01476,inventados/civel,inventados/civel/inventado_01476.txt,Civel,Nota Técnica Jurídica,Não,2412
+inventado_01477,inventados/consumidor,inventados/consumidor/inventado_01477.txt,Consumidor,Alegações Finais,Sim,2417
+inventado_01478,inventados/tributario,inventados/tributario/inventado_01478.txt,Tributario,Embargos de Declaração,Não,2440
+inventado_01479,inventados/trabalhista,inventados/trabalhista/inventado_01479.txt,Trabalhista,Mandado de Segurança,Não,2465
+inventado_01480,inventados/administrativo,inventados/administrativo/inventado_01480.txt,Administrativo,Petição Inicial,Sim,2392
+inventado_01481,inventados/penal,inventados/penal/inventado_01481.txt,Penal,Contestação,Não,2434
+inventado_01482,inventados/ambiental,inventados/ambiental/inventado_01482.txt,Ambiental,Recurso de Apelação,Não,2388
+inventado_01483,inventados/empresarial,inventados/empresarial/inventado_01483.txt,Empresarial,Agravo de Instrumento,Sim,2387
+inventado_01484,inventados/civel,inventados/civel/inventado_01484.txt,Civel,Parecer Consultivo,Não,2396
+inventado_01485,inventados/consumidor,inventados/consumidor/inventado_01485.txt,Consumidor,Memorando Técnico,Não,2408
+inventado_01486,inventados/tributario,inventados/tributario/inventado_01486.txt,Tributario,Nota Técnica Jurídica,Sim,2432
+inventado_01487,inventados/trabalhista,inventados/trabalhista/inventado_01487.txt,Trabalhista,Alegações Finais,Não,2412
+inventado_01488,inventados/administrativo,inventados/administrativo/inventado_01488.txt,Administrativo,Embargos de Declaração,Não,2453
+inventado_01489,inventados/penal,inventados/penal/inventado_01489.txt,Penal,Mandado de Segurança,Sim,2457
+inventado_01490,inventados/ambiental,inventados/ambiental/inventado_01490.txt,Ambiental,Petição Inicial,Não,2388
+inventado_01491,inventados/empresarial,inventados/empresarial/inventado_01491.txt,Empresarial,Contestação,Não,2437
+inventado_01492,inventados/civel,inventados/civel/inventado_01492.txt,Civel,Recurso de Apelação,Sim,2356
+inventado_01493,inventados/consumidor,inventados/consumidor/inventado_01493.txt,Consumidor,Agravo de Instrumento,Não,2392
+inventado_01494,inventados/tributario,inventados/tributario/inventado_01494.txt,Tributario,Parecer Consultivo,Não,2402
+inventado_01495,inventados/trabalhista,inventados/trabalhista/inventado_01495.txt,Trabalhista,Memorando Técnico,Sim,2410
+inventado_01496,inventados/administrativo,inventados/administrativo/inventado_01496.txt,Administrativo,Nota Técnica Jurídica,Não,2427
+inventado_01497,inventados/penal,inventados/penal/inventado_01497.txt,Penal,Alegações Finais,Não,2423
+inventado_01498,inventados/ambiental,inventados/ambiental/inventado_01498.txt,Ambiental,Embargos de Declaração,Sim,2437
+inventado_01499,inventados/empresarial,inventados/empresarial/inventado_01499.txt,Empresarial,Mandado de Segurança,Não,2457
+inventado_015,inventados/consumidor,inventados/consumidor/inventado_015.txt,Consumidor,Petição / Parecer Jurídico,Não,4080
+inventado_01500,inventados/civel,inventados/civel/inventado_01500.txt,Civel,Petição Inicial,Não,2393
+inventado_016,inventados/consumidor,inventados/consumidor/inventado_016.txt,Consumidor,Petição / Parecer Jurídico,Não,4079
+inventado_017,inventados/consumidor,inventados/consumidor/inventado_017.txt,Consumidor,Petição / Parecer Jurídico,Não,4066
+inventado_018,inventados/administrativo,inventados/administrativo/inventado_018.txt,Administrativo,Petição / Parecer Jurídico,Não,4064
+inventado_019,inventados/consumidor,inventados/consumidor/inventado_019.txt,Consumidor,Petição / Parecer Jurídico,Não,4057
+inventado_020,inventados/consumidor,inventados/consumidor/inventado_020.txt,Consumidor,Petição / Parecer Jurídico,Não,4105
+inventado_0201,inventados/penal,inventados/penal/inventado_0201.txt,Penal,Petição / Parecer Jurídico,Não,1319
+inventado_0202,inventados/administrativo,inventados/administrativo/inventado_0202.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0203,inventados/administrativo,inventados/administrativo/inventado_0203.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0204,inventados/civel,inventados/civel/inventado_0204.txt,Civel,Petição / Parecer Jurídico,Não,1306
+inventado_0205,inventados/administrativo,inventados/administrativo/inventado_0205.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0206,inventados/administrativo,inventados/administrativo/inventado_0206.txt,Administrativo,Petição / Parecer Jurídico,Não,914
+inventado_0207,inventados/civel,inventados/civel/inventado_0207.txt,Civel,Petição / Parecer Jurídico,Não,1302
+inventado_0208,inventados/administrativo,inventados/administrativo/inventado_0208.txt,Administrativo,Petição / Parecer Jurídico,Não,1192
+inventado_0209,inventados/administrativo,inventados/administrativo/inventado_0209.txt,Administrativo,Petição / Parecer Jurídico,Não,872
+inventado_021,inventados/consumidor,inventados/consumidor/inventado_021.txt,Consumidor,Petição / Parecer Jurídico,Não,4089
+inventado_0210,inventados/civel,inventados/civel/inventado_0210.txt,Civel,Petição / Parecer Jurídico,Não,1345
+inventado_0211,inventados/administrativo,inventados/administrativo/inventado_0211.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0212,inventados/administrativo,inventados/administrativo/inventado_0212.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0213,inventados/civel,inventados/civel/inventado_0213.txt,Civel,Petição / Parecer Jurídico,Não,1336
+inventado_0214,inventados/administrativo,inventados/administrativo/inventado_0214.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0215,inventados/administrativo,inventados/administrativo/inventado_0215.txt,Administrativo,Petição / Parecer Jurídico,Não,907
+inventado_0216,inventados/trabalhista,inventados/trabalhista/inventado_0216.txt,Trabalhista,Petição / Parecer Jurídico,Não,1318
+inventado_0217,inventados/administrativo,inventados/administrativo/inventado_0217.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0218,inventados/administrativo,inventados/administrativo/inventado_0218.txt,Administrativo,Petição / Parecer Jurídico,Não,896
+inventado_0219,inventados/trabalhista,inventados/trabalhista/inventado_0219.txt,Trabalhista,Petição / Parecer Jurídico,Não,1298
+inventado_022,inventados/consumidor,inventados/consumidor/inventado_022.txt,Consumidor,Petição / Parecer Jurídico,Não,4095
+inventado_0220,inventados/administrativo,inventados/administrativo/inventado_0220.txt,Administrativo,Petição / Parecer Jurídico,Não,1200
+inventado_0221,inventados/administrativo,inventados/administrativo/inventado_0221.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_0222,inventados/civel,inventados/civel/inventado_0222.txt,Civel,Petição / Parecer Jurídico,Não,1362
+inventado_0223,inventados/administrativo,inventados/administrativo/inventado_0223.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0224,inventados/administrativo,inventados/administrativo/inventado_0224.txt,Administrativo,Petição / Parecer Jurídico,Não,912
+inventado_0225,inventados/trabalhista,inventados/trabalhista/inventado_0225.txt,Trabalhista,Petição / Parecer Jurídico,Não,1330
+inventado_0226,inventados/administrativo,inventados/administrativo/inventado_0226.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0227,inventados/administrativo,inventados/administrativo/inventado_0227.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_0228,inventados/tributario,inventados/tributario/inventado_0228.txt,Tributario,Petição / Parecer Jurídico,Não,1288
+inventado_0229,inventados/administrativo,inventados/administrativo/inventado_0229.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_023,inventados/consumidor,inventados/consumidor/inventado_023.txt,Consumidor,Petição / Parecer Jurídico,Não,4085
+inventado_0230,inventados/administrativo,inventados/administrativo/inventado_0230.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0231,inventados/trabalhista,inventados/trabalhista/inventado_0231.txt,Trabalhista,Petição / Parecer Jurídico,Não,1322
+inventado_0232,inventados/administrativo,inventados/administrativo/inventado_0232.txt,Administrativo,Petição / Parecer Jurídico,Não,1183
+inventado_0233,inventados/administrativo,inventados/administrativo/inventado_0233.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_0234,inventados/trabalhista,inventados/trabalhista/inventado_0234.txt,Trabalhista,Petição / Parecer Jurídico,Não,1303
+inventado_0235,inventados/administrativo,inventados/administrativo/inventado_0235.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0236,inventados/administrativo,inventados/administrativo/inventado_0236.txt,Administrativo,Petição / Parecer Jurídico,Não,884
+inventado_0237,inventados/consumidor,inventados/consumidor/inventado_0237.txt,Consumidor,Petição / Parecer Jurídico,Não,1323
+inventado_0238,inventados/administrativo,inventados/administrativo/inventado_0238.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0239,inventados/administrativo,inventados/administrativo/inventado_0239.txt,Administrativo,Petição / Parecer Jurídico,Não,899
+inventado_024,inventados/consumidor,inventados/consumidor/inventado_024.txt,Consumidor,Petição / Parecer Jurídico,Não,4061
+inventado_0240,inventados/civel,inventados/civel/inventado_0240.txt,Civel,Petição / Parecer Jurídico,Não,1328
+inventado_0241,inventados/administrativo,inventados/administrativo/inventado_0241.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0242,inventados/administrativo,inventados/administrativo/inventado_0242.txt,Administrativo,Petição / Parecer Jurídico,Não,897
+inventado_0243,inventados/civel,inventados/civel/inventado_0243.txt,Civel,Petição / Parecer Jurídico,Não,1333
+inventado_0244,inventados/administrativo,inventados/administrativo/inventado_0244.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0245,inventados/administrativo,inventados/administrativo/inventado_0245.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_0246,inventados/consumidor,inventados/consumidor/inventado_0246.txt,Consumidor,Petição / Parecer Jurídico,Não,1337
+inventado_0247,inventados/administrativo,inventados/administrativo/inventado_0247.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0248,inventados/administrativo,inventados/administrativo/inventado_0248.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0249,inventados/trabalhista,inventados/trabalhista/inventado_0249.txt,Trabalhista,Petição / Parecer Jurídico,Não,1294
+inventado_025,inventados/consumidor,inventados/consumidor/inventado_025.txt,Consumidor,Petição / Parecer Jurídico,Não,4078
+inventado_0250,inventados/administrativo,inventados/administrativo/inventado_0250.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0251,inventados/administrativo,inventados/administrativo/inventado_0251.txt,Administrativo,Petição / Parecer Jurídico,Não,880
+inventado_0252,inventados/civel,inventados/civel/inventado_0252.txt,Civel,Petição / Parecer Jurídico,Não,1349
+inventado_0253,inventados/administrativo,inventados/administrativo/inventado_0253.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0254,inventados/administrativo,inventados/administrativo/inventado_0254.txt,Administrativo,Petição / Parecer Jurídico,Não,905
+inventado_0255,inventados/trabalhista,inventados/trabalhista/inventado_0255.txt,Trabalhista,Petição / Parecer Jurídico,Não,1323
+inventado_0256,inventados/administrativo,inventados/administrativo/inventado_0256.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0257,inventados/administrativo,inventados/administrativo/inventado_0257.txt,Administrativo,Petição / Parecer Jurídico,Não,899
+inventado_0258,inventados/trabalhista,inventados/trabalhista/inventado_0258.txt,Trabalhista,Petição / Parecer Jurídico,Não,1304
+inventado_0259,inventados/administrativo,inventados/administrativo/inventado_0259.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_026,inventados/consumidor,inventados/consumidor/inventado_026.txt,Consumidor,Petição / Parecer Jurídico,Não,4088
+inventado_0260,inventados/administrativo,inventados/administrativo/inventado_0260.txt,Administrativo,Petição / Parecer Jurídico,Não,911
+inventado_0261,inventados/trabalhista,inventados/trabalhista/inventado_0261.txt,Trabalhista,Petição / Parecer Jurídico,Não,1316
+inventado_0262,inventados/administrativo,inventados/administrativo/inventado_0262.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0263,inventados/administrativo,inventados/administrativo/inventado_0263.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0264,inventados/trabalhista,inventados/trabalhista/inventado_0264.txt,Trabalhista,Petição / Parecer Jurídico,Não,1307
+inventado_0265,inventados/administrativo,inventados/administrativo/inventado_0265.txt,Administrativo,Petição / Parecer Jurídico,Não,1205
+inventado_0266,inventados/administrativo,inventados/administrativo/inventado_0266.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0267,inventados/civel,inventados/civel/inventado_0267.txt,Civel,Petição / Parecer Jurídico,Não,1324
+inventado_0268,inventados/administrativo,inventados/administrativo/inventado_0268.txt,Administrativo,Petição / Parecer Jurídico,Não,1191
+inventado_0269,inventados/administrativo,inventados/administrativo/inventado_0269.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_027,inventados/consumidor,inventados/consumidor/inventado_027.txt,Consumidor,Petição / Parecer Jurídico,Não,4059
+inventado_0270,inventados/penal,inventados/penal/inventado_0270.txt,Penal,Petição / Parecer Jurídico,Não,1321
+inventado_0271,inventados/administrativo,inventados/administrativo/inventado_0271.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0272,inventados/administrativo,inventados/administrativo/inventado_0272.txt,Administrativo,Petição / Parecer Jurídico,Não,904
+inventado_0273,inventados/civel,inventados/civel/inventado_0273.txt,Civel,Petição / Parecer Jurídico,Não,1342
+inventado_0274,inventados/administrativo,inventados/administrativo/inventado_0274.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_0275,inventados/administrativo,inventados/administrativo/inventado_0275.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0276,inventados/trabalhista,inventados/trabalhista/inventado_0276.txt,Trabalhista,Petição / Parecer Jurídico,Não,1298
+inventado_0277,inventados/administrativo,inventados/administrativo/inventado_0277.txt,Administrativo,Petição / Parecer Jurídico,Não,1197
+inventado_0278,inventados/administrativo,inventados/administrativo/inventado_0278.txt,Administrativo,Petição / Parecer Jurídico,Não,914
+inventado_0279,inventados/trabalhista,inventados/trabalhista/inventado_0279.txt,Trabalhista,Petição / Parecer Jurídico,Não,1295
+inventado_028,inventados/consumidor,inventados/consumidor/inventado_028.txt,Consumidor,Petição / Parecer Jurídico,Não,4071
+inventado_0280,inventados/administrativo,inventados/administrativo/inventado_0280.txt,Administrativo,Petição / Parecer Jurídico,Não,1192
+inventado_0281,inventados/administrativo,inventados/administrativo/inventado_0281.txt,Administrativo,Petição / Parecer Jurídico,Não,883
+inventado_0282,inventados/penal,inventados/penal/inventado_0282.txt,Penal,Petição / Parecer Jurídico,Não,1347
+inventado_0283,inventados/administrativo,inventados/administrativo/inventado_0283.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0284,inventados/administrativo,inventados/administrativo/inventado_0284.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0285,inventados/trabalhista,inventados/trabalhista/inventado_0285.txt,Trabalhista,Petição / Parecer Jurídico,Não,1318
+inventado_0286,inventados/administrativo,inventados/administrativo/inventado_0286.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0287,inventados/administrativo,inventados/administrativo/inventado_0287.txt,Administrativo,Petição / Parecer Jurídico,Não,898
+inventado_0288,inventados/tributario,inventados/tributario/inventado_0288.txt,Tributario,Petição / Parecer Jurídico,Não,1327
+inventado_0289,inventados/administrativo,inventados/administrativo/inventado_0289.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_029,inventados/consumidor,inventados/consumidor/inventado_029.txt,Consumidor,Petição / Parecer Jurídico,Não,4063
+inventado_0290,inventados/administrativo,inventados/administrativo/inventado_0290.txt,Administrativo,Petição / Parecer Jurídico,Não,906
+inventado_0291,inventados/consumidor,inventados/consumidor/inventado_0291.txt,Consumidor,Petição / Parecer Jurídico,Não,1358
+inventado_0292,inventados/administrativo,inventados/administrativo/inventado_0292.txt,Administrativo,Petição / Parecer Jurídico,Não,1191
+inventado_0293,inventados/administrativo,inventados/administrativo/inventado_0293.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0294,inventados/civel,inventados/civel/inventado_0294.txt,Civel,Petição / Parecer Jurídico,Não,1306
+inventado_0295,inventados/administrativo,inventados/administrativo/inventado_0295.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0296,inventados/administrativo,inventados/administrativo/inventado_0296.txt,Administrativo,Petição / Parecer Jurídico,Não,904
+inventado_0297,inventados/trabalhista,inventados/trabalhista/inventado_0297.txt,Trabalhista,Petição / Parecer Jurídico,Não,1302
+inventado_0298,inventados/administrativo,inventados/administrativo/inventado_0298.txt,Administrativo,Petição / Parecer Jurídico,Não,1162
+inventado_0299,inventados/administrativo,inventados/administrativo/inventado_0299.txt,Administrativo,Petição / Parecer Jurídico,Não,899
+inventado_030,inventados/consumidor,inventados/consumidor/inventado_030.txt,Consumidor,Petição / Parecer Jurídico,Não,4086
+inventado_0300,inventados/penal,inventados/penal/inventado_0300.txt,Penal,Petição / Parecer Jurídico,Não,1317
+inventado_0301,inventados/administrativo,inventados/administrativo/inventado_0301.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0302,inventados/administrativo,inventados/administrativo/inventado_0302.txt,Administrativo,Petição / Parecer Jurídico,Não,914
+inventado_0303,inventados/civel,inventados/civel/inventado_0303.txt,Civel,Petição / Parecer Jurídico,Não,1324
+inventado_0304,inventados/administrativo,inventados/administrativo/inventado_0304.txt,Administrativo,Petição / Parecer Jurídico,Não,1192
+inventado_0305,inventados/administrativo,inventados/administrativo/inventado_0305.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0306,inventados/civel,inventados/civel/inventado_0306.txt,Civel,Petição / Parecer Jurídico,Não,1341
+inventado_0307,inventados/administrativo,inventados/administrativo/inventado_0307.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0308,inventados/administrativo,inventados/administrativo/inventado_0308.txt,Administrativo,Petição / Parecer Jurídico,Não,903
+inventado_0309,inventados/trabalhista,inventados/trabalhista/inventado_0309.txt,Trabalhista,Petição / Parecer Jurídico,Não,1289
+inventado_031,inventados/consumidor,inventados/consumidor/inventado_031.txt,Consumidor,Petição / Parecer Jurídico,Não,4089
+inventado_0310,inventados/administrativo,inventados/administrativo/inventado_0310.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0311,inventados/administrativo,inventados/administrativo/inventado_0311.txt,Administrativo,Petição / Parecer Jurídico,Não,880
+inventado_0312,inventados/civel,inventados/civel/inventado_0312.txt,Civel,Petição / Parecer Jurídico,Não,1368
+inventado_0313,inventados/administrativo,inventados/administrativo/inventado_0313.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0314,inventados/administrativo,inventados/administrativo/inventado_0314.txt,Administrativo,Petição / Parecer Jurídico,Não,905
+inventado_0315,inventados/consumidor,inventados/consumidor/inventado_0315.txt,Consumidor,Petição / Parecer Jurídico,Não,1353
+inventado_0316,inventados/administrativo,inventados/administrativo/inventado_0316.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0317,inventados/administrativo,inventados/administrativo/inventado_0317.txt,Administrativo,Petição / Parecer Jurídico,Não,883
+inventado_0318,inventados/consumidor,inventados/consumidor/inventado_0318.txt,Consumidor,Petição / Parecer Jurídico,Não,1334
+inventado_0319,inventados/administrativo,inventados/administrativo/inventado_0319.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_032,inventados/consumidor,inventados/consumidor/inventado_032.txt,Consumidor,Petição / Parecer Jurídico,Não,4116
+inventado_0320,inventados/administrativo,inventados/administrativo/inventado_0320.txt,Administrativo,Petição / Parecer Jurídico,Não,912
+inventado_0321,inventados/civel,inventados/civel/inventado_0321.txt,Civel,Petição / Parecer Jurídico,Não,1339
+inventado_0322,inventados/administrativo,inventados/administrativo/inventado_0322.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0323,inventados/administrativo,inventados/administrativo/inventado_0323.txt,Administrativo,Petição / Parecer Jurídico,Não,898
+inventado_0324,inventados/consumidor,inventados/consumidor/inventado_0324.txt,Consumidor,Petição / Parecer Jurídico,Não,1314
+inventado_0325,inventados/administrativo,inventados/administrativo/inventado_0325.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0326,inventados/administrativo,inventados/administrativo/inventado_0326.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0327,inventados/trabalhista,inventados/trabalhista/inventado_0327.txt,Trabalhista,Petição / Parecer Jurídico,Não,1310
+inventado_0328,inventados/administrativo,inventados/administrativo/inventado_0328.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0329,inventados/administrativo,inventados/administrativo/inventado_0329.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_033,inventados/consumidor,inventados/consumidor/inventado_033.txt,Consumidor,Petição / Parecer Jurídico,Não,4074
+inventado_0330,inventados/civel,inventados/civel/inventado_0330.txt,Civel,Petição / Parecer Jurídico,Não,1324
+inventado_0331,inventados/administrativo,inventados/administrativo/inventado_0331.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0332,inventados/administrativo,inventados/administrativo/inventado_0332.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0333,inventados/penal,inventados/penal/inventado_0333.txt,Penal,Petição / Parecer Jurídico,Não,1316
+inventado_0334,inventados/administrativo,inventados/administrativo/inventado_0334.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0335,inventados/administrativo,inventados/administrativo/inventado_0335.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_0336,inventados/trabalhista,inventados/trabalhista/inventado_0336.txt,Trabalhista,Petição / Parecer Jurídico,Não,1326
+inventado_0337,inventados/administrativo,inventados/administrativo/inventado_0337.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0338,inventados/administrativo,inventados/administrativo/inventado_0338.txt,Administrativo,Petição / Parecer Jurídico,Não,904
+inventado_0339,inventados/trabalhista,inventados/trabalhista/inventado_0339.txt,Trabalhista,Petição / Parecer Jurídico,Não,1325
+inventado_034,inventados/consumidor,inventados/consumidor/inventado_034.txt,Consumidor,Petição / Parecer Jurídico,Não,4052
+inventado_0340,inventados/administrativo,inventados/administrativo/inventado_0340.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0341,inventados/administrativo,inventados/administrativo/inventado_0341.txt,Administrativo,Petição / Parecer Jurídico,Não,872
+inventado_0342,inventados/civel,inventados/civel/inventado_0342.txt,Civel,Petição / Parecer Jurídico,Não,1350
+inventado_0343,inventados/administrativo,inventados/administrativo/inventado_0343.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0344,inventados/administrativo,inventados/administrativo/inventado_0344.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0345,inventados/civel,inventados/civel/inventado_0345.txt,Civel,Petição / Parecer Jurídico,Não,1341
+inventado_0346,inventados/administrativo,inventados/administrativo/inventado_0346.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0347,inventados/administrativo,inventados/administrativo/inventado_0347.txt,Administrativo,Petição / Parecer Jurídico,Não,915
+inventado_0348,inventados/trabalhista,inventados/trabalhista/inventado_0348.txt,Trabalhista,Petição / Parecer Jurídico,Não,1289
+inventado_0349,inventados/administrativo,inventados/administrativo/inventado_0349.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_035,inventados/consumidor,inventados/consumidor/inventado_035.txt,Consumidor,Petição / Parecer Jurídico,Não,4091
+inventado_0350,inventados/administrativo,inventados/administrativo/inventado_0350.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0351,inventados/trabalhista,inventados/trabalhista/inventado_0351.txt,Trabalhista,Petição / Parecer Jurídico,Não,1321
+inventado_0352,inventados/administrativo,inventados/administrativo/inventado_0352.txt,Administrativo,Petição / Parecer Jurídico,Não,1172
+inventado_0353,inventados/administrativo,inventados/administrativo/inventado_0353.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_0354,inventados/civel,inventados/civel/inventado_0354.txt,Civel,Petição / Parecer Jurídico,Não,1303
+inventado_0355,inventados/administrativo,inventados/administrativo/inventado_0355.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_0356,inventados/administrativo,inventados/administrativo/inventado_0356.txt,Administrativo,Petição / Parecer Jurídico,Não,911
+inventado_0357,inventados/trabalhista,inventados/trabalhista/inventado_0357.txt,Trabalhista,Petição / Parecer Jurídico,Não,1296
+inventado_0358,inventados/administrativo,inventados/administrativo/inventado_0358.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0359,inventados/administrativo,inventados/administrativo/inventado_0359.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_036,inventados/consumidor,inventados/consumidor/inventado_036.txt,Consumidor,Petição / Parecer Jurídico,Não,4082
+inventado_0360,inventados/penal,inventados/penal/inventado_0360.txt,Penal,Petição / Parecer Jurídico,Não,1329
+inventado_0361,inventados/administrativo,inventados/administrativo/inventado_0361.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0362,inventados/administrativo,inventados/administrativo/inventado_0362.txt,Administrativo,Petição / Parecer Jurídico,Não,914
+inventado_0363,inventados/consumidor,inventados/consumidor/inventado_0363.txt,Consumidor,Petição / Parecer Jurídico,Não,1353
+inventado_0364,inventados/administrativo,inventados/administrativo/inventado_0364.txt,Administrativo,Petição / Parecer Jurídico,Não,1192
+inventado_0365,inventados/administrativo,inventados/administrativo/inventado_0365.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0366,inventados/civel,inventados/civel/inventado_0366.txt,Civel,Petição / Parecer Jurídico,Não,1311
+inventado_0367,inventados/administrativo,inventados/administrativo/inventado_0367.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0368,inventados/administrativo,inventados/administrativo/inventado_0368.txt,Administrativo,Petição / Parecer Jurídico,Não,904
+inventado_0369,inventados/trabalhista,inventados/trabalhista/inventado_0369.txt,Trabalhista,Petição / Parecer Jurídico,Não,1304
+inventado_037,inventados/consumidor,inventados/consumidor/inventado_037.txt,Consumidor,Petição / Parecer Jurídico,Não,4059
+inventado_0370,inventados/administrativo,inventados/administrativo/inventado_0370.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0371,inventados/administrativo,inventados/administrativo/inventado_0371.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0372,inventados/civel,inventados/civel/inventado_0372.txt,Civel,Petição / Parecer Jurídico,Não,1351
+inventado_0373,inventados/administrativo,inventados/administrativo/inventado_0373.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0374,inventados/administrativo,inventados/administrativo/inventado_0374.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0375,inventados/penal,inventados/penal/inventado_0375.txt,Penal,Petição / Parecer Jurídico,Não,1332
+inventado_0376,inventados/administrativo,inventados/administrativo/inventado_0376.txt,Administrativo,Petição / Parecer Jurídico,Não,1199
+inventado_0377,inventados/administrativo,inventados/administrativo/inventado_0377.txt,Administrativo,Petição / Parecer Jurídico,Não,872
+inventado_0378,inventados/trabalhista,inventados/trabalhista/inventado_0378.txt,Trabalhista,Petição / Parecer Jurídico,Não,1303
+inventado_0379,inventados/administrativo,inventados/administrativo/inventado_0379.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_038,inventados/administrativo,inventados/administrativo/inventado_038.txt,Administrativo,Petição / Parecer Jurídico,Não,4079
+inventado_0380,inventados/administrativo,inventados/administrativo/inventado_0380.txt,Administrativo,Petição / Parecer Jurídico,Não,894
+inventado_0381,inventados/civel,inventados/civel/inventado_0381.txt,Civel,Petição / Parecer Jurídico,Não,1340
+inventado_0382,inventados/administrativo,inventados/administrativo/inventado_0382.txt,Administrativo,Petição / Parecer Jurídico,Não,1162
+inventado_0383,inventados/administrativo,inventados/administrativo/inventado_0383.txt,Administrativo,Petição / Parecer Jurídico,Não,908
+inventado_0384,inventados/consumidor,inventados/consumidor/inventado_0384.txt,Consumidor,Petição / Parecer Jurídico,Não,1333
+inventado_0385,inventados/administrativo,inventados/administrativo/inventado_0385.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0386,inventados/administrativo,inventados/administrativo/inventado_0386.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0387,inventados/penal,inventados/penal/inventado_0387.txt,Penal,Petição / Parecer Jurídico,Não,1305
+inventado_0388,inventados/administrativo,inventados/administrativo/inventado_0388.txt,Administrativo,Petição / Parecer Jurídico,Não,1199
+inventado_0389,inventados/administrativo,inventados/administrativo/inventado_0389.txt,Administrativo,Petição / Parecer Jurídico,Não,890
+inventado_039,inventados/consumidor,inventados/consumidor/inventado_039.txt,Consumidor,Petição / Parecer Jurídico,Não,4056
+inventado_0390,inventados/civel,inventados/civel/inventado_0390.txt,Civel,Petição / Parecer Jurídico,Não,1331
+inventado_0391,inventados/administrativo,inventados/administrativo/inventado_0391.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0392,inventados/administrativo,inventados/administrativo/inventado_0392.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0393,inventados/consumidor,inventados/consumidor/inventado_0393.txt,Consumidor,Petição / Parecer Jurídico,Não,1350
+inventado_0394,inventados/administrativo,inventados/administrativo/inventado_0394.txt,Administrativo,Petição / Parecer Jurídico,Não,1162
+inventado_0395,inventados/administrativo,inventados/administrativo/inventado_0395.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0396,inventados/civel,inventados/civel/inventado_0396.txt,Civel,Petição / Parecer Jurídico,Não,1326
+inventado_0397,inventados/administrativo,inventados/administrativo/inventado_0397.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_0398,inventados/administrativo,inventados/administrativo/inventado_0398.txt,Administrativo,Petição / Parecer Jurídico,Não,905
+inventado_0399,inventados/trabalhista,inventados/trabalhista/inventado_0399.txt,Trabalhista,Petição / Parecer Jurídico,Não,1316
+inventado_040,inventados/consumidor,inventados/consumidor/inventado_040.txt,Consumidor,Petição / Parecer Jurídico,Não,4090
+inventado_0400,inventados/administrativo,inventados/administrativo/inventado_0400.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0401,inventados/administrativo,inventados/administrativo/inventado_0401.txt,Administrativo,Petição / Parecer Jurídico,Não,880
+inventado_0402,inventados/consumidor,inventados/consumidor/inventado_0402.txt,Consumidor,Petição / Parecer Jurídico,Não,1373
+inventado_0403,inventados/administrativo,inventados/administrativo/inventado_0403.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0404,inventados/administrativo,inventados/administrativo/inventado_0404.txt,Administrativo,Petição / Parecer Jurídico,Não,912
+inventado_0405,inventados/trabalhista,inventados/trabalhista/inventado_0405.txt,Trabalhista,Petição / Parecer Jurídico,Não,1317
+inventado_0406,inventados/administrativo,inventados/administrativo/inventado_0406.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_0407,inventados/administrativo,inventados/administrativo/inventado_0407.txt,Administrativo,Petição / Parecer Jurídico,Não,888
+inventado_0408,inventados/tributario,inventados/tributario/inventado_0408.txt,Tributario,Petição / Parecer Jurídico,Não,1307
+inventado_0409,inventados/administrativo,inventados/administrativo/inventado_0409.txt,Administrativo,Petição / Parecer Jurídico,Não,1178
+inventado_041,inventados/consumidor,inventados/consumidor/inventado_041.txt,Consumidor,Petição / Parecer Jurídico,Não,4100
+inventado_0410,inventados/administrativo,inventados/administrativo/inventado_0410.txt,Administrativo,Petição / Parecer Jurídico,Não,897
+inventado_0411,inventados/trabalhista,inventados/trabalhista/inventado_0411.txt,Trabalhista,Petição / Parecer Jurídico,Não,1324
+inventado_0412,inventados/administrativo,inventados/administrativo/inventado_0412.txt,Administrativo,Petição / Parecer Jurídico,Não,1180
+inventado_0413,inventados/administrativo,inventados/administrativo/inventado_0413.txt,Administrativo,Petição / Parecer Jurídico,Não,898
+inventado_0414,inventados/civel,inventados/civel/inventado_0414.txt,Civel,Petição / Parecer Jurídico,Não,1306
+inventado_0415,inventados/administrativo,inventados/administrativo/inventado_0415.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0416,inventados/administrativo,inventados/administrativo/inventado_0416.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0417,inventados/civel,inventados/civel/inventado_0417.txt,Civel,Petição / Parecer Jurídico,Não,1301
+inventado_0418,inventados/administrativo,inventados/administrativo/inventado_0418.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0419,inventados/administrativo,inventados/administrativo/inventado_0419.txt,Administrativo,Petição / Parecer Jurídico,Não,880
+inventado_042,inventados/consumidor,inventados/consumidor/inventado_042.txt,Consumidor,Petição / Parecer Jurídico,Não,4098
+inventado_0420,inventados/trabalhista,inventados/trabalhista/inventado_0420.txt,Trabalhista,Petição / Parecer Jurídico,Não,1310
+inventado_0421,inventados/administrativo,inventados/administrativo/inventado_0421.txt,Administrativo,Petição / Parecer Jurídico,Não,1178
+inventado_0422,inventados/administrativo,inventados/administrativo/inventado_0422.txt,Administrativo,Petição / Parecer Jurídico,Não,913
+inventado_0423,inventados/civel,inventados/civel/inventado_0423.txt,Civel,Petição / Parecer Jurídico,Não,1334
+inventado_0424,inventados/administrativo,inventados/administrativo/inventado_0424.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0425,inventados/administrativo,inventados/administrativo/inventado_0425.txt,Administrativo,Petição / Parecer Jurídico,Não,898
+inventado_0426,inventados/trabalhista,inventados/trabalhista/inventado_0426.txt,Trabalhista,Petição / Parecer Jurídico,Não,1322
+inventado_0427,inventados/administrativo,inventados/administrativo/inventado_0427.txt,Administrativo,Petição / Parecer Jurídico,Não,1197
+inventado_0428,inventados/administrativo,inventados/administrativo/inventado_0428.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0429,inventados/trabalhista,inventados/trabalhista/inventado_0429.txt,Trabalhista,Petição / Parecer Jurídico,Não,1289
+inventado_043,inventados/consumidor,inventados/consumidor/inventado_043.txt,Consumidor,Petição / Parecer Jurídico,Não,4078
+inventado_0430,inventados/administrativo,inventados/administrativo/inventado_0430.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0431,inventados/administrativo,inventados/administrativo/inventado_0431.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0432,inventados/civel,inventados/civel/inventado_0432.txt,Civel,Petição / Parecer Jurídico,Não,1369
+inventado_0433,inventados/administrativo,inventados/administrativo/inventado_0433.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0434,inventados/administrativo,inventados/administrativo/inventado_0434.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0435,inventados/civel,inventados/civel/inventado_0435.txt,Civel,Petição / Parecer Jurídico,Não,1352
+inventado_0436,inventados/administrativo,inventados/administrativo/inventado_0436.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0437,inventados/administrativo,inventados/administrativo/inventado_0437.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0438,inventados/tributario,inventados/tributario/inventado_0438.txt,Tributario,Petição / Parecer Jurídico,Não,1318
+inventado_0439,inventados/administrativo,inventados/administrativo/inventado_0439.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_044,inventados/consumidor,inventados/consumidor/inventado_044.txt,Consumidor,Petição / Parecer Jurídico,Não,4076
+inventado_0440,inventados/administrativo,inventados/administrativo/inventado_0440.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0441,inventados/penal,inventados/penal/inventado_0441.txt,Penal,Petição / Parecer Jurídico,Não,1320
+inventado_0442,inventados/administrativo,inventados/administrativo/inventado_0442.txt,Administrativo,Petição / Parecer Jurídico,Não,1188
+inventado_0443,inventados/administrativo,inventados/administrativo/inventado_0443.txt,Administrativo,Petição / Parecer Jurídico,Não,915
+inventado_0444,inventados/civel,inventados/civel/inventado_0444.txt,Civel,Petição / Parecer Jurídico,Não,1305
+inventado_0445,inventados/administrativo,inventados/administrativo/inventado_0445.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0446,inventados/administrativo,inventados/administrativo/inventado_0446.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0447,inventados/trabalhista,inventados/trabalhista/inventado_0447.txt,Trabalhista,Petição / Parecer Jurídico,Não,1303
+inventado_0448,inventados/administrativo,inventados/administrativo/inventado_0448.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0449,inventados/administrativo,inventados/administrativo/inventado_0449.txt,Administrativo,Petição / Parecer Jurídico,Não,890
+inventado_045,inventados/consumidor,inventados/consumidor/inventado_045.txt,Consumidor,Petição / Parecer Jurídico,Não,4077
+inventado_0450,inventados/civel,inventados/civel/inventado_0450.txt,Civel,Petição / Parecer Jurídico,Não,1325
+inventado_0451,inventados/administrativo,inventados/administrativo/inventado_0451.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0452,inventados/administrativo,inventados/administrativo/inventado_0452.txt,Administrativo,Petição / Parecer Jurídico,Não,884
+inventado_0453,inventados/civel,inventados/civel/inventado_0453.txt,Civel,Petição / Parecer Jurídico,Não,1334
+inventado_0454,inventados/administrativo,inventados/administrativo/inventado_0454.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0455,inventados/administrativo,inventados/administrativo/inventado_0455.txt,Administrativo,Petição / Parecer Jurídico,Não,906
+inventado_0456,inventados/consumidor,inventados/consumidor/inventado_0456.txt,Consumidor,Petição / Parecer Jurídico,Não,1345
+inventado_0457,inventados/administrativo,inventados/administrativo/inventado_0457.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0458,inventados/administrativo,inventados/administrativo/inventado_0458.txt,Administrativo,Petição / Parecer Jurídico,Não,905
+inventado_0459,inventados/trabalhista,inventados/trabalhista/inventado_0459.txt,Trabalhista,Petição / Parecer Jurídico,Não,1297
+inventado_046,inventados/consumidor,inventados/consumidor/inventado_046.txt,Consumidor,Petição / Parecer Jurídico,Não,4072
+inventado_0460,inventados/administrativo,inventados/administrativo/inventado_0460.txt,Administrativo,Petição / Parecer Jurídico,Não,1200
+inventado_0461,inventados/administrativo,inventados/administrativo/inventado_0461.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0462,inventados/civel,inventados/civel/inventado_0462.txt,Civel,Petição / Parecer Jurídico,Não,1369
+inventado_0463,inventados/administrativo,inventados/administrativo/inventado_0463.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0464,inventados/administrativo,inventados/administrativo/inventado_0464.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0465,inventados/civel,inventados/civel/inventado_0465.txt,Civel,Petição / Parecer Jurídico,Não,1333
+inventado_0466,inventados/administrativo,inventados/administrativo/inventado_0466.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0467,inventados/administrativo,inventados/administrativo/inventado_0467.txt,Administrativo,Petição / Parecer Jurídico,Não,880
+inventado_0468,inventados/tributario,inventados/tributario/inventado_0468.txt,Tributario,Petição / Parecer Jurídico,Não,1308
+inventado_0469,inventados/administrativo,inventados/administrativo/inventado_0469.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_047,inventados/consumidor,inventados/consumidor/inventado_047.txt,Consumidor,Petição / Parecer Jurídico,Não,4069
+inventado_0470,inventados/administrativo,inventados/administrativo/inventado_0470.txt,Administrativo,Petição / Parecer Jurídico,Não,886
+inventado_0471,inventados/civel,inventados/civel/inventado_0471.txt,Civel,Petição / Parecer Jurídico,Não,1342
+inventado_0472,inventados/administrativo,inventados/administrativo/inventado_0472.txt,Administrativo,Petição / Parecer Jurídico,Não,1172
+inventado_0473,inventados/administrativo,inventados/administrativo/inventado_0473.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0474,inventados/civel,inventados/civel/inventado_0474.txt,Civel,Petição / Parecer Jurídico,Não,1304
+inventado_0475,inventados/administrativo,inventados/administrativo/inventado_0475.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0476,inventados/administrativo,inventados/administrativo/inventado_0476.txt,Administrativo,Petição / Parecer Jurídico,Não,895
+inventado_0477,inventados/civel,inventados/civel/inventado_0477.txt,Civel,Petição / Parecer Jurídico,Não,1315
+inventado_0478,inventados/administrativo,inventados/administrativo/inventado_0478.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0479,inventados/administrativo,inventados/administrativo/inventado_0479.txt,Administrativo,Petição / Parecer Jurídico,Não,907
+inventado_048,inventados/consumidor,inventados/consumidor/inventado_048.txt,Consumidor,Petição / Parecer Jurídico,Não,4073
+inventado_0480,inventados/civel,inventados/civel/inventado_0480.txt,Civel,Petição / Parecer Jurídico,Não,1347
+inventado_0481,inventados/administrativo,inventados/administrativo/inventado_0481.txt,Administrativo,Petição / Parecer Jurídico,Não,1198
+inventado_0482,inventados/administrativo,inventados/administrativo/inventado_0482.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0483,inventados/civel,inventados/civel/inventado_0483.txt,Civel,Petição / Parecer Jurídico,Não,1335
+inventado_0484,inventados/administrativo,inventados/administrativo/inventado_0484.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0485,inventados/administrativo,inventados/administrativo/inventado_0485.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_0486,inventados/civel,inventados/civel/inventado_0486.txt,Civel,Petição / Parecer Jurídico,Não,1337
+inventado_0487,inventados/administrativo,inventados/administrativo/inventado_0487.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0488,inventados/administrativo,inventados/administrativo/inventado_0488.txt,Administrativo,Petição / Parecer Jurídico,Não,911
+inventado_0489,inventados/trabalhista,inventados/trabalhista/inventado_0489.txt,Trabalhista,Petição / Parecer Jurídico,Não,1314
+inventado_049,inventados/consumidor,inventados/consumidor/inventado_049.txt,Consumidor,Petição / Parecer Jurídico,Não,4055
+inventado_0490,inventados/administrativo,inventados/administrativo/inventado_0490.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0491,inventados/administrativo,inventados/administrativo/inventado_0491.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_0492,inventados/consumidor,inventados/consumidor/inventado_0492.txt,Consumidor,Petição / Parecer Jurídico,Não,1359
+inventado_0493,inventados/administrativo,inventados/administrativo/inventado_0493.txt,Administrativo,Petição / Parecer Jurídico,Não,1180
+inventado_0494,inventados/administrativo,inventados/administrativo/inventado_0494.txt,Administrativo,Petição / Parecer Jurídico,Não,914
+inventado_0495,inventados/trabalhista,inventados/trabalhista/inventado_0495.txt,Trabalhista,Petição / Parecer Jurídico,Não,1324
+inventado_0496,inventados/administrativo,inventados/administrativo/inventado_0496.txt,Administrativo,Petição / Parecer Jurídico,Não,1191
+inventado_0497,inventados/administrativo,inventados/administrativo/inventado_0497.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0498,inventados/trabalhista,inventados/trabalhista/inventado_0498.txt,Trabalhista,Petição / Parecer Jurídico,Não,1304
+inventado_0499,inventados/administrativo,inventados/administrativo/inventado_0499.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_050,inventados/consumidor,inventados/consumidor/inventado_050.txt,Consumidor,Petição / Parecer Jurídico,Não,4100
+inventado_0500,inventados/administrativo,inventados/administrativo/inventado_0500.txt,Administrativo,Petição / Parecer Jurídico,Não,902
+inventado_0501,inventados/civel,inventados/civel/inventado_0501.txt,Civel,Petição / Parecer Jurídico,Não,1333
+inventado_0502,inventados/administrativo,inventados/administrativo/inventado_0502.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0503,inventados/administrativo,inventados/administrativo/inventado_0503.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0504,inventados/consumidor,inventados/consumidor/inventado_0504.txt,Consumidor,Petição / Parecer Jurídico,Não,1340
+inventado_0505,inventados/administrativo,inventados/administrativo/inventado_0505.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0506,inventados/administrativo,inventados/administrativo/inventado_0506.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0507,inventados/trabalhista,inventados/trabalhista/inventado_0507.txt,Trabalhista,Petição / Parecer Jurídico,Não,1303
+inventado_0508,inventados/administrativo,inventados/administrativo/inventado_0508.txt,Administrativo,Petição / Parecer Jurídico,Não,1200
+inventado_0509,inventados/administrativo,inventados/administrativo/inventado_0509.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_051,inventados/consumidor,inventados/consumidor/inventado_051.txt,Consumidor,Petição / Parecer Jurídico,Não,4087
+inventado_0510,inventados/consumidor,inventados/consumidor/inventado_0510.txt,Consumidor,Petição / Parecer Jurídico,Não,1348
+inventado_0511,inventados/administrativo,inventados/administrativo/inventado_0511.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0512,inventados/administrativo,inventados/administrativo/inventado_0512.txt,Administrativo,Petição / Parecer Jurídico,Não,912
+inventado_0513,inventados/civel,inventados/civel/inventado_0513.txt,Civel,Petição / Parecer Jurídico,Não,1342
+inventado_0514,inventados/administrativo,inventados/administrativo/inventado_0514.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0515,inventados/administrativo,inventados/administrativo/inventado_0515.txt,Administrativo,Petição / Parecer Jurídico,Não,915
+inventado_0516,inventados/trabalhista,inventados/trabalhista/inventado_0516.txt,Trabalhista,Petição / Parecer Jurídico,Não,1300
+inventado_0517,inventados/administrativo,inventados/administrativo/inventado_0517.txt,Administrativo,Petição / Parecer Jurídico,Não,1198
+inventado_0518,inventados/administrativo,inventados/administrativo/inventado_0518.txt,Administrativo,Petição / Parecer Jurídico,Não,904
+inventado_0519,inventados/trabalhista,inventados/trabalhista/inventado_0519.txt,Trabalhista,Petição / Parecer Jurídico,Não,1296
+inventado_052,inventados/consumidor,inventados/consumidor/inventado_052.txt,Consumidor,Petição / Parecer Jurídico,Não,4100
+inventado_0520,inventados/administrativo,inventados/administrativo/inventado_0520.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0521,inventados/administrativo,inventados/administrativo/inventado_0521.txt,Administrativo,Petição / Parecer Jurídico,Não,898
+inventado_0522,inventados/civel,inventados/civel/inventado_0522.txt,Civel,Petição / Parecer Jurídico,Não,1348
+inventado_0523,inventados/administrativo,inventados/administrativo/inventado_0523.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0524,inventados/administrativo,inventados/administrativo/inventado_0524.txt,Administrativo,Petição / Parecer Jurídico,Não,884
+inventado_0525,inventados/civel,inventados/civel/inventado_0525.txt,Civel,Petição / Parecer Jurídico,Não,1335
+inventado_0526,inventados/administrativo,inventados/administrativo/inventado_0526.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0527,inventados/administrativo,inventados/administrativo/inventado_0527.txt,Administrativo,Petição / Parecer Jurídico,Não,890
+inventado_0528,inventados/tributario,inventados/tributario/inventado_0528.txt,Tributario,Petição / Parecer Jurídico,Não,1307
+inventado_0529,inventados/administrativo,inventados/administrativo/inventado_0529.txt,Administrativo,Petição / Parecer Jurídico,Não,1188
+inventado_053,inventados/consumidor,inventados/consumidor/inventado_053.txt,Consumidor,Petição / Parecer Jurídico,Não,4084
+inventado_0530,inventados/administrativo,inventados/administrativo/inventado_0530.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0531,inventados/trabalhista,inventados/trabalhista/inventado_0531.txt,Trabalhista,Petição / Parecer Jurídico,Não,1323
+inventado_0532,inventados/administrativo,inventados/administrativo/inventado_0532.txt,Administrativo,Petição / Parecer Jurídico,Não,1198
+inventado_0533,inventados/administrativo,inventados/administrativo/inventado_0533.txt,Administrativo,Petição / Parecer Jurídico,Não,872
+inventado_0534,inventados/civel,inventados/civel/inventado_0534.txt,Civel,Petição / Parecer Jurídico,Não,1298
+inventado_0535,inventados/administrativo,inventados/administrativo/inventado_0535.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0536,inventados/administrativo,inventados/administrativo/inventado_0536.txt,Administrativo,Petição / Parecer Jurídico,Não,884
+inventado_0537,inventados/trabalhista,inventados/trabalhista/inventado_0537.txt,Trabalhista,Petição / Parecer Jurídico,Não,1302
+inventado_0538,inventados/administrativo,inventados/administrativo/inventado_0538.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0539,inventados/administrativo,inventados/administrativo/inventado_0539.txt,Administrativo,Petição / Parecer Jurídico,Não,907
+inventado_054,inventados/consumidor,inventados/consumidor/inventado_054.txt,Consumidor,Petição / Parecer Jurídico,Não,4054
+inventado_0540,inventados/trabalhista,inventados/trabalhista/inventado_0540.txt,Trabalhista,Petição / Parecer Jurídico,Não,1310
+inventado_0541,inventados/administrativo,inventados/administrativo/inventado_0541.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_0542,inventados/administrativo,inventados/administrativo/inventado_0542.txt,Administrativo,Petição / Parecer Jurídico,Não,894
+inventado_0543,inventados/penal,inventados/penal/inventado_0543.txt,Penal,Petição / Parecer Jurídico,Não,1332
+inventado_0544,inventados/administrativo,inventados/administrativo/inventado_0544.txt,Administrativo,Petição / Parecer Jurídico,Não,1192
+inventado_0545,inventados/administrativo,inventados/administrativo/inventado_0545.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0546,inventados/civel,inventados/civel/inventado_0546.txt,Civel,Petição / Parecer Jurídico,Não,1333
+inventado_0547,inventados/administrativo,inventados/administrativo/inventado_0547.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0548,inventados/administrativo,inventados/administrativo/inventado_0548.txt,Administrativo,Petição / Parecer Jurídico,Não,919
+inventado_0549,inventados/trabalhista,inventados/trabalhista/inventado_0549.txt,Trabalhista,Petição / Parecer Jurídico,Não,1290
+inventado_055,inventados/consumidor,inventados/consumidor/inventado_055.txt,Consumidor,Petição / Parecer Jurídico,Não,4083
+inventado_0550,inventados/administrativo,inventados/administrativo/inventado_0550.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0551,inventados/administrativo,inventados/administrativo/inventado_0551.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0552,inventados/civel,inventados/civel/inventado_0552.txt,Civel,Petição / Parecer Jurídico,Não,1376
+inventado_0553,inventados/administrativo,inventados/administrativo/inventado_0553.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0554,inventados/administrativo,inventados/administrativo/inventado_0554.txt,Administrativo,Petição / Parecer Jurídico,Não,913
+inventado_0555,inventados/consumidor,inventados/consumidor/inventado_0555.txt,Consumidor,Petição / Parecer Jurídico,Não,1352
+inventado_0556,inventados/administrativo,inventados/administrativo/inventado_0556.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_0557,inventados/administrativo,inventados/administrativo/inventado_0557.txt,Administrativo,Petição / Parecer Jurídico,Não,872
+inventado_0558,inventados/trabalhista,inventados/trabalhista/inventado_0558.txt,Trabalhista,Petição / Parecer Jurídico,Não,1299
+inventado_0559,inventados/administrativo,inventados/administrativo/inventado_0559.txt,Administrativo,Petição / Parecer Jurídico,Não,1182
+inventado_056,inventados/consumidor,inventados/consumidor/inventado_056.txt,Consumidor,Petição / Parecer Jurídico,Não,4096
+inventado_0560,inventados/administrativo,inventados/administrativo/inventado_0560.txt,Administrativo,Petição / Parecer Jurídico,Não,903
+inventado_0561,inventados/civel,inventados/civel/inventado_0561.txt,Civel,Petição / Parecer Jurídico,Não,1340
+inventado_0562,inventados/administrativo,inventados/administrativo/inventado_0562.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0563,inventados/administrativo,inventados/administrativo/inventado_0563.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0564,inventados/civel,inventados/civel/inventado_0564.txt,Civel,Petição / Parecer Jurídico,Não,1288
+inventado_0565,inventados/administrativo,inventados/administrativo/inventado_0565.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0566,inventados/administrativo,inventados/administrativo/inventado_0566.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0567,inventados/consumidor,inventados/consumidor/inventado_0567.txt,Consumidor,Petição / Parecer Jurídico,Não,1338
+inventado_0568,inventados/administrativo,inventados/administrativo/inventado_0568.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0569,inventados/administrativo,inventados/administrativo/inventado_0569.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_057,inventados/consumidor,inventados/consumidor/inventado_057.txt,Consumidor,Petição / Parecer Jurídico,Não,4057
+inventado_0570,inventados/penal,inventados/penal/inventado_0570.txt,Penal,Petição / Parecer Jurídico,Não,1325
+inventado_0571,inventados/administrativo,inventados/administrativo/inventado_0571.txt,Administrativo,Petição / Parecer Jurídico,Não,1188
+inventado_0572,inventados/administrativo,inventados/administrativo/inventado_0572.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0573,inventados/civel,inventados/civel/inventado_0573.txt,Civel,Petição / Parecer Jurídico,Não,1328
+inventado_0574,inventados/administrativo,inventados/administrativo/inventado_0574.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_0575,inventados/administrativo,inventados/administrativo/inventado_0575.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0576,inventados/civel,inventados/civel/inventado_0576.txt,Civel,Petição / Parecer Jurídico,Não,1337
+inventado_0577,inventados/administrativo,inventados/administrativo/inventado_0577.txt,Administrativo,Petição / Parecer Jurídico,Não,1198
+inventado_0578,inventados/administrativo,inventados/administrativo/inventado_0578.txt,Administrativo,Petição / Parecer Jurídico,Não,894
+inventado_0579,inventados/trabalhista,inventados/trabalhista/inventado_0579.txt,Trabalhista,Petição / Parecer Jurídico,Não,1297
+inventado_058,inventados/administrativo,inventados/administrativo/inventado_058.txt,Administrativo,Petição / Parecer Jurídico,Não,4063
+inventado_0580,inventados/administrativo,inventados/administrativo/inventado_0580.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0581,inventados/administrativo,inventados/administrativo/inventado_0581.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0582,inventados/consumidor,inventados/consumidor/inventado_0582.txt,Consumidor,Petição / Parecer Jurídico,Não,1368
+inventado_0583,inventados/administrativo,inventados/administrativo/inventado_0583.txt,Administrativo,Petição / Parecer Jurídico,Não,1180
+inventado_0584,inventados/administrativo,inventados/administrativo/inventado_0584.txt,Administrativo,Petição / Parecer Jurídico,Não,912
+inventado_0585,inventados/trabalhista,inventados/trabalhista/inventado_0585.txt,Trabalhista,Petição / Parecer Jurídico,Não,1323
+inventado_0586,inventados/administrativo,inventados/administrativo/inventado_0586.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0587,inventados/administrativo,inventados/administrativo/inventado_0587.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0588,inventados/trabalhista,inventados/trabalhista/inventado_0588.txt,Trabalhista,Petição / Parecer Jurídico,Não,1289
+inventado_0589,inventados/administrativo,inventados/administrativo/inventado_0589.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_059,inventados/consumidor,inventados/consumidor/inventado_059.txt,Consumidor,Petição / Parecer Jurídico,Não,4066
+inventado_0590,inventados/administrativo,inventados/administrativo/inventado_0590.txt,Administrativo,Petição / Parecer Jurídico,Não,906
+inventado_0591,inventados/trabalhista,inventados/trabalhista/inventado_0591.txt,Trabalhista,Petição / Parecer Jurídico,Não,1323
+inventado_0592,inventados/administrativo,inventados/administrativo/inventado_0592.txt,Administrativo,Petição / Parecer Jurídico,Não,1199
+inventado_0593,inventados/administrativo,inventados/administrativo/inventado_0593.txt,Administrativo,Petição / Parecer Jurídico,Não,882
+inventado_0594,inventados/consumidor,inventados/consumidor/inventado_0594.txt,Consumidor,Petição / Parecer Jurídico,Não,1331
+inventado_0595,inventados/administrativo,inventados/administrativo/inventado_0595.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0596,inventados/administrativo,inventados/administrativo/inventado_0596.txt,Administrativo,Petição / Parecer Jurídico,Não,885
+inventado_0597,inventados/civel,inventados/civel/inventado_0597.txt,Civel,Petição / Parecer Jurídico,Não,1315
+inventado_0598,inventados/administrativo,inventados/administrativo/inventado_0598.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0599,inventados/administrativo,inventados/administrativo/inventado_0599.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_060,inventados/consumidor,inventados/consumidor/inventado_060.txt,Consumidor,Petição / Parecer Jurídico,Não,4092
+inventado_0600,inventados/consumidor,inventados/consumidor/inventado_0600.txt,Consumidor,Petição / Parecer Jurídico,Não,1356
+inventado_0601,inventados/administrativo,inventados/administrativo/inventado_0601.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0602,inventados/administrativo,inventados/administrativo/inventado_0602.txt,Administrativo,Petição / Parecer Jurídico,Não,886
+inventado_0603,inventados/civel,inventados/civel/inventado_0603.txt,Civel,Petição / Parecer Jurídico,Não,1344
+inventado_0604,inventados/administrativo,inventados/administrativo/inventado_0604.txt,Administrativo,Petição / Parecer Jurídico,Não,1191
+inventado_0605,inventados/administrativo,inventados/administrativo/inventado_0605.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_0606,inventados/civel,inventados/civel/inventado_0606.txt,Civel,Petição / Parecer Jurídico,Não,1329
+inventado_0607,inventados/administrativo,inventados/administrativo/inventado_0607.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0608,inventados/administrativo,inventados/administrativo/inventado_0608.txt,Administrativo,Petição / Parecer Jurídico,Não,911
+inventado_0609,inventados/trabalhista,inventados/trabalhista/inventado_0609.txt,Trabalhista,Petição / Parecer Jurídico,Não,1304
+inventado_061,inventados/consumidor,inventados/consumidor/inventado_061.txt,Consumidor,Petição / Parecer Jurídico,Não,4092
+inventado_0610,inventados/administrativo,inventados/administrativo/inventado_0610.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0611,inventados/administrativo,inventados/administrativo/inventado_0611.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0612,inventados/civel,inventados/civel/inventado_0612.txt,Civel,Petição / Parecer Jurídico,Não,1351
+inventado_0613,inventados/administrativo,inventados/administrativo/inventado_0613.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0614,inventados/administrativo,inventados/administrativo/inventado_0614.txt,Administrativo,Petição / Parecer Jurídico,Não,886
+inventado_0615,inventados/civel,inventados/civel/inventado_0615.txt,Civel,Petição / Parecer Jurídico,Não,1344
+inventado_0616,inventados/administrativo,inventados/administrativo/inventado_0616.txt,Administrativo,Petição / Parecer Jurídico,Não,1200
+inventado_0617,inventados/administrativo,inventados/administrativo/inventado_0617.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_0618,inventados/tributario,inventados/tributario/inventado_0618.txt,Tributario,Petição / Parecer Jurídico,Não,1331
+inventado_0619,inventados/administrativo,inventados/administrativo/inventado_0619.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_062,inventados/consumidor,inventados/consumidor/inventado_062.txt,Consumidor,Petição / Parecer Jurídico,Não,4112
+inventado_0620,inventados/administrativo,inventados/administrativo/inventado_0620.txt,Administrativo,Petição / Parecer Jurídico,Não,911
+inventado_0621,inventados/trabalhista,inventados/trabalhista/inventado_0621.txt,Trabalhista,Petição / Parecer Jurídico,Não,1316
+inventado_0622,inventados/administrativo,inventados/administrativo/inventado_0622.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0623,inventados/administrativo,inventados/administrativo/inventado_0623.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0624,inventados/trabalhista,inventados/trabalhista/inventado_0624.txt,Trabalhista,Petição / Parecer Jurídico,Não,1307
+inventado_0625,inventados/administrativo,inventados/administrativo/inventado_0625.txt,Administrativo,Petição / Parecer Jurídico,Não,1178
+inventado_0626,inventados/administrativo,inventados/administrativo/inventado_0626.txt,Administrativo,Petição / Parecer Jurídico,Não,914
+inventado_0627,inventados/civel,inventados/civel/inventado_0627.txt,Civel,Petição / Parecer Jurídico,Não,1311
+inventado_0628,inventados/administrativo,inventados/administrativo/inventado_0628.txt,Administrativo,Petição / Parecer Jurídico,Não,1173
+inventado_0629,inventados/administrativo,inventados/administrativo/inventado_0629.txt,Administrativo,Petição / Parecer Jurídico,Não,890
+inventado_063,inventados/consumidor,inventados/consumidor/inventado_063.txt,Consumidor,Petição / Parecer Jurídico,Não,4076
+inventado_0630,inventados/trabalhista,inventados/trabalhista/inventado_0630.txt,Trabalhista,Petição / Parecer Jurídico,Não,1320
+inventado_0631,inventados/administrativo,inventados/administrativo/inventado_0631.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0632,inventados/administrativo,inventados/administrativo/inventado_0632.txt,Administrativo,Petição / Parecer Jurídico,Não,903
+inventado_0633,inventados/civel,inventados/civel/inventado_0633.txt,Civel,Petição / Parecer Jurídico,Não,1322
+inventado_0634,inventados/administrativo,inventados/administrativo/inventado_0634.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0635,inventados/administrativo,inventados/administrativo/inventado_0635.txt,Administrativo,Petição / Parecer Jurídico,Não,907
+inventado_0636,inventados/civel,inventados/civel/inventado_0636.txt,Civel,Petição / Parecer Jurídico,Não,1310
+inventado_0637,inventados/administrativo,inventados/administrativo/inventado_0637.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0638,inventados/administrativo,inventados/administrativo/inventado_0638.txt,Administrativo,Petição / Parecer Jurídico,Não,913
+inventado_0639,inventados/trabalhista,inventados/trabalhista/inventado_0639.txt,Trabalhista,Petição / Parecer Jurídico,Não,1316
+inventado_064,inventados/consumidor,inventados/consumidor/inventado_064.txt,Consumidor,Petição / Parecer Jurídico,Não,4060
+inventado_0640,inventados/administrativo,inventados/administrativo/inventado_0640.txt,Administrativo,Petição / Parecer Jurídico,Não,1180
+inventado_0641,inventados/administrativo,inventados/administrativo/inventado_0641.txt,Administrativo,Petição / Parecer Jurídico,Não,880
+inventado_0642,inventados/civel,inventados/civel/inventado_0642.txt,Civel,Petição / Parecer Jurídico,Não,1348
+inventado_0643,inventados/administrativo,inventados/administrativo/inventado_0643.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0644,inventados/administrativo,inventados/administrativo/inventado_0644.txt,Administrativo,Petição / Parecer Jurídico,Não,884
+inventado_0645,inventados/civel,inventados/civel/inventado_0645.txt,Civel,Petição / Parecer Jurídico,Não,1335
+inventado_0646,inventados/administrativo,inventados/administrativo/inventado_0646.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0647,inventados/administrativo,inventados/administrativo/inventado_0647.txt,Administrativo,Petição / Parecer Jurídico,Não,899
+inventado_0648,inventados/tributario,inventados/tributario/inventado_0648.txt,Tributario,Petição / Parecer Jurídico,Não,1326
+inventado_0649,inventados/administrativo,inventados/administrativo/inventado_0649.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_065,inventados/consumidor,inventados/consumidor/inventado_065.txt,Consumidor,Petição / Parecer Jurídico,Não,4087
+inventado_0650,inventados/administrativo,inventados/administrativo/inventado_0650.txt,Administrativo,Petição / Parecer Jurídico,Não,913
+inventado_0651,inventados/trabalhista,inventados/trabalhista/inventado_0651.txt,Trabalhista,Petição / Parecer Jurídico,Não,1330
+inventado_0652,inventados/administrativo,inventados/administrativo/inventado_0652.txt,Administrativo,Petição / Parecer Jurídico,Não,1200
+inventado_0653,inventados/administrativo,inventados/administrativo/inventado_0653.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_0654,inventados/trabalhista,inventados/trabalhista/inventado_0654.txt,Trabalhista,Petição / Parecer Jurídico,Não,1298
+inventado_0655,inventados/administrativo,inventados/administrativo/inventado_0655.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0656,inventados/administrativo,inventados/administrativo/inventado_0656.txt,Administrativo,Petição / Parecer Jurídico,Não,912
+inventado_0657,inventados/civel,inventados/civel/inventado_0657.txt,Civel,Petição / Parecer Jurídico,Não,1319
+inventado_0658,inventados/administrativo,inventados/administrativo/inventado_0658.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_0659,inventados/administrativo,inventados/administrativo/inventado_0659.txt,Administrativo,Petição / Parecer Jurídico,Não,907
+inventado_066,inventados/consumidor,inventados/consumidor/inventado_066.txt,Consumidor,Petição / Parecer Jurídico,Não,4074
+inventado_0660,inventados/civel,inventados/civel/inventado_0660.txt,Civel,Petição / Parecer Jurídico,Não,1319
+inventado_0661,inventados/administrativo,inventados/administrativo/inventado_0661.txt,Administrativo,Petição / Parecer Jurídico,Não,1198
+inventado_0662,inventados/administrativo,inventados/administrativo/inventado_0662.txt,Administrativo,Petição / Parecer Jurídico,Não,906
+inventado_0663,inventados/trabalhista,inventados/trabalhista/inventado_0663.txt,Trabalhista,Petição / Parecer Jurídico,Não,1325
+inventado_0664,inventados/administrativo,inventados/administrativo/inventado_0664.txt,Administrativo,Petição / Parecer Jurídico,Não,1172
+inventado_0665,inventados/administrativo,inventados/administrativo/inventado_0665.txt,Administrativo,Petição / Parecer Jurídico,Não,873
+inventado_0666,inventados/trabalhista,inventados/trabalhista/inventado_0666.txt,Trabalhista,Petição / Parecer Jurídico,Não,1323
+inventado_0667,inventados/administrativo,inventados/administrativo/inventado_0667.txt,Administrativo,Petição / Parecer Jurídico,Não,1181
+inventado_0668,inventados/administrativo,inventados/administrativo/inventado_0668.txt,Administrativo,Petição / Parecer Jurídico,Não,884
+inventado_0669,inventados/trabalhista,inventados/trabalhista/inventado_0669.txt,Trabalhista,Petição / Parecer Jurídico,Não,1308
+inventado_067,inventados/consumidor,inventados/consumidor/inventado_067.txt,Consumidor,Petição / Parecer Jurídico,Não,4061
+inventado_0670,inventados/administrativo,inventados/administrativo/inventado_0670.txt,Administrativo,Petição / Parecer Jurídico,Não,1189
+inventado_0671,inventados/administrativo,inventados/administrativo/inventado_0671.txt,Administrativo,Petição / Parecer Jurídico,Não,908
+inventado_0672,inventados/civel,inventados/civel/inventado_0672.txt,Civel,Petição / Parecer Jurídico,Não,1358
+inventado_0673,inventados/administrativo,inventados/administrativo/inventado_0673.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0674,inventados/administrativo,inventados/administrativo/inventado_0674.txt,Administrativo,Petição / Parecer Jurídico,Não,897
+inventado_0675,inventados/trabalhista,inventados/trabalhista/inventado_0675.txt,Trabalhista,Petição / Parecer Jurídico,Não,1326
+inventado_0676,inventados/administrativo,inventados/administrativo/inventado_0676.txt,Administrativo,Petição / Parecer Jurídico,Não,1192
+inventado_0677,inventados/administrativo,inventados/administrativo/inventado_0677.txt,Administrativo,Petição / Parecer Jurídico,Não,891
+inventado_0678,inventados/tributario,inventados/tributario/inventado_0678.txt,Tributario,Petição / Parecer Jurídico,Não,1325
+inventado_0679,inventados/administrativo,inventados/administrativo/inventado_0679.txt,Administrativo,Petição / Parecer Jurídico,Não,1163
+inventado_068,inventados/consumidor,inventados/consumidor/inventado_068.txt,Consumidor,Petição / Parecer Jurídico,Não,4087
+inventado_0680,inventados/administrativo,inventados/administrativo/inventado_0680.txt,Administrativo,Petição / Parecer Jurídico,Não,904
+inventado_0681,inventados/civel,inventados/civel/inventado_0681.txt,Civel,Petição / Parecer Jurídico,Não,1338
+inventado_0682,inventados/administrativo,inventados/administrativo/inventado_0682.txt,Administrativo,Petição / Parecer Jurídico,Não,1170
+inventado_0683,inventados/administrativo,inventados/administrativo/inventado_0683.txt,Administrativo,Petição / Parecer Jurídico,Não,881
+inventado_0684,inventados/civel,inventados/civel/inventado_0684.txt,Civel,Petição / Parecer Jurídico,Não,1297
+inventado_0685,inventados/administrativo,inventados/administrativo/inventado_0685.txt,Administrativo,Petição / Parecer Jurídico,Não,1171
+inventado_0686,inventados/administrativo,inventados/administrativo/inventado_0686.txt,Administrativo,Petição / Parecer Jurídico,Não,887
+inventado_0687,inventados/civel,inventados/civel/inventado_0687.txt,Civel,Petição / Parecer Jurídico,Não,1322
+inventado_0688,inventados/administrativo,inventados/administrativo/inventado_0688.txt,Administrativo,Petição / Parecer Jurídico,Não,1180
+inventado_0689,inventados/administrativo,inventados/administrativo/inventado_0689.txt,Administrativo,Petição / Parecer Jurídico,Não,899
+inventado_069,inventados/consumidor,inventados/consumidor/inventado_069.txt,Consumidor,Petição / Parecer Jurídico,Não,4053
+inventado_0690,inventados/civel,inventados/civel/inventado_0690.txt,Civel,Petição / Parecer Jurídico,Não,1344
+inventado_0691,inventados/administrativo,inventados/administrativo/inventado_0691.txt,Administrativo,Petição / Parecer Jurídico,Não,1190
+inventado_0692,inventados/administrativo,inventados/administrativo/inventado_0692.txt,Administrativo,Petição / Parecer Jurídico,Não,892
+inventado_0693,inventados/civel,inventados/civel/inventado_0693.txt,Civel,Petição / Parecer Jurídico,Não,1337
+inventado_0694,inventados/administrativo,inventados/administrativo/inventado_0694.txt,Administrativo,Petição / Parecer Jurídico,Não,1162
+inventado_0695,inventados/administrativo,inventados/administrativo/inventado_0695.txt,Administrativo,Petição / Parecer Jurídico,Não,900
+inventado_0696,inventados/civel,inventados/civel/inventado_0696.txt,Civel,Petição / Parecer Jurídico,Não,1338
+inventado_0697,inventados/administrativo,inventados/administrativo/inventado_0697.txt,Administrativo,Petição / Parecer Jurídico,Não,1188
+inventado_0698,inventados/administrativo,inventados/administrativo/inventado_0698.txt,Administrativo,Petição / Parecer Jurídico,Não,904
+inventado_0699,inventados/trabalhista,inventados/trabalhista/inventado_0699.txt,Trabalhista,Petição / Parecer Jurídico,Não,1298
+inventado_070,inventados/consumidor,inventados/consumidor/inventado_070.txt,Consumidor,Petição / Parecer Jurídico,Não,4084
+inventado_0700,inventados/administrativo,inventados/administrativo/inventado_0700.txt,Administrativo,Petição / Parecer Jurídico,Não,1180
+inventado_071,inventados/consumidor,inventados/consumidor/inventado_071.txt,Consumidor,Petição / Parecer Jurídico,Não,4097
+inventado_072,inventados/consumidor,inventados/consumidor/inventado_072.txt,Consumidor,Petição / Parecer Jurídico,Não,4102
+inventado_073,inventados/consumidor,inventados/consumidor/inventado_073.txt,Consumidor,Petição / Parecer Jurídico,Não,4076
+inventado_074,inventados/consumidor,inventados/consumidor/inventado_074.txt,Consumidor,Petição / Parecer Jurídico,Não,4068
+inventado_075,inventados/consumidor,inventados/consumidor/inventado_075.txt,Consumidor,Petição / Parecer Jurídico,Não,4081
+inventado_076,inventados/consumidor,inventados/consumidor/inventado_076.txt,Consumidor,Petição / Parecer Jurídico,Não,4080
+inventado_077,inventados/consumidor,inventados/consumidor/inventado_077.txt,Consumidor,Petição / Parecer Jurídico,Não,4067
+inventado_078,inventados/administrativo,inventados/administrativo/inventado_078.txt,Administrativo,Petição / Parecer Jurídico,Não,4065
+inventado_079,inventados/consumidor,inventados/consumidor/inventado_079.txt,Consumidor,Petição / Parecer Jurídico,Não,4058
+inventado_080,inventados/consumidor,inventados/consumidor/inventado_080.txt,Consumidor,Petição / Parecer Jurídico,Não,4106
+inventado_081,inventados/administrativo,inventados/administrativo/inventado_081.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_082,inventados/administrativo,inventados/administrativo/inventado_082.txt,Administrativo,Petição / Parecer Jurídico,Não,4080
+inventado_083,inventados/trabalhista,inventados/trabalhista/inventado_083.txt,Trabalhista,Petição / Parecer Jurídico,Não,4145
+inventado_084,inventados/trabalhista,inventados/trabalhista/inventado_084.txt,Trabalhista,Petição / Parecer Jurídico,Não,4126
+inventado_085,inventados/trabalhista,inventados/trabalhista/inventado_085.txt,Trabalhista,Petição / Parecer Jurídico,Não,4131
+inventado_086,inventados/trabalhista,inventados/trabalhista/inventado_086.txt,Trabalhista,Petição / Parecer Jurídico,Não,4107
+inventado_087,inventados/administrativo,inventados/administrativo/inventado_087.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_088,inventados/tributario,inventados/tributario/inventado_088.txt,Tributario,Petição / Parecer Jurídico,Não,4087
+inventado_089,inventados/civel,inventados/civel/inventado_089.txt,Civel,Petição / Parecer Jurídico,Não,4071
+inventado_090,inventados/administrativo,inventados/administrativo/inventado_090.txt,Administrativo,Petição / Parecer Jurídico,Não,4092
+inventado_091,inventados/administrativo,inventados/administrativo/inventado_091.txt,Administrativo,Petição / Parecer Jurídico,Não,4123
+inventado_092,inventados/administrativo,inventados/administrativo/inventado_092.txt,Administrativo,Petição / Parecer Jurídico,Não,4086
+inventado_093,inventados/trabalhista,inventados/trabalhista/inventado_093.txt,Trabalhista,Petição / Parecer Jurídico,Não,4142
+inventado_094,inventados/trabalhista,inventados/trabalhista/inventado_094.txt,Trabalhista,Petição / Parecer Jurídico,Não,4120
+inventado_095,inventados/trabalhista,inventados/trabalhista/inventado_095.txt,Trabalhista,Petição / Parecer Jurídico,Não,4134
+inventado_096,inventados/trabalhista,inventados/trabalhista/inventado_096.txt,Trabalhista,Petição / Parecer Jurídico,Não,4113
+inventado_097,inventados/administrativo,inventados/administrativo/inventado_097.txt,Administrativo,Petição / Parecer Jurídico,Não,4117
+inventado_098,inventados/tributario,inventados/tributario/inventado_098.txt,Tributario,Petição / Parecer Jurídico,Não,4081
+inventado_099,inventados/civel,inventados/civel/inventado_099.txt,Civel,Petição / Parecer Jurídico,Não,4074
+inventado_100,inventados/administrativo,inventados/administrativo/inventado_100.txt,Administrativo,Petição / Parecer Jurídico,Não,4098
+inventado_101,inventados/administrativo,inventados/administrativo/inventado_101.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_102,inventados/administrativo,inventados/administrativo/inventado_102.txt,Administrativo,Petição / Parecer Jurídico,Não,4080
+inventado_103,inventados/trabalhista,inventados/trabalhista/inventado_103.txt,Trabalhista,Petição / Parecer Jurídico,Não,4145
+inventado_104,inventados/trabalhista,inventados/trabalhista/inventado_104.txt,Trabalhista,Petição / Parecer Jurídico,Não,4126
+inventado_105,inventados/trabalhista,inventados/trabalhista/inventado_105.txt,Trabalhista,Petição / Parecer Jurídico,Não,4131
+inventado_106,inventados/trabalhista,inventados/trabalhista/inventado_106.txt,Trabalhista,Petição / Parecer Jurídico,Não,4107
+inventado_107,inventados/administrativo,inventados/administrativo/inventado_107.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_108,inventados/tributario,inventados/tributario/inventado_108.txt,Tributario,Petição / Parecer Jurídico,Não,4087
+inventado_109,inventados/civel,inventados/civel/inventado_109.txt,Civel,Petição / Parecer Jurídico,Não,4071
+inventado_110,inventados/administrativo,inventados/administrativo/inventado_110.txt,Administrativo,Petição / Parecer Jurídico,Não,4092
+inventado_111,inventados/administrativo,inventados/administrativo/inventado_111.txt,Administrativo,Petição / Parecer Jurídico,Não,4123
+inventado_112,inventados/administrativo,inventados/administrativo/inventado_112.txt,Administrativo,Petição / Parecer Jurídico,Não,4086
+inventado_113,inventados/trabalhista,inventados/trabalhista/inventado_113.txt,Trabalhista,Petição / Parecer Jurídico,Não,4142
+inventado_114,inventados/trabalhista,inventados/trabalhista/inventado_114.txt,Trabalhista,Petição / Parecer Jurídico,Não,4120
+inventado_115,inventados/trabalhista,inventados/trabalhista/inventado_115.txt,Trabalhista,Petição / Parecer Jurídico,Não,4134
+inventado_116,inventados/trabalhista,inventados/trabalhista/inventado_116.txt,Trabalhista,Petição / Parecer Jurídico,Não,4113
+inventado_117,inventados/administrativo,inventados/administrativo/inventado_117.txt,Administrativo,Petição / Parecer Jurídico,Não,4117
+inventado_118,inventados/tributario,inventados/tributario/inventado_118.txt,Tributario,Petição / Parecer Jurídico,Não,4081
+inventado_119,inventados/civel,inventados/civel/inventado_119.txt,Civel,Petição / Parecer Jurídico,Não,4074
+inventado_120,inventados/administrativo,inventados/administrativo/inventado_120.txt,Administrativo,Petição / Parecer Jurídico,Não,4098
+inventado_121,inventados/administrativo,inventados/administrativo/inventado_121.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_122,inventados/administrativo,inventados/administrativo/inventado_122.txt,Administrativo,Petição / Parecer Jurídico,Não,4080
+inventado_123,inventados/trabalhista,inventados/trabalhista/inventado_123.txt,Trabalhista,Petição / Parecer Jurídico,Não,4145
+inventado_124,inventados/trabalhista,inventados/trabalhista/inventado_124.txt,Trabalhista,Petição / Parecer Jurídico,Não,4126
+inventado_125,inventados/trabalhista,inventados/trabalhista/inventado_125.txt,Trabalhista,Petição / Parecer Jurídico,Não,4131
+inventado_126,inventados/trabalhista,inventados/trabalhista/inventado_126.txt,Trabalhista,Petição / Parecer Jurídico,Não,4107
+inventado_127,inventados/administrativo,inventados/administrativo/inventado_127.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_128,inventados/tributario,inventados/tributario/inventado_128.txt,Tributario,Petição / Parecer Jurídico,Não,4087
+inventado_129,inventados/civel,inventados/civel/inventado_129.txt,Civel,Petição / Parecer Jurídico,Não,4071
+inventado_130,inventados/administrativo,inventados/administrativo/inventado_130.txt,Administrativo,Petição / Parecer Jurídico,Não,4092
+inventado_131,inventados/administrativo,inventados/administrativo/inventado_131.txt,Administrativo,Petição / Parecer Jurídico,Não,4123
+inventado_132,inventados/administrativo,inventados/administrativo/inventado_132.txt,Administrativo,Petição / Parecer Jurídico,Não,4086
+inventado_133,inventados/trabalhista,inventados/trabalhista/inventado_133.txt,Trabalhista,Petição / Parecer Jurídico,Não,4142
+inventado_134,inventados/trabalhista,inventados/trabalhista/inventado_134.txt,Trabalhista,Petição / Parecer Jurídico,Não,4120
+inventado_135,inventados/trabalhista,inventados/trabalhista/inventado_135.txt,Trabalhista,Petição / Parecer Jurídico,Não,4134
+inventado_136,inventados/trabalhista,inventados/trabalhista/inventado_136.txt,Trabalhista,Petição / Parecer Jurídico,Não,4113
+inventado_137,inventados/administrativo,inventados/administrativo/inventado_137.txt,Administrativo,Petição / Parecer Jurídico,Não,4117
+inventado_138,inventados/tributario,inventados/tributario/inventado_138.txt,Tributario,Petição / Parecer Jurídico,Não,4081
+inventado_139,inventados/civel,inventados/civel/inventado_139.txt,Civel,Petição / Parecer Jurídico,Não,4074
+inventado_140,inventados/administrativo,inventados/administrativo/inventado_140.txt,Administrativo,Petição / Parecer Jurídico,Não,4098
+inventado_141,inventados/administrativo,inventados/administrativo/inventado_141.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_142,inventados/administrativo,inventados/administrativo/inventado_142.txt,Administrativo,Petição / Parecer Jurídico,Não,4080
+inventado_143,inventados/trabalhista,inventados/trabalhista/inventado_143.txt,Trabalhista,Petição / Parecer Jurídico,Não,4145
+inventado_144,inventados/trabalhista,inventados/trabalhista/inventado_144.txt,Trabalhista,Petição / Parecer Jurídico,Não,4126
+inventado_145,inventados/trabalhista,inventados/trabalhista/inventado_145.txt,Trabalhista,Petição / Parecer Jurídico,Não,4131
+inventado_146,inventados/trabalhista,inventados/trabalhista/inventado_146.txt,Trabalhista,Petição / Parecer Jurídico,Não,4107
+inventado_147,inventados/administrativo,inventados/administrativo/inventado_147.txt,Administrativo,Petição / Parecer Jurídico,Não,4120
+inventado_148,inventados/tributario,inventados/tributario/inventado_148.txt,Tributario,Petição / Parecer Jurídico,Não,4087
+inventado_149,inventados/civel,inventados/civel/inventado_149.txt,Civel,Petição / Parecer Jurídico,Não,4071
+inventado_150,inventados/administrativo,inventados/administrativo/inventado_150.txt,Administrativo,Petição / Parecer Jurídico,Não,4092
+inventado_151,inventados/administrativo,inventados/administrativo/inventado_151.txt,Administrativo,Petição / Parecer Jurídico,Não,4123
+inventado_152,inventados/administrativo,inventados/administrativo/inventado_152.txt,Administrativo,Petição / Parecer Jurídico,Não,4086
+inventado_153,inventados/trabalhista,inventados/trabalhista/inventado_153.txt,Trabalhista,Petição / Parecer Jurídico,Não,4142
+inventado_154,inventados/trabalhista,inventados/trabalhista/inventado_154.txt,Trabalhista,Petição / Parecer Jurídico,Não,4120
+inventado_155,inventados/trabalhista,inventados/trabalhista/inventado_155.txt,Trabalhista,Petição / Parecer Jurídico,Não,4134
+inventado_156,inventados/trabalhista,inventados/trabalhista/inventado_156.txt,Trabalhista,Petição / Parecer Jurídico,Não,4113
+inventado_157,inventados/administrativo,inventados/administrativo/inventado_157.txt,Administrativo,Petição / Parecer Jurídico,Não,4117
+inventado_158,inventados/tributario,inventados/tributario/inventado_158.txt,Tributario,Petição / Parecer Jurídico,Não,4081
+inventado_159,inventados/civel,inventados/civel/inventado_159.txt,Civel,Petição / Parecer Jurídico,Não,4074
+inventado_160,inventados/administrativo,inventados/administrativo/inventado_160.txt,Administrativo,Petição / Parecer Jurídico,Não,4098
+inventado_161,inventados/administrativo,inventados/administrativo/inventado_161.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_162,inventados/administrativo,inventados/administrativo/inventado_162.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_163,inventados/administrativo,inventados/administrativo/inventado_163.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_164,inventados/administrativo,inventados/administrativo/inventado_164.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_165,inventados/administrativo,inventados/administrativo/inventado_165.txt,Administrativo,Petição / Parecer Jurídico,Não,2742
+inventado_166,inventados/administrativo,inventados/administrativo/inventado_166.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_167,inventados/administrativo,inventados/administrativo/inventado_167.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_168,inventados/administrativo,inventados/administrativo/inventado_168.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_169,inventados/administrativo,inventados/administrativo/inventado_169.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_170,inventados/administrativo,inventados/administrativo/inventado_170.txt,Administrativo,Petição / Parecer Jurídico,Não,2742
+inventado_171,inventados/administrativo,inventados/administrativo/inventado_171.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_172,inventados/administrativo,inventados/administrativo/inventado_172.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_173,inventados/administrativo,inventados/administrativo/inventado_173.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_174,inventados/administrativo,inventados/administrativo/inventado_174.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_175,inventados/administrativo,inventados/administrativo/inventado_175.txt,Administrativo,Petição / Parecer Jurídico,Não,2742
+inventado_176,inventados/administrativo,inventados/administrativo/inventado_176.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_177,inventados/administrativo,inventados/administrativo/inventado_177.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_178,inventados/administrativo,inventados/administrativo/inventado_178.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_179,inventados/administrativo,inventados/administrativo/inventado_179.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_180,inventados/administrativo,inventados/administrativo/inventado_180.txt,Administrativo,Petição / Parecer Jurídico,Não,2742
+inventado_181,inventados/administrativo,inventados/administrativo/inventado_181.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_182,inventados/administrativo,inventados/administrativo/inventado_182.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_183,inventados/administrativo,inventados/administrativo/inventado_183.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_184,inventados/administrativo,inventados/administrativo/inventado_184.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_185,inventados/administrativo,inventados/administrativo/inventado_185.txt,Administrativo,Petição / Parecer Jurídico,Não,2742
+inventado_186,inventados/administrativo,inventados/administrativo/inventado_186.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_187,inventados/administrativo,inventados/administrativo/inventado_187.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_188,inventados/administrativo,inventados/administrativo/inventado_188.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_189,inventados/administrativo,inventados/administrativo/inventado_189.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_190,inventados/administrativo,inventados/administrativo/inventado_190.txt,Administrativo,Petição / Parecer Jurídico,Não,2742
+inventado_191,inventados/administrativo,inventados/administrativo/inventado_191.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_192,inventados/administrativo,inventados/administrativo/inventado_192.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_193,inventados/administrativo,inventados/administrativo/inventado_193.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_194,inventados/administrativo,inventados/administrativo/inventado_194.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_195,inventados/administrativo,inventados/administrativo/inventado_195.txt,Administrativo,Petição / Parecer Jurídico,Não,2742
+inventado_196,inventados/administrativo,inventados/administrativo/inventado_196.txt,Administrativo,Petição / Parecer Jurídico,Não,2738
+inventado_197,inventados/administrativo,inventados/administrativo/inventado_197.txt,Administrativo,Petição / Parecer Jurídico,Não,2737
+inventado_198,inventados/administrativo,inventados/administrativo/inventado_198.txt,Administrativo,Petição / Parecer Jurídico,Não,2729
+inventado_199,inventados/administrativo,inventados/administrativo/inventado_199.txt,Administrativo,Petição / Parecer Jurídico,Não,2740
+inventado_200,inventados/administrativo,inventados/administrativo/inventado_200.txt,Administrativo,Petição / Parecer Jurídico,Não,2742

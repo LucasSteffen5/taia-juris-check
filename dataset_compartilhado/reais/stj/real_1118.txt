@@ -1,0 +1,27 @@
+SUPERIOR TRIBUNAL DE JUSTIÇA
+AgInt no AREsp 2661087 / SP
+AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL
+2024/0204964-9
+RELATOR: Ministro JOÃO OTÁVIO DE NORONHA (1123)
+============================================================
+
+EMENTA:
+DIREITO PROCESSUAL CIVIL. AGRAVO INTERNO. PRESCRIÇÃO INTERCORRENTE. HONORÁRIOS DE SUCUMBÊNCIA. AGRAVO INTERNO DESPROVIDO.
+I. Caso em exame
+1. Agravo interno interposto contra decisão que conheceu do agravo em recurso especial para dar provimento ao recurso especial, reconhecendo a inexistência de ônus sucumbenciais em sede de exceção de pré-executividade, quando declarada a prescrição intercorrente.
+2. A parte agravante sustenta que o recurso especial interposto pela parte contrária é inadmissível, pois busca afastar a condenação ao pagamento de honorários imposta por acórdão publicado antes da vigência da Lei n. 14.195/2021, e que a decisão agravada contraria os princípios da legalidade, boa-fé processual e segurança jurídica, visto que o recurso especial foi interposto fora do prazo legal.
+II. Questão em discussão
+3. Há duas questões em discussão: (i) saber se a prescrição intercorrente, declarada em sede de exceção de pré-executividade, gera ônus sucumbenciais para a parte exequente, considerando a vigência da Lei n. 14.195/2021; (ii) saber se o recurso especial interposto fora do prazo legal pode ser considerado admissível, à luz dos princípios da legalidade, boa-fé processual e segurança jurídica.
+III. Razões de decidir
+4. A jurisprudência do STJ estabelece que a prescrição intercorrente não gera ônus sucumbenciais para o exequente, mesmo quando declarada em sede de exceção de pré-executividade.
+5. A Lei n. 14.195/2021, que alterou o art. 921, § 5º, do CPC, estabelece que a extinção da execução em razão do reconhecimento da prescrição intercorrente não importará em ônus para as partes, aplicando-se aos casos em que a sentença é prolatada após sua vigência.
+6. O recurso especial foi considerado tempestivo, não havendo violação aos princípios da legalidade, boa-fé processual e segurança jurídica, conforme entendimento consolidado do STJ.
+IV. Dispositivo e tese
+7. Agravo interno desprovido.
+Tese de julgamento: "1. A prescrição intercorrente declarada em sede de exceção de pré-executividade não gera ônus sucumbenciais para a parte exequente. 2. A Lei n. 14.195/2021 aplica-se aos casos em que a sentença de extinção da execução é prolatada após sua vigência, não importando em ônus para as partes".
+Dispositivos relevantes citados: CPC/15, art. 1.003, § 5º; CPC/15, art. 921, § 5º.Jurisprudência relevante citada: STJ, Tema n. 1.076.
+
+ACÓRDÃO:
+Vistos e relatados estes autos em que são partes as acima indicadas, acordam os Ministros da QUARTA TURMA do Superior Tribunal de Justiça, em Sessão Virtual de 12/08/2025 a 18/08/2025, por unanimidade, negar provimento ao recurso, nos termos do voto do Sr. Ministro Relator.
+Os Srs. Ministros Raul Araújo, Maria Isabel Gallotti, Antonio Carlos Ferreira e Marco Buzzi votaram com o Sr. Ministro Relator.
+Presidiu o julgamento o Sr. Ministro João Otávio de Noronha.

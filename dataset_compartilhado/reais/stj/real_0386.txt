@@ -1,0 +1,21 @@
+SUPERIOR TRIBUNAL DE JUSTIÇA
+AgRg no RHC 215506 / SP
+AGRAVO REGIMENTAL NO RECURSO ORDINÁRIO EM HABEAS CORPUS
+2025/0158421-8
+RELATOR: Ministro CARLOS CINI MARCHIONATTI (DESEMBARGADOR CONVOCADO TJRS) (8441)
+============================================================
+
+EMENTA:
+DIREITO PROCESSUAL PENAL. AGRAVO REGIMENTAL EM RECURSO EM HABEAS CORPUS. TRÁFICO DE DROGAS. EXTRAÇÃO DE DADOS DE APLICATIVO DE MENSAGENS. VINCULAÇÃO DE MENSAGENS DE ÁUDIO. LIMITAÇÕES TÉCNICAS. AGRAVO DESPROVIDO. I. CASO EM EXAME
+1. Agravo regimental interposto contra decisão que negou provimento a recurso em habeas corpus, no qual se questiona a forma de organização das mensagens de texto e de áudio extraídas do aplicativo WhatsApp do aparelho celular do agravante.
+2. A defesa alega prejuízo pela falta de vinculação automática entre as mensagens de texto e as mensagens de áudio incluídas no mesmo diálogo de WhatsApp.
+3. A decisão recorrida concluiu que a ausência de vinculação automática não inviabilizou o direito de defesa, pois todos os dados foram disponibilizados às partes, e a organização dos arquivos não resultou em impossibilidade de acesso à prova. II. QUESTÃO EM DISCUSSÃO
+4. A questão em discussão consiste em saber se a ausência de vinculação automática entre mensagens de texto e áudio do aplicativo WhatsApp constitui prejuízo à defesa e justifica a inadmissibilidade da prova. III. RAZÕES DE DECIDIR
+5. A ausência de vinculação automática entre mensagens de texto e áudio decorre de limitações técnicas do programa utilizado, não constituindo falha ou erro procedimental na extração dos dados.
+6. Todos os arquivos foram colhidos com regularidade, preservando a cadeia de custódia, e foram disponibilizados às partes, não havendo prejuízo concreto à defesa.
+IV. AGRAVO REGIMENTAL DESPROVIDO.
+
+ACÓRDÃO:
+Vistos e relatados estes autos em que são partes as acima indicadas, acordam os Ministros da QUINTA TURMA do Superior Tribunal de Justiça, em Sessão Virtual de 14/08/2025 a 20/08/2025, por unanimidade, negar provimento ao recurso, nos termos do voto do Sr. Ministro Relator.
+Os Srs. Ministros Reynaldo Soares da Fonseca, Ribeiro Dantas, Joel Ilan Paciornik e Messod Azulay Neto votaram com o Sr. Ministro Relator.
+Presidiu o julgamento o Sr. Ministro Reynaldo Soares da Fonseca.

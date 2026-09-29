@@ -1,0 +1,32 @@
+SUPERIOR TRIBUNAL DE JUSTIÇA
+AgInt na TutAntAnt 553 / SC
+AGRAVO INTERNO NA TUTELA ANTECIPADA ANTECEDENTE
+2025/0140911-3
+RELATOR: Ministro JOÃO OTÁVIO DE NORONHA (1123)
+============================================================
+
+EMENTA:
+DIREITO PROCESSUAL CIVIL. AGRAVO INTERNO. ATRIBUIÇÃO DE EFEITO
+SUSPENSIVO A RECURSO ESPECIAL. REQUISITOS. AGRAVO DESPROVIDO.
+I. Caso em exame
+1. Agravo interno interposto contra a decisão monocrática que deferiu pedido de tutela provisória para suspender medidas executivas no cumprimento provisório de sentença, até o julgamento do agravo em recurso especial, reconhecendo a plausibilidade das alegações do requerente e o perigo da demora.
+2. A parte agravante sustenta a perda de objeto da decisão, pois a reintegração de posse já havia sido cumprida antes da decisão.
+Questiona a competência do STJ para apreciar o pedido antes do juízo de admissibilidade do recurso especial na origem.
+II. Questão em discussão
+3. Há duas questões em discussão: (i) saber se estão presentes os requisitos para a concessão de efeito suspensivo a recurso especial pendente de juízo de admissibilidade, especificamente a plausibilidade do direito invocado (fumus boni iuris) e o perigo na demora (periculum in mora); e (ii) saber se houve perda de objeto da decisão monocrática em decorrência da efetivação da reintegração de posse antes de sua prolação.
+III. Razões de decidir
+4. A decisão monocrática foi mantida, pois a tutela de urgência concedida visa suspender a eficácia do título executivo judicial, preservando a utilidade de eventual provimento do recurso principal, mesmo após a consumação da medida executiva.
+5. A jurisprudência do STJ admite a concessão de medidas cautelares para atribuir efeito suspensivo a recurso especial ainda não admitido na origem, quando presentes os requisitos do fumus boni iuris e do periculum in mora.
+6. Tratando-se e usufruto simultâneo, a plausibilidade do direito do agravado foi verificada, considerando a controvérsia jurídica sobre a necessidade de cláusula expressa para exercício do direito de acrescer, com precedentes que amparam a tese dos agravados.
+7. O perigo da demora foi caracterizado pela iminência de alteração na situação possessória do imóvel, configurando risco de dano grave e de difícil reparação.
+8. A alegação de periculum in mora inverso foi considerada impertinente, pois a decisão visou resguardar o status quo de maneira provisória até a análise exauriente no recurso especial.
+IV. Dispositivo e tese
+9. Agravo interno desprovido, mantendo-se integralmente a decisão monocrática agravada.
+Tese de julgamento: "1. A concessão de efeito suspensivo a recurso especial pendente de juízo de admissibilidade é cabível quando demonstrados, de forma simultânea e inequívoca, a plausibilidade do direito invocado e o perigo na demora. 2. A consumação da medida executiva não implica a perda de objeto da decisão cautelar que visa reverter os efeitos de uma execução temerária".
+Dispositivos relevantes citados: CPC, arts. 300 e 1.029, § 5º.
+Jurisprudência relevante citada: STJ, AgInt na TutCautAnt n. 822/PE, relator Ministro Ricardo Villas Bôas Cueva, Terceira Turma, julgado em 28/4/2025.
+
+ACÓRDÃO:
+Vistos e relatados estes autos em que são partes as acima indicadas, acordam os Ministros da QUARTA TURMA do Superior Tribunal de Justiça, em Sessão Virtual de 12/08/2025 a 18/08/2025, por unanimidade, negar provimento ao recurso, nos termos do voto do Sr. Ministro Relator.
+Os Srs. Ministros Raul Araújo, Maria Isabel Gallotti, Antonio Carlos Ferreira e Marco Buzzi votaram com o Sr. Ministro Relator.
+Presidiu o julgamento o Sr. Ministro João Otávio de Noronha.
