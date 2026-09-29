@@ -2,7 +2,7 @@ Vamos construi um pipeline de preparacao de dados. Este pipeline deve ser totalm
 
 Os dados brutos estão em C:\Users\lucas\OneDrive\Área de Trabalho\juris-check-TAIA\dataset_compartilhado
 
-O resultado final é uma base confiavel totalmente feita por scripts, voce deve encontar uma maneira de criar de ponta ponta sem validacao humana totalmente automatizado. Note que em manifesto_reais temos 3501 arquivos que tem de fato uma citacao real portanto no minimo se cada arquivo tiver apenas uma citacao teremos 3501 citacoes reais. Mas sabemos que vamos ter mais
+O resultado final é uma base confiavel totalmente feita por scripts, voce deve encontar uma maneira de criar de ponta ponta sem validacao humana totalmente automatizado e denotada. Note que em manifesto_reais temos 3501 arquivos que tem de fato uma citacao real portanto no minimo se cada arquivo tiver apenas uma citacao teremos 3501 citacoes reais. Mas sabemos que vamos ter mais use essa mesma logica para as demais. Seja extremamente criterioso. 
 
 
 
