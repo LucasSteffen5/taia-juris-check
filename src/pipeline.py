@@ -9,9 +9,10 @@ from pathlib import Path
 from typing import Any
 
 from src.classification.classifier import classify_citation
-from src.classification.confidence import compute_confidence
-from src.config import NER_MODEL_DIR, ROOT_DIR, assert_output_outside_official_data
+from src.config import DEFAULT_CONFIDENCE, NER_MODEL_DIR, ROOT_DIR, assert_output_outside_official_data
 from src.extraction.fusion import fuse_extractions
+from src.extraction.ner_inference import extract_ner_citations
+from src.extraction.ner_model import load_ner_model_and_tokenizer
 from src.extraction.regex_extractor import extract_regex_citations
 from src.output.json_builder import build_document_json, save_document_json, validate_document_json
 from src.output.submission_builder import generate_submission_csv
@@ -25,19 +26,12 @@ def process_document(
     doc_id: str,
     text: str,
     resolver: UnifiedResolver,
-    ner_model: Any = None,
-    tokenizer: Any = None,
+    ner_model: Any,
+    tokenizer: Any,
 ) -> dict[str, Any]:
     """Processa um documento sem alterar o texto usado nos offsets."""
-    if (ner_model is None) != (tokenizer is None):
-        raise ValueError("Modelo e tokenizer NER precisam ser fornecidos juntos.")
-
     regex_citations = extract_regex_citations(text)
-    ner_citations = None
-    if ner_model is not None:
-        from src.extraction.ner_inference import extract_ner_citations
-        ner_citations = extract_ner_citations(text, ner_model, tokenizer)
-
+    ner_citations = extract_ner_citations(text, ner_model, tokenizer)
     citations = fuse_extractions(text, regex_citations, ner_citations)
     final = []
     for citation in citations:
@@ -46,7 +40,7 @@ def process_document(
         result = dict(citation)
         result["classificacao"] = decision["classificacao"]
         result["id_canonico"] = decision["id_canonico"]
-        result["confianca"] = compute_confidence(citation, resolution)
+        result["confianca"] = DEFAULT_CONFIDENCE
         final.append(result)
 
     payload = build_document_json(doc_id, final)
@@ -78,7 +72,6 @@ def run_pipeline(
     txt_dir: Path | str,
     db_path: Path | str,
     output_dir: Path | str,
-    use_ner: bool = True,
 ) -> Path:
     """Gera JSONs, submissão CSV e manifesto em uma única execução."""
     started = time.perf_counter()
@@ -103,7 +96,7 @@ def run_pipeline(
         "source_sha256": HeaderIndex.fingerprint(ROOT_DIR / "src"),
         "scripts_sha256": HeaderIndex.fingerprint(ROOT_DIR / "scripts"),
         "dependencies_sha256": HeaderIndex.fingerprint(ROOT_DIR / "requirements.txt"),
-        "checkpoint_sha256": HeaderIndex.fingerprint(NER_MODEL_DIR) if use_ner else None,
+        "checkpoint_sha256": HeaderIndex.fingerprint(NER_MODEL_DIR),
         "metric_sha256": HeaderIndex.fingerprint(
             ROOT_DIR / "data" / "desafio-jusbrasil-bracis-2026" / "kaggle_metric.py"
         ),
@@ -120,12 +113,9 @@ def run_pipeline(
             header_index.save(index_path)
 
         resolver = UnifiedResolver(connection, header_index)
-        model, tokenizer, device = None, None, "cpu"
-        if use_ner:
-            from src.extraction.ner_model import load_ner_model_and_tokenizer
-            print("[Pipeline] Carregando checkpoint NER local...")
-            model, tokenizer = load_ner_model_and_tokenizer()
-            device = str(next(model.parameters()).device)
+        print("[Pipeline] Carregando checkpoint NER local...")
+        model, tokenizer = load_ner_model_and_tokenizer()
+        device = str(next(model.parameters()).device)
 
         print(f"[Pipeline] Dispositivo: {device}; documentos: {len(documents)}")
         payloads = {}
@@ -140,7 +130,7 @@ def run_pipeline(
     generate_submission_csv(payloads, submission_path)
     current_source = HeaderIndex.fingerprint(ROOT_DIR / "src")
     current_scripts = HeaderIndex.fingerprint(ROOT_DIR / "scripts")
-    current_checkpoint = HeaderIndex.fingerprint(NER_MODEL_DIR) if use_ner else None
+    current_checkpoint = HeaderIndex.fingerprint(NER_MODEL_DIR)
     if (current_source, current_scripts, current_checkpoint) != (
         frozen["source_sha256"], frozen["scripts_sha256"], frozen["checkpoint_sha256"]
     ):
@@ -151,7 +141,6 @@ def run_pipeline(
         "input_documents_sha256": _documents_fingerprint(documents),
         "submission_sha256": HeaderIndex.fingerprint(submission_path),
         "parser_version": PARSER_VERSION,
-        "ner_enabled": use_ner,
         "device": device,
         "confidence_policy": "constante neutra 0.5; não calibrada",
         "documents_processed": len(documents),
@@ -171,9 +160,8 @@ def main() -> None:
     parser.add_argument("--input", required=True, help="Diretório com os documentos .txt")
     parser.add_argument("--db", required=True, help="Banco SQLite de consulta")
     parser.add_argument("--output", required=True, help="Diretório para as saídas")
-    parser.add_argument("--no-ner", action="store_true", help="Executa somente Regex")
     args = parser.parse_args()
-    run_pipeline(args.input, args.db, args.output, use_ner=not args.no_ner)
+    run_pipeline(args.input, args.db, args.output)
 
 
 if __name__ == "__main__":

@@ -97,14 +97,10 @@ def normalize_process_number(citation_text: str) -> dict[str, str]:
         return {
             "digits": digits,
             "formatted": fmt,
-            "fts_phrase": fmt,
-            "is_cnj": True,
         }
     else:
         fmt = format_triplet_number(digits)
         return {
             "digits": digits,
             "formatted": fmt,
-            "fts_phrase": fmt,
-            "is_cnj": False,
         }

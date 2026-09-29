@@ -15,7 +15,7 @@ def extract_regex_citations(text: str) -> list[dict[str, Any]]:
     match_text, starts, ends = normalized_view(text)
     raw_candidates = []
 
-    def add_matches(pattern, pattern_name, citation_type, is_vague, confidence):
+    def add_matches(pattern, pattern_name, citation_type, is_vague):
         for match in pattern.finditer(match_text):
             begin, finish = map_normalized_span(match.start(), match.end(), starts, ends)
             raw_candidates.append({
@@ -25,24 +25,23 @@ def extract_regex_citations(text: str) -> list[dict[str, Any]]:
                 "tipo": citation_type,
                 "is_vague": is_vague,
                 "pattern": pattern_name,
-                "confianca_regex": confidence,
             })
 
     # 1. Padrão Vago
-    add_matches(RE_VAGA, "vaga", "jurisprudencia", True, 0.90)
-    add_matches(RE_VAGA_GENERIC, "vaga_generica", "jurisprudencia", True, 0.88)
+    add_matches(RE_VAGA, "vaga", "jurisprudencia", True)
+    add_matches(RE_VAGA_GENERIC, "vaga_generica", "jurisprudencia", True)
 
     # 2. Padrão Súmula
-    add_matches(RE_SUMULA, "sumula", "jurisprudencia", False, 0.95)
+    add_matches(RE_SUMULA, "sumula", "jurisprudencia", False)
 
     # 3. Padrão Lei
-    add_matches(RE_LEI, "lei", "lei", False, 0.92)
+    add_matches(RE_LEI, "lei", "lei", False)
 
     # 4. Padrão CNJ
-    add_matches(RE_JURIS_CNJ, "cnj", "jurisprudencia", False, 0.92)
+    add_matches(RE_JURIS_CNJ, "cnj", "jurisprudencia", False)
 
     # 5. Padrão Clássico
-    add_matches(RE_JURIS_CLASSICA, "classica", "jurisprudencia", False, 0.88)
+    add_matches(RE_JURIS_CLASSICA, "classica", "jurisprudencia", False)
 
     for c in raw_candidates:
         if c["trecho"].startswith("Rp nº") and text[max(0, c["inicio"]-2):c["inicio"]] == "R-":
@@ -58,7 +57,6 @@ def extract_regex_citations(text: str) -> list[dict[str, Any]]:
                 "pattern": "cnj",
                 "tipo": "jurisprudencia",
                 "is_vague": False,
-                "confianca_regex": 0.92,
             })
 
     # Filtrar distratores
@@ -82,10 +80,8 @@ def extract_regex_citations(text: str) -> list[dict[str, Any]]:
     deduped = [
         max(group["items"], key=lambda item: (
             pattern_rank.get(item["pattern"], 0),
-            item.get("confianca_regex", 0.0),
             (item["fim"] - item["inicio"]),
         ))
         for group in groups
     ]
-
     return deduped

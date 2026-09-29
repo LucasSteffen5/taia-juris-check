@@ -62,9 +62,11 @@ def test_adjacent_citations_are_not_duplicated():
     assert citations[0]["fim"] <= citations[1]["inicio"]
 
 
-def test_fusion_does_not_duplicate_low_iou_or_conflicting_ner_overlap():
+def test_fusion_keeps_regex_when_ner_is_empty_or_conflicts():
     text = "art. 5 da CF/88"
-    regex = [{"inicio": 0, "fim": 14, "trecho": text[:14], "tipo": "lei", "confianca_regex": 0.9}]
+    regex = [{"inicio": 0, "fim": 14, "trecho": text[:14], "tipo": "lei"}]
     ner = [{"inicio": 0, "fim": len(text), "trecho": text, "tipo": "jurisprudencia", "prob": 0.99}]
-    fused = fuse_extractions(text, regex, ner)
-    assert len(fused) == 1 and fused[0]["source"] == "regex_only"
+    for fused in (fuse_extractions(text, regex, []), fuse_extractions(text, regex, ner)):
+        assert len(fused) == 1
+        assert fused[0]["tipo"] == "lei"
+        assert "confianca" not in fused[0]

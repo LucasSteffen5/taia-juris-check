@@ -25,7 +25,6 @@ class AcordaoResolver:
         uf = extract_uf(text)
         m_trib = re.search(r"\b(STF|STJ|TST|TSE|STM)\b", text, re.IGNORECASE)
         tribunal = m_trib.group(1).upper() if m_trib else None
-        is_cnj = len(digits) >= 14
         is_tema = "tema" in text.lower() or "temã" in text.lower()
         sufficient = (len(digits) >= 5 or is_tema or bool(class_families) or bool(uf) or bool(tribunal)) and len(digits) >= 3
         if not sufficient:
@@ -48,7 +47,7 @@ class AcordaoResolver:
 
         # FTS retrieves records that mention the number; the same principal-title
         # parser used to build the index decides whether a result is that case.
-        rows = query_fts(self.conn, norm_info["formatted"], limit=None)
+        rows = query_fts(self.conn, norm_info["formatted"])
         confirmed: list[dict[str, Any]] = []
         for row in rows:
             if row.get("natureza") != "acordao":
@@ -62,7 +61,6 @@ class AcordaoResolver:
                 "tribunal": (row.get("tribunal") or "").upper() or None,
                 "uf": parsed.get("uf"),
                 "class_families": parsed.get("class_families", []),
-                "principal_text": parsed.get("principal_text", ""),
             }
             if tribunal and entry["tribunal"] != tribunal:
                 continue

@@ -15,16 +15,7 @@ from ..config import assert_output_outside_official_data
 from .result import ResolutionResult
 
 PARSER_VERSION = 3
-INDEX_VERSION = 2
-_TST_AUTUACAO = re.compile(
-    r"\bn[ºo°.]\s*((?:TST[-\s])?[A-Za-z0-9][A-Za-z0-9.\-/\s]{8,50}?)\s*,?\s*em\s+que\s+[ée]\b",
-    re.IGNORECASE,
-)
-_CNJ = re.compile(
-    r"(?<!\d)(\d{1,7}[\s\-.]*\d{2}[\s\-.]*\d{4}[\s\-.]*\d[\s\-.]*\d{2}[\s\-.]*\d{4}|\d{14,20})(?!\d)"
-)
-_PROCESS_NUMBER = re.compile(r"\d(?:[\d.\-/\s]{2,30}\d)?")
-_SECTION = re.compile(r"\b(?:EMENTA|RELAT[ÓO]RIO|VOTO|DECIS[ÃA]O|AC[ÓO]RD[ÃA]O)\b", re.IGNORECASE)
+INDEX_VERSION = 3
 
 
 def _families(class_text: str) -> list[str]:
@@ -46,11 +37,6 @@ def _families(class_text: str) -> list[str]:
 def extract_class_families(class_text: str) -> list[str]:
     """Public class-label parser used by indexing and lookup."""
     return _families(class_text)
-
-
-def _class_prefix(candidate: str) -> str:
-    match = _PROCESS_NUMBER.search(candidate)
-    return candidate[:match.start()].strip(" ,:-") if match else ""
 
 
 def parse_header_tokens(header_text: str) -> list[dict[str, Any]]:
@@ -79,10 +65,8 @@ def parse_header_tokens(header_text: str) -> list[dict[str, Any]]:
             seen.add(digs)
             results.append({
                 "digits": digs,
-                "is_cnj": len(digs) >= 14,
                 "uf": extract_uf(raw),
                 "class_families": _families(raw),
-                "principal_text": raw,
             })
 
     # 2. CNJ (14 to 20 digits) in header title
@@ -96,10 +80,8 @@ def parse_header_tokens(header_text: str) -> list[dict[str, Any]]:
             cnj_spans.append(m.span())
             results.append({
                 "digits": digs,
-                "is_cnj": True,
                 "uf": extract_uf(text[:m.end() + 20]),
                 "class_families": _families(text[:m.start()]),
-                "principal_text": m.group(0),
             })
 
     # 3. Classical process numbers strictly outside CNJ spans (and excluding dates)
@@ -119,10 +101,8 @@ def parse_header_tokens(header_text: str) -> list[dict[str, Any]]:
             seen.add(digs)
             results.append({
                 "digits": digs,
-                "is_cnj": False,
                 "uf": extract_uf(text[:m.end() + 30]),
                 "class_families": _families(text[max(0, m.start() - 40):m.end()]),
-                "principal_text": m.group(1),
             })
             break
 
@@ -134,17 +114,15 @@ class HeaderIndex:
 
     def __init__(self):
         self.exact_map: dict[str, list[dict[str, Any]]] = {}
-        self.entries_by_id: dict[int, list[dict[str, Any]]] = {}
         self.database_sha256: str | None = None
 
     def build_from_db(self, conn: sqlite3.Connection, database_sha256: str | None = None) -> None:
         cursor = conn.cursor()
         cursor.execute(
-            """SELECT documento_id, id, tribunal, ano, relator, substr(texto, 1, 5000) AS texto
+            """SELECT id, tribunal, substr(texto, 1, 5000) AS texto
                  FROM documentos WHERE natureza = 'acordao' ORDER BY id"""
         )
         self.exact_map.clear()
-        self.entries_by_id.clear()
         self.database_sha256 = database_sha256
         for row in cursor.fetchall():
             cab = row["texto"] or ""
@@ -155,18 +133,11 @@ class HeaderIndex:
             for principal in parsed:
                 entry = {
                     "id": canon_id,
-                    "documento_id": row["documento_id"],
                     "tribunal": (row["tribunal"] or "").upper() or None,
-                    "ano": row["ano"],
-                    "relator": row["relator"],
                     "uf": principal["uf"],
                     "class_families": principal["class_families"],
-                    "principal_text": principal["principal_text"],
-                    "digits": principal["digits"],
-                    "is_cnj": principal["is_cnj"],
                     "cabecalho": cab[:600],
                 }
-                self.entries_by_id.setdefault(canon_id, []).append(entry)
                 bucket = self.exact_map.setdefault(principal["digits"], [])
                 if not any(item["id"] == canon_id for item in bucket):
                     bucket.append(entry)
@@ -180,7 +151,6 @@ class HeaderIndex:
             "parser_version": PARSER_VERSION,
             "database_sha256": self.database_sha256,
             "exact_map": self.exact_map,
-            "entries_by_id": self.entries_by_id,
         }
         temporary = path.with_suffix(path.suffix + ".tmp")
         temporary.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
@@ -194,10 +164,6 @@ class HeaderIndex:
             raise ValueError("Índice de cabeçalhos pertence a outra versão do banco canônico.")
         self.database_sha256 = data.get("database_sha256")
         self.exact_map = data.get("exact_map", {})
-        self.entries_by_id = {
-            int(key): value if isinstance(value, list) else [value]
-            for key, value in data.get("entries_by_id", {}).items()
-        }
 
     def lookup(
         self,

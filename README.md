@@ -20,7 +20,7 @@ O manifesto registra hashes do código, dependências, entrada, banco, checkpoin
 
 ## Como decide
 
-Regex identifica padrões de processo, súmula, lei e alusões vagas. O NER local procura trechos que escapam aos padrões. A fusão usa sobreposição dos spans e preserva os offsets do texto UTF-8 original, inclusive CRLF. O resolvedor consulta o índice dos identificadores principais dos acórdãos e os registros específicos de súmulas e leis; a busca FTS é confirmada contra o cabeçalho do processo.
+Regex e o NER local são executados juntos em todos os documentos: Regex identifica padrões de processo, súmula, lei e alusões vagas; o NER encontra trechos que escapam aos padrões. A fusão usa sobreposição dos spans e preserva os offsets do texto UTF-8 original, inclusive CRLF. O resolvedor consulta o índice dos identificadores principais dos acórdãos e os registros específicos de súmulas e leis; a busca FTS é confirmada contra o cabeçalho do processo.
 
 Uma referência sem dados suficientes ou com múltiplos candidatos é `incompleta`; uma consulta suficiente sem resultado é `inventada`; um único registro confirmado é `real` e recebe o `id` numérico canônico. O campo de confiança é sempre `0.5`: estimativa neutra sem calibração, com Brier esperado de `0.25` em pares avaliados.
 

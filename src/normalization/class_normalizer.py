@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Normalização e mapeamento canônico de classes processuais brasileiras."""
-import re
-from .ocr_denoiser import clean_spaces_and_newlines
+"""Aliases de classes processuais usados pelo resolvedor de acórdãos."""
 
 CLASS_ALIASES = {
     # Recurso Especial
@@ -86,30 +84,3 @@ CLASS_ALIASES = {
     "suspensao de liminar e de sentenca": "SLS",
     "suspensão de liminar e de sentença": "SLS",
 }
-
-
-def normalize_class_name(raw_class: str) -> str:
-    """
-    Normaliza sequências compostas de classes (ex: 'EDcl nos EDcl no AgInt no AREsp').
-    """
-    text = clean_spaces_and_newlines(raw_class)
-    # Substituir expressões multi-palavras primeiro
-    for phrase, canonical in sorted(CLASS_ALIASES.items(), key=lambda x: -len(x[0])):
-        if " " in phrase or "." in phrase:
-            pattern = r"\b" + re.escape(phrase) + r"\b"
-            text = re.sub(pattern, canonical, text, flags=re.IGNORECASE)
-
-    # Substituir conectivos (incluindo 'e' como conjunção)
-    text = re.sub(r"\b(no|na|nos|nas|em|de|do|da|dos|das|e)\b", " ", text, flags=re.IGNORECASE)
-    parts = [p.strip() for p in text.split() if p.strip()]
-    
-    canonical_parts = []
-    for part in parts:
-        part_clean = part.lower().rstrip(".:,;")
-        if part_clean in CLASS_ALIASES:
-            canonical_parts.append(CLASS_ALIASES[part_clean])
-        else:
-            # Manter capitalizado se não tiver alias exato
-            canonical_parts.append(part.capitalize())
-            
-    return " ".join(canonical_parts) if canonical_parts else raw_class.strip()

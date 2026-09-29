@@ -17,21 +17,11 @@ def compute_iou(a: dict[str, Any], b: dict[str, Any]) -> float:
 def fuse_extractions(
     text: str,
     regex_cits: list[dict[str, Any]],
-    ner_cits: list[dict[str, Any]] | None = None,
+    ner_cits: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     """
     Combina spans do Regex e do NER com matching 1-para-1 guloso por maior IoU.
     """
-    if not ner_cits:
-        # Se NER não executou, retornar cópia das extrações do regex com source 'regex_only'
-        result = []
-        for c in regex_cits:
-            item = dict(c)
-            item.setdefault("source", "regex_only")
-            item.setdefault("confianca", c.get("confianca_regex", 0.90))
-            result.append(item)
-        return result
-
     header_end = find_header_boundary(text)
     
     # Calcular matriz de candidatos IoU >= 0.5
@@ -59,9 +49,6 @@ def fuse_extractions(
         
         # O span do regex é preferido para bordas precisas
         combined = dict(r)
-        combined["source"] = "both"
-        combined["ner_prob"] = n.get("prob", 0.90)
-        combined["confianca"] = max(r.get("confianca_regex", 0.90), n.get("prob", 0.90))
         # Uma entidade de relator/data do NER não pode apagar um identificador
         # explícito já extraído pelo Regex.
         combined["is_vague"] = bool(r.get("is_vague"))
@@ -71,8 +58,6 @@ def fuse_extractions(
     for ri, r in enumerate(regex_cits):
         if ri not in used_r:
             item = dict(r)
-            item["source"] = "regex_only"
-            item["confianca"] = r.get("confianca_regex", 0.88)
             fused.append(item)
 
     # 3. Spans exclusivamente NER (Safety Net & Autonomous Discovery)
@@ -88,8 +73,6 @@ def fuse_extractions(
             is_v = n.get("is_vague", False)
             if prob >= NER_THRESHOLD and not is_distractor_span(text, n["inicio"], n["fim"], header_end, is_vague=is_v):
                 item = dict(n)
-                item["source"] = "ner_only"
-                item["confianca"] = prob * 0.90 if is_v else prob * 0.85
                 item["is_vague"] = is_v
                 fused.append(item)
 

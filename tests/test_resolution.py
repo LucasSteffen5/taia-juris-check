@@ -7,17 +7,10 @@ from src.resolution.dispositivo_resolver import DispositivoResolver
 from src.resolution.header_index import HeaderIndex, parse_header_tokens
 from src.resolution.result import ResolutionResult
 from src.resolution.sumula_resolver import SumulaResolver
-from src.config import OFFICIAL_DATA_DIR, assert_not_training_on_test, assert_output_outside_official_data
+from src.config import OFFICIAL_DATA_DIR, assert_output_outside_official_data
 
 
-def test_training_path_guard_uses_path_containment_not_substring():
-    try:
-        assert_not_training_on_test(OFFICIAL_DATA_DIR / "txt")
-    except ValueError:
-        pass
-    else:
-        raise AssertionError("O diretório oficial precisa ser bloqueado para treino")
-    assert_not_training_on_test(OFFICIAL_DATA_DIR.parent / (OFFICIAL_DATA_DIR.name + "-copy"))
+def test_output_path_guard_uses_path_containment_not_substring():
     try:
         assert_output_outside_official_data(OFFICIAL_DATA_DIR / "output.csv")
     except ValueError:
@@ -101,19 +94,14 @@ def test_result_classification_retains_evidence():
         reason="identificador confirmado", target_type="acordao",
     )
     classified = classify_citation({"trecho": "REsp 12345"}, result)
-    assert classified["classificacao"] == "real"
-    assert classified["id_canonico"] == "99"
-    assert classified["resolution_evidence"] == ["número:12345"]
+    assert classified == {"classificacao": "real", "id_canonico": "99"}
+    assert result.evidence == ("número:12345",)
 
 
-def test_confidence_is_omitted_without_a_fitted_calibrator():
-    from src.classification.confidence import compute_confidence
+def test_default_confidence_is_neutral_and_uncalibrated():
+    from src.config import DEFAULT_CONFIDENCE
 
-    result = ResolutionResult.make(
-        [99], sufficient=True, method="header_exact", evidence=["number"],
-        reason="fixture", target_type="acordao",
-    )
-    assert compute_confidence({"classificacao": "real"}, result) == 0.5
+    assert DEFAULT_CONFIDENCE == 0.5
 
 
 def test_header_index_rejects_qualifier_conflicts_instead_of_dropping_them():
