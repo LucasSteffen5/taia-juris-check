@@ -1,3 +1,6 @@
 services:
   predict:
     gpus: all
+  test:
+    gpus: all
+    entrypoint: ["sh", "-ec", "python -m pytest -q && CUDA_VISIBLE_DEVICES= python -m scripts.smoke_ner && python -m scripts.smoke_ner --require-cuda"]

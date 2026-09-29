@@ -12,7 +12,7 @@ Da raiz do projeto, um único comando constrói a imagem e executa a inferência
 docker compose up --build --exit-code-from predict
 ```
 
-O padrão em `.env` usa a GPU NVIDIA. Para executar em CPU, altere apenas `COMPOSE_FILE=compose.yaml` no mesmo arquivo. Os scripts `run.ps1 predict` e `bash run.sh predict` continuam disponíveis e detectam a GPU automaticamente. O manifesto registra o dispositivo efetivo.
+O padrão em `.env` usa a GPU NVIDIA. Para executar em CPU, altere apenas `COMPOSE_FILE=compose.yaml` no mesmo arquivo. O manifesto registra o dispositivo efetivo.
 
 JSONs, `submission.csv`, manifesto e cache ficam no caminho configurado em `OUTPUT_DIR`; continuam disponíveis no computador depois que o contêiner termina. Para testar sem carregar dados oficiais, use `docker compose run --rm --build test`. A avaliação da submissão já gerada é separada: `docker compose run --rm --no-deps score`. Só esse serviço monta o gabarito, se `GOLDEN_PATH` existir.
 
