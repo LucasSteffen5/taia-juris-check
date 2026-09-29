@@ -1,0 +1,15 @@
+{
+  "source_model": "dominguesm/legal-bert-ner-base-cased-ptbr",
+  "revision": "44210927c925448df025985e0ed48081bb5ac57c",
+  "license": "CC-BY-4.0",
+  "model_card": "https://huggingface.co/dominguesm/legal-bert-ner-base-cased-ptbr/tree/44210927c925448df025985e0ed48081bb5ac57c",
+  "upstream_model_sha256": "dea15cbbe0935ec20da635f6861ffdcad0d737a648ad48dff1affd686cf776a6",
+  "files": {
+    "config.json": "f441d644163561d67d6d05ac8f86f6ee2dd7c20bff605b2538b7f338e520ec3a",
+    "model.safetensors": "dea15cbbe0935ec20da635f6861ffdcad0d737a648ad48dff1affd686cf776a6",
+    "special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+    "tokenizer_config.json": "e26864d89c128ca627211c2d5bc2f19eac667b21bc905874882e06fce939b2cf",
+    "tokenizer.json": "604add2eabe9cab56fe5a12e519917581cf375c3b00050a46fb48e7dfcccdb23",
+    "vocab.txt": "3b563e6ad0f2e72a9fa12d9b4ec4321594b53cd3b3ee90a683efae72ac0ddff1"
+  }
+}
