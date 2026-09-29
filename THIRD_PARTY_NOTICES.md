@@ -5,5 +5,6 @@
 - **Transformers** e **Tokenizers**: licença Apache-2.0.
 - **NumPy**, **pandas** e **safetensors**: consulte os avisos de licença dos respectivos pacotes distribuídos.
 - **Dados de desenvolvimento**: créditos a Eduardo Osti e Thiago Meirelles Ventura pela disponibilização dos dados brutos. A base e os arquivos do desafio seguem os termos de seus respectivos provedores.
+- **Métrica da competição**: `data/desafio-jusbrasil-bracis-2026/kaggle_metric.py` é o arquivo oficial fornecido com o desafio e é incluído para reproduzir a avaliação. Seus termos seguem os do provedor do desafio.
 
 O checkpoint local é verificado no build Docker contra os hashes em `models/ner_legal_large/provenance.json`. A atribuição do modelo é exigida pela licença CC BY 4.0.

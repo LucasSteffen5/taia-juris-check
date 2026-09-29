@@ -4,27 +4,17 @@ Pipeline offline para encontrar referências a jurisprudência e leis em documen
 
 ## Executar
 
-Requer Docker Desktop com motor Linux. A construção baixa versões fixadas das dependências e empacota o checkpoint local. Depois, a inferência roda sem rede. Os pesos do modelo são armazenados com Git LFS.
+Requer Docker com motor Linux e Git LFS para obter os pesos após clonar (`git lfs pull`). Edite apenas [`.env`](.env) para apontar para outra base: `INPUT_TXT_DIR` é a pasta de TXT, `DATABASE_PATH` é o arquivo SQLite, `GOLDEN_PATH` é o gabarito opcional e `OUTPUT_DIR` é onde persistir as saídas. Os caminhos podem ser relativos à raiz do projeto ou absolutos; a base não precisa manter nomes de arquivo nem estrutura de pastas específicos. Os TXT e o gabarito não são versionados: forneça seus caminhos no `.env` quando estiverem fora dos locais padrão. Os dados são montados no contêiner para leitura e não entram na imagem.
 
-No PowerShell:
-
-```powershell
-.\run.ps1 build
-.\run.ps1 test
-.\run.ps1 predict
-.\run.ps1 score
-```
-
-No Linux:
+Da raiz do projeto, um único comando constrói a imagem e executa a inferência offline:
 
 ```bash
-bash run.sh build
-bash run.sh test
-bash run.sh predict
-bash run.sh score
+docker compose up --build --exit-code-from predict
 ```
 
-`predict` verifica CUDA dentro de um contêiner; usa NVIDIA quando disponível e muda para CPU quando não estiver. Os documentos e o banco são montados para leitura. JSONs, CSV e manifesto aparecem em `output/simulation/`. `score` é uma ação separada e só então monta o gabarito.
+O padrão em `.env` usa a GPU NVIDIA. Para executar em CPU, altere apenas `COMPOSE_FILE=compose.yaml` no mesmo arquivo. Os scripts `run.ps1 predict` e `bash run.sh predict` continuam disponíveis e detectam a GPU automaticamente. O manifesto registra o dispositivo efetivo.
+
+JSONs, `submission.csv`, manifesto e cache ficam no caminho configurado em `OUTPUT_DIR`; continuam disponíveis no computador depois que o contêiner termina. Para testar sem carregar dados oficiais, use `docker compose run --rm --build test`. A avaliação da submissão já gerada é separada: `docker compose run --rm --no-deps score`. Só esse serviço monta o gabarito, se `GOLDEN_PATH` existir.
 
 O manifesto registra hashes do código, dependências, entrada, banco, checkpoint e CSV, além do dispositivo e tempo de execução. O índice SQLite fica no diretório de saída e é reconstruído quando muda o banco ou parser.
 
@@ -38,6 +28,6 @@ Uma referência sem dados suficientes ou com múltiplos candidatos é `incomplet
 
 O checkpoint é `dominguesm/legal-bert-ner-base-cased-ptbr`, revisão `44210927c925448df025985e0ed48081bb5ac57c`. O hash dos pesos corresponde ao arquivo publicado nessa revisão. A licença indicada pelo cartão oficial é **CC BY 4.0**; a atribuição, revisão e hashes locais ficam em `models/ner_legal_large/provenance.json`. O arquivo de configuração que acompanhava o exemplo dizia MIT; essa indicação diverge do cartão do modelo e não é usada como licença do checkpoint.
 
-O código deste repositório está sob MIT. As dependências têm suas licenças próprias. Os dados oficiais e gabarito permanecem conforme os termos da competição; não são usados para treino ou calibração. A base de desenvolvimento local deve creditar Eduardo Osti e Thiago Meirelles Ventura por disponibilizarem os dados brutos.
+O código próprio deste repositório está sob MIT. As dependências e a métrica oficial têm seus próprios termos. Os dados oficiais e gabarito permanecem conforme os termos da competição; não são usados para treino ou calibração. A base de desenvolvimento local deve creditar Eduardo Osti e Thiago Meirelles Ventura por disponibilizarem os dados brutos.
 
-Os 26 documentos presentes são a amostra de desenvolvimento do desafio. O resultado de `score` sobre eles é uma **simulação de teste cego em amostra conhecida**, não uma previsão do ranking final. Primeiro execute `predict`; examine o manifesto e só então `score`. Esta entrega não retreina nem ajusta o sistema com base nesse score.
+A amostra local de 26 documentos é o conjunto de desenvolvimento do desafio. O resultado de `score` sobre ela é uma **simulação de teste cego em amostra conhecida**, não uma previsão do ranking final. Primeiro execute `predict`; examine o manifesto e só então `score`. Esta entrega não retreina nem ajusta o sistema com base nesse score.

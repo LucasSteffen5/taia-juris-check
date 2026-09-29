@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Caminhos e parâmetros únicos da execução."""
+"""Parâmetros do pipeline e proteção de dados no contêiner."""
+import os
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-OFFICIAL_DATA_DIR = ROOT_DIR / "data" / "desafio-jusbrasil-bracis-2026"
-OFFICIAL_DB_PATH = OFFICIAL_DATA_DIR / "desafio1_bracis.db"
-OFFICIAL_GOLDEN_PATH = OFFICIAL_DATA_DIR / "goldenset_offsets.csv"
-OFFICIAL_TXT_DIR = OFFICIAL_DATA_DIR / "txt"
+OFFICIAL_DATA_DIR = Path(
+    os.environ.get("PROTECTED_DATA_DIR", ROOT_DIR / "data" / "desafio-jusbrasil-bracis-2026")
+)
 MODELS_DIR = ROOT_DIR / "models"
 NER_MODEL_DIR = MODELS_DIR / "ner_legal_large"
-HEADER_INDEX_PATH = ROOT_DIR / "output" / ".cache" / "header_index.json"
 
 IOU_MIN = 0.5
 CLASSES = ("real", "inventada", "incompleta")
