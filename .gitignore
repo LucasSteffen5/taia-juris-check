@@ -1,28 +1,3 @@
-# Dados do desafio — teste cego
-/desafio-jusbrasil-bracis-2026/
-
-# Saídas recriáveis do pipeline e caches locais
-/data/data_oversampling/dataset_*/
-/data/data_oversampling/audits/
-/data/data_oversampling/**/__pycache__/
-/data/data_oversampling/**/*.pyc
-
-# Arquivos LeNER que não são usados pelo conversor
-/data/LeNER-Br/README.md
-/data/LeNER-Br/luz_etal_propor2018.pdf
-/data/LeNER-Br/model/
-/data/LeNER-Br/leNER-Br/metadata/
-/data/LeNER-Br/leNER-Br/raw_text/*.json
-/data/LeNER-Br/leNER-Br/train/train.conll
-/data/LeNER-Br/leNER-Br/dev/dev.conll
-/data/LeNER-Br/leNER-Br/test/test.conll
-
-# Materiais oficiais do teste cego; não são necessários para gerar as bases
-/data/desafio-jusbrasil-bracis-2026/txt/
-/data/desafio-jusbrasil-bracis-2026/goldenset_offsets.csv
-/data/desafio-jusbrasil-bracis-2026/sample_submission.csv
-/data/desafio-jusbrasil-bracis-2026/json_to_submission.py
-
 # Saídas e caches do pipeline
 /output/
 /.pytest_cache/
