@@ -1,79 +1,41 @@
 # Verificador de Citações Jurídicas — Desafio Jusbrasil x BRACIS 2026
 
-Solução em contêiner Docker para identificação, resolução e classificação automática de citações jurídicas (acórdãos, súmulas e dispositivos legais) em peças processuais, determinando se cada referência é **real**, **inventada** ou **incompleta**.
+Solução para resolver e classificar citações jurídicas em documentos judiciais como **reais**, **inventadas** ou **incompletas**.
 
----
+## Pré-requisitos
 
-## 📋 Pré-requisitos
+- Docker Desktop ou Docker Engine configurado para contêineres Linux.
+- GPU NVIDIA e drivers configurados para acesso pelo Docker. No Linux, instale o [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/container-toolkit/latest/install-guide.html); no Windows, use o Docker Desktop com suporte NVIDIA via WSL 2.
 
-- [Docker](https://www.docker.com/).
-- GPU NVIDIA configurado  para uso com  Docker ([NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)).
+- Bash no Linux/WSL ou PowerShell no Windows.
 
----
+## Executar
 
-## ⚙️ Configuração do `.env`
-
-Crie ou edite o arquivo `.env` na raiz do projeto indicando a estrutura de dados do desafio e a ativação da GPU:
-
-```dotenv
-INPUT_TXT_DIR=./data/desafio-jusbrasil-bracis-2026/txt
-DATABASE_PATH=./data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db
-OUTPUT_DIR=./output
-
-COMPOSE_PATH_SEPARATOR=;
-COMPOSE_FILE=compose.yaml;compose.gpu.yaml
-```
-
-### Significado das variáveis:
-- **`INPUT_TXT_DIR`**: Diretório contendo os arquivos `.txt` dos documentos a serem processados.
-- **`DATABASE_PATH`**: Caminho do banco de dados SQLite canônico (`.db`).
-- **`OUTPUT_DIR`**: Diretório onde o arquivo final de submissão será gravado.
-- **`COMPOSE_PATH_SEPARATOR`** e **`COMPOSE_FILE`**: Habilitam a aceleração por GPU NVIDIA no Docker Compose.
-
-> **Nota:** Todos os caminhos relativos partem da raiz do repositório. Para executar sobre um novo conjunto de documentos, basta atualizar `INPUT_TXT_DIR` e `DATABASE_PATH` com os caminhos da nova base.
-
----
-
-## 🚀 Como Executar
-
-Com o serviço do Docker ativo, execute o comando na raiz do repositório:
+Passe o caminho do banco SQLite, a pasta com os `.txt` e o caminho completo para o CSV. O caminho de saída pode ser escolhido livremente; caminhos relativos partem do diretório atual.
 
 ```bash
-docker compose up --build --exit-code-from predict
+bash run.sh ./data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db ./data/desafio-jusbrasil-bracis-2026/txt ./output/submission.csv
 ```
 
-O comando irá:
-1. Construir a imagem Docker do pipeline com todas as dependências e o checkpoint local do modelo NER.
-2. Executar a inferência acelerada por GPU sobre os documentos informados.
-3. Encerrar automaticamente o contêiner ao concluir o processamento.
+No Windows PowerShell:
 
----
-
-## 📄 Arquivo de Saída
-
-O resultado final é gravado diretamente no diretório de saída especificado:
-
-```text
-./output/submission.csv
+```powershell
+.\run.ps1 .\data\desafio-jusbrasil-bracis-2026\desafio1_bracis.db .\data\desafio-jusbrasil-bracis-2026\txt .\output\submission.csv
 ```
 
+O script constrói a imagem a partir do Dockerfile, valida CUDA dentro do contêiner e executa o pipeline com GPU NVIDIA. Na primeira execução, o build pode demorar enquanto baixa as dependências e os pesos. Execuções seguintes reaproveitam o cache do Docker.
 
----
+O CSV é salvo exatamente no terceiro caminho informado.. O contêiner é removido ao terminar; banco e documentos são montados somente para leitura.
 
-## 🧠 Arquitetura do Pipeline
+
+
+## Arquitetura do Pipeline
 
 ```mermaid
 flowchart LR
     TXT["Documentos .txt"] --> PIPE["Pipeline Docker (GPU)"]
     DB["Base SQLite Canônica"] --> PIPE
-    PIPE --> EXTRACT["Extração Híbrida<br/>(Regex + Modelo NER)"]
-    EXTRACT --> RESOLVE["Resolução Canônica<br/>(FTS5 + Consulta Exata)"]
-    RESOLVE --> SUBMISSION["submission.csv"]
-
-    classDef input fill:#e8f4fd,stroke:#2b6cb0,stroke-width:1px;
-    classDef process fill:#f0fdf4,stroke:#16a34a,stroke-width:1px;
-    classDef output fill:#fef3c7,stroke:#d97706,stroke-width:1px;
-    class TXT,DB input;
-    class PIPE,EXTRACT,RESOLVE process;
-    class SUBMISSION output;
+    PIPE --> EXTRACT["Extração híbrida<br/>(Regex + NER)"]
+    EXTRACT --> RESOLVE["Resolução canônica<br/>(FTS5 + consulta exata)"]
+    RESOLVE --> SUBMISSION["CSV de submissão"]
 ```

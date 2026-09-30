@@ -75,10 +75,18 @@ def run_pipeline(
     txt_dir: Path | str,
     db_path: Path | str,
     output_dir: Path | str,
+    output_filename: str = "submission.csv",
 ) -> Path:
     """Gera JSONs, submissão CSV e manifesto em uma única execução."""
     started = time.perf_counter()
     txt_path, database_path, output_path = Path(txt_dir), Path(db_path), Path(output_dir)
+    if (
+        not output_filename
+        or output_filename in {".", ".."}
+        or "/" in output_filename
+        or "\\" in output_filename
+    ):
+        raise ValueError("--output-file precisa ser apenas um nome de arquivo.")
     assert_output_outside_official_data(output_path)
     if not txt_path.is_dir() or not database_path.is_file():
         raise FileNotFoundError("Diretório TXT ou banco SQLite não encontrado.")
@@ -129,7 +137,7 @@ def run_pipeline(
     finally:
         connection.close()
 
-    submission_path = output_path / "submission.csv"
+    submission_path = output_path / output_filename
     generate_submission_csv(payloads, submission_path)
     current_source = HeaderIndex.fingerprint(ROOT_DIR / "src")
     current_scripts = HeaderIndex.fingerprint(ROOT_DIR / "scripts")
@@ -164,8 +172,13 @@ def main() -> None:
     parser.add_argument("--input", required=True, help="Diretório com os documentos .txt")
     parser.add_argument("--db", required=True, help="Banco SQLite de consulta")
     parser.add_argument("--output", required=True, help="Diretório para as saídas")
+    parser.add_argument(
+        "--output-file",
+        default="submission.csv",
+        help="Nome do CSV de submissão dentro do diretório --output",
+    )
     args = parser.parse_args()
-    run_pipeline(args.input, args.db, args.output)
+    run_pipeline(args.input, args.db, args.output, args.output_file)
 
 
 if __name__ == "__main__":

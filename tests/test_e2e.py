@@ -118,15 +118,27 @@ def test_pipeline_persists_outputs_and_rebuilds_old_index(tmp_path, monkeypatch)
     monkeypatch.setattr(pipeline, "load_ner_model_and_tokenizer", lambda: (fake_model, object()))
     monkeypatch.setattr(pipeline, "extract_ner_citations", lambda *_args: [])
 
-    submission = pipeline.run_pipeline(input_dir, database, output)
+    submission = pipeline.run_pipeline(input_dir, database, output, "submission custom.csv")
 
     assert submission.is_file()
+    assert submission.name == "submission custom.csv"
+    assert not (output / "submission.csv").exists()
     assert (output / "json" / "fixture.json").is_file()
     manifest = json.loads((output / "run_manifest.json").read_text(encoding="utf-8"))
     assert manifest["documents_processed"] == 1
     assert manifest["device"] == "cpu"
     assert manifest["confidence_policy_version"] == "evidence-rules-v2"
     assert "heurísticos" in manifest["confidence_policy"]
+    assert manifest["submission_sha256"] == pipeline.HeaderIndex.fingerprint(submission)
     rebuilt = json.loads((cache_dir / "header_index.json").read_text(encoding="utf-8"))
     assert rebuilt["index_version"] == 3
     assert "entries_by_id" not in rebuilt
+
+
+def test_pipeline_rejects_output_filename_paths_before_processing(tmp_path):
+    try:
+        pipeline.run_pipeline(tmp_path, tmp_path / "missing.db", tmp_path / "output", "../escape.csv")
+    except ValueError as exc:
+        assert "apenas um nome de arquivo" in str(exc)
+    else:
+        raise AssertionError("--output-file não pode escapar do diretório de saída")
