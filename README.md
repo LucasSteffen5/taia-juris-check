@@ -1,33 +1,79 @@
-# Verificador de citações jurídicas
+# Verificador de Citações Jurídicas — Desafio Jusbrasil x BRACIS 2026
 
-Pipeline offline para encontrar referências a jurisprudência e leis em documentos judiciais, resolver identificadores contra o SQLite congelado do desafio e gerar os arquivos de submissão.
+Solução em contêiner Docker para identificação, resolução e classificação automática de citações jurídicas (acórdãos, súmulas e dispositivos legais) em peças processuais, determinando se cada referência é **real**, **inventada** ou **incompleta**.
 
-## Executar
+---
 
-Requer Docker com motor Linux e Git LFS para obter os pesos após clonar (`git lfs pull`). Edite apenas [`.env`](.env) para apontar para outra base: `INPUT_TXT_DIR` é a pasta de TXT, `DATABASE_PATH` é o arquivo SQLite, `GOLDEN_PATH` é o gabarito opcional e `OUTPUT_DIR` é onde persistir as saídas. Os caminhos podem ser relativos à raiz do projeto ou absolutos; a base não precisa manter nomes de arquivo nem estrutura de pastas específicos. Os TXT e o gabarito não são versionados: forneça seus caminhos no `.env` quando estiverem fora dos locais padrão. Os dados são montados no contêiner para leitura e não entram na imagem.
+## 📋 Pré-requisitos
 
-Da raiz do projeto, um único comando constrói a imagem e executa a inferência offline:
+- [Docker](https://www.docker.com/).
+- GPU NVIDIA configurado  para uso com  Docker ([NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)).
+
+---
+
+## ⚙️ Configuração do `.env`
+
+Crie ou edite o arquivo `.env` na raiz do projeto indicando a estrutura de dados do desafio e a ativação da GPU:
+
+```dotenv
+INPUT_TXT_DIR=./data/desafio-jusbrasil-bracis-2026/txt
+DATABASE_PATH=./data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db
+OUTPUT_DIR=./output
+
+COMPOSE_PATH_SEPARATOR=;
+COMPOSE_FILE=compose.yaml;compose.gpu.yaml
+```
+
+### Significado das variáveis:
+- **`INPUT_TXT_DIR`**: Diretório contendo os arquivos `.txt` dos documentos a serem processados.
+- **`DATABASE_PATH`**: Caminho do banco de dados SQLite canônico (`.db`).
+- **`OUTPUT_DIR`**: Diretório onde o arquivo final de submissão será gravado.
+- **`COMPOSE_PATH_SEPARATOR`** e **`COMPOSE_FILE`**: Habilitam a aceleração por GPU NVIDIA no Docker Compose.
+
+> **Nota:** Todos os caminhos relativos partem da raiz do repositório. Para executar sobre um novo conjunto de documentos, basta atualizar `INPUT_TXT_DIR` e `DATABASE_PATH` com os caminhos da nova base.
+
+---
+
+## 🚀 Como Executar
+
+Com o serviço do Docker ativo, execute o comando na raiz do repositório:
 
 ```bash
 docker compose up --build --exit-code-from predict
 ```
 
-O padrão em `.env` usa a GPU NVIDIA. Para executar em CPU, altere apenas `COMPOSE_FILE=compose.yaml` no mesmo arquivo. O manifesto registra o dispositivo efetivo.
+O comando irá:
+1. Construir a imagem Docker do pipeline com todas as dependências e o checkpoint local do modelo NER.
+2. Executar a inferência acelerada por GPU sobre os documentos informados.
+3. Encerrar automaticamente o contêiner ao concluir o processamento.
 
-JSONs, `submission.csv`, manifesto e cache ficam no caminho configurado em `OUTPUT_DIR`; continuam disponíveis no computador depois que o contêiner termina. Para testar sem carregar dados oficiais, use `docker compose run --rm --build test`. A avaliação da submissão já gerada é separada: `docker compose run --rm --no-deps score`. Só esse serviço monta o gabarito, se `GOLDEN_PATH` existir.
+---
 
-O manifesto registra hashes do código, dependências, entrada, banco, checkpoint e CSV, além do dispositivo e tempo de execução. O índice SQLite fica no diretório de saída e é reconstruído quando muda o banco ou parser.
+## 📄 Arquivo de Saída
 
-## Como decide
+O resultado final é gravado diretamente no diretório de saída especificado:
 
-Regex e o NER local são executados juntos em todos os documentos: Regex identifica padrões de processo, súmula, lei e alusões vagas; o NER encontra trechos que escapam aos padrões. A fusão usa sobreposição dos spans e preserva os offsets do texto UTF-8 original, inclusive CRLF. O resolvedor consulta o índice dos identificadores principais dos acórdãos e os registros específicos de súmulas e leis; a busca FTS é confirmada contra o cabeçalho do processo.
+```text
+./output/submission.csv
+```
 
-Uma referência sem dados suficientes ou com múltiplos candidatos é `incompleta`; uma consulta suficiente sem resultado é `inventada`; um único registro confirmado é `real` e recebe o `id` numérico canônico. A confiança usa a força do identificador e a evidência da resolução. Para `real`, os patamares são `0.65`, `0.75` e `0.80` para identificadores fracos, fortes e muito fortes; uma concordância Regex–NER com IoU de pelo menos `0.90` acrescenta `0.05`. Para `inventada`, os patamares são `0.55`, `0.65` e `0.75`. Para `incompleta`, múltiplos candidatos com identificador forte recebem `0.70`, ambiguidades ou referências vagas reconhecidas por Regex recebem `0.65`, e os demais casos recebem `0.55`. Extração exclusiva pelo NER reduz o patamar em `0.05`; o resultado fica limitado a `[0.50, 0.85]`. Esses valores não são probabilidades calibradas; a versão da política fica registrada no manifesto.
 
-## Modelo, licenças e dados
+---
 
-O checkpoint é `dominguesm/legal-bert-ner-base-cased-ptbr`, revisão `44210927c925448df025985e0ed48081bb5ac57c`. O hash dos pesos corresponde ao arquivo publicado nessa revisão. A licença indicada pelo cartão oficial é **CC BY 4.0**; a atribuição, revisão e hashes locais ficam em `models/ner_legal_large/provenance.json`. O arquivo de configuração que acompanhava o exemplo dizia MIT; essa indicação diverge do cartão do modelo e não é usada como licença do checkpoint.
+## 🧠 Arquitetura do Pipeline
 
-O código próprio deste repositório está sob MIT. As dependências e a métrica oficial têm seus próprios termos. Os dados oficiais e gabarito permanecem conforme os termos da competição; não são usados para treino ou calibração. A base de desenvolvimento local deve creditar Eduardo Osti e Thiago Meirelles Ventura por disponibilizarem os dados brutos.
+```mermaid
+flowchart LR
+    TXT["Documentos .txt"] --> PIPE["Pipeline Docker (GPU)"]
+    DB["Base SQLite Canônica"] --> PIPE
+    PIPE --> EXTRACT["Extração Híbrida<br/>(Regex + Modelo NER)"]
+    EXTRACT --> RESOLVE["Resolução Canônica<br/>(FTS5 + Consulta Exata)"]
+    RESOLVE --> SUBMISSION["submission.csv"]
 
-A amostra local de 26 documentos é o conjunto de desenvolvimento do desafio. O resultado de `score` sobre ela é uma **simulação de teste cego em amostra conhecida**, não uma previsão do ranking final. Primeiro execute `predict`; examine o manifesto e só então `score`. Esta entrega não retreina nem ajusta o sistema com base nesse score.
+    classDef input fill:#e8f4fd,stroke:#2b6cb0,stroke-width:1px;
+    classDef process fill:#f0fdf4,stroke:#16a34a,stroke-width:1px;
+    classDef output fill:#fef3c7,stroke:#d97706,stroke-width:1px;
+    class TXT,DB input;
+    class PIPE,EXTRACT,RESOLVE process;
+    class SUBMISSION output;
+```
