@@ -1,0 +1,54 @@
+name: juris-check-pipeline
+
+x-image: &image
+  build: .
+  image: juris-check:local
+  network_mode: none
+
+services:
+  predict:
+    <<: *image
+    environment:
+      PROTECTED_DATA_DIR: /input
+    volumes:
+      - type: bind
+        source: ${INPUT_TXT_DIR:?Defina INPUT_TXT_DIR no .env}
+        target: /input/txt
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${DATABASE_PATH:?Defina DATABASE_PATH no .env}
+        target: /input/reference.sqlite
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${OUTPUT_DIR:?Defina OUTPUT_DIR no .env}
+        target: /output
+        bind:
+          create_host_path: true
+    command: ["--input", "/input/txt", "--db", "/input/reference.sqlite", "--output", "/output"]
+
+  test:
+    <<: *image
+    profiles: [test]
+    entrypoint: ["sh", "-ec", "python -m pytest -q && CUDA_VISIBLE_DEVICES= python -m scripts.smoke_ner"]
+
+  score:
+    <<: *image
+    profiles: [score]
+    entrypoint: ["python", "-m", "scripts.evaluate"]
+    volumes:
+      - type: bind
+        source: ${GOLDEN_PATH:?Defina GOLDEN_PATH no .env}
+        target: /input/golden.csv
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${OUTPUT_DIR:?Defina OUTPUT_DIR no .env}
+        target: /output
+        bind:
+          create_host_path: false
+    command: ["--submission", "/output/submission.csv", "--golden", "/input/golden.csv", "--manifest", "/output/run_manifest.json", "--report", "/output/score.json"]

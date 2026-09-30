@@ -1,0 +1,12 @@
+.git
+.env
+.pytest_cache
+**/__pycache__
+**/*.py[cod]
+output
+data/dataset
+data/desafio-jusbrasil-bracis-2026/txt
+data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db
+data/desafio-jusbrasil-bracis-2026/goldenset_offsets.csv
+data/desafio-jusbrasil-bracis-2026/sample_submission.csv
+data/desafio-jusbrasil-bracis-2026/json_to_submission.py

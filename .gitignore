@@ -1,0 +1,5 @@
+# Saídas e caches do pipeline
+/output/
+/.pytest_cache/
+**/__pycache__/
+**/*.py[cod]
