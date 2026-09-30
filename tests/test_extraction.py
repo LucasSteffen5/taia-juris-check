@@ -70,3 +70,40 @@ def test_fusion_keeps_regex_when_ner_is_empty_or_conflicts():
         assert len(fused) == 1
         assert fused[0]["tipo"] == "lei"
         assert "confianca" not in fused[0]
+
+
+def test_fusion_preserves_extraction_provenance_for_confidence():
+    text = "Súmula 211 do STJ"
+    regex = [{"inicio": 0, "fim": len(text), "trecho": text, "tipo": "jurisprudencia"}]
+    ner = [{
+        "inicio": 0, "fim": len(text), "trecho": text,
+        "tipo": "jurisprudencia", "prob": 0.98,
+    }]
+
+    both = fuse_extractions(text, regex, ner)
+    regex_only = fuse_extractions(text, regex, [])
+    ner_only = fuse_extractions(text, [], ner)
+
+    assert both[0]["_confidence_sources"] == ("regex", "ner")
+    assert both[0]["_confidence_agreement"] is True
+    assert both[0]["_fusion_iou"] == 1.0
+    assert both[0]["_ner_prob"] == 0.98
+    assert regex_only[0]["_confidence_sources"] == ("regex",)
+    assert regex_only[0]["_confidence_agreement"] is False
+    assert regex_only[0]["_fusion_iou"] is None
+    assert ner_only[0]["_confidence_sources"] == ("ner",)
+    assert ner_only[0]["_ner_prob"] == 0.98
+
+
+def test_fusion_requires_high_iou_for_confidence_agreement():
+    text = "Súmula 211 do STJ"
+    regex = [{"inicio": 0, "fim": 10, "trecho": text[:10], "tipo": "jurisprudencia"}]
+    ner = [{
+        "inicio": 0, "fim": len(text), "trecho": text,
+        "tipo": "jurisprudencia", "prob": 0.98,
+    }]
+
+    fused = fuse_extractions(text, regex, ner)
+
+    assert fused[0]["_fusion_iou"] == 10 / len(text)
+    assert fused[0]["_confidence_agreement"] is False

@@ -13,6 +13,7 @@ class ResolutionResult:
     evidence: tuple[str, ...]
     reason: str
     target_type: str
+    identifier_strength: str = "fraca"
 
     @property
     def n_candidates(self) -> int:
@@ -32,7 +33,10 @@ class ResolutionResult:
         evidence: list[str] | tuple[str, ...] = (),
         reason: str,
         target_type: str,
+        identifier_strength: str = "fraca",
     ) -> "ResolutionResult":
+        if identifier_strength not in {"fraca", "forte", "muito_forte"}:
+            raise ValueError(f"Força de identificador inválida: {identifier_strength}")
         return cls(
             tuple(dict.fromkeys(int(value) for value in candidate_ids)),
             sufficient,
@@ -40,4 +44,5 @@ class ResolutionResult:
             tuple(evidence),
             reason,
             target_type,
+            identifier_strength,
         )

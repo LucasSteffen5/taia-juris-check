@@ -26,6 +26,13 @@ class AcordaoResolver:
         m_trib = re.search(r"\b(STF|STJ|TST|TSE|STM)\b", text, re.IGNORECASE)
         tribunal = m_trib.group(1).upper() if m_trib else None
         is_tema = "tema" in text.lower() or "temã" in text.lower()
+        qualifier_count = sum(bool(value) for value in (class_families, uf, tribunal))
+        if len(digits) == 20 or (len(digits) >= 6 and qualifier_count >= 2):
+            identifier_strength = "muito_forte"
+        elif len(digits) >= 5 and qualifier_count >= 1:
+            identifier_strength = "forte"
+        else:
+            identifier_strength = "fraca"
         sufficient = (len(digits) >= 5 or is_tema or bool(class_families) or bool(uf) or bool(tribunal)) and len(digits) >= 3
         if not sufficient:
             return ResolutionResult.make(
@@ -34,6 +41,7 @@ class AcordaoResolver:
                 evidence=[digits] if digits else [],
                 reason="número e qualificadores insuficientes para uma busca identificável",
                 target_type="acordao",
+                identifier_strength=identifier_strength,
             )
 
         indexed = self.header_index.lookup(
@@ -43,7 +51,10 @@ class AcordaoResolver:
             class_hint=text,
         )
         if indexed:
-            return self._result_from_entries(indexed, "header_exact", digits, uf, tribunal, class_families)
+            return self._result_from_entries(
+                indexed, "header_exact", digits, uf, tribunal, class_families,
+                identifier_strength,
+            )
 
         # FTS retrieves records that mention the number; the same principal-title
         # parser used to build the index decides whether a result is that case.
@@ -70,7 +81,10 @@ class AcordaoResolver:
                 continue
             confirmed.append(entry)
 
-        return self._result_from_entries(confirmed, "fts_principal_exact", digits, uf, tribunal, class_families)
+        return self._result_from_entries(
+            confirmed, "fts_principal_exact", digits, uf, tribunal, class_families,
+            identifier_strength,
+        )
 
     @staticmethod
     def _result_from_entries(
@@ -80,6 +94,7 @@ class AcordaoResolver:
         uf: str | None,
         tribunal: str | None,
         class_families: list[str],
+        identifier_strength: str,
     ) -> ResolutionResult:
         qualifier_evidence = [f"número:{digits}"]
         qualifier_evidence.extend(f"classe:{family}" for family in class_families)
@@ -101,4 +116,5 @@ class AcordaoResolver:
             evidence=qualifier_evidence,
             reason=reason,
             target_type="acordao",
+            identifier_strength=identifier_strength,
         )

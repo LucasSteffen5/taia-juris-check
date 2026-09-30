@@ -9,7 +9,8 @@ from pathlib import Path
 from typing import Any
 
 from src.classification.classifier import classify_citation
-from src.config import DEFAULT_CONFIDENCE, NER_MODEL_DIR, ROOT_DIR, assert_output_outside_official_data
+from src.classification.confidence import CONFIDENCE_POLICY_VERSION, calculate_confidence
+from src.config import NER_MODEL_DIR, ROOT_DIR, assert_output_outside_official_data
 from src.extraction.fusion import fuse_extractions
 from src.extraction.ner_inference import extract_ner_citations
 from src.extraction.ner_model import load_ner_model_and_tokenizer
@@ -40,7 +41,9 @@ def process_document(
         result = dict(citation)
         result["classificacao"] = decision["classificacao"]
         result["id_canonico"] = decision["id_canonico"]
-        result["confianca"] = DEFAULT_CONFIDENCE
+        result["confianca"] = calculate_confidence(
+            citation, resolution, decision["classificacao"]
+        )
         final.append(result)
 
     payload = build_document_json(doc_id, final)
@@ -142,7 +145,8 @@ def run_pipeline(
         "submission_sha256": HeaderIndex.fingerprint(submission_path),
         "parser_version": PARSER_VERSION,
         "device": device,
-        "confidence_policy": "constante neutra 0.5; não calibrada",
+        "confidence_policy_version": CONFIDENCE_POLICY_VERSION,
+        "confidence_policy": "patamares heurísticos por evidência; não calibrada",
         "documents_processed": len(documents),
         "elapsed_seconds": round(time.perf_counter() - started, 3),
         "python_version": __import__("platform").python_version(),

@@ -157,7 +157,7 @@ class DispositivoResolver:
         
         # Se não tem artigo, é vaga/incompleta (ex: 'Constituição Federal')
         if not art:
-            return ResolutionResult.make(sufficient=False, method="law_parse", evidence=[text_clean], reason="número do artigo ausente", target_type="dispositivo")
+            return ResolutionResult.make(sufficient=False, method="law_parse", evidence=[text_clean], reason="número do artigo ausente", target_type="dispositivo", identifier_strength="fraca")
             
         # Checar se tem menção a alguma lei ou código (mesmo que fora dos 13 diplomas)
         has_law_identifier = (
@@ -181,15 +181,18 @@ class DispositivoResolver:
                 evidence=[f"art.{art}"],
                 reason="nome do diploma não identifica uma lei específica",
                 target_type="dispositivo",
+                identifier_strength="fraca",
             )
+
+        identifier_strength = "muito_forte" if diploma is not None else "forte"
             
         # Comparar contra os 13 dispositivos
         if diploma:
             candidates = [d["id"] for d in self.dispositivos if d["diploma"] == diploma and d["art"] == art]
             if len(candidates) == 1:
-                return ResolutionResult.make(candidates, sufficient=True, method="law_exact", evidence=[f"art.{art}", diploma], reason="artigo e diploma canônicos coincidem", target_type="dispositivo")
+                return ResolutionResult.make(candidates, sufficient=True, method="law_exact", evidence=[f"art.{art}", diploma], reason="artigo e diploma canônicos coincidem", target_type="dispositivo", identifier_strength=identifier_strength)
             elif len(candidates) > 1:
-                return ResolutionResult.make(candidates, sufficient=True, method="law_exact", evidence=[f"art.{art}", diploma], reason="mais de um registro de lei compatível", target_type="dispositivo")
+                return ResolutionResult.make(candidates, sufficient=True, method="law_exact", evidence=[f"art.{art}", diploma], reason="mais de um registro de lei compatível", target_type="dispositivo", identifier_strength=identifier_strength)
                 
         # Tem identificador suficiente (Artigo + Lei/Código), mas não existe nos 13 registros congelados:
         # Pelo contrato da competição, isso é INVENTADA!
@@ -199,4 +202,5 @@ class DispositivoResolver:
             evidence=[f"art.{art}", diploma or "lei identificada por número"],
             reason="nenhum dispositivo correspondente na cobertura congelada",
             target_type="dispositivo",
+            identifier_strength=identifier_strength,
         )

@@ -35,6 +35,8 @@ def test_sumula_needs_unique_tribunal_and_number():
     resolver = SumulaResolver(conn)
     ambiguous = resolver.resolve("Súmula 1")
     assert ambiguous.n_candidates == 2 and ambiguous.sufficient
+    assert ambiguous.identifier_strength == "forte"
+    assert resolver.resolve("Súmula 1 do STJ").identifier_strength == "muito_forte"
     assert resolver.resolve("Súmula 1 do TSE").n_candidates == 0
     assert not resolver.resolve("Súmula sem número").sufficient
     conn.close()
@@ -44,11 +46,29 @@ def test_law_resolution_distinguishes_unknown_diploma_from_specific_absence():
     conn = _connection()
     conn.execute("INSERT INTO documentos VALUES (?, ?, NULL, ?, 'dispositivo')", ("cpc_373", 22, "Código de Processo Civil\nArt. 373"))
     resolver = DispositivoResolver(conn)
-    assert resolver.resolve("art. 373, I, do CPC").canonical_id == 22
+    exact = resolver.resolve("art. 373, I, do CPC")
+    assert exact.canonical_id == 22
+    assert exact.identifier_strength == "muito_forte"
     assert not resolver.resolve("art. 10 do Código").sufficient
     absent = resolver.resolve("art. 10 da Lei nº 99.999/2020")
     assert absent.sufficient and absent.n_candidates == 0
+    assert absent.identifier_strength == "forte"
     conn.close()
+
+
+def test_acordao_identifier_strength_uses_number_and_qualifiers():
+    resolver = AcordaoResolver(sqlite3.connect(":memory:"), HeaderIndex())
+    resolver.header_index.exact_map["12345"] = [{
+        "id": 1, "tribunal": "STJ", "uf": "RS", "class_families": ["REsp"],
+    }]
+    strong = resolver.resolve("REsp 12.345/RS do STJ")
+    assert strong.identifier_strength == "forte"
+
+    resolver.header_index.exact_map["123456"] = [{
+        "id": 2, "tribunal": "STJ", "uf": "RS", "class_families": ["REsp"],
+    }]
+    very_strong = resolver.resolve("REsp 123.456/RS do STJ")
+    assert very_strong.identifier_strength == "muito_forte"
 
 
 def test_header_parser_indexes_only_principal_case_and_preserves_full_cnj():
@@ -96,12 +116,6 @@ def test_result_classification_retains_evidence():
     classified = classify_citation({"trecho": "REsp 12345"}, result)
     assert classified == {"classificacao": "real", "id_canonico": "99"}
     assert result.evidence == ("número:12345",)
-
-
-def test_default_confidence_is_neutral_and_uncalibrated():
-    from src.config import DEFAULT_CONFIDENCE
-
-    assert DEFAULT_CONFIDENCE == 0.5
 
 
 def test_header_index_rejects_qualifier_conflicts_instead_of_dropping_them():

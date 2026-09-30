@@ -39,25 +39,34 @@ def fuse_extractions(
     fused: list[dict[str, Any]] = []
 
     # 1. Spans em que Regex e NER concordam
-    for _, ri, ni in pairs:
+    for neg_iou, ri, ni in pairs:
         if ri in used_r or ni in used_n:
             continue
         used_r.add(ri)
         used_n.add(ni)
         r = regex_cits[ri]
         n = ner_cits[ni]
+        v = -neg_iou
         
         # O span do regex é preferido para bordas precisas
         combined = dict(r)
         # Uma entidade de relator/data do NER não pode apagar um identificador
         # explícito já extraído pelo Regex.
         combined["is_vague"] = bool(r.get("is_vague"))
+        combined["_fusion_iou"] = v
+        combined["_confidence_sources"] = ("regex", "ner")
+        combined["_confidence_agreement"] = v >= 0.90
+        combined["_ner_prob"] = n.get("prob")
         fused.append(combined)
 
     # 2. Spans exclusivamente Regex
     for ri, r in enumerate(regex_cits):
         if ri not in used_r:
             item = dict(r)
+            item["_fusion_iou"] = None
+            item["_confidence_sources"] = ("regex",)
+            item["_confidence_agreement"] = False
+            item["_ner_prob"] = None
             fused.append(item)
 
     # 3. Spans exclusivamente NER (Safety Net & Autonomous Discovery)
@@ -74,6 +83,10 @@ def fuse_extractions(
             if prob >= NER_THRESHOLD and not is_distractor_span(text, n["inicio"], n["fim"], header_end, is_vague=is_v):
                 item = dict(n)
                 item["is_vague"] = is_v
+                item["_fusion_iou"] = None
+                item["_confidence_sources"] = ("ner",)
+                item["_confidence_agreement"] = False
+                item["_ner_prob"] = prob
                 fused.append(item)
 
     # Ordenar por início no documento

@@ -17,12 +17,14 @@ class FixtureResolver:
     def resolve(self, citation):
         if citation["tipo"] == "lei":
             return ResolutionResult.make(
-                [101], sufficient=True, method="law_exact", evidence=["art.5", "CF"],
+            [101], sufficient=True, method="law_exact", evidence=["art.5", "CF"],
                 reason="fixture match", target_type="dispositivo",
+                identifier_strength="muito_forte",
             )
         return ResolutionResult.make(
             sufficient=True, method="sumula_exact", evidence=["súmula:211", "STJ"],
             reason="fixture absent", target_type="sumula",
+            identifier_strength="muito_forte",
         )
 
 
@@ -45,7 +47,7 @@ def test_synthetic_pipeline_emits_valid_submission(monkeypatch):
     assert len(result["citacoes"]) == 2
     assert result["citacoes"][0]["classificacao"] == "real"
     assert result["citacoes"][0]["resolucao"]["id_canonico"] == 101
-    assert all(item["confianca"] == 0.5 for item in result["citacoes"])
+    assert [item["confianca"] for item in result["citacoes"]] == [0.80, 0.75]
     assert ner_calls == [(text, fake_model, fake_tokenizer)]
     assert all(text[item["inicio"]:item["fim"]] == item["trecho"] for item in result["citacoes"])
 
@@ -60,7 +62,8 @@ def test_synthetic_pipeline_emits_valid_submission(monkeypatch):
     assert len(rows) == 2
     assert rows[0]["citacoes"].count("|") == 1
     assert rows[1]["citacoes"] == "-"
-    assert rows[0]["citacoes"].endswith("-,0.5000")
+    assert rows[0]["citacoes"].split("|")[0].endswith("101,0.8000")
+    assert rows[0]["citacoes"].split("|")[1].endswith("-,0.7500")
 
 
 def test_json_validator_rejects_offsets_that_do_not_slice_the_source():
@@ -122,6 +125,8 @@ def test_pipeline_persists_outputs_and_rebuilds_old_index(tmp_path, monkeypatch)
     manifest = json.loads((output / "run_manifest.json").read_text(encoding="utf-8"))
     assert manifest["documents_processed"] == 1
     assert manifest["device"] == "cpu"
+    assert manifest["confidence_policy_version"] == "evidence-rules-v2"
+    assert "heurísticos" in manifest["confidence_policy"]
     rebuilt = json.loads((cache_dir / "header_index.json").read_text(encoding="utf-8"))
     assert rebuilt["index_version"] == 3
     assert "entries_by_id" not in rebuilt

@@ -81,18 +81,19 @@ class SumulaResolver:
         trib = m_trib.group(1).upper() if m_trib else None
         
         tipo = "vinculante" if is_vinculante else "sumula"
+        identifier_strength = "muito_forte" if (trib is not None or is_vinculante) else "forte"
         
         # Tentativa 1: chave exata
         if (tipo, num, trib) in self.sumulas:
             ids = sorted(self.sumulas[(tipo, num, trib)])
             reason = "chave canônica única" if len(ids) == 1 else "chave canônica ambígua"
-            return ResolutionResult.make(ids, sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib or "tribunal omitido"], reason=reason, target_type="sumula")
+            return ResolutionResult.make(ids, sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib or "tribunal omitido"], reason=reason, target_type="sumula", identifier_strength=identifier_strength)
         
         # Tentativa 2: vinculante sem tribunal
         if is_vinculante and (tipo, num, None) in self.sumulas:
             ids = sorted(self.sumulas[(tipo, num, None)])
             reason = "chave canônica única" if len(ids) == 1 else "chave canônica ambígua"
-            return ResolutionResult.make(ids, sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}"], reason=reason, target_type="sumula")
+            return ResolutionResult.make(ids, sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}"], reason=reason, target_type="sumula", identifier_strength=identifier_strength)
             
         # Tentativa 3: buscar por número no índice
         matches = self.by_num.get(num, [])
@@ -100,17 +101,17 @@ class SumulaResolver:
             if trib is not None:
                 filtered = [m for m in matches if m["tribunal"] == trib and m["tipo"] == tipo]
                 if len(filtered) == 1:
-                    return ResolutionResult.make([filtered[0]["id"]], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib], reason="número e tribunal confirmados", target_type="sumula")
+                    return ResolutionResult.make([filtered[0]["id"]], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib], reason="número e tribunal confirmados", target_type="sumula", identifier_strength=identifier_strength)
                 elif len(filtered) > 1:
-                    return ResolutionResult.make([item["id"] for item in filtered], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib], reason="mais de uma súmula compatível", target_type="sumula")
+                    return ResolutionResult.make([item["id"] for item in filtered], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib], reason="mais de uma súmula compatível", target_type="sumula", identifier_strength=identifier_strength)
             else:
                 filtered = [m for m in matches if m["tipo"] == tipo]
                 if len(filtered) == 1:
-                    return ResolutionResult.make([filtered[0]["id"]], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}"], reason="número e tipo confirmados", target_type="sumula")
+                    return ResolutionResult.make([filtered[0]["id"]], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}"], reason="número e tipo confirmados", target_type="sumula", identifier_strength=identifier_strength)
                 elif len(filtered) > 1:
-                    return ResolutionResult.make([item["id"] for item in filtered], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}"], reason="número da súmula ambíguo", target_type="sumula")
+                    return ResolutionResult.make([item["id"] for item in filtered], sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}"], reason="número da súmula ambíguo", target_type="sumula", identifier_strength=identifier_strength)
                     
         # Se tem número e tipo/tribunal bem formulado, mas não está no acervo: INVENTADA!
         if trib is None and not is_vinculante:
-            return ResolutionResult.make(sufficient=False, method="sumula_parse", evidence=[f"súmula:{num}"], reason="tribunal ausente e número não é único na cobertura", target_type="sumula")
-        return ResolutionResult.make(sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib or ""], reason="nenhuma súmula correspondente na cobertura congelada", target_type="sumula")
+            return ResolutionResult.make(sufficient=False, method="sumula_parse", evidence=[f"súmula:{num}"], reason="tribunal ausente e número não é único na cobertura", target_type="sumula", identifier_strength=identifier_strength)
+        return ResolutionResult.make(sufficient=True, method="sumula_exact", evidence=[f"{tipo}:{num}", trib or ""], reason="nenhuma súmula correspondente na cobertura congelada", target_type="sumula", identifier_strength=identifier_strength)
