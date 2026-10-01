@@ -47,3 +47,5 @@ flowchart LR
     EXTRACT --> RESOLVE["Resolução canônica<br/>(FTS5 + consulta exata)"]
     RESOLVE --> SUBMISSION["CSV de submissão"]
 ```
+
+O código foi feito com ajuda de IA.
