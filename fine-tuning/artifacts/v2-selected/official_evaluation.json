@@ -1,0 +1,5257 @@
+{
+  "schema_version": 1,
+  "mode": "official",
+  "run_id": "ft-20260930-v2-balanced-campaign",
+  "evaluation_name": "official_v2",
+  "expected_document_ids": [
+    "gen_n1_002",
+    "gen_n1_003",
+    "gen_n1_004",
+    "gen_n1_007",
+    "gen_n1_009",
+    "gen_n1_010",
+    "gen_n1_011",
+    "gen_n1_012",
+    "gen_n2_003",
+    "gen_n2_004",
+    "gen_n2_005",
+    "gen_n2_007",
+    "gen_n2_008",
+    "gen_n2_009",
+    "gen_n2_010",
+    "gen_n2_012"
+  ],
+  "expected_documents": 16,
+  "documents_without_gold_citations": 0,
+  "official_training_document_ids": [
+    "gen_n1_001",
+    "gen_n1_005",
+    "gen_n1_006",
+    "gen_n1_008",
+    "gen_n1_013",
+    "gen_n2_001",
+    "gen_n2_002",
+    "gen_n2_006",
+    "gen_n2_011",
+    "gen_n2_013"
+  ],
+  "official_heldout_overlap_audit": [],
+  "official_golden_sha256": "8dcd8e6db1f3e533e743ec606df68a85958c8b7709313ced6def735b290f1533",
+  "official_golden_source_sha256": "562e4ee5d0e8cb299ccb99b4c6dd758b195fbb5668617ce4c2ead465ea27211d",
+  "official_golden_filter_code_sha256": "7ae01ebc05cea83ca9ecdce6f5b13e626aee62c54e98cbe9d6d8e825c0cc92ef",
+  "official_golden_filter": {
+    "source_sha256": "562e4ee5d0e8cb299ccb99b4c6dd758b195fbb5668617ce4c2ead465ea27211d",
+    "filtered_sha256": "8dcd8e6db1f3e533e743ec606df68a85958c8b7709313ced6def735b290f1533",
+    "source_row_count": 192,
+    "included_row_count": 119,
+    "included_annotation_document_ids": [
+      "gen_n1_002",
+      "gen_n1_003",
+      "gen_n1_004",
+      "gen_n1_007",
+      "gen_n1_009",
+      "gen_n1_010",
+      "gen_n1_011",
+      "gen_n1_012",
+      "gen_n2_003",
+      "gen_n2_004",
+      "gen_n2_005",
+      "gen_n2_007",
+      "gen_n2_008",
+      "gen_n2_009",
+      "gen_n2_010",
+      "gen_n2_012"
+    ],
+    "expected_document_ids": [
+      "gen_n1_002",
+      "gen_n1_003",
+      "gen_n1_004",
+      "gen_n1_007",
+      "gen_n1_009",
+      "gen_n1_010",
+      "gen_n1_011",
+      "gen_n1_012",
+      "gen_n2_003",
+      "gen_n2_004",
+      "gen_n2_005",
+      "gen_n2_007",
+      "gen_n2_008",
+      "gen_n2_009",
+      "gen_n2_010",
+      "gen_n2_012"
+    ],
+    "expected_documents_without_annotation_rows": []
+  },
+  "official_offset_validation": {
+    "validated_annotation_rows": 119,
+    "expected_document_count": 16,
+    "annotation_rows_per_document": {
+      "gen_n1_002": 8,
+      "gen_n1_003": 7,
+      "gen_n1_004": 6,
+      "gen_n1_007": 9,
+      "gen_n1_009": 9,
+      "gen_n1_010": 9,
+      "gen_n1_011": 7,
+      "gen_n1_012": 9,
+      "gen_n2_003": 7,
+      "gen_n2_004": 5,
+      "gen_n2_005": 8,
+      "gen_n2_007": 8,
+      "gen_n2_008": 4,
+      "gen_n2_009": 8,
+      "gen_n2_010": 7,
+      "gen_n2_012": 8
+    },
+    "documents_without_annotations": []
+  },
+  "official_text_normalization": "UTF-8-sig decode; CRLF and CR converted to LF; UTF-8 staged copy",
+  "official_text_source_sha256": {
+    "gen_n1_002": "3bed72843c91953e292db4a5c49e1ae7812a3fff5fcf0eccface45105b80161b",
+    "gen_n1_003": "9587b63d73d9127d95fff3a13faa95f88d750674d3f2e4a8c8ab7bc219fc44c1",
+    "gen_n1_004": "683d108fb76e7f547bd606d01a08a13532219b22474e1a257dc7773e6760583f",
+    "gen_n1_007": "23e3e8e8236f46167ae8aa098c3c8960008faee366efb663fd2726a6a28a932c",
+    "gen_n1_009": "29cc571a47a8f94fabdd08005b32826116ca11f182d29f822c8085cb6eca3df3",
+    "gen_n1_010": "866579704a8dc7f80bcce96aa4628906829cda2ad01c3897e18829bba1742bdd",
+    "gen_n1_011": "db8482b88e51a0233c2780f4a6c071fb645eb608250164d54d28ef01f380558b",
+    "gen_n1_012": "93ff9c7d6a9c46123b50caeb4db54af4b090c2adae3827f5ccb2e223352146f9",
+    "gen_n2_003": "93f6eb49b6692ce12994750f9dfd5d86f46032f8173e70019ff101572155223b",
+    "gen_n2_004": "41fe4678f1d0c2a1e894e041a3931d32ef8cb1982f9b18a7e8a350fcaa604580",
+    "gen_n2_005": "e339004c878951b4929464878f17bfa66acea33d4ef91ea318cfa2eb04b9c0b9",
+    "gen_n2_007": "19fbf3f58cc49093e5f0b4df8e3b5b23cf2ac5cf1f04da254d963e3b9fd1fd9a",
+    "gen_n2_008": "00a5d4529e0d51526229650b91e99f3546aef8dda2f140fc073f07caad237cd7",
+    "gen_n2_009": "0dff900eb1c7d9920fc02f6a2bbb9ac5315c785db0b0d6fc629e1fbd405886fb",
+    "gen_n2_010": "2512228eb39d3a240813ca35212d3d065c80592fc08e0e7a585c0143a8b96d94",
+    "gen_n2_012": "1a00460cfe8c09b408e5600c0b69344f8fa5bdea1e2d227628c3eac09d42364e"
+  },
+  "official_text_staging": {
+    "gen_n1_002": {
+      "source_sha256": "3bed72843c91953e292db4a5c49e1ae7812a3fff5fcf0eccface45105b80161b",
+      "staged_sha256": "856f73881066c8ff9954fdc6505767888726de4da7a496d3715667761d07b91b",
+      "source_crlf_count": 64,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n1_003": {
+      "source_sha256": "9587b63d73d9127d95fff3a13faa95f88d750674d3f2e4a8c8ab7bc219fc44c1",
+      "staged_sha256": "7812c034579857bb82566112e6aa9f872efd017cf4cf92ee3cdd9b676c25e1ab",
+      "source_crlf_count": 61,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n1_004": {
+      "source_sha256": "683d108fb76e7f547bd606d01a08a13532219b22474e1a257dc7773e6760583f",
+      "staged_sha256": "55b1ed0fbe5464e72ae66f958437ec79a3a85a246449e88e3ab318dd50a46a51",
+      "source_crlf_count": 58,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n1_007": {
+      "source_sha256": "23e3e8e8236f46167ae8aa098c3c8960008faee366efb663fd2726a6a28a932c",
+      "staged_sha256": "fa39332d776bccdd243686e8c09de197bec2288ba0dda2e87eae0ebcf63d2abd",
+      "source_crlf_count": 59,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n1_009": {
+      "source_sha256": "29cc571a47a8f94fabdd08005b32826116ca11f182d29f822c8085cb6eca3df3",
+      "staged_sha256": "449359f5acadff75e7cea3499c506c43c09f2fd6260aef5cd1bffc57f2dcd602",
+      "source_crlf_count": 66,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n1_010": {
+      "source_sha256": "866579704a8dc7f80bcce96aa4628906829cda2ad01c3897e18829bba1742bdd",
+      "staged_sha256": "c958a786632f7400c1983bb9f3b9080f9367b51e6b5227eeba9d559e990f0e35",
+      "source_crlf_count": 61,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n1_011": {
+      "source_sha256": "db8482b88e51a0233c2780f4a6c071fb645eb608250164d54d28ef01f380558b",
+      "staged_sha256": "d1c8ec7cf70218315e9e0a3b65bf06e837f247e78527e3d3bb52c0e4c9c70675",
+      "source_crlf_count": 59,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n1_012": {
+      "source_sha256": "93ff9c7d6a9c46123b50caeb4db54af4b090c2adae3827f5ccb2e223352146f9",
+      "staged_sha256": "498c3db3bb28c632d545c8be381e16c55aef2177bd06b9013e6ba4be308aa54b",
+      "source_crlf_count": 63,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_003": {
+      "source_sha256": "93f6eb49b6692ce12994750f9dfd5d86f46032f8173e70019ff101572155223b",
+      "staged_sha256": "40fcaa8066e6f7516a1a2623ba0cb616c8977b98459d9587379531280dc5b8ec",
+      "source_crlf_count": 63,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_004": {
+      "source_sha256": "41fe4678f1d0c2a1e894e041a3931d32ef8cb1982f9b18a7e8a350fcaa604580",
+      "staged_sha256": "38ca05cc91ad92d6ec1f3ffdccd7fde5f3dc823c39749a9dcfb8a1c798688175",
+      "source_crlf_count": 61,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_005": {
+      "source_sha256": "e339004c878951b4929464878f17bfa66acea33d4ef91ea318cfa2eb04b9c0b9",
+      "staged_sha256": "972ed712ab691c8e70cf76ac2cfa81a6579e7f2a2aa104da73a8c779f86f23ec",
+      "source_crlf_count": 67,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_007": {
+      "source_sha256": "19fbf3f58cc49093e5f0b4df8e3b5b23cf2ac5cf1f04da254d963e3b9fd1fd9a",
+      "staged_sha256": "e0d2233597ed5a4ae42ed7ceab01474ec6b036b6b9c0113d105fb9fadcd080c6",
+      "source_crlf_count": 65,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_008": {
+      "source_sha256": "00a5d4529e0d51526229650b91e99f3546aef8dda2f140fc073f07caad237cd7",
+      "staged_sha256": "2713daaed718e6e95d6027b632a902ed3076815040bdc875722f8d67361a3bbc",
+      "source_crlf_count": 63,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_009": {
+      "source_sha256": "0dff900eb1c7d9920fc02f6a2bbb9ac5315c785db0b0d6fc629e1fbd405886fb",
+      "staged_sha256": "64187a7dc27d2b321632c3bb13a616d605123b105f28c1eb55221d5e1e3e20f6",
+      "source_crlf_count": 65,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_010": {
+      "source_sha256": "2512228eb39d3a240813ca35212d3d065c80592fc08e0e7a585c0143a8b96d94",
+      "staged_sha256": "0eb723827025930c129943f1e0386e8e82cad7bb2eb3fb8cedb3ae7c1c7a2233",
+      "source_crlf_count": 60,
+      "source_has_bom": false,
+      "changed_from_source": true
+    },
+    "gen_n2_012": {
+      "source_sha256": "1a00460cfe8c09b408e5600c0b69344f8fa5bdea1e2d227628c3eac09d42364e",
+      "staged_sha256": "ad6540c47d9811b28404af8be19907eab8e39886f5460bbed826fe806a44f78b",
+      "source_crlf_count": 66,
+      "source_has_bom": false,
+      "changed_from_source": true
+    }
+  },
+  "canonical_database_sha256": "78f0708b0a21c11655dfdd882382fea75c62a75415d8d3b118888c0a340bef4c",
+  "checkpoint_sha256": "b0f08384fdcc47196ea894f12c4ef839ec5a7f25e6e66231721590fb780b55cc",
+  "model_weights_sha256": "52b24416c23a645db9aa49e83cf59e14aa8b225ae396f01d48415d50ae67945c",
+  "evaluation_code_sha256": "c093dd2ccdaf33549ff5def1aa5c4e42dd82661ad421bdd9c0a4cc4e10dc4a1b",
+  "metric_code_sha256": "fcea4f9b390561f90c56e6718b9c010c0899e44ce173313775819cac9bc858b7",
+  "text_sha256": {
+    "gen_n1_002": "856f73881066c8ff9954fdc6505767888726de4da7a496d3715667761d07b91b",
+    "gen_n1_003": "7812c034579857bb82566112e6aa9f872efd017cf4cf92ee3cdd9b676c25e1ab",
+    "gen_n1_004": "55b1ed0fbe5464e72ae66f958437ec79a3a85a246449e88e3ab318dd50a46a51",
+    "gen_n1_007": "fa39332d776bccdd243686e8c09de197bec2288ba0dda2e87eae0ebcf63d2abd",
+    "gen_n1_009": "449359f5acadff75e7cea3499c506c43c09f2fd6260aef5cd1bffc57f2dcd602",
+    "gen_n1_010": "c958a786632f7400c1983bb9f3b9080f9367b51e6b5227eeba9d559e990f0e35",
+    "gen_n1_011": "d1c8ec7cf70218315e9e0a3b65bf06e837f247e78527e3d3bb52c0e4c9c70675",
+    "gen_n1_012": "498c3db3bb28c632d545c8be381e16c55aef2177bd06b9013e6ba4be308aa54b",
+    "gen_n2_003": "40fcaa8066e6f7516a1a2623ba0cb616c8977b98459d9587379531280dc5b8ec",
+    "gen_n2_004": "38ca05cc91ad92d6ec1f3ffdccd7fde5f3dc823c39749a9dcfb8a1c798688175",
+    "gen_n2_005": "972ed712ab691c8e70cf76ac2cfa81a6579e7f2a2aa104da73a8c779f86f23ec",
+    "gen_n2_007": "e0d2233597ed5a4ae42ed7ceab01474ec6b036b6b9c0113d105fb9fadcd080c6",
+    "gen_n2_008": "2713daaed718e6e95d6027b632a902ed3076815040bdc875722f8d67361a3bbc",
+    "gen_n2_009": "64187a7dc27d2b321632c3bb13a616d605123b105f28c1eb55221d5e1e3e20f6",
+    "gen_n2_010": "0eb723827025930c129943f1e0386e8e82cad7bb2eb3fb8cedb3ae7c1c7a2233",
+    "gen_n2_012": "ad6540c47d9811b28404af8be19907eab8e39886f5460bbed826fe806a44f78b"
+  },
+  "submission_sha256": "a6cddbd18dd3b1b73d68739ee3f307ca751932ffe5cc5f20bc8ad8a075766e80",
+  "challenge_metrics": {
+    "score_final": 1.0826433884507491,
+    "niveis": {
+      "1": {
+        "macro_f1": 1.0,
+        "f1_por_classe": {
+          "real": 1.0,
+          "inventada": 1.0,
+          "incompleta": 1.0
+        },
+        "tau": 0.0,
+        "s": 1.0,
+        "b": 0.0938203125,
+        "score": 1.0938203125000001
+      },
+      "2": {
+        "macro_f1": 0.985809312638581,
+        "f1_por_classe": {
+          "real": 0.9818181818181818,
+          "inventada": 0.975609756097561,
+          "incompleta": 1.0
+        },
+        "tau": 0.0,
+        "s": 0.985809312638581,
+        "b": 0.09255909090909092,
+        "score": 1.0770549264261238
+      }
+    }
+  },
+  "context_bootstrap": null,
+  "stage_span_metrics": {
+    "regex": {
+      "iou_threshold": 0.5,
+      "matched": 119,
+      "typed_matched": 100,
+      "exact_span_matched": 101,
+      "gold": 119,
+      "predictions": 119,
+      "precision": 1.0,
+      "recall": 1.0,
+      "typed_precision": 0.8403361344537815,
+      "typed_recall": 0.8403361344537815,
+      "gold_negative_documents": 0,
+      "false_positives_in_gold_negative_documents": 0,
+      "per_level": {
+        "1": {
+          "iou_threshold": 0.5,
+          "matched": 64,
+          "typed_matched": 55,
+          "exact_span_matched": 61,
+          "gold": 64,
+          "predictions": 64,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 0.859375,
+          "typed_recall": 0.859375
+        },
+        "2": {
+          "iou_threshold": 0.5,
+          "matched": 55,
+          "typed_matched": 45,
+          "exact_span_matched": 40,
+          "gold": 55,
+          "predictions": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 0.8181818181818182,
+          "typed_recall": 0.8181818181818182
+        }
+      },
+      "per_type": {
+        "legislacao": {
+          "iou_threshold": 0.5,
+          "matched": 0,
+          "typed_matched": 0,
+          "exact_span_matched": 0,
+          "gold": 0,
+          "predictions": 19,
+          "precision": 0.0,
+          "recall": 0.0,
+          "typed_precision": 0.0,
+          "typed_recall": 0.0
+        },
+        "jurisprudencia": {
+          "iou_threshold": 0.5,
+          "matched": 100,
+          "typed_matched": 100,
+          "exact_span_matched": 82,
+          "gold": 100,
+          "predictions": 100,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 1.0,
+          "typed_recall": 1.0
+        }
+      }
+    },
+    "ner": {
+      "iou_threshold": 0.5,
+      "matched": 115,
+      "typed_matched": 95,
+      "exact_span_matched": 108,
+      "gold": 119,
+      "predictions": 124,
+      "precision": 0.9274193548387096,
+      "recall": 0.9663865546218487,
+      "typed_precision": 0.7661290322580645,
+      "typed_recall": 0.7983193277310925,
+      "gold_negative_documents": 0,
+      "false_positives_in_gold_negative_documents": 0,
+      "per_level": {
+        "1": {
+          "iou_threshold": 0.5,
+          "matched": 62,
+          "typed_matched": 53,
+          "exact_span_matched": 59,
+          "gold": 64,
+          "predictions": 68,
+          "precision": 0.9117647058823529,
+          "recall": 0.96875,
+          "typed_precision": 0.7794117647058824,
+          "typed_recall": 0.828125
+        },
+        "2": {
+          "iou_threshold": 0.5,
+          "matched": 53,
+          "typed_matched": 42,
+          "exact_span_matched": 49,
+          "gold": 55,
+          "predictions": 56,
+          "precision": 0.9464285714285714,
+          "recall": 0.9636363636363636,
+          "typed_precision": 0.75,
+          "typed_recall": 0.7636363636363637
+        }
+      },
+      "per_type": {
+        "legislacao": {
+          "iou_threshold": 0.5,
+          "matched": 0,
+          "typed_matched": 0,
+          "exact_span_matched": 0,
+          "gold": 0,
+          "predictions": 21,
+          "precision": 0.0,
+          "recall": 0.0,
+          "typed_precision": 0.0,
+          "typed_recall": 0.0
+        },
+        "jurisprudencia": {
+          "iou_threshold": 0.5,
+          "matched": 95,
+          "typed_matched": 95,
+          "exact_span_matched": 89,
+          "gold": 100,
+          "predictions": 103,
+          "precision": 0.9223300970873787,
+          "recall": 0.95,
+          "typed_precision": 0.9223300970873787,
+          "typed_recall": 0.95
+        }
+      }
+    },
+    "fused": {
+      "iou_threshold": 0.5,
+      "matched": 119,
+      "typed_matched": 100,
+      "exact_span_matched": 101,
+      "gold": 119,
+      "predictions": 119,
+      "precision": 1.0,
+      "recall": 1.0,
+      "typed_precision": 0.8403361344537815,
+      "typed_recall": 0.8403361344537815,
+      "gold_negative_documents": 0,
+      "false_positives_in_gold_negative_documents": 0,
+      "per_level": {
+        "1": {
+          "iou_threshold": 0.5,
+          "matched": 64,
+          "typed_matched": 55,
+          "exact_span_matched": 61,
+          "gold": 64,
+          "predictions": 64,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 0.859375,
+          "typed_recall": 0.859375
+        },
+        "2": {
+          "iou_threshold": 0.5,
+          "matched": 55,
+          "typed_matched": 45,
+          "exact_span_matched": 40,
+          "gold": 55,
+          "predictions": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 0.8181818181818182,
+          "typed_recall": 0.8181818181818182
+        }
+      },
+      "per_type": {
+        "legislacao": {
+          "iou_threshold": 0.5,
+          "matched": 0,
+          "typed_matched": 0,
+          "exact_span_matched": 0,
+          "gold": 0,
+          "predictions": 19,
+          "precision": 0.0,
+          "recall": 0.0,
+          "typed_precision": 0.0,
+          "typed_recall": 0.0
+        },
+        "jurisprudencia": {
+          "iou_threshold": 0.5,
+          "matched": 100,
+          "typed_matched": 100,
+          "exact_span_matched": 82,
+          "gold": 100,
+          "predictions": 100,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 1.0,
+          "typed_recall": 1.0
+        }
+      }
+    },
+    "resolved": {
+      "iou_threshold": 0.5,
+      "matched": 119,
+      "typed_matched": 100,
+      "exact_span_matched": 101,
+      "gold": 119,
+      "predictions": 119,
+      "precision": 1.0,
+      "recall": 1.0,
+      "typed_precision": 0.8403361344537815,
+      "typed_recall": 0.8403361344537815,
+      "gold_negative_documents": 0,
+      "false_positives_in_gold_negative_documents": 0,
+      "per_level": {
+        "1": {
+          "iou_threshold": 0.5,
+          "matched": 64,
+          "typed_matched": 55,
+          "exact_span_matched": 61,
+          "gold": 64,
+          "predictions": 64,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 0.859375,
+          "typed_recall": 0.859375
+        },
+        "2": {
+          "iou_threshold": 0.5,
+          "matched": 55,
+          "typed_matched": 45,
+          "exact_span_matched": 40,
+          "gold": 55,
+          "predictions": 55,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 0.8181818181818182,
+          "typed_recall": 0.8181818181818182
+        }
+      },
+      "per_type": {
+        "legislacao": {
+          "iou_threshold": 0.5,
+          "matched": 0,
+          "typed_matched": 0,
+          "exact_span_matched": 0,
+          "gold": 0,
+          "predictions": 19,
+          "precision": 0.0,
+          "recall": 0.0,
+          "typed_precision": 0.0,
+          "typed_recall": 0.0
+        },
+        "jurisprudencia": {
+          "iou_threshold": 0.5,
+          "matched": 100,
+          "typed_matched": 100,
+          "exact_span_matched": 82,
+          "gold": 100,
+          "predictions": 100,
+          "precision": 1.0,
+          "recall": 1.0,
+          "typed_precision": 1.0,
+          "typed_recall": 1.0
+        }
+      }
+    }
+  },
+  "stage_predictions": {
+    "regex": {
+      "gen_n1_002": [
+        {
+          "inicio": 651,
+          "fim": 709,
+          "trecho": "precedente\ndo STF de 2026, da relatoria de CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 845,
+          "fim": 898,
+          "trecho": "Reclamação\ndo STF, de 2025, Rel. Min. CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 1052,
+          "fim": 1065,
+          "trecho": "Rcl 55.626/DF",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1464,
+          "fim": 1501,
+          "trecho": "Recurso em Habeas Corpus nº 57.763/PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1613,
+          "fim": 1643,
+          "trecho": "AgInt no AREsp nº 1.996.496/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2133,
+          "fim": 2153,
+          "trecho": "Súmula Vinculante 10",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula"
+        },
+        {
+          "inicio": 2308,
+          "fim": 2350,
+          "trecho": "Agravo em Recurso Especial nº 1.708.000/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3364,
+          "fim": 3396,
+          "trecho": "art. 1.134 da Lei nº\n13.105/2015",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        }
+      ],
+      "gen_n1_003": [
+        {
+          "inicio": 577,
+          "fim": 602,
+          "trecho": "AgInt no AREsp 1576933/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1202,
+          "fim": 1244,
+          "trecho": "art. 158 do Código de Defesa do Consumidor",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 1686,
+          "fim": 1704,
+          "trecho": "REsp nº 2020005/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2317,
+          "fim": 2407,
+          "trecho": "Agravo em Recurso Especial do STJ,\nde 2023, Rel. Min. Assusete Magalhães. Sob outro ângulo",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 2489,
+          "fim": 2531,
+          "trecho": "art. 185 do Código de Defesa do Consumidor",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 3043,
+          "fim": 3069,
+          "trecho": "AgRg no AREsp 1.327.863/PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3213,
+          "fim": 3232,
+          "trecho": "art. 373, I, do CPC",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        }
+      ],
+      "gen_n1_004": [
+        {
+          "inicio": 460,
+          "fim": 492,
+          "trecho": "APL 7357951-18.2020.7.00.0000/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 1435,
+          "fim": 1450,
+          "trecho": "RE 7.216.673/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1571,
+          "fim": 1603,
+          "trecho": "APL 7000136-79.2023.7.00.0000/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 2005,
+          "fim": 2040,
+          "trecho": "RSE nº 7000768-37.2025.7.00.0000/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 2508,
+          "fim": 2540,
+          "trecho": "art.\n290 do Código Penal Militar",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 2639,
+          "fim": 2671,
+          "trecho": "RSE 7000082-11.2026.7.00.0000/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        }
+      ],
+      "gen_n1_007": [
+        {
+          "inicio": 531,
+          "fim": 572,
+          "trecho": "art. 93, IX, da Constituição da República",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 946,
+          "fim": 968,
+          "trecho": "AgInt na Rcl 36.670/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1422,
+          "fim": 1483,
+          "trecho": "julgado do STF proferido em 2021 pela relatoria de Rosa Weber",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 1636,
+          "fim": 1652,
+          "trecho": "RHC nº 55.508/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1732,
+          "fim": 1764,
+          "trecho": "art. 261 da Constituição Federal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 1902,
+          "fim": 1944,
+          "trecho": "Rcl de 2025, Rel. Min. CÁRMEN LÚCIA.\n\nIII ",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 2360,
+          "fim": 2426,
+          "trecho": "acórdão do STJ julgado em 2023 sob relatoria de Assusete Magalhães",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 2892,
+          "fim": 2909,
+          "trecho": "REsp 1.883.715/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3028,
+          "fim": 3051,
+          "trecho": "Reclamação nº 11.125/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n1_009": [
+        {
+          "inicio": 616,
+          "fim": 686,
+          "trecho": "Embargos de Declaração no Recurso em Mandado de Segurança\nnº 67.101/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1386,
+          "fim": 1403,
+          "trecho": "REsp 1.501.000/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1921,
+          "fim": 1934,
+          "trecho": "RHC 346037/PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2449,
+          "fim": 2533,
+          "trecho": "Embargos de Declaração no Agravo Interno no Agravo em Recurso Especial nº 1904603/TO",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2968,
+          "fim": 2985,
+          "trecho": "Súmula 979 do STF",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula"
+        },
+        {
+          "inicio": 3065,
+          "fim": 3098,
+          "trecho": "AgInt nos EDcl no REsp 2144995/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3220,
+          "fim": 3235,
+          "trecho": "REsp 5672508/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3401,
+          "fim": 3465,
+          "trecho": "Agravo Interno na Suspensão\nde Liminar e de Sentença nº 2.883/MA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3603,
+          "fim": 3635,
+          "trecho": "EDcl no AgInt no REsp 1889127/SE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n1_010": [
+        {
+          "inicio": 477,
+          "fim": 494,
+          "trecho": "REsp 6.989.916/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 933,
+          "fim": 949,
+          "trecho": "RHC nº\n88.033/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1612,
+          "fim": 1629,
+          "trecho": "Súmula 443 do STJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula"
+        },
+        {
+          "inicio": 2140,
+          "fim": 2181,
+          "trecho": "AgInt no Recurso Especial nº 1.657.496/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2565,
+          "fim": 2597,
+          "trecho": "Recurso Especial nº 1.718.894/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2757,
+          "fim": 2786,
+          "trecho": "AgInt no REsp nº 1.944.552/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2927,
+          "fim": 2940,
+          "trecho": "Rcl 33.235/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3058,
+          "fim": 3116,
+          "trecho": "Agravo Interno no Agravo em Recurso Especial nº 1807643/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3244,
+          "fim": 3260,
+          "trecho": "Rcl nº 55.930/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n1_011": [
+        {
+          "inicio": 502,
+          "fim": 523,
+          "trecho": "Súmula Vinculante 182",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula"
+        },
+        {
+          "inicio": 670,
+          "fim": 728,
+          "trecho": "precedente do STF de 2024, da relatoria de Cristiano\nZanin",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 1216,
+          "fim": 1242,
+          "trecho": "AgInt no REsp 1.820.970/SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1710,
+          "fim": 1746,
+          "trecho": "art. 5º, LV, da Constituição Federal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 2204,
+          "fim": 2220,
+          "trecho": "RHC nº 55.509/SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2363,
+          "fim": 2421,
+          "trecho": "precedente do STF de 2026,\nda relatoria de CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 2828,
+          "fim": 2851,
+          "trecho": "Reclamação nº 33.125/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n1_012": [
+        {
+          "inicio": 582,
+          "fim": 605,
+          "trecho": "RR-65-63.2010.5.01.0075",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1119,
+          "fim": 1143,
+          "trecho": "art. 896, § 1º-A, da CLT",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 1218,
+          "fim": 1243,
+          "trecho": "ARR-213-85.2010.5.02.0030",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1412,
+          "fim": 1428,
+          "trecho": "Rcl nº 66.884/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1891,
+          "fim": 1914,
+          "trecho": "Reclamação nº 22.357/PE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2043,
+          "fim": 2085,
+          "trecho": "processo nº TST-RR-79500-16.2009.5.15.0016",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 2970,
+          "fim": 2986,
+          "trecho": "Rcl nº\n68.244/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3135,
+          "fim": 3170,
+          "trecho": "Terceiro AG.REG na Rcl nº 62.425/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3317,
+          "fim": 3330,
+          "trecho": "Rcl 44.960/PE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n2_003": [
+        {
+          "inicio": 613,
+          "fim": 682,
+          "trecho": "precedente do STF\nde 2024, da relatoria de Cármen Lúcia. Não se trata",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 736,
+          "fim": 789,
+          "trecho": "Processo n° TST- ED - E-ED-RR-41200-79.2011.5.21.0005",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 1289,
+          "fim": 1314,
+          "trecho": "RR-1835-06.2010.5.15.0042",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1726,
+          "fim": 1743,
+          "trecho": "RE. nº 3.647.129-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1847,
+          "fim": 1863,
+          "trecho": "Rcl n° 66698/ BA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2559,
+          "fim": 2578,
+          "trecho": "artigo 1.143 da CLT",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 2988,
+          "fim": 3027,
+          "trecho": "TST-ED-E-ED-ARR-1099-66.2011.5.02.\n0251",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        }
+      ],
+      "gen_n2_004": [
+        {
+          "inicio": 1014,
+          "fim": 1045,
+          "trecho": "artigo 172 da Lei nº 9.504/1997",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 1463,
+          "fim": 1478,
+          "trecho": "Súm. 166 do TSE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula"
+        },
+        {
+          "inicio": 2055,
+          "fim": 2092,
+          "trecho": "REspe. n° 0600216-46.2020-\n.6.14.0022",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 2244,
+          "fim": 2286,
+          "trecho": "EDs no AGR-RESPE n° 533-80. 2012.6.13.0029",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 2390,
+          "fim": 2418,
+          "trecho": "art 189 da Lei nº 9.504/1997",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        }
+      ],
+      "gen_n2_005": [
+        {
+          "inicio": 574,
+          "fim": 601,
+          "trecho": "Reclamação n° 33.-\n474 (MA)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1122,
+          "fim": 1175,
+          "trecho": "Reclamação do STF, de 2026, Rel. Min. CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 1617,
+          "fim": 1687,
+          "trecho": "Reclamação do STF, de 2020, Rel. Min. Celso De Mello. Antes de avançar",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 1765,
+          "fim": 1793,
+          "trecho": "art 60 da Lei nº 13.467/2017",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 1901,
+          "fim": 1938,
+          "trecho": "TST-AgARR-25823-78.2015.5.24.\n0091.\n\n",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 2388,
+          "fim": 2466,
+          "trecho": "julgado do TST proferido\nem 2017 pela relatoria de José Roberto Freire Pimenta",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 2959,
+          "fim": 3012,
+          "trecho": "Processo n° TST- ED-E-ED-RR-160000-97.2010.5.21.0006 ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 3172,
+          "fim": 3212,
+          "trecho": "artigo 7º, XXIX, da Constituição Fedcral",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        }
+      ],
+      "gen_n2_007": [
+        {
+          "inicio": 514,
+          "fim": 547,
+          "trecho": "Ag. Int. No 7001184-1520197000000",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 955,
+          "fim": 986,
+          "trecho": "art 290 da Constituição\nFederal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 1416,
+          "fim": 1485,
+          "trecho": "Rcl de 2024, Rel.  Min. Flávio Dino\npara sustentar tese já superada. ",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 1549,
+          "fim": 1587,
+          "trecho": "RSE Nº 7220273--\n23.2018.7.00.0000/ RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 1818,
+          "fim": 1831,
+          "trecho": "RCL n° 88905-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1972,
+          "fim": 2005,
+          "trecho": "APL\n 7000761-84 2021 7 00 0000/BA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        },
+        {
+          "inicio": 2100,
+          "fim": 2121,
+          "trecho": "Súmula Vinculante 188",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula"
+        },
+        {
+          "inicio": 2519,
+          "fim": 2553,
+          "trecho": "RSE n.  7000171-3920237000000 (DF)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj"
+        }
+      ],
+      "gen_n2_008": [
+        {
+          "inicio": 1206,
+          "fim": 1239,
+          "trecho": "Recurso Especial n°  2.467-\n.648-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1898,
+          "fim": 1932,
+          "trecho": "EDcl no AgInt no ARESP 1980827/ RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2384,
+          "fim": 2398,
+          "trecho": "RCL nº 99.942-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3051,
+          "fim": 3078,
+          "trecho": "AgRg no H.C. Nº 891369 (RS)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n2_009": [
+        {
+          "inicio": 539,
+          "fim": 568,
+          "trecho": "Rec. Esp. nº  1. 570.531 – CE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 725,
+          "fim": 762,
+          "trecho": "EDcl no AgInt no ARESP  1 821 663/ SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 883,
+          "fim": 915,
+          "trecho": "art. 303 da Constituição\nFederal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 1190,
+          "fim": 1208,
+          "trecho": "REsp\n 555 700 (RS)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1614,
+          "fim": 1640,
+          "trecho": "AgInt no RESP 21737l8 - SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1771,
+          "fim": 1786,
+          "trecho": "AR\nn. 2785 (SP)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2227,
+          "fim": 2257,
+          "trecho": "AgInt no RESP nº 1.666.812/ PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3263,
+          "fim": 3281,
+          "trecho": "REsp Nº 1.632.479-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n2_010": [
+        {
+          "inicio": 579,
+          "fim": 604,
+          "trecho": "Reclamação Nº 77.872 – SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1164,
+          "fim": 1192,
+          "trecho": "AgInt no ARESP Nº 1.512.757-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1640,
+          "fim": 1666,
+          "trecho": "artigo 186 do Código Civil",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 2107,
+          "fim": 2148,
+          "trecho": "art. 14 do Código de Defesa do Consumidor",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 2626,
+          "fim": 2687,
+          "trecho": "precedente do\nSTJ de 2021, da relatoria de Assusete Magalhães",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 2841,
+          "fim": 2873,
+          "trecho": "Recurso Especial nº  1377019/ SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2963,
+          "fim": 3007,
+          "trecho": "AgInt no Recurso Especial nº  1.597.443\n- PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ],
+      "gen_n2_012": [
+        {
+          "inicio": 481,
+          "fim": 507,
+          "trecho": "AgRg no RESP 1.528.4S5/ RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1082,
+          "fim": 1179,
+          "trecho": "Recurso em Habeas Corpus do STJ, de 2019, Rel. Min. Sebastião\nReis Júnlor foi reafirmada em julga",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga"
+        },
+        {
+          "inicio": 1282,
+          "fim": 1299,
+          "trecho": "AgREsp 9188087/ES",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 1603,
+          "fim": 1627,
+          "trecho": "Reclamação nº 33560 - BA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2089,
+          "fim": 2124,
+          "trecho": "art 312 do Código\nde Processo Penal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei"
+        },
+        {
+          "inicio": 2540,
+          "fim": 2561,
+          "trecho": "R.Esp. n°  1.45g.779-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 2695,
+          "fim": 2718,
+          "trecho": "Reclamação 33. 672 (BA)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        },
+        {
+          "inicio": 3158,
+          "fim": 3172,
+          "trecho": "RMS Nº  67109-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica"
+        }
+      ]
+    },
+    "ner": {
+      "gen_n1_002": [
+        {
+          "inicio": 651,
+          "fim": 693,
+          "tipo": "jurisprudencia",
+          "prob": 0.9375420121046213,
+          "is_vague": false,
+          "trecho": "precedente\ndo STF de 2026, da relatoria de"
+        },
+        {
+          "inicio": 702,
+          "fim": 703,
+          "tipo": "jurisprudencia",
+          "prob": 0.7230854034423828,
+          "is_vague": false,
+          "trecho": "O"
+        },
+        {
+          "inicio": 845,
+          "fim": 898,
+          "tipo": "jurisprudencia",
+          "prob": 0.9960281186633639,
+          "is_vague": true,
+          "trecho": "Reclamação\ndo STF, de 2025, Rel. Min. CRISTIANO ZANIN"
+        },
+        {
+          "inicio": 1052,
+          "fim": 1065,
+          "tipo": "jurisprudencia",
+          "prob": 0.9994905657238431,
+          "is_vague": false,
+          "trecho": "Rcl 55.626/DF"
+        },
+        {
+          "inicio": 1464,
+          "fim": 1501,
+          "tipo": "jurisprudencia",
+          "prob": 0.999700133005778,
+          "is_vague": false,
+          "trecho": "Recurso em Habeas Corpus nº 57.763/PR"
+        },
+        {
+          "inicio": 1613,
+          "fim": 1643,
+          "tipo": "jurisprudencia",
+          "prob": 0.9989308188943302,
+          "is_vague": false,
+          "trecho": "AgInt no AREsp nº 1.996.496/RJ"
+        },
+        {
+          "inicio": 2133,
+          "fim": 2153,
+          "tipo": "jurisprudencia",
+          "prob": 0.9967144727706909,
+          "is_vague": false,
+          "trecho": "Súmula Vinculante 10"
+        },
+        {
+          "inicio": 2308,
+          "fim": 2350,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997767885526021,
+          "is_vague": false,
+          "trecho": "Agravo em Recurso Especial nº 1.708.000/SP"
+        },
+        {
+          "inicio": 3364,
+          "fim": 3396,
+          "tipo": "lei",
+          "prob": 0.999594224350793,
+          "is_vague": false,
+          "trecho": "art. 1.134 da Lei nº\n13.105/2015"
+        }
+      ],
+      "gen_n1_003": [
+        {
+          "inicio": 577,
+          "fim": 602,
+          "tipo": "jurisprudencia",
+          "prob": 0.9992642849683762,
+          "is_vague": false,
+          "trecho": "AgInt no AREsp 1576933/SP"
+        },
+        {
+          "inicio": 1202,
+          "fim": 1244,
+          "tipo": "lei",
+          "prob": 0.9998158433220603,
+          "is_vague": false,
+          "trecho": "art. 158 do Código de Defesa do Consumidor"
+        },
+        {
+          "inicio": 1686,
+          "fim": 1704,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997502101792229,
+          "is_vague": false,
+          "trecho": "REsp nº 2020005/RJ"
+        },
+        {
+          "inicio": 2317,
+          "fim": 2389,
+          "tipo": "jurisprudencia",
+          "prob": 0.9653547286987305,
+          "is_vague": true,
+          "trecho": "Agravo em Recurso Especial do STJ,\nde 2023, Rel. Min. Assusete Magalhães"
+        },
+        {
+          "inicio": 2489,
+          "fim": 2531,
+          "tipo": "lei",
+          "prob": 0.9984737038612366,
+          "is_vague": false,
+          "trecho": "art. 185 do Código de Defesa do Consumidor"
+        },
+        {
+          "inicio": 3043,
+          "fim": 3069,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996216893196106,
+          "is_vague": false,
+          "trecho": "AgRg no AREsp 1.327.863/PR"
+        },
+        {
+          "inicio": 3213,
+          "fim": 3232,
+          "tipo": "lei",
+          "prob": 0.9992453694343567,
+          "is_vague": false,
+          "trecho": "art. 373, I, do CPC"
+        }
+      ],
+      "gen_n1_004": [
+        {
+          "inicio": 460,
+          "fim": 492,
+          "tipo": "jurisprudencia",
+          "prob": 0.9995534658432007,
+          "is_vague": false,
+          "trecho": "APL 7357951-18.2020.7.00.0000/RJ"
+        },
+        {
+          "inicio": 1435,
+          "fim": 1450,
+          "tipo": "jurisprudencia",
+          "prob": 0.9988894408399408,
+          "is_vague": false,
+          "trecho": "RE 7.216.673/RS"
+        },
+        {
+          "inicio": 1571,
+          "fim": 1603,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997623594183671,
+          "is_vague": false,
+          "trecho": "APL 7000136-79.2023.7.00.0000/RS"
+        },
+        {
+          "inicio": 2005,
+          "fim": 2040,
+          "tipo": "jurisprudencia",
+          "prob": 0.9995210113979521,
+          "is_vague": false,
+          "trecho": "RSE nº 7000768-37.2025.7.00.0000/RS"
+        },
+        {
+          "inicio": 2508,
+          "fim": 2540,
+          "tipo": "lei",
+          "prob": 0.9996097236871719,
+          "is_vague": false,
+          "trecho": "art.\n290 do Código Penal Militar"
+        },
+        {
+          "inicio": 2639,
+          "fim": 2671,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996787577867507,
+          "is_vague": false,
+          "trecho": "RSE 7000082-11.2026.7.00.0000/RS"
+        }
+      ],
+      "gen_n1_007": [
+        {
+          "inicio": 531,
+          "fim": 572,
+          "tipo": "lei",
+          "prob": 0.9993036568164826,
+          "is_vague": false,
+          "trecho": "art. 93, IX, da Constituição da República"
+        },
+        {
+          "inicio": 946,
+          "fim": 968,
+          "tipo": "jurisprudencia",
+          "prob": 0.9661423961321512,
+          "is_vague": false,
+          "trecho": "AgInt na Rcl 36.670/SP"
+        },
+        {
+          "inicio": 1422,
+          "fim": 1483,
+          "tipo": "jurisprudencia",
+          "prob": 0.9685255438089371,
+          "is_vague": false,
+          "trecho": "julgado do STF proferido em 2021 pela relatoria de Rosa Weber"
+        },
+        {
+          "inicio": 1636,
+          "fim": 1652,
+          "tipo": "jurisprudencia",
+          "prob": 0.9992779228422377,
+          "is_vague": false,
+          "trecho": "RHC nº 55.508/RS"
+        },
+        {
+          "inicio": 1732,
+          "fim": 1764,
+          "tipo": "lei",
+          "prob": 0.9996844785554069,
+          "is_vague": false,
+          "trecho": "art. 261 da Constituição Federal"
+        },
+        {
+          "inicio": 1902,
+          "fim": 1937,
+          "tipo": "jurisprudencia",
+          "prob": 0.9981568694114685,
+          "is_vague": true,
+          "trecho": "Rcl de 2025, Rel. Min. CÁRMEN LÚCIA"
+        },
+        {
+          "inicio": 2360,
+          "fim": 2426,
+          "tipo": "jurisprudencia",
+          "prob": 0.95,
+          "is_vague": true,
+          "trecho": "acórdão do STJ julgado em 2023 sob relatoria de Assusete Magalhães"
+        },
+        {
+          "inicio": 2892,
+          "fim": 2909,
+          "tipo": "jurisprudencia",
+          "prob": 0.9998325059811274,
+          "is_vague": false,
+          "trecho": "REsp 1.883.715/SP"
+        },
+        {
+          "inicio": 3028,
+          "fim": 3051,
+          "tipo": "jurisprudencia",
+          "prob": 0.9993279948830605,
+          "is_vague": false,
+          "trecho": "Reclamação nº 11.125/SP"
+        }
+      ],
+      "gen_n1_009": [
+        {
+          "inicio": 642,
+          "fim": 686,
+          "tipo": "jurisprudencia",
+          "prob": 0.9919135937323937,
+          "is_vague": false,
+          "trecho": "Recurso em Mandado de Segurança\nnº 67.101/RJ"
+        },
+        {
+          "inicio": 1386,
+          "fim": 1403,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997399178418246,
+          "is_vague": false,
+          "trecho": "REsp 1.501.000/RJ"
+        },
+        {
+          "inicio": 1921,
+          "fim": 1934,
+          "tipo": "jurisprudencia",
+          "prob": 0.9995915293693542,
+          "is_vague": false,
+          "trecho": "RHC 346037/PR"
+        },
+        {
+          "inicio": 2449,
+          "fim": 2533,
+          "tipo": "jurisprudencia",
+          "prob": 0.9959615444143614,
+          "is_vague": false,
+          "trecho": "Embargos de Declaração no Agravo Interno no Agravo em Recurso Especial nº 1904603/TO"
+        },
+        {
+          "inicio": 2968,
+          "fim": 2985,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997368976473808,
+          "is_vague": false,
+          "trecho": "Súmula 979 do STF"
+        },
+        {
+          "inicio": 3065,
+          "fim": 3098,
+          "tipo": "jurisprudencia",
+          "prob": 0.9992405631962944,
+          "is_vague": false,
+          "trecho": "AgInt nos EDcl no REsp 2144995/RJ"
+        },
+        {
+          "inicio": 3220,
+          "fim": 3235,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997474948565165,
+          "is_vague": false,
+          "trecho": "REsp 5672508/RJ"
+        },
+        {
+          "inicio": 3401,
+          "fim": 3465,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997223317623138,
+          "is_vague": false,
+          "trecho": "Agravo Interno na Suspensão\nde Liminar e de Sentença nº 2.883/MA"
+        },
+        {
+          "inicio": 3603,
+          "fim": 3635,
+          "tipo": "jurisprudencia",
+          "prob": 0.99964964017272,
+          "is_vague": false,
+          "trecho": "EDcl no AgInt no REsp 1889127/SE"
+        }
+      ],
+      "gen_n1_010": [
+        {
+          "inicio": 477,
+          "fim": 494,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996087352434794,
+          "is_vague": false,
+          "trecho": "REsp 6.989.916/RS"
+        },
+        {
+          "inicio": 933,
+          "fim": 949,
+          "tipo": "jurisprudencia",
+          "prob": 0.9990762405925326,
+          "is_vague": false,
+          "trecho": "RHC nº\n88.033/RS"
+        },
+        {
+          "inicio": 1612,
+          "fim": 1629,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997587502002716,
+          "is_vague": false,
+          "trecho": "Súmula 443 do STJ"
+        },
+        {
+          "inicio": 2140,
+          "fim": 2181,
+          "tipo": "jurisprudencia",
+          "prob": 0.999746511964237,
+          "is_vague": false,
+          "trecho": "AgInt no Recurso Especial nº 1.657.496/RS"
+        },
+        {
+          "inicio": 2565,
+          "fim": 2597,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996485343346229,
+          "is_vague": false,
+          "trecho": "Recurso Especial nº 1.718.894/SP"
+        },
+        {
+          "inicio": 2757,
+          "fim": 2786,
+          "tipo": "jurisprudencia",
+          "prob": 0.99980427237118,
+          "is_vague": false,
+          "trecho": "AgInt no REsp nº 1.944.552/RS"
+        },
+        {
+          "inicio": 2927,
+          "fim": 2940,
+          "tipo": "jurisprudencia",
+          "prob": 0.9994717016816139,
+          "is_vague": false,
+          "trecho": "Rcl 33.235/RJ"
+        },
+        {
+          "inicio": 3058,
+          "fim": 3116,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997538626194,
+          "is_vague": false,
+          "trecho": "Agravo Interno no Agravo em Recurso Especial nº 1807643/RS"
+        },
+        {
+          "inicio": 3244,
+          "fim": 3260,
+          "tipo": "jurisprudencia",
+          "prob": 0.9988289475440979,
+          "is_vague": false,
+          "trecho": "Rcl nº 55.930/SP"
+        }
+      ],
+      "gen_n1_011": [
+        {
+          "inicio": 502,
+          "fim": 503,
+          "tipo": "jurisprudencia",
+          "prob": 0.5646352171897888,
+          "is_vague": false,
+          "trecho": "S"
+        },
+        {
+          "inicio": 509,
+          "fim": 519,
+          "tipo": "jurisprudencia",
+          "prob": 0.5838610231876373,
+          "is_vague": false,
+          "trecho": "Vinculante"
+        },
+        {
+          "inicio": 670,
+          "fim": 728,
+          "tipo": "jurisprudencia",
+          "prob": 0.9967619143426418,
+          "is_vague": false,
+          "trecho": "precedente do STF de 2024, da relatoria de Cristiano\nZanin"
+        },
+        {
+          "inicio": 1216,
+          "fim": 1242,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997591599822044,
+          "is_vague": false,
+          "trecho": "AgInt no REsp 1.820.970/SC"
+        },
+        {
+          "inicio": 1710,
+          "fim": 1746,
+          "tipo": "lei",
+          "prob": 0.9990096628665924,
+          "is_vague": false,
+          "trecho": "art. 5º, LV, da Constituição Federal"
+        },
+        {
+          "inicio": 2204,
+          "fim": 2220,
+          "tipo": "jurisprudencia",
+          "prob": 0.9956076410081651,
+          "is_vague": false,
+          "trecho": "RHC nº 55.509/SC"
+        },
+        {
+          "inicio": 2363,
+          "fim": 2421,
+          "tipo": "jurisprudencia",
+          "prob": 0.9991172779174078,
+          "is_vague": false,
+          "trecho": "precedente do STF de 2026,\nda relatoria de CRISTIANO ZANIN"
+        },
+        {
+          "inicio": 2828,
+          "fim": 2851,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996932670474052,
+          "is_vague": false,
+          "trecho": "Reclamação nº 33.125/SP"
+        }
+      ],
+      "gen_n1_012": [
+        {
+          "inicio": 574,
+          "fim": 605,
+          "tipo": "jurisprudencia",
+          "prob": 0.9990481656530629,
+          "is_vague": false,
+          "trecho": "ED-E-ED-RR-65-63.2010.5.01.0075"
+        },
+        {
+          "inicio": 1119,
+          "fim": 1143,
+          "tipo": "lei",
+          "prob": 0.9997112963880811,
+          "is_vague": false,
+          "trecho": "art. 896, § 1º-A, da CLT"
+        },
+        {
+          "inicio": 1218,
+          "fim": 1222,
+          "tipo": "jurisprudencia",
+          "prob": 0.6308741966883341,
+          "is_vague": false,
+          "trecho": "ARR-"
+        },
+        {
+          "inicio": 1222,
+          "fim": 1225,
+          "tipo": "lei",
+          "prob": 0.5484238564968109,
+          "is_vague": false,
+          "trecho": "213"
+        },
+        {
+          "inicio": 1225,
+          "fim": 1243,
+          "tipo": "jurisprudencia",
+          "prob": 0.6984907984733582,
+          "is_vague": false,
+          "trecho": "-85.2010.5.02.0030"
+        },
+        {
+          "inicio": 1412,
+          "fim": 1506,
+          "tipo": "jurisprudencia",
+          "prob": 0.9971478382746378,
+          "is_vague": true,
+          "trecho": "Rcl nº 66.884/RJ.\n\nII — DO DIREITO APLICÁVEL\n\nO reclamante foi admitido em 13 de julho de 2019"
+        },
+        {
+          "inicio": 1891,
+          "fim": 1914,
+          "tipo": "jurisprudencia",
+          "prob": 0.9977687358856201,
+          "is_vague": false,
+          "trecho": "Reclamação nº 22.357/PE"
+        },
+        {
+          "inicio": 2043,
+          "fim": 2085,
+          "tipo": "jurisprudencia",
+          "prob": 0.9722250132333665,
+          "is_vague": false,
+          "trecho": "processo nº TST-RR-79500-16.2009.5.15.0016"
+        },
+        {
+          "inicio": 2970,
+          "fim": 2986,
+          "tipo": "jurisprudencia",
+          "prob": 0.9991273283958435,
+          "is_vague": false,
+          "trecho": "Rcl nº\n68.244/SP"
+        },
+        {
+          "inicio": 3135,
+          "fim": 3170,
+          "tipo": "jurisprudencia",
+          "prob": 0.941401481628418,
+          "is_vague": false,
+          "trecho": "Terceiro AG.REG na Rcl nº 62.425/SP"
+        },
+        {
+          "inicio": 3317,
+          "fim": 3330,
+          "tipo": "jurisprudencia",
+          "prob": 0.9970686369472079,
+          "is_vague": false,
+          "trecho": "Rcl 44.960/PE"
+        }
+      ],
+      "gen_n2_003": [
+        {
+          "inicio": 613,
+          "fim": 668,
+          "tipo": "jurisprudencia",
+          "prob": 0.9941281886661754,
+          "is_vague": false,
+          "trecho": "precedente do STF\nde 2024, da relatoria de Cármen Lúcia"
+        },
+        {
+          "inicio": 736,
+          "fim": 789,
+          "tipo": "jurisprudencia",
+          "prob": 0.8006445904572804,
+          "is_vague": false,
+          "trecho": "Processo n° TST- ED - E-ED-RR-41200-79.2011.5.21.0005"
+        },
+        {
+          "inicio": 1289,
+          "fim": 1314,
+          "tipo": "jurisprudencia",
+          "prob": 0.984547134488821,
+          "is_vague": false,
+          "trecho": "RR-1835-06.2010.5.15.0042"
+        },
+        {
+          "inicio": 1726,
+          "fim": 1745,
+          "tipo": "jurisprudencia",
+          "prob": 0.9961087306340536,
+          "is_vague": false,
+          "trecho": "RE. nº 3.647.129-RS"
+        },
+        {
+          "inicio": 1847,
+          "fim": 1863,
+          "tipo": "jurisprudencia",
+          "prob": 0.9925320386886597,
+          "is_vague": false,
+          "trecho": "Rcl n° 66698/ BA"
+        },
+        {
+          "inicio": 2559,
+          "fim": 2578,
+          "tipo": "lei",
+          "prob": 0.9995609985457526,
+          "is_vague": false,
+          "trecho": "artigo 1.143 da CLT"
+        },
+        {
+          "inicio": 2988,
+          "fim": 3027,
+          "tipo": "jurisprudencia",
+          "prob": 0.9856061062642506,
+          "is_vague": false,
+          "trecho": "TST-ED-E-ED-ARR-1099-66.2011.5.02.\n0251"
+        }
+      ],
+      "gen_n2_004": [
+        {
+          "inicio": 1014,
+          "fim": 1045,
+          "tipo": "lei",
+          "prob": 0.9999007528478449,
+          "is_vague": false,
+          "trecho": "artigo 172 da Lei nº 9.504/1997"
+        },
+        {
+          "inicio": 1463,
+          "fim": 1478,
+          "tipo": "jurisprudencia",
+          "prob": 0.9994225331715175,
+          "is_vague": false,
+          "trecho": "Súm. 166 do TSE"
+        },
+        {
+          "inicio": 2055,
+          "fim": 2092,
+          "tipo": "jurisprudencia",
+          "prob": 0.9452878133110378,
+          "is_vague": false,
+          "trecho": "REspe. n° 0600216-46.2020-\n.6.14.0022"
+        },
+        {
+          "inicio": 2244,
+          "fim": 2245,
+          "tipo": "jurisprudencia",
+          "prob": 0.8202100396156311,
+          "is_vague": false,
+          "trecho": "E"
+        },
+        {
+          "inicio": 2251,
+          "fim": 2286,
+          "tipo": "jurisprudencia",
+          "prob": 0.968846781687303,
+          "is_vague": false,
+          "trecho": "AGR-RESPE n° 533-80. 2012.6.13.0029"
+        },
+        {
+          "inicio": 2390,
+          "fim": 2418,
+          "tipo": "lei",
+          "prob": 0.9998098828575828,
+          "is_vague": false,
+          "trecho": "art 189 da Lei nº 9.504/1997"
+        }
+      ],
+      "gen_n2_005": [
+        {
+          "inicio": 574,
+          "fim": 601,
+          "tipo": "jurisprudencia",
+          "prob": 0.9954706529776255,
+          "is_vague": false,
+          "trecho": "Reclamação n° 33.-\n474 (MA)"
+        },
+        {
+          "inicio": 1122,
+          "fim": 1175,
+          "tipo": "jurisprudencia",
+          "prob": 0.9993965864181519,
+          "is_vague": true,
+          "trecho": "Reclamação do STF, de 2026, Rel. Min. CRISTIANO ZANIN"
+        },
+        {
+          "inicio": 1617,
+          "fim": 1669,
+          "tipo": "jurisprudencia",
+          "prob": 0.856617444091373,
+          "is_vague": true,
+          "trecho": "Reclamação do STF, de 2020, Rel. Min. Celso De Mello"
+        },
+        {
+          "inicio": 1765,
+          "fim": 1793,
+          "tipo": "lei",
+          "prob": 0.9995985464616255,
+          "is_vague": false,
+          "trecho": "art 60 da Lei nº 13.467/2017"
+        },
+        {
+          "inicio": 1901,
+          "fim": 1935,
+          "tipo": "jurisprudencia",
+          "prob": 0.9972292071297055,
+          "is_vague": false,
+          "trecho": "TST-AgARR-25823-78.2015.5.24.\n0091"
+        },
+        {
+          "inicio": 2388,
+          "fim": 2466,
+          "tipo": "jurisprudencia",
+          "prob": 0.9986157136804917,
+          "is_vague": false,
+          "trecho": "julgado do TST proferido\nem 2017 pela relatoria de José Roberto Freire Pimenta"
+        },
+        {
+          "inicio": 2959,
+          "fim": 3011,
+          "tipo": "jurisprudencia",
+          "prob": 0.9718642612298329,
+          "is_vague": false,
+          "trecho": "Processo n° TST- ED-E-ED-RR-160000-97.2010.5.21.0006"
+        },
+        {
+          "inicio": 3172,
+          "fim": 3212,
+          "tipo": "lei",
+          "prob": 0.999870146314303,
+          "is_vague": false,
+          "trecho": "artigo 7º, XXIX, da Constituição Fedcral"
+        }
+      ],
+      "gen_n2_007": [
+        {
+          "inicio": 955,
+          "fim": 986,
+          "tipo": "lei",
+          "prob": 0.999651183684667,
+          "is_vague": false,
+          "trecho": "art 290 da Constituição\nFederal"
+        },
+        {
+          "inicio": 1416,
+          "fim": 1451,
+          "tipo": "jurisprudencia",
+          "prob": 0.9787631264099708,
+          "is_vague": false,
+          "trecho": "Rcl de 2024, Rel.  Min. Flávio Dino"
+        },
+        {
+          "inicio": 1549,
+          "fim": 1587,
+          "tipo": "jurisprudencia",
+          "prob": 0.9970415887378511,
+          "is_vague": false,
+          "trecho": "RSE Nº 7220273--\n23.2018.7.00.0000/ RS"
+        },
+        {
+          "inicio": 1818,
+          "fim": 1829,
+          "tipo": "lei",
+          "prob": 0.5453900609697614,
+          "is_vague": false,
+          "trecho": "RCL n° 8890"
+        },
+        {
+          "inicio": 1829,
+          "fim": 1833,
+          "tipo": "jurisprudencia",
+          "prob": 0.95608089864254,
+          "is_vague": false,
+          "trecho": "5-DF"
+        },
+        {
+          "inicio": 1972,
+          "fim": 2005,
+          "tipo": "jurisprudencia",
+          "prob": 0.9990580446190305,
+          "is_vague": false,
+          "trecho": "APL\n 7000761-84 2021 7 00 0000/BA"
+        },
+        {
+          "inicio": 2519,
+          "fim": 2553,
+          "tipo": "jurisprudencia",
+          "prob": 0.9637492895126343,
+          "is_vague": false,
+          "trecho": "RSE n.  7000171-3920237000000 (DF)"
+        }
+      ],
+      "gen_n2_008": [
+        {
+          "inicio": 1206,
+          "fim": 1241,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996015667915344,
+          "is_vague": false,
+          "trecho": "Recurso Especial n°  2.467-\n.648-RS"
+        },
+        {
+          "inicio": 1898,
+          "fim": 1932,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997963905334473,
+          "is_vague": false,
+          "trecho": "EDcl no AgInt no ARESP 1980827/ RS"
+        },
+        {
+          "inicio": 2384,
+          "fim": 2400,
+          "tipo": "jurisprudencia",
+          "prob": 0.9851687984033064,
+          "is_vague": false,
+          "trecho": "RCL nº 99.942-BA"
+        },
+        {
+          "inicio": 3051,
+          "fim": 3078,
+          "tipo": "jurisprudencia",
+          "prob": 0.9911165912946065,
+          "is_vague": false,
+          "trecho": "AgRg no H.C. Nº 891369 (RS)"
+        }
+      ],
+      "gen_n2_009": [
+        {
+          "inicio": 539,
+          "fim": 568,
+          "tipo": "jurisprudencia",
+          "prob": 0.9582126012870243,
+          "is_vague": false,
+          "trecho": "Rec. Esp. nº  1. 570.531 – CE"
+        },
+        {
+          "inicio": 725,
+          "fim": 762,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996718413689557,
+          "is_vague": false,
+          "trecho": "EDcl no AgInt no ARESP  1 821 663/ SC"
+        },
+        {
+          "inicio": 883,
+          "fim": 915,
+          "tipo": "lei",
+          "prob": 0.9989474586078099,
+          "is_vague": false,
+          "trecho": "art. 303 da Constituição\nFederal"
+        },
+        {
+          "inicio": 1190,
+          "fim": 1208,
+          "tipo": "jurisprudencia",
+          "prob": 0.9929901825057136,
+          "is_vague": false,
+          "trecho": "REsp\n 555 700 (RS)"
+        },
+        {
+          "inicio": 1614,
+          "fim": 1640,
+          "tipo": "jurisprudencia",
+          "prob": 0.9995173078316909,
+          "is_vague": false,
+          "trecho": "AgInt no RESP 21737l8 - SP"
+        },
+        {
+          "inicio": 1771,
+          "fim": 1786,
+          "tipo": "jurisprudencia",
+          "prob": 0.9881356731057167,
+          "is_vague": false,
+          "trecho": "AR\nn. 2785 (SP)"
+        },
+        {
+          "inicio": 2227,
+          "fim": 2257,
+          "tipo": "jurisprudencia",
+          "prob": 0.9933938756585121,
+          "is_vague": false,
+          "trecho": "AgInt no RESP nº 1.666.812/ PR"
+        },
+        {
+          "inicio": 3263,
+          "fim": 3283,
+          "tipo": "jurisprudencia",
+          "prob": 0.9995308564259455,
+          "is_vague": false,
+          "trecho": "REsp Nº 1.632.479-RJ"
+        }
+      ],
+      "gen_n2_010": [
+        {
+          "inicio": 579,
+          "fim": 604,
+          "tipo": "jurisprudencia",
+          "prob": 0.9983803100056119,
+          "is_vague": false,
+          "trecho": "Reclamação Nº 77.872 – SC"
+        },
+        {
+          "inicio": 1164,
+          "fim": 1194,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997410923242569,
+          "is_vague": false,
+          "trecho": "AgInt no ARESP Nº 1.512.757-PR"
+        },
+        {
+          "inicio": 1640,
+          "fim": 1666,
+          "tipo": "lei",
+          "prob": 0.9998345732688904,
+          "is_vague": false,
+          "trecho": "artigo 186 do Código Civil"
+        },
+        {
+          "inicio": 2107,
+          "fim": 2148,
+          "tipo": "lei",
+          "prob": 0.9997782978144559,
+          "is_vague": false,
+          "trecho": "art. 14 do Código de Defesa do Consumidor"
+        },
+        {
+          "inicio": 2626,
+          "fim": 2687,
+          "tipo": "jurisprudencia",
+          "prob": 0.9974315576255322,
+          "is_vague": false,
+          "trecho": "precedente do\nSTJ de 2021, da relatoria de Assusete Magalhães"
+        },
+        {
+          "inicio": 2841,
+          "fim": 2873,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996536572774252,
+          "is_vague": false,
+          "trecho": "Recurso Especial nº  1377019/ SP"
+        },
+        {
+          "inicio": 2963,
+          "fim": 3007,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997402184149798,
+          "is_vague": false,
+          "trecho": "AgInt no Recurso Especial nº  1.597.443\n- PR"
+        }
+      ],
+      "gen_n2_012": [
+        {
+          "inicio": 481,
+          "fim": 507,
+          "tipo": "jurisprudencia",
+          "prob": 0.9993518516421318,
+          "is_vague": false,
+          "trecho": "AgRg no RESP 1.528.4S5/ RJ"
+        },
+        {
+          "inicio": 1082,
+          "fim": 1155,
+          "tipo": "jurisprudencia",
+          "prob": 0.9996223287148909,
+          "is_vague": true,
+          "trecho": "Recurso em Habeas Corpus do STJ, de 2019, Rel. Min. Sebastião\nReis Júnlor"
+        },
+        {
+          "inicio": 1282,
+          "fim": 1299,
+          "tipo": "jurisprudencia",
+          "prob": 0.9997697412967682,
+          "is_vague": false,
+          "trecho": "AgREsp 9188087/ES"
+        },
+        {
+          "inicio": 1603,
+          "fim": 1627,
+          "tipo": "jurisprudencia",
+          "prob": 0.9993603626887003,
+          "is_vague": false,
+          "trecho": "Reclamação nº 33560 - BA"
+        },
+        {
+          "inicio": 2089,
+          "fim": 2124,
+          "tipo": "lei",
+          "prob": 0.999803900718689,
+          "is_vague": false,
+          "trecho": "art 312 do Código\nde Processo Penal"
+        },
+        {
+          "inicio": 2540,
+          "fim": 2563,
+          "tipo": "jurisprudencia",
+          "prob": 0.9006038665771484,
+          "is_vague": false,
+          "trecho": "R.Esp. n°  1.45g.779-MA"
+        },
+        {
+          "inicio": 2695,
+          "fim": 2713,
+          "tipo": "jurisprudencia",
+          "prob": 0.9992805620034536,
+          "is_vague": false,
+          "trecho": "Reclamação 33. 672"
+        },
+        {
+          "inicio": 2716,
+          "fim": 2717,
+          "tipo": "jurisprudencia",
+          "prob": 0.5233546495437622,
+          "is_vague": false,
+          "trecho": "A"
+        },
+        {
+          "inicio": 3158,
+          "fim": 3174,
+          "tipo": "jurisprudencia",
+          "prob": 0.999466962284512,
+          "is_vague": false,
+          "trecho": "RMS Nº  67109-TO"
+        }
+      ]
+    },
+    "fused": {
+      "gen_n1_002": [
+        {
+          "inicio": 651,
+          "fim": 709,
+          "trecho": "precedente\ndo STF de 2026, da relatoria de CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 0.7241379310344828,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9375420121046213
+        },
+        {
+          "inicio": 845,
+          "fim": 898,
+          "trecho": "Reclamação\ndo STF, de 2025, Rel. Min. CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9960281186633639
+        },
+        {
+          "inicio": 1052,
+          "fim": 1065,
+          "trecho": "Rcl 55.626/DF",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9994905657238431
+        },
+        {
+          "inicio": 1464,
+          "fim": 1501,
+          "trecho": "Recurso em Habeas Corpus nº 57.763/PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.999700133005778
+        },
+        {
+          "inicio": 1613,
+          "fim": 1643,
+          "trecho": "AgInt no AREsp nº 1.996.496/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9989308188943302
+        },
+        {
+          "inicio": 2133,
+          "fim": 2153,
+          "trecho": "Súmula Vinculante 10",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9967144727706909
+        },
+        {
+          "inicio": 2308,
+          "fim": 2350,
+          "trecho": "Agravo em Recurso Especial nº 1.708.000/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997767885526021
+        },
+        {
+          "inicio": 3364,
+          "fim": 3396,
+          "trecho": "art. 1.134 da Lei nº\n13.105/2015",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.999594224350793
+        }
+      ],
+      "gen_n1_003": [
+        {
+          "inicio": 577,
+          "fim": 602,
+          "trecho": "AgInt no AREsp 1576933/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9992642849683762
+        },
+        {
+          "inicio": 1202,
+          "fim": 1244,
+          "trecho": "art. 158 do Código de Defesa do Consumidor",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9998158433220603
+        },
+        {
+          "inicio": 1686,
+          "fim": 1704,
+          "trecho": "REsp nº 2020005/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997502101792229
+        },
+        {
+          "inicio": 2317,
+          "fim": 2407,
+          "trecho": "Agravo em Recurso Especial do STJ,\nde 2023, Rel. Min. Assusete Magalhães. Sob outro ângulo",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 0.8,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9653547286987305
+        },
+        {
+          "inicio": 2489,
+          "fim": 2531,
+          "trecho": "art. 185 do Código de Defesa do Consumidor",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9984737038612366
+        },
+        {
+          "inicio": 3043,
+          "fim": 3069,
+          "trecho": "AgRg no AREsp 1.327.863/PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996216893196106
+        },
+        {
+          "inicio": 3213,
+          "fim": 3232,
+          "trecho": "art. 373, I, do CPC",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9992453694343567
+        }
+      ],
+      "gen_n1_004": [
+        {
+          "inicio": 460,
+          "fim": 492,
+          "trecho": "APL 7357951-18.2020.7.00.0000/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9995534658432007
+        },
+        {
+          "inicio": 1435,
+          "fim": 1450,
+          "trecho": "RE 7.216.673/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9988894408399408
+        },
+        {
+          "inicio": 1571,
+          "fim": 1603,
+          "trecho": "APL 7000136-79.2023.7.00.0000/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997623594183671
+        },
+        {
+          "inicio": 2005,
+          "fim": 2040,
+          "trecho": "RSE nº 7000768-37.2025.7.00.0000/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9995210113979521
+        },
+        {
+          "inicio": 2508,
+          "fim": 2540,
+          "trecho": "art.\n290 do Código Penal Militar",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996097236871719
+        },
+        {
+          "inicio": 2639,
+          "fim": 2671,
+          "trecho": "RSE 7000082-11.2026.7.00.0000/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996787577867507
+        }
+      ],
+      "gen_n1_007": [
+        {
+          "inicio": 531,
+          "fim": 572,
+          "trecho": "art. 93, IX, da Constituição da República",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9993036568164826
+        },
+        {
+          "inicio": 946,
+          "fim": 968,
+          "trecho": "AgInt na Rcl 36.670/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9661423961321512
+        },
+        {
+          "inicio": 1422,
+          "fim": 1483,
+          "trecho": "julgado do STF proferido em 2021 pela relatoria de Rosa Weber",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9685255438089371
+        },
+        {
+          "inicio": 1636,
+          "fim": 1652,
+          "trecho": "RHC nº 55.508/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9992779228422377
+        },
+        {
+          "inicio": 1732,
+          "fim": 1764,
+          "trecho": "art. 261 da Constituição Federal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996844785554069
+        },
+        {
+          "inicio": 1902,
+          "fim": 1944,
+          "trecho": "Rcl de 2025, Rel. Min. CÁRMEN LÚCIA.\n\nIII ",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 0.8333333333333334,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9981568694114685
+        },
+        {
+          "inicio": 2360,
+          "fim": 2426,
+          "trecho": "acórdão do STJ julgado em 2023 sob relatoria de Assusete Magalhães",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.95
+        },
+        {
+          "inicio": 2892,
+          "fim": 2909,
+          "trecho": "REsp 1.883.715/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9998325059811274
+        },
+        {
+          "inicio": 3028,
+          "fim": 3051,
+          "trecho": "Reclamação nº 11.125/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9993279948830605
+        }
+      ],
+      "gen_n1_009": [
+        {
+          "inicio": 616,
+          "fim": 686,
+          "trecho": "Embargos de Declaração no Recurso em Mandado de Segurança\nnº 67.101/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.6285714285714286,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9919135937323937
+        },
+        {
+          "inicio": 1386,
+          "fim": 1403,
+          "trecho": "REsp 1.501.000/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997399178418246
+        },
+        {
+          "inicio": 1921,
+          "fim": 1934,
+          "trecho": "RHC 346037/PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9995915293693542
+        },
+        {
+          "inicio": 2449,
+          "fim": 2533,
+          "trecho": "Embargos de Declaração no Agravo Interno no Agravo em Recurso Especial nº 1904603/TO",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9959615444143614
+        },
+        {
+          "inicio": 2968,
+          "fim": 2985,
+          "trecho": "Súmula 979 do STF",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997368976473808
+        },
+        {
+          "inicio": 3065,
+          "fim": 3098,
+          "trecho": "AgInt nos EDcl no REsp 2144995/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9992405631962944
+        },
+        {
+          "inicio": 3220,
+          "fim": 3235,
+          "trecho": "REsp 5672508/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997474948565165
+        },
+        {
+          "inicio": 3401,
+          "fim": 3465,
+          "trecho": "Agravo Interno na Suspensão\nde Liminar e de Sentença nº 2.883/MA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997223317623138
+        },
+        {
+          "inicio": 3603,
+          "fim": 3635,
+          "trecho": "EDcl no AgInt no REsp 1889127/SE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.99964964017272
+        }
+      ],
+      "gen_n1_010": [
+        {
+          "inicio": 477,
+          "fim": 494,
+          "trecho": "REsp 6.989.916/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996087352434794
+        },
+        {
+          "inicio": 933,
+          "fim": 949,
+          "trecho": "RHC nº\n88.033/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9990762405925326
+        },
+        {
+          "inicio": 1612,
+          "fim": 1629,
+          "trecho": "Súmula 443 do STJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997587502002716
+        },
+        {
+          "inicio": 2140,
+          "fim": 2181,
+          "trecho": "AgInt no Recurso Especial nº 1.657.496/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.999746511964237
+        },
+        {
+          "inicio": 2565,
+          "fim": 2597,
+          "trecho": "Recurso Especial nº 1.718.894/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996485343346229
+        },
+        {
+          "inicio": 2757,
+          "fim": 2786,
+          "trecho": "AgInt no REsp nº 1.944.552/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.99980427237118
+        },
+        {
+          "inicio": 2927,
+          "fim": 2940,
+          "trecho": "Rcl 33.235/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9994717016816139
+        },
+        {
+          "inicio": 3058,
+          "fim": 3116,
+          "trecho": "Agravo Interno no Agravo em Recurso Especial nº 1807643/RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997538626194
+        },
+        {
+          "inicio": 3244,
+          "fim": 3260,
+          "trecho": "Rcl nº 55.930/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9988289475440979
+        }
+      ],
+      "gen_n1_011": [
+        {
+          "inicio": 502,
+          "fim": 523,
+          "trecho": "Súmula Vinculante 182",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula",
+          "_fusion_iou": null,
+          "_confidence_sources": [
+            "regex"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": null
+        },
+        {
+          "inicio": 670,
+          "fim": 728,
+          "trecho": "precedente do STF de 2024, da relatoria de Cristiano\nZanin",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9967619143426418
+        },
+        {
+          "inicio": 1216,
+          "fim": 1242,
+          "trecho": "AgInt no REsp 1.820.970/SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997591599822044
+        },
+        {
+          "inicio": 1710,
+          "fim": 1746,
+          "trecho": "art. 5º, LV, da Constituição Federal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9990096628665924
+        },
+        {
+          "inicio": 2204,
+          "fim": 2220,
+          "trecho": "RHC nº 55.509/SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9956076410081651
+        },
+        {
+          "inicio": 2363,
+          "fim": 2421,
+          "trecho": "precedente do STF de 2026,\nda relatoria de CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9991172779174078
+        },
+        {
+          "inicio": 2828,
+          "fim": 2851,
+          "trecho": "Reclamação nº 33.125/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996932670474052
+        }
+      ],
+      "gen_n1_012": [
+        {
+          "inicio": 582,
+          "fim": 605,
+          "trecho": "RR-65-63.2010.5.01.0075",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.7419354838709677,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9990481656530629
+        },
+        {
+          "inicio": 1119,
+          "fim": 1143,
+          "trecho": "art. 896, § 1º-A, da CLT",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997112963880811
+        },
+        {
+          "inicio": 1218,
+          "fim": 1243,
+          "trecho": "ARR-213-85.2010.5.02.0030",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.72,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.6984907984733582
+        },
+        {
+          "inicio": 1412,
+          "fim": 1428,
+          "trecho": "Rcl nº 66.884/RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": null,
+          "_confidence_sources": [
+            "regex"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": null
+        },
+        {
+          "inicio": 1891,
+          "fim": 1914,
+          "trecho": "Reclamação nº 22.357/PE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9977687358856201
+        },
+        {
+          "inicio": 2043,
+          "fim": 2085,
+          "trecho": "processo nº TST-RR-79500-16.2009.5.15.0016",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9722250132333665
+        },
+        {
+          "inicio": 2970,
+          "fim": 2986,
+          "trecho": "Rcl nº\n68.244/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9991273283958435
+        },
+        {
+          "inicio": 3135,
+          "fim": 3170,
+          "trecho": "Terceiro AG.REG na Rcl nº 62.425/SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.941401481628418
+        },
+        {
+          "inicio": 3317,
+          "fim": 3330,
+          "trecho": "Rcl 44.960/PE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9970686369472079
+        }
+      ],
+      "gen_n2_003": [
+        {
+          "inicio": 613,
+          "fim": 682,
+          "trecho": "precedente do STF\nde 2024, da relatoria de Cármen Lúcia. Não se trata",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 0.7971014492753623,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9941281886661754
+        },
+        {
+          "inicio": 736,
+          "fim": 789,
+          "trecho": "Processo n° TST- ED - E-ED-RR-41200-79.2011.5.21.0005",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.8006445904572804
+        },
+        {
+          "inicio": 1289,
+          "fim": 1314,
+          "trecho": "RR-1835-06.2010.5.15.0042",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.984547134488821
+        },
+        {
+          "inicio": 1726,
+          "fim": 1743,
+          "trecho": "RE. nº 3.647.129-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.8947368421052632,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9961087306340536
+        },
+        {
+          "inicio": 1847,
+          "fim": 1863,
+          "trecho": "Rcl n° 66698/ BA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9925320386886597
+        },
+        {
+          "inicio": 2559,
+          "fim": 2578,
+          "trecho": "artigo 1.143 da CLT",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9995609985457526
+        },
+        {
+          "inicio": 2988,
+          "fim": 3027,
+          "trecho": "TST-ED-E-ED-ARR-1099-66.2011.5.02.\n0251",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9856061062642506
+        }
+      ],
+      "gen_n2_004": [
+        {
+          "inicio": 1014,
+          "fim": 1045,
+          "trecho": "artigo 172 da Lei nº 9.504/1997",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9999007528478449
+        },
+        {
+          "inicio": 1463,
+          "fim": 1478,
+          "trecho": "Súm. 166 do TSE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9994225331715175
+        },
+        {
+          "inicio": 2055,
+          "fim": 2092,
+          "trecho": "REspe. n° 0600216-46.2020-\n.6.14.0022",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9452878133110378
+        },
+        {
+          "inicio": 2244,
+          "fim": 2286,
+          "trecho": "EDs no AGR-RESPE n° 533-80. 2012.6.13.0029",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 0.8333333333333334,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.968846781687303
+        },
+        {
+          "inicio": 2390,
+          "fim": 2418,
+          "trecho": "art 189 da Lei nº 9.504/1997",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9998098828575828
+        }
+      ],
+      "gen_n2_005": [
+        {
+          "inicio": 574,
+          "fim": 601,
+          "trecho": "Reclamação n° 33.-\n474 (MA)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9954706529776255
+        },
+        {
+          "inicio": 1122,
+          "fim": 1175,
+          "trecho": "Reclamação do STF, de 2026, Rel. Min. CRISTIANO ZANIN",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9993965864181519
+        },
+        {
+          "inicio": 1617,
+          "fim": 1687,
+          "trecho": "Reclamação do STF, de 2020, Rel. Min. Celso De Mello. Antes de avançar",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 0.7428571428571429,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.856617444091373
+        },
+        {
+          "inicio": 1765,
+          "fim": 1793,
+          "trecho": "art 60 da Lei nº 13.467/2017",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9995985464616255
+        },
+        {
+          "inicio": 1901,
+          "fim": 1938,
+          "trecho": "TST-AgARR-25823-78.2015.5.24.\n0091.\n\n",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 0.918918918918919,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9972292071297055
+        },
+        {
+          "inicio": 2388,
+          "fim": 2466,
+          "trecho": "julgado do TST proferido\nem 2017 pela relatoria de José Roberto Freire Pimenta",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9986157136804917
+        },
+        {
+          "inicio": 2959,
+          "fim": 3012,
+          "trecho": "Processo n° TST- ED-E-ED-RR-160000-97.2010.5.21.0006 ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 0.9811320754716981,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9718642612298329
+        },
+        {
+          "inicio": 3172,
+          "fim": 3212,
+          "trecho": "artigo 7º, XXIX, da Constituição Fedcral",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.999870146314303
+        }
+      ],
+      "gen_n2_007": [
+        {
+          "inicio": 514,
+          "fim": 547,
+          "trecho": "Ag. Int. No 7001184-1520197000000",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": null,
+          "_confidence_sources": [
+            "regex"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": null
+        },
+        {
+          "inicio": 955,
+          "fim": 986,
+          "trecho": "art 290 da Constituição\nFederal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.999651183684667
+        },
+        {
+          "inicio": 1416,
+          "fim": 1485,
+          "trecho": "Rcl de 2024, Rel.  Min. Flávio Dino\npara sustentar tese já superada. ",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 0.5072463768115942,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9787631264099708
+        },
+        {
+          "inicio": 1549,
+          "fim": 1587,
+          "trecho": "RSE Nº 7220273--\n23.2018.7.00.0000/ RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9970415887378511
+        },
+        {
+          "inicio": 1818,
+          "fim": 1831,
+          "trecho": "RCL n° 88905-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": null,
+          "_confidence_sources": [
+            "regex"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": null
+        },
+        {
+          "inicio": 1972,
+          "fim": 2005,
+          "trecho": "APL\n 7000761-84 2021 7 00 0000/BA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9990580446190305
+        },
+        {
+          "inicio": 2100,
+          "fim": 2121,
+          "trecho": "Súmula Vinculante 188",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "sumula",
+          "_fusion_iou": null,
+          "_confidence_sources": [
+            "regex"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": null
+        },
+        {
+          "inicio": 2519,
+          "fim": 2553,
+          "trecho": "RSE n.  7000171-3920237000000 (DF)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "cnj",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9637492895126343
+        }
+      ],
+      "gen_n2_008": [
+        {
+          "inicio": 1206,
+          "fim": 1239,
+          "trecho": "Recurso Especial n°  2.467-\n.648-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.9428571428571428,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996015667915344
+        },
+        {
+          "inicio": 1898,
+          "fim": 1932,
+          "trecho": "EDcl no AgInt no ARESP 1980827/ RS",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997963905334473
+        },
+        {
+          "inicio": 2384,
+          "fim": 2398,
+          "trecho": "RCL nº 99.942-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.875,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9851687984033064
+        },
+        {
+          "inicio": 3051,
+          "fim": 3078,
+          "trecho": "AgRg no H.C. Nº 891369 (RS)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9911165912946065
+        }
+      ],
+      "gen_n2_009": [
+        {
+          "inicio": 539,
+          "fim": 568,
+          "trecho": "Rec. Esp. nº  1. 570.531 – CE",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9582126012870243
+        },
+        {
+          "inicio": 725,
+          "fim": 762,
+          "trecho": "EDcl no AgInt no ARESP  1 821 663/ SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996718413689557
+        },
+        {
+          "inicio": 883,
+          "fim": 915,
+          "trecho": "art. 303 da Constituição\nFederal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9989474586078099
+        },
+        {
+          "inicio": 1190,
+          "fim": 1208,
+          "trecho": "REsp\n 555 700 (RS)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9929901825057136
+        },
+        {
+          "inicio": 1614,
+          "fim": 1640,
+          "trecho": "AgInt no RESP 21737l8 - SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9995173078316909
+        },
+        {
+          "inicio": 1771,
+          "fim": 1786,
+          "trecho": "AR\nn. 2785 (SP)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9881356731057167
+        },
+        {
+          "inicio": 2227,
+          "fim": 2257,
+          "trecho": "AgInt no RESP nº 1.666.812/ PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9933938756585121
+        },
+        {
+          "inicio": 3263,
+          "fim": 3281,
+          "trecho": "REsp Nº 1.632.479-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.9,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9995308564259455
+        }
+      ],
+      "gen_n2_010": [
+        {
+          "inicio": 579,
+          "fim": 604,
+          "trecho": "Reclamação Nº 77.872 – SC",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9983803100056119
+        },
+        {
+          "inicio": 1164,
+          "fim": 1192,
+          "trecho": "AgInt no ARESP Nº 1.512.757-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.9333333333333333,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997410923242569
+        },
+        {
+          "inicio": 1640,
+          "fim": 1666,
+          "trecho": "artigo 186 do Código Civil",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9998345732688904
+        },
+        {
+          "inicio": 2107,
+          "fim": 2148,
+          "trecho": "art. 14 do Código de Defesa do Consumidor",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997782978144559
+        },
+        {
+          "inicio": 2626,
+          "fim": 2687,
+          "trecho": "precedente do\nSTJ de 2021, da relatoria de Assusete Magalhães",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9974315576255322
+        },
+        {
+          "inicio": 2841,
+          "fim": 2873,
+          "trecho": "Recurso Especial nº  1377019/ SP",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9996536572774252
+        },
+        {
+          "inicio": 2963,
+          "fim": 3007,
+          "trecho": "AgInt no Recurso Especial nº  1.597.443\n- PR",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997402184149798
+        }
+      ],
+      "gen_n2_012": [
+        {
+          "inicio": 481,
+          "fim": 507,
+          "trecho": "AgRg no RESP 1.528.4S5/ RJ",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9993518516421318
+        },
+        {
+          "inicio": 1082,
+          "fim": 1179,
+          "trecho": "Recurso em Habeas Corpus do STJ, de 2019, Rel. Min. Sebastião\nReis Júnlor foi reafirmada em julga",
+          "tipo": "jurisprudencia",
+          "is_vague": true,
+          "pattern": "vaga",
+          "_fusion_iou": 0.7525773195876289,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9996223287148909
+        },
+        {
+          "inicio": 1282,
+          "fim": 1299,
+          "trecho": "AgREsp 9188087/ES",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9997697412967682
+        },
+        {
+          "inicio": 1603,
+          "fim": 1627,
+          "trecho": "Reclamação nº 33560 - BA",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9993603626887003
+        },
+        {
+          "inicio": 2089,
+          "fim": 2124,
+          "trecho": "art 312 do Código\nde Processo Penal",
+          "tipo": "lei",
+          "is_vague": false,
+          "pattern": "lei",
+          "_fusion_iou": 1.0,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.999803900718689
+        },
+        {
+          "inicio": 2540,
+          "fim": 2561,
+          "trecho": "R.Esp. n°  1.45g.779-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.9130434782608695,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": true,
+          "_ner_prob": 0.9006038665771484
+        },
+        {
+          "inicio": 2695,
+          "fim": 2718,
+          "trecho": "Reclamação 33. 672 (BA)",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.782608695652174,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.9992805620034536
+        },
+        {
+          "inicio": 3158,
+          "fim": 3172,
+          "trecho": "RMS Nº  67109-",
+          "tipo": "jurisprudencia",
+          "is_vague": false,
+          "pattern": "classica",
+          "_fusion_iou": 0.875,
+          "_confidence_sources": [
+            "regex",
+            "ner"
+          ],
+          "_confidence_agreement": false,
+          "_ner_prob": 0.999466962284512
+        }
+      ]
+    },
+    "resolved": {
+      "gen_n1_002": [
+        {
+          "inicio": 651,
+          "fim": 709,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 845,
+          "fim": 898,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1052,
+          "fim": 1065,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1464,
+          "fim": 1501,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3576055165"
+        },
+        {
+          "inicio": 1613,
+          "fim": 1643,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "1922829498"
+        },
+        {
+          "inicio": 2133,
+          "fim": 2153,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "1289712966"
+        },
+        {
+          "inicio": 2308,
+          "fim": 2350,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2678821961"
+        },
+        {
+          "inicio": 3364,
+          "fim": 3396,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        }
+      ],
+      "gen_n1_003": [
+        {
+          "inicio": 577,
+          "fim": 602,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2108020112"
+        },
+        {
+          "inicio": 1202,
+          "fim": 1244,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1686,
+          "fim": 1704,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2939285691"
+        },
+        {
+          "inicio": 2317,
+          "fim": 2407,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2489,
+          "fim": 2531,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 3043,
+          "fim": 3069,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3445761877"
+        },
+        {
+          "inicio": 3213,
+          "fim": 3232,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "28893055"
+        }
+      ],
+      "gen_n1_004": [
+        {
+          "inicio": 460,
+          "fim": 492,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1435,
+          "fim": 1450,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1571,
+          "fim": 1603,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2161632985"
+        },
+        {
+          "inicio": 2005,
+          "fim": 2040,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "6688597116"
+        },
+        {
+          "inicio": 2508,
+          "fim": 2540,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10590194"
+        },
+        {
+          "inicio": 2639,
+          "fim": 2671,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "6689057510"
+        }
+      ],
+      "gen_n1_007": [
+        {
+          "inicio": 531,
+          "fim": 572,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10626510"
+        },
+        {
+          "inicio": 946,
+          "fim": 968,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2679568224"
+        },
+        {
+          "inicio": 1422,
+          "fim": 1483,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1636,
+          "fim": 1652,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1732,
+          "fim": 1764,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1902,
+          "fim": 1944,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2360,
+          "fim": 2426,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2892,
+          "fim": 2909,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "1915411069"
+        },
+        {
+          "inicio": 3028,
+          "fim": 3051,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        }
+      ],
+      "gen_n1_009": [
+        {
+          "inicio": 616,
+          "fim": 686,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "1480058767"
+        },
+        {
+          "inicio": 1386,
+          "fim": 1403,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3584971504"
+        },
+        {
+          "inicio": 1921,
+          "fim": 1934,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2449,
+          "fim": 2533,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3360644937"
+        },
+        {
+          "inicio": 2968,
+          "fim": 2985,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 3065,
+          "fim": 3098,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "5533262570"
+        },
+        {
+          "inicio": 3220,
+          "fim": 3235,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 3401,
+          "fim": 3465,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "6576893354"
+        },
+        {
+          "inicio": 3603,
+          "fim": 3635,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2563032738"
+        }
+      ],
+      "gen_n1_010": [
+        {
+          "inicio": 477,
+          "fim": 494,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 933,
+          "fim": 949,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2566417138"
+        },
+        {
+          "inicio": 1612,
+          "fim": 1629,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "1289711022"
+        },
+        {
+          "inicio": 2140,
+          "fim": 2181,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2684945476"
+        },
+        {
+          "inicio": 2565,
+          "fim": 2597,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3444970751"
+        },
+        {
+          "inicio": 2757,
+          "fim": 2786,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2549257337"
+        },
+        {
+          "inicio": 2927,
+          "fim": 2940,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 3058,
+          "fim": 3116,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2107673016"
+        },
+        {
+          "inicio": 3244,
+          "fim": 3260,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        }
+      ],
+      "gen_n1_011": [
+        {
+          "inicio": 502,
+          "fim": 523,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 670,
+          "fim": 728,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1216,
+          "fim": 1242,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2679580316"
+        },
+        {
+          "inicio": 1710,
+          "fim": 1746,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10641516"
+        },
+        {
+          "inicio": 2204,
+          "fim": 2220,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2363,
+          "fim": 2421,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2828,
+          "fim": 2851,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        }
+      ],
+      "gen_n1_012": [
+        {
+          "inicio": 582,
+          "fim": 605,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "862182008"
+        },
+        {
+          "inicio": 1119,
+          "fim": 1143,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10637358"
+        },
+        {
+          "inicio": 1218,
+          "fim": 1243,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "867328396"
+        },
+        {
+          "inicio": 1412,
+          "fim": 1428,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1891,
+          "fim": 1914,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2043,
+          "fim": 2085,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "867273442"
+        },
+        {
+          "inicio": 2970,
+          "fim": 2986,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2785081280"
+        },
+        {
+          "inicio": 3135,
+          "fim": 3170,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2428195275"
+        },
+        {
+          "inicio": 3317,
+          "fim": 3330,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        }
+      ],
+      "gen_n2_003": [
+        {
+          "inicio": 613,
+          "fim": 682,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 736,
+          "fim": 789,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "861411580"
+        },
+        {
+          "inicio": 1289,
+          "fim": 1314,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "392669042"
+        },
+        {
+          "inicio": 1726,
+          "fim": 1743,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1847,
+          "fim": 1863,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2559,
+          "fim": 2578,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2988,
+          "fim": 3027,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "861411566"
+        }
+      ],
+      "gen_n2_004": [
+        {
+          "inicio": 1014,
+          "fim": 1045,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1463,
+          "fim": 1478,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2055,
+          "fim": 2092,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "1887816799"
+        },
+        {
+          "inicio": 2244,
+          "fim": 2286,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "369460073"
+        },
+        {
+          "inicio": 2390,
+          "fim": 2418,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        }
+      ],
+      "gen_n2_005": [
+        {
+          "inicio": 574,
+          "fim": 601,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1122,
+          "fim": 1175,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1617,
+          "fim": 1687,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1765,
+          "fim": 1793,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1901,
+          "fim": 1938,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2388,
+          "fim": 2466,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2959,
+          "fim": 3012,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "862014739"
+        },
+        {
+          "inicio": 3172,
+          "fim": 3212,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10641213"
+        }
+      ],
+      "gen_n2_007": [
+        {
+          "inicio": 514,
+          "fim": 547,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2382656124"
+        },
+        {
+          "inicio": 955,
+          "fim": 986,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1416,
+          "fim": 1485,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1549,
+          "fim": 1587,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1818,
+          "fim": 1831,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1972,
+          "fim": 2005,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2383009176"
+        },
+        {
+          "inicio": 2100,
+          "fim": 2121,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2519,
+          "fim": 2553,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2382852256"
+        }
+      ],
+      "gen_n2_008": [
+        {
+          "inicio": 1206,
+          "fim": 1239,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1898,
+          "fim": 1932,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3360644282"
+        },
+        {
+          "inicio": 2384,
+          "fim": 2398,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 3051,
+          "fim": 3078,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2849473714"
+        }
+      ],
+      "gen_n2_009": [
+        {
+          "inicio": 539,
+          "fim": 568,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3347738001"
+        },
+        {
+          "inicio": 725,
+          "fim": 762,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3375797414"
+        },
+        {
+          "inicio": 883,
+          "fim": 915,
+          "tipo": "lei",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1190,
+          "fim": 1208,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1614,
+          "fim": 1640,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "6490934118"
+        },
+        {
+          "inicio": 1771,
+          "fim": 1786,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2549252487"
+        },
+        {
+          "inicio": 2227,
+          "fim": 2257,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "524699160"
+        },
+        {
+          "inicio": 3263,
+          "fim": 3281,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "3347737758"
+        }
+      ],
+      "gen_n2_010": [
+        {
+          "inicio": 579,
+          "fim": 604,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1164,
+          "fim": 1192,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2107883738"
+        },
+        {
+          "inicio": 1640,
+          "fim": 1666,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10718759"
+        },
+        {
+          "inicio": 2107,
+          "fim": 2148,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10606184"
+        },
+        {
+          "inicio": 2626,
+          "fim": 2687,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2841,
+          "fim": 2873,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2106317594"
+        },
+        {
+          "inicio": 2963,
+          "fim": 3007,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2684973273"
+        }
+      ],
+      "gen_n2_012": [
+        {
+          "inicio": 481,
+          "fim": 507,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2674928810"
+        },
+        {
+          "inicio": 1082,
+          "fim": 1179,
+          "tipo": "jurisprudencia",
+          "classificacao": "incompleta",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1282,
+          "fim": 1299,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 1603,
+          "fim": 1627,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 2089,
+          "fim": 2124,
+          "tipo": "lei",
+          "classificacao": "real",
+          "id_canonico": "10652044"
+        },
+        {
+          "inicio": 2540,
+          "fim": 2561,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2106305320"
+        },
+        {
+          "inicio": 2695,
+          "fim": 2718,
+          "tipo": "jurisprudencia",
+          "classificacao": "inventada",
+          "id_canonico": null
+        },
+        {
+          "inicio": 3158,
+          "fim": 3172,
+          "tipo": "jurisprudencia",
+          "classificacao": "real",
+          "id_canonico": "2675221299"
+        }
+      ]
+    }
+  },
+  "run_manifest_sha256": "67042fee082aecd7803ba7fae8cb76b1489e85db2579fcc9c65e4c6306b39349"
+}

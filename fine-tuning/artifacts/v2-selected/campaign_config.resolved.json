@@ -1,0 +1,458 @@
+{
+  "all_parameters_trainable": true,
+  "architecture": {
+    "_attn_implementation_autoset": false,
+    "_name_or_path": "/source/model",
+    "add_cross_attention": false,
+    "architectures": [
+      "BertForTokenClassification"
+    ],
+    "attention_probs_dropout_prob": 0.1,
+    "bad_words_ids": null,
+    "base_model_license": "MIT",
+    "base_model_name": "dominguesm/legal-bert-ner-base-cased-ptbr",
+    "base_model_revision": "44210927c925448df025985e0ed48081bb5ac57c",
+    "begin_suppress_tokens": null,
+    "bos_token_id": null,
+    "chunk_size_feed_forward": 0,
+    "classifier_dropout": null,
+    "cross_attention_hidden_size": null,
+    "decoder_start_token_id": null,
+    "directionality": "bidi",
+    "diversity_penalty": 0.0,
+    "do_sample": false,
+    "early_stopping": false,
+    "encoder_no_repeat_ngram_size": 0,
+    "eos_token_id": null,
+    "exponential_decay_length_penalty": null,
+    "finetuning_task": null,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.1,
+    "hidden_size": 768,
+    "id2label": {
+      "0": "O",
+      "1": "B-ORGANIZACAO",
+      "10": "I-LEGISLACAO",
+      "11": "B-JURISPRUDENCIA",
+      "12": "I-JURISPRUDENCIA",
+      "2": "I-ORGANIZACAO",
+      "3": "B-PESSOA",
+      "4": "I-PESSOA",
+      "5": "B-TEMPO",
+      "6": "I-TEMPO",
+      "7": "B-LOCAL",
+      "8": "I-LOCAL",
+      "9": "B-LEGISLACAO"
+    },
+    "initializer_range": 0.02,
+    "intermediate_size": 3072,
+    "is_decoder": false,
+    "is_encoder_decoder": false,
+    "label2id": {
+      "B-JURISPRUDENCIA": "11",
+      "B-LEGISLACAO": "9",
+      "B-LOCAL": "7",
+      "B-ORGANIZACAO": "1",
+      "B-PESSOA": "3",
+      "B-TEMPO": "5",
+      "I-JURISPRUDENCIA": "12",
+      "I-LEGISLACAO": "10",
+      "I-LOCAL": "8",
+      "I-ORGANIZACAO": "2",
+      "I-PESSOA": "4",
+      "I-TEMPO": "6",
+      "O": "0"
+    },
+    "layer_norm_eps": 1e-12,
+    "length_penalty": 1.0,
+    "max_length": 20,
+    "max_position_embeddings": 512,
+    "min_length": 0,
+    "model_type": "bert",
+    "no_repeat_ngram_size": 0,
+    "num_attention_heads": 12,
+    "num_beam_groups": 1,
+    "num_beams": 1,
+    "num_hidden_layers": 12,
+    "num_return_sequences": 1,
+    "output_attentions": false,
+    "output_hidden_states": false,
+    "output_past": true,
+    "output_scores": false,
+    "pad_token_id": 0,
+    "pooler_fc_size": 768,
+    "pooler_num_attention_heads": 12,
+    "pooler_num_fc_layers": 3,
+    "pooler_size_per_head": 128,
+    "pooler_type": "first_token_transform",
+    "position_embedding_type": "absolute",
+    "prefix": null,
+    "problem_type": null,
+    "pruned_heads": {},
+    "remove_invalid_values": false,
+    "repetition_penalty": 1.0,
+    "return_dict": true,
+    "return_dict_in_generate": false,
+    "sep_token_id": null,
+    "suppress_tokens": null,
+    "task_specific_params": null,
+    "temperature": 1.0,
+    "tf_legacy_loss": false,
+    "tie_encoder_decoder": false,
+    "tie_word_embeddings": true,
+    "tokenizer_class": null,
+    "top_k": 50,
+    "top_p": 1.0,
+    "torch_dtype": "float32",
+    "torchscript": false,
+    "transformers_version": "4.46.3",
+    "type_vocab_size": 2,
+    "typical_p": 1.0,
+    "use_bfloat16": false,
+    "use_cache": true,
+    "vocab_size": 29794
+  },
+  "checkpoint_retention_policy": {
+    "after_local_score_selection": "write per-file hashes and sizes to checkpoint_archive.json, then remove bulky optimizer states and temporary snapshots; preserve selected model weights, resolved config, metrics and archive manifest",
+    "during_active_experiment": "retain Trainer's latest complete states for interruption and resume",
+    "resume_after_trial_completion": "start a new experiment from the preserved selected candidate; completed Trainer states are not resumable after disk cleanup"
+  },
+  "checkpoint_selection": {
+    "evaluation_snapshots": "lightweight model plus tokenizer at every Trainer save/evaluation checkpoint",
+    "metric": "complete local challenge score from isolated evaluation pipeline",
+    "resume_checkpoints": "latest and best eval-loss full states, including optimizer, scheduler, RNG and GradScaler",
+    "tie_breakers": [
+      "N2 score",
+      "raw NER span precision"
+    ]
+  },
+  "environment": {
+    "accelerate": "1.1.1",
+    "cuda_available": true,
+    "cudnn_version": 90100,
+    "docker_image": "juris-check-finetuning-trainer:local",
+    "docker_image_id": "sha256:e62ed1bb30028397efb13fbca0f8d9ee011b77bd0ef5af6340ab2c3a6b555c35",
+    "git_commit": "4d47cbb1d57b79e2ac71ead3280d2d434ff99612",
+    "git_worktree_sha256": null,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_compute_capability": [
+      8,
+      6
+    ],
+    "gpu_driver": "616.92",
+    "gpu_total_memory_bytes": 12884377600,
+    "numpy": "1.26.4",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "python": "3.11.11",
+    "torch": "2.5.1+cu124",
+    "torch_cuda_version": "12.4",
+    "trainer_requirements_sha256": "a533afceefb4b3cfd491abc07c546727fd085d39cb8be37dfae3a7b1f1e14311",
+    "trainer_source_sha256": "23eaf0ab1a160377c29cba67720263d36056a8a0eb25d12bfae72891d317e54e",
+    "transformers": "4.46.3"
+  },
+  "experiments": [
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "original",
+      "learning_rate": 5e-06,
+      "name": "original_lr_5e-06",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    },
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "original",
+      "learning_rate": 1e-05,
+      "name": "original_lr_1e-05",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    },
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "original",
+      "learning_rate": 2e-05,
+      "name": "original_lr_2e-05",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    },
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "original",
+      "learning_rate": 3e-05,
+      "name": "original_lr_3e-05",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    },
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "v1",
+      "learning_rate": 5e-06,
+      "name": "v1_lr_5e-06",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    },
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "v1",
+      "learning_rate": 1e-05,
+      "name": "v1_lr_1e-05",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    },
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "v1",
+      "learning_rate": 2e-05,
+      "name": "v1_lr_2e-05",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    },
+    {
+      "auxiliary_loss_weight": 0.25,
+      "initial_checkpoint": "v1",
+      "learning_rate": 3e-05,
+      "name": "v1_lr_3e-05",
+      "ocr_noise_rate": 0.0,
+      "official_repeat": 5,
+      "sampler": "window",
+      "seed": 42,
+      "stage": "base"
+    }
+  ],
+  "git_state": {
+    "commit": "4d47cbb1d57b79e2ac71ead3280d2d434ff99612",
+    "worktree_sha256": "23eaf0ab1a160377c29cba67720263d36056a8a0eb25d12bfae72891d317e54e"
+  },
+  "labels": {
+    "ids_by_name": {
+      "B-JURISPRUDENCIA": 11,
+      "B-LEGISLACAO": 9,
+      "B-LOCAL": 7,
+      "B-ORGANIZACAO": 1,
+      "B-PESSOA": 3,
+      "B-TEMPO": 5,
+      "I-JURISPRUDENCIA": 12,
+      "I-LEGISLACAO": 10,
+      "I-LOCAL": 8,
+      "I-ORGANIZACAO": 2,
+      "I-PESSOA": 4,
+      "I-TEMPO": 6,
+      "O": 0
+    },
+    "names_by_id": [
+      "O",
+      "B-ORGANIZACAO",
+      "I-ORGANIZACAO",
+      "B-PESSOA",
+      "I-PESSOA",
+      "B-TEMPO",
+      "I-TEMPO",
+      "B-LOCAL",
+      "I-LOCAL",
+      "B-LEGISLACAO",
+      "I-LEGISLACAO",
+      "B-JURISPRUDENCIA",
+      "I-JURISPRUDENCIA"
+    ]
+  },
+  "loss": {
+    "ambiguous_span_label": -100,
+    "auxiliary_pseudolabel_confidence_threshold": 0.9,
+    "auxiliary_pseudolabel_weight": 0.25,
+    "citation_annotation_weight": 1.0,
+    "citation_nonentity_projection": "logsumexp(O,ORGANIZACAO,PESSOA,TEMPO,LOCAL)",
+    "confirmed_distractor_target": "O",
+    "ignored_special_padding_label": -100,
+    "kind": "projected_five_class_citation_cross_entropy_plus_auxiliary_teacher_cross_entropy"
+  },
+  "objective": "token_classification_for_citation_span_extraction",
+  "official_data": {
+    "documents_used_only_for_training": true,
+    "sampling_repeats": 5,
+    "training_document_count": 10,
+    "validation_or_model_selection_use": false
+  },
+  "planned_ablation_stages": {
+    "ablation": {
+      "auxiliary_loss_weights": [
+        0.0,
+        0.1,
+        0.25
+      ],
+      "official_repeats": [
+        1,
+        3,
+        5
+      ],
+      "parents": 2
+    },
+    "cross_validation": {
+      "grouping": "local training context",
+      "planned_folds": 3,
+      "status": "not yet executed"
+    },
+    "robustness": {
+      "ocr_noise_rates": [
+        0.0,
+        0.01,
+        0.03
+      ],
+      "parents": 2,
+      "samplers": [
+        "window",
+        "context"
+      ]
+    },
+    "stability": {
+      "additional_seeds": [
+        17,
+        2026
+      ],
+      "parents": 2,
+      "seed_42_reference": true
+    }
+  },
+  "prepared_dataset_manifest_sha256": "a2042bb830bc357ce85f1388d7d0025071b7959a78a3bd71db33b14c50e37442",
+  "schema_version": 1,
+  "selection_policy": {
+    "eligibility_constraint": "tau by level does not exceed original or v1 and score exceeds v1",
+    "fallback_without_eligible_candidates": "export_as_experimental_only",
+    "primary_metric": "score_final",
+    "selected_local_test_evaluations": 1,
+    "tie_breakers": [
+      "score_N2",
+      "span_precision"
+    ],
+    "validation_only": true
+  },
+  "source_checkpoint_sha256": "a407fce80afba888ba73e74443f0711dba718f4bc12a11a372482e523e10042b",
+  "source_license": "CC-BY-4.0",
+  "source_model": "dominguesm/legal-bert-ner-base-cased-ptbr",
+  "source_model_weights_sha256": "dea15cbbe0935ec20da635f6861ffdcad0d737a648ad48dff1affd686cf776a6",
+  "source_revision": "44210927c925448df025985e0ed48081bb5ac57c",
+  "tokenizer": {
+    "class": "BertTokenizerFast",
+    "init_kwargs": {
+      "cls_token": "[CLS]",
+      "do_basic_tokenize": true,
+      "do_lower_case": false,
+      "mask_token": "[MASK]",
+      "max_length": 512,
+      "name_or_path": "/source/model",
+      "never_split": null,
+      "pad_token": "[PAD]",
+      "sep_token": "[SEP]",
+      "special_tokens_map_file": "/root/.cache/huggingface/hub/models--neuralmind--bert-base-portuguese-cased/snapshots/94d69c95f98f7d5b2a8700c420230ae10def0baa/special_tokens_map.json",
+      "stride": 0,
+      "strip_accents": null,
+      "tokenize_chinese_chars": true,
+      "truncation_side": "right",
+      "truncation_strategy": "longest_first",
+      "unk_token": "[UNK]"
+    },
+    "is_fast": true,
+    "model_max_length": 1000000000000000019884624838656,
+    "pad_token_id": 0,
+    "padding_side": "right",
+    "special_tokens_map": {
+      "cls_token": "[CLS]",
+      "mask_token": "[MASK]",
+      "pad_token": "[PAD]",
+      "sep_token": "[SEP]",
+      "unk_token": "[UNK]"
+    },
+    "truncation_side": "right",
+    "vocab_size": 29794
+  },
+  "total_parameters": 108342541,
+  "trainable_parameters": 108342541,
+  "training_defaults": {
+    "data_seed": 42,
+    "dataloader_workers": 0,
+    "deterministic_torch_algorithms": false,
+    "early_stopping": {
+      "greater_is_better": false,
+      "monitor": "eval_loss_diagnostic_only",
+      "patience_evaluations": 8,
+      "threshold": 0.0
+    },
+    "early_stopping_patience": 8,
+    "evaluation_events_per_epoch": 4,
+    "evaluation_strategy": "steps",
+    "evaluations_per_epoch": 4,
+    "gpu_memory_safety_fraction": 0.2,
+    "gradient_checkpointing": true,
+    "gradient_clip_norm": 1.0,
+    "greater_is_better": false,
+    "load_best_model_at_end": true,
+    "logging_steps": 1,
+    "lr_scheduler": "linear",
+    "lr_scheduler_kwargs": {},
+    "max_epochs": 12,
+    "max_training_wall_seconds": null,
+    "metric_for_best_model": "eval_loss",
+    "optimizer": "adamw_torch",
+    "optimizer_constructor_defaults": {
+      "amsgrad": false,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "capturable": false,
+      "differentiable": false,
+      "eps": 1e-08,
+      "foreach": null,
+      "fused": null,
+      "lr": 0.001,
+      "maximize": false,
+      "weight_decay": 0.01
+    },
+    "optimizer_effective_parameters": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay_by_parameter_group": [
+        0.01,
+        0.0
+      ]
+    },
+    "precision": "fp16",
+    "save_strategy": "same_steps_as_evaluation",
+    "save_total_limit": 2,
+    "seed": 42,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01
+  },
+  "windowing": {
+    "batch_padding_to_multiple_of": 8,
+    "maximum_padded_batch_length": 512,
+    "overlap_tokens": 128,
+    "total_tokens": 510,
+    "truncation": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "estimated_optimizer_steps_remaining": 1920,
+  "estimated_seconds_with_25_percent_margin": 2111.52,
+  "experiment": {
+    "auxiliary_loss_weight": 0.1,
+    "configuration_id": "a4bafc99_a10_r3_o00_window",
+    "initial_candidate": "s2_1_a4bafc99_a10_r3",
+    "initial_checkpoint": "candidate",
+    "learning_rate": 3e-05,
+    "name": "s3_1_7e4cf94f_o00_w",
+    "ocr_noise_rate": 0.0,
+    "official_repeat": 3,
+    "parent_checkpoint_sha256": "7e4cf94f9621d6fd7548e14bb4dcbd9c0e698f7dec0312d9ec07c9b533eadb5b",
+    "parent_validation_score": 0.6648582179639748,
+    "sampler": "window",
+    "seed": 42,
+    "stage": "robustness"
+  },
+  "gradient_accumulation_steps": 1,
+  "preflight_microbatch_step_seconds": 0.8798,
+  "remaining_training_budget_seconds": null,
+  "resumed_from_checkpoint": null,
+  "timestamp_utc": "2026-10-01T06:32:20.979513+00:00",
+  "will_start": true
+}

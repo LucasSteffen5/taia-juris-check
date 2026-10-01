@@ -1,0 +1,96 @@
+{
+  "archived_at_utc": "2026-10-01T07:02:54.115708+00:00",
+  "checkpoints": [
+    {
+      "directory": "checkpoint-400",
+      "files": {
+        "checkpoint.complete.json": {
+          "sha256": "8cb4bf1c6c9c91510fef37c2e942d03f7a0ae3e5aa047f541beba443a3f2c8e5",
+          "size_bytes": 657
+        },
+        "config.json": {
+          "sha256": "b582348277e07c383cad35baf33c80d447608c65dc17d898d3607ced6351ad49",
+          "size_bytes": 1692
+        },
+        "model.safetensors": {
+          "sha256": "58704f9ff103896f8ce2403f6396fe78bd8f93b515abc57db8912be5bd72d6d5",
+          "size_bytes": 433393508
+        },
+        "optimizer.pt": {
+          "sha256": "f4f2532460813633a6d61afcbd6fa1711f7ac090e68da218e802ab51fb6771d8",
+          "size_bytes": 866906682
+        },
+        "rng_state.pth": {
+          "sha256": "0c88c94ace4136759ff3bffdc53ee83b70b985cae8a9bfbfdb49385c5e61adad",
+          "size_bytes": 14244
+        },
+        "scaler.pt": {
+          "sha256": "29fa2d0536c1328334dd3d85a74604a64fca1fdfab7a6065c5dbfacf836a9b90",
+          "size_bytes": 1000
+        },
+        "scheduler.pt": {
+          "sha256": "bf31351a707bca7287b982ab42e12924ba8e1830a01ed3af731c82236d26d2b7",
+          "size_bytes": 1064
+        },
+        "trainer_state.json": {
+          "sha256": "65bcabe657f85b31b91f352bcc236152e5010609db14ab7ded6236c382699be6",
+          "size_bytes": 82547
+        },
+        "training_args.bin": {
+          "sha256": "56cd4d8f84a8603b47e5f9a5d09e182fd074d19ce9f0c83bc445af4eb955d634",
+          "size_bytes": 5368
+        }
+      },
+      "resume_compatible_before_archive": true
+    },
+    {
+      "directory": "checkpoint-720",
+      "files": {
+        "checkpoint.complete.json": {
+          "sha256": "72bd3aed27c87bf7adabe5c2d5319bd11476f57616f6b1c8033a4cb1fedef774",
+          "size_bytes": 657
+        },
+        "config.json": {
+          "sha256": "b582348277e07c383cad35baf33c80d447608c65dc17d898d3607ced6351ad49",
+          "size_bytes": 1692
+        },
+        "model.safetensors": {
+          "sha256": "b6b73805b6468f554373b8e22030f5665b950b5ef9fb5039bfe5661136ecb11d",
+          "size_bytes": 433393508
+        },
+        "optimizer.pt": {
+          "sha256": "ae0a5e9812e69b9fd80b890b8acce585f61a3a551206e45a5070de768878e43a",
+          "size_bytes": 866906682
+        },
+        "rng_state.pth": {
+          "sha256": "a310e6abeb94163127b8e31ca8e1d239559c2ef67d830b58dee8f7a5002f9fa7",
+          "size_bytes": 14244
+        },
+        "scaler.pt": {
+          "sha256": "eed4402b25b36ecf8c271fc5d3c3a4fabcaa18ecc0e79ddcaf492be812316bdb",
+          "size_bytes": 1000
+        },
+        "scheduler.pt": {
+          "sha256": "a3fbc9ac2fd851497ab15e5fd384bce45c81a3ba9bb88a34368fe6f8cec005fe",
+          "size_bytes": 1064
+        },
+        "trainer_state.json": {
+          "sha256": "d74444510a21f72a7c33fc14a18edec70ab5bd50b6154078dc7753ed13215c69",
+          "size_bytes": 149033
+        },
+        "training_args.bin": {
+          "sha256": "56cd4d8f84a8603b47e5f9a5d09e182fd074d19ce9f0c83bc445af4eb955d634",
+          "size_bytes": 5368
+        }
+      },
+      "resume_compatible_before_archive": true
+    }
+  ],
+  "experiment": "s3_1_7e4cf94f_o00_w",
+  "free_disk_bytes_before_archive": 24527093760,
+  "full_checkpoint_states_retained": false,
+  "retention_reason": "keep the campaign within available disk while preserving selected model weights and all state hashes",
+  "run_id": "ft-20260930-v2-balanced-campaign",
+  "schema_version": 1,
+  "states_archived_after_full_local_score_selection": true
+}

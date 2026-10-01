@@ -25,7 +25,27 @@ No Windows PowerShell:
 
 O script constrói a imagem a partir do Dockerfile, valida CUDA dentro do contêiner e executa o pipeline com GPU NVIDIA. Na primeira execução, o build pode demorar enquanto baixa as dependências e os pesos. Execuções seguintes reaproveitam o cache do Docker.
 
-O CSV é salvo exatamente no terceiro caminho informado.. O contêiner é removido ao terminar; banco e documentos são montados somente para leitura.
+O CSV é salvo exatamente no terceiro caminho informado. O contêiner é removido ao terminar; banco e documentos são montados somente para leitura.
+
+## Reprodução da versão entregue
+
+Clone a branch e baixe os pesos versionados com Git LFS antes de construir a imagem:
+
+```bash
+git clone --branch feat/solution-ner https://github.com/LucasSteffen5/taia-juris-check.git
+cd taia-juris-check
+git lfs pull
+```
+
+O comando principal acima continua usando o checkpoint original. Para avaliar explicitamente o fine-tuning selecionado, use o pacote completo em `fine-tuning/artifacts/v2-selected`:
+
+```powershell
+.\fine-tuning\run.ps1 predict -CheckpointPath .\fine-tuning\artifacts\v2-selected -InputDirectory .\data\desafio-jusbrasil-bracis-2026\txt -DatabasePath .\data\desafio-jusbrasil-bracis-2026\desafio1_bracis.db -OutputPath .\output\submission-v2.csv
+```
+
+No Linux/WSL, o equivalente é `bash fine-tuning/run.sh predict fine-tuning/artifacts/v2-selected data/desafio-jusbrasil-bracis-2026/txt data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db output/submission-v2.csv`. O launcher valida os hashes e os 13 rótulos antes de gerar a submissão. O checkpoint `fine-tuning/artifacts/v1-reference` também está versionado porque é uma inicialização necessária para reproduzir a campanha v2. O código, a preparação, os testes e o comando de treinamento estão documentados em [fine-tuning/README.md](fine-tuning/README.md); os parâmetros efetivos, métricas, hashes e instruções específicas estão no pacote v2.
+
+O v2 venceu na validação local, mas no conjunto oficial de desenvolvimento reservado de 16 documentos o v1 ficou ligeiramente à frente (1,082703 contra 1,082643). Este resultado é referencial: o conjunto final cego e a classificação da competição não foram avaliados. Nenhum checkpoint derivado é ativado pelo comando padrão.
 
 
 

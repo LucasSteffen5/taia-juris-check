@@ -1,0 +1,29 @@
+{
+  "attempts": [
+    {
+      "attempt_seconds": 3.832,
+      "batch_size": 16,
+      "device_index": 0,
+      "peak_reserved_bytes": 2340421632,
+      "result": "fits",
+      "step_seconds": 0.8798
+    }
+  ],
+  "batch_size_per_device": 16,
+  "cuda_device_index": 0,
+  "cuda_free_memory_before_bytes": 11783897088,
+  "cuda_total_memory_bytes": 12884377600,
+  "cudnn_version": 90100,
+  "effective_batch_size": 16,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "gradient_accumulation_steps": 1,
+  "gradient_checkpointing": true,
+  "mixed_precision": "fp16",
+  "one_step_seconds": 0.8798,
+  "peak_reserved_bytes": 2340421632,
+  "requested_memory_safety_fraction": 0.2,
+  "sequence_length": 512,
+  "teacher_batch_size": 4,
+  "timestamp_utc": "2026-09-30T20:43:04.469138+00:00",
+  "torch_cuda_version": "12.4"
+}

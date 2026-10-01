@@ -1,0 +1,345 @@
+{
+  "baseline_validation": {
+    "niveis": {
+      "1": {
+        "b": 0.0774250547045952,
+        "f1_por_classe": {
+          "incompleta": 0.5421412300683371,
+          "inventada": 0.5863192182410424,
+          "real": 0.8450704225352113
+        },
+        "macro_f1": 0.6578436236148636,
+        "s": 0.6578436236148636,
+        "score": 0.7087772021603135,
+        "tau": 0.0
+      },
+      "2": {
+        "b": 0.0763159645232816,
+        "f1_por_classe": {
+          "incompleta": 0.5340782122905028,
+          "inventada": 0.5208333333333334,
+          "real": 0.6885245901639344
+        },
+        "macro_f1": 0.5811453785959235,
+        "s": 0.5759098346446089,
+        "score": 0.6198609491539558,
+        "tau": 0.018018018018018018
+      }
+    },
+    "score_final": 0.649499700156075
+  },
+  "data_summary": {
+    "groups_are_disjoint": true,
+    "local_documents": {
+      "test": 56,
+      "train": 412,
+      "validation": 62
+    },
+    "official_documents_authorized_for_training": [
+      "gen_n1_001",
+      "gen_n1_005",
+      "gen_n1_006",
+      "gen_n1_008",
+      "gen_n1_013",
+      "gen_n2_001",
+      "gen_n2_002",
+      "gen_n2_006",
+      "gen_n2_011",
+      "gen_n2_013"
+    ],
+    "official_documents_reserved_for_requested_final_score": 16,
+    "official_selected_annotation_rows_read": 73
+  },
+  "dataset_manifest_sha256": "800c599488f1cd040a0b58075ac1bb89e8b4698910ab845d1d1c800a0ec0d1a7",
+  "evaluation_run_manifests": {
+    "baseline_validation": {
+      "checkpoint_sha256": "164b638c57f3493814ea89264f9b61af3fd586922d5db7e855caa9a87aed0c86",
+      "database_sha256": "78f0708b0a21c11655dfdd882382fea75c62a75415d8d3b118888c0a340bef4c",
+      "manifest_sha256": "36471d648894b7626a97c6a475007aaefccc1cedfb9251080f32ff68e5b92e63",
+      "scripts_sha256": "6e08de5dd182f4b8eb436d014096369fa56e4b6fc91f8d7daedbf367428ef0aa",
+      "source_sha256": "6b6452696b0dc65449fbba93e9254d551f8ec2fcb574ce4e967a737e5651b4af",
+      "submission_sha256": "9404f0f1693bd3dc8f53300e01cb80922ca06366410d86a607fbbc8afe0a9c00"
+    },
+    "lr_3e-5_validation": {
+      "checkpoint_sha256": "77f61c28b2888f6e477161e2c7929116af53b3ee8d812098845824eb017b8e76",
+      "database_sha256": "78f0708b0a21c11655dfdd882382fea75c62a75415d8d3b118888c0a340bef4c",
+      "manifest_sha256": "c7fa8d11eb74d97165c52f8427c723ea4fbdb35eb9841259ef97676dedaf5506",
+      "scripts_sha256": "6e08de5dd182f4b8eb436d014096369fa56e4b6fc91f8d7daedbf367428ef0aa",
+      "source_sha256": "6b6452696b0dc65449fbba93e9254d551f8ec2fcb574ce4e967a737e5651b4af",
+      "submission_sha256": "124a866507522ae99e625027811fef9a2de3014a1e114b2618fed48259281be9"
+    },
+    "selected_local_test": {
+      "checkpoint_sha256": "77f61c28b2888f6e477161e2c7929116af53b3ee8d812098845824eb017b8e76",
+      "database_sha256": "78f0708b0a21c11655dfdd882382fea75c62a75415d8d3b118888c0a340bef4c",
+      "manifest_sha256": "0144d458e4dfb471a81cb04ba9df06e5e5b6c1d9dbd0b9efc93297585a8e8220",
+      "scripts_sha256": "6e08de5dd182f4b8eb436d014096369fa56e4b6fc91f8d7daedbf367428ef0aa",
+      "source_sha256": "6b6452696b0dc65449fbba93e9254d551f8ec2fcb574ce4e967a737e5651b4af",
+      "submission_sha256": "cfdead716db8ecfe23e3b0add5ae59a091f32a273095b8a07d6b943069c3ad49"
+    }
+  },
+  "experiment": "lr_3e-5",
+  "experimental_only": false,
+  "recommended_for_explicit_local_use": true,
+  "resolved_campaign_config_sha256": "13c056ad13712d7d79f877ab6a2e8dcc1ae642c7e58580e5d66c4920cfb8c13a",
+  "resolved_experiment_config_sha256": "547d69a042f0586da48815449ff026c7c3f8b8a653d1255d926fc6779c0df10a",
+  "run_id": "ft-20260930-prod2",
+  "selected_checkpoint": "/runs/ft-20260930-prod2/candidates/lr_3e-5",
+  "selected_local_test": {
+    "niveis": {
+      "1": {
+        "b": 0.07954982363315698,
+        "f1_por_classe": {
+          "incompleta": 0.6424418604651163,
+          "inventada": 0.7236842105263158,
+          "real": 0.8535031847133758
+        },
+        "macro_f1": 0.7398764185682692,
+        "s": 0.7398764185682692,
+        "score": 0.7987334571757069,
+        "tau": 0.0
+      },
+      "2": {
+        "b": 0.07576902654867257,
+        "f1_por_classe": {
+          "incompleta": 0.6183310533515732,
+          "inventada": 0.5619469026548672,
+          "real": 0.5565217391304348
+        },
+        "macro_f1": 0.5789332317122917,
+        "s": 0.5775142777129969,
+        "score": 0.6212719723532705,
+        "tau": 0.004901960784313725
+      }
+    },
+    "score_final": 0.680425800627416
+  },
+  "selected_local_test_span_audit": {
+    "gold_sha256": "0ec6ec8f3efc0f49e222283c26e48c4170421aa1d7145cbd178957acfa07bfab",
+    "gold_spans": 1333,
+    "iou_threshold": 0.5,
+    "matched_spans": 1132,
+    "per_level": {
+      "1": {
+        "gold": 668,
+        "matched": 567,
+        "precision": 0.8943217665615142,
+        "predictions": 634,
+        "recall": 0.8488023952095808,
+        "typed_matched": 566,
+        "typed_precision": 0.8927444794952681,
+        "typed_recall": 0.8473053892215568
+      },
+      "2": {
+        "gold": 665,
+        "matched": 565,
+        "precision": 0.8911671924290221,
+        "predictions": 634,
+        "recall": 0.849624060150376,
+        "typed_matched": 564,
+        "typed_precision": 0.889589905362776,
+        "typed_recall": 0.8481203007518797
+      }
+    },
+    "per_type": {
+      "jurisprudencia": {
+        "gold": 571,
+        "matched": 456,
+        "precision": 0.7875647668393783,
+        "predictions": 579,
+        "recall": 0.7985989492119089
+      },
+      "legislacao": {
+        "gold": 762,
+        "matched": 674,
+        "precision": 0.9782293178519593,
+        "predictions": 689,
+        "recall": 0.884514435695538
+      }
+    },
+    "precision": 0.8927444794952681,
+    "predicted_spans": 1268,
+    "prediction_directory": "/runs/ft-20260930-prod2/evaluations/selected_test",
+    "recall": 0.8492123030757689,
+    "typed_precision": 0.8911671924290221,
+    "typed_recall": 0.8477119279819955
+  },
+  "selected_validation": {
+    "niveis": {
+      "1": {
+        "b": 0.07692084942084942,
+        "f1_por_classe": {
+          "incompleta": 0.6087888531618435,
+          "inventada": 0.5617283950617284,
+          "real": 0.8611111111111112
+        },
+        "macro_f1": 0.6772094531115611,
+        "s": 0.6772094531115611,
+        "score": 0.7293009794807314,
+        "tau": 0.0
+      },
+      "2": {
+        "b": 0.07603499079189688,
+        "f1_por_classe": {
+          "incompleta": 0.6127659574468085,
+          "inventada": 0.48,
+          "real": 0.7096774193548387
+        },
+        "macro_f1": 0.6008144589338824,
+        "s": 0.5954017160606042,
+        "score": 0.6406730800587519,
+        "tau": 0.018018018018018018
+      }
+    },
+    "score_final": 0.6702157131994118
+  },
+  "selected_validation_span_audit": {
+    "gold_sha256": "5b7b25bda9d84263316bfd3676f04b330ac1a7c8a17d36dfe19bb5e4835ceab5",
+    "gold_spans": 1416,
+    "iou_threshold": 0.5,
+    "matched_spans": 1061,
+    "per_level": {
+      "1": {
+        "gold": 711,
+        "matched": 518,
+        "precision": 0.8381877022653722,
+        "predictions": 618,
+        "recall": 0.7285513361462729,
+        "typed_matched": 510,
+        "typed_precision": 0.8252427184466019,
+        "typed_recall": 0.7172995780590717
+      },
+      "2": {
+        "gold": 705,
+        "matched": 543,
+        "precision": 0.8729903536977492,
+        "predictions": 622,
+        "recall": 0.7702127659574468,
+        "typed_matched": 534,
+        "typed_precision": 0.8585209003215434,
+        "typed_recall": 0.7574468085106383
+      }
+    },
+    "per_type": {
+      "jurisprudencia": {
+        "gold": 622,
+        "matched": 386,
+        "precision": 0.6942446043165468,
+        "predictions": 556,
+        "recall": 0.6205787781350482
+      },
+      "legislacao": {
+        "gold": 794,
+        "matched": 658,
+        "precision": 0.9619883040935673,
+        "predictions": 684,
+        "recall": 0.8287153652392947
+      }
+    },
+    "precision": 0.8556451612903225,
+    "predicted_spans": 1240,
+    "prediction_directory": "/runs/ft-20260930-prod2/evaluations/lr_3e-5",
+    "recall": 0.7492937853107344,
+    "typed_precision": 0.8419354838709677,
+    "typed_recall": 0.7372881355932204
+  },
+  "selection": {
+    "baseline": {
+      "score_final": 0.649499700156075,
+      "score_n2": 0.6198609491539558,
+      "tau_n1": 0.0,
+      "tau_n2": 0.018018018018018018
+    },
+    "candidate_selection_uses_official_training_docs_for_evaluation": false,
+    "candidates": [
+      {
+        "checkpoint": "/runs/ft-20260930-prod2/candidates/lr_2e-5",
+        "eligible": true,
+        "experiment": "lr_2e-5",
+        "maximum_tau_increase": 0.0,
+        "score_final": 0.6673961444901239,
+        "score_n2": 0.6372222279539403,
+        "span_metrics_sha256": "93c89487f2d216be55288816934336a539f7313afdd0cdd36e9d3fffcd9365f0",
+        "span_precision": 0.8533440773569702,
+        "span_recall": 0.7478813559322034,
+        "tau_n1": 0.0,
+        "tau_n2": 0.018018018018018018,
+        "validation_metrics_sha256": "2ffb7590a82f936ebf4e2eb0265b3ce9df203368ccbc03f1ce074e0a763013b6"
+      },
+      {
+        "checkpoint": "/runs/ft-20260930-prod2/candidates/lr_1e-5",
+        "eligible": true,
+        "experiment": "lr_1e-5",
+        "maximum_tau_increase": 0.0,
+        "score_final": 0.6675119557027615,
+        "score_n2": 0.6387371309661992,
+        "span_metrics_sha256": "41c404aca5cff220d3a996fec591af180f24894ef6ea3350be598747f3806b0b",
+        "span_precision": 0.8616,
+        "span_recall": 0.760593220338983,
+        "tau_n1": 0.0,
+        "tau_n2": 0.018018018018018018,
+        "validation_metrics_sha256": "e0ee9d3cc7a8fe5709014a86b2ed1faf0b8db609836d8792b8fe6ca5a9fb5f5b"
+      },
+      {
+        "checkpoint": "/runs/ft-20260930-prod2/candidates/lr_3e-5",
+        "eligible": true,
+        "experiment": "lr_3e-5",
+        "maximum_tau_increase": 0.0,
+        "score_final": 0.6702157131994118,
+        "score_n2": 0.6406730800587519,
+        "span_metrics_sha256": "74704d1aa06fb90ee016b43df24e9e5908069e0dc5a2d3a4e7b5f8f9238d398a",
+        "span_precision": 0.8556451612903225,
+        "span_recall": 0.7492937853107344,
+        "tau_n1": 0.0,
+        "tau_n2": 0.018018018018018018,
+        "validation_metrics_sha256": "3bcfe6ca7fd022e1800ed8db8e3687b7a742896291a37054b79ec874427472d9"
+      }
+    ],
+    "eligible_for_recommendation": true,
+    "experimental_only": false,
+    "run_id": "ft-20260930-prod2",
+    "schema_version": 1,
+    "selected_checkpoint": "/runs/ft-20260930-prod2/candidates/lr_3e-5",
+    "selected_checkpoint_sha256": "79ab819ef03afa691701b41e8bf1d73855c3f25101f50c4e3d086c3c6947f877",
+    "selected_experiment": "lr_3e-5",
+    "selected_validation_score": 0.6702157131994118,
+    "selected_validation_score_n2": 0.6406730800587519,
+    "selection_metric": "weighted_local_dev_challenge_score",
+    "tie_breaking": [
+      "score_final",
+      "score_n2",
+      "span_precision"
+    ],
+    "timestamp_utc": "2026-09-30T06:07:34.857774+00:00"
+  },
+  "timestamp_utc": "2026-09-30T06:19:29.898003+00:00",
+  "training_budget": {
+    "budget_limit_seconds": 36000,
+    "elapsed_seconds": 1099.807,
+    "last_updated_utc": "2026-09-30T06:05:12.765613+00:00",
+    "remaining_seconds": 34900.193,
+    "stages_seconds": {
+      "fine_tuning_lr_1e-5": 348.325,
+      "fine_tuning_lr_2e-5": 347.335,
+      "fine_tuning_lr_3e-5": 342.378,
+      "prepare_and_teacher_inference": 61.769
+    }
+  },
+  "training_execution": {
+    "effective_batch_size": 16,
+    "epoch": 2.99537750385208,
+    "eval_loss": 0.3900696039199829,
+    "fp16": true,
+    "global_step": 486,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_peak_allocated_bytes": 2231305728,
+    "gpu_peak_reserved_bytes": 2407530496,
+    "gpu_total_memory_bytes": 12884377600,
+    "gradient_accumulation_steps": 4,
+    "gradient_checkpointing": true,
+    "per_device_train_batch_size": 4,
+    "selected_learning_rate": 3e-05,
+    "train_loss": 0.030835402377789128,
+    "train_runtime_seconds": 342.319
+  },
+  "training_log_sha256": "7879b1891310717b983b6adb7448309905d0ab598dcc940a9e7ba1f0a79f2d3c"
+}

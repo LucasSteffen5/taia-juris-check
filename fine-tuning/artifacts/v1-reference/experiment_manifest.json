@@ -1,0 +1,53 @@
+{
+  "best_checkpoint": "/runs/ft-20260930-prod2/experiments/lr_3e-5/checkpoint-162",
+  "best_global_step": null,
+  "best_metric": 0.3900696039199829,
+  "budget_callback_stopped_training": false,
+  "candidate_files_sha256": {
+    "config.json": "ec2cde36de1b0142939749d3c98d6b21dce25b53541fe1ea569a805f3471c3c3",
+    "model.safetensors": "79ab819ef03afa691701b41e8bf1d73855c3f25101f50c4e3d086c3c6947f877",
+    "provenance.json": "38a02f7b6c87c43871822e01abe68ba37bb4e6862a3a8afe5308b5268957155d",
+    "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+    "tokenizer.json": "45ccb3e514665f3b11b5e2a8e1a3e29765d94330bc7232aa46c4cdc485bc8881",
+    "tokenizer_config.json": "d2333f9badb2305d545b0702c09f81369e254558d0bf5bb1f1f79182a36e01ce",
+    "vocab.txt": "69c28584c67a0e5018f85ca734aa272cc38e26b5dd0d33fffa28059299f21707"
+  },
+  "effective_max_steps": 972,
+  "effective_warmup_steps": 98,
+  "evaluation_metrics": {
+    "epoch": 2.99537750385208,
+    "eval_loss": 0.3900696039199829,
+    "eval_runtime": 3.5833,
+    "eval_samples_per_second": 121.956,
+    "eval_steps_per_second": 30.698,
+    "num_input_tokens_seen": 3986912
+  },
+  "experiment": {
+    "learning_rate": 3e-05,
+    "name": "lr_3e-5"
+  },
+  "final_learning_rate_per_optimizer_group": [
+    1.668192219679634e-05,
+    1.668192219679634e-05
+  ],
+  "last_epoch": 2.99537750385208,
+  "last_global_step": 486,
+  "resolved_config_sha256": "547d69a042f0586da48815449ff026c7c3f8b8a653d1255d926fc6779c0df10a",
+  "resumed_from_checkpoint": null,
+  "run_id": "ft-20260930-prod2",
+  "status": "completed",
+  "timestamp_finished_utc": "2026-09-30T06:05:12.703585+00:00",
+  "timestamp_utc": "2026-09-30T05:59:30.402067+00:00",
+  "train_metrics": {
+    "epoch": 2.99537750385208,
+    "num_input_tokens_seen": 3986912,
+    "total_flos": 2034903865387584.0,
+    "train_loss": 0.030835402377789128,
+    "train_runtime": 321.1289,
+    "train_samples_per_second": 48.504,
+    "train_steps_per_second": 3.027
+  },
+  "train_runtime_seconds": 342.319,
+  "training_log_sha256": "7879b1891310717b983b6adb7448309905d0ab598dcc940a9e7ba1f0a79f2d3c",
+  "training_wall_seconds_before_run": 758.023
+}

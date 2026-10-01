@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-10-01T06:39:00.002079+00:00",
+  "epoch": 2.0,
+  "files": {
+    "config.json": "4000d0ebf0cefd06d7c3c2c05c5ea26a7b435e4a28d2e68ee4a59920fea3163e",
+    "model.safetensors": "52b24416c23a645db9aa49e83cf59e14aa8b225ae396f01d48415d50ae67945c",
+    "provenance.json": "7291bc5cd1bfb2b52798dd850f33a2d73c6e2e438559735d274a799ea5efa995",
+    "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+    "tokenizer.json": "45ccb3e514665f3b11b5e2a8e1a3e29765d94330bc7232aa46c4cdc485bc8881",
+    "tokenizer_config.json": "d2333f9badb2305d545b0702c09f81369e254558d0bf5bb1f1f79182a36e01ce",
+    "vocab.txt": "69c28584c67a0e5018f85ca734aa272cc38e26b5dd0d33fffa28059299f21707"
+  },
+  "global_step": 320,
+  "schema_version": 1
+}

@@ -4,6 +4,8 @@
 **/__pycache__
 **/*.py[cod]
 output
+fine-tuning/runs
+fine-tuning/artifacts
 data/dataset
 data/desafio-jusbrasil-bracis-2026/txt
 data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db

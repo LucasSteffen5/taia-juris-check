@@ -1,0 +1,69 @@
+{
+  "best_checkpoint": "/runs/ft-20260930-v2-balanced-campaign/experiments/s3_1_7e4cf94f_o00_w/checkpoint-400",
+  "best_global_step": null,
+  "best_metric": 0.0796290710568428,
+  "budget_callback_stopped_training": false,
+  "candidate_files_sha256": {
+    "config.json": "b582348277e07c383cad35baf33c80d447608c65dc17d898d3607ced6351ad49",
+    "model.safetensors": "58704f9ff103896f8ce2403f6396fe78bd8f93b515abc57db8912be5bd72d6d5",
+    "provenance.json": "f7e59610afde995d6edd4102ea52476c860ccb3b71cb6fa2842872c0c0775521",
+    "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+    "tokenizer.json": "45ccb3e514665f3b11b5e2a8e1a3e29765d94330bc7232aa46c4cdc485bc8881",
+    "tokenizer_config.json": "d2333f9badb2305d545b0702c09f81369e254558d0bf5bb1f1f79182a36e01ce",
+    "vocab.txt": "69c28584c67a0e5018f85ca734aa272cc38e26b5dd0d33fffa28059299f21707"
+  },
+  "checkpoint_archive": "checkpoint_archive.json",
+  "checkpoint_archive_sha256": "0325db46343fb3480be19dc738cc3c26de0145301ca9b534397e1470ca445485",
+  "effective_max_steps": 1920,
+  "effective_warmup_steps": 192,
+  "evaluation_metrics": {
+    "epoch": 4.5,
+    "eval_loss": 0.0796290710568428,
+    "eval_runtime": 2.9598,
+    "eval_samples_per_second": 145.616,
+    "eval_steps_per_second": 9.122,
+    "num_input_tokens_seen": 5890048
+  },
+  "experiment": {
+    "auxiliary_loss_weight": 0.1,
+    "configuration_id": "a4bafc99_a10_r3_o00_window",
+    "initial_candidate": "s2_1_a4bafc99_a10_r3",
+    "initial_checkpoint": "candidate",
+    "learning_rate": 3e-05,
+    "name": "s3_1_7e4cf94f_o00_w",
+    "ocr_noise_rate": 0.0,
+    "official_repeat": 3,
+    "parent_checkpoint_sha256": "7e4cf94f9621d6fd7548e14bb4dcbd9c0e698f7dec0312d9ec07c9b533eadb5b",
+    "parent_validation_score": 0.6648582179639748,
+    "sampler": "window",
+    "seed": 42,
+    "stage": "robustness"
+  },
+  "final_learning_rate_per_optimizer_group": [
+    2.0833333333333333e-05,
+    2.0833333333333333e-05
+  ],
+  "full_checkpoint_states_retained": false,
+  "gpu_peak_allocated_bytes": 2209962496,
+  "gpu_peak_reserved_bytes": 2799697920,
+  "last_epoch": 4.5,
+  "last_global_step": 720,
+  "resolved_config_sha256": "6c8721df189aa402e3f228c210c58eeb063b966fb07aa848bac5178c9700b87a",
+  "resumed_from_checkpoint": null,
+  "run_id": "ft-20260930-v2-balanced-campaign",
+  "status": "completed",
+  "timestamp_finished_utc": "2026-10-01T06:47:32.440983+00:00",
+  "timestamp_utc": "2026-10-01T06:32:21.006937+00:00",
+  "train_metrics": {
+    "epoch": 4.5,
+    "num_input_tokens_seen": 5890048,
+    "total_flos": 3006256832987136.0,
+    "train_loss": 0.003490967713959334,
+    "train_runtime": 882.3032,
+    "train_samples_per_second": 34.764,
+    "train_steps_per_second": 2.176
+  },
+  "train_runtime_seconds": 911.475,
+  "training_log_sha256": "742e14d98bb19746f8f0b7b107ce9326d9794d80ebdf8aa736b45b879f4cef2d",
+  "training_wall_seconds_before_run": 17143.918
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "run_id": "ft-20260930-v2-balanced-campaign",
+  "status": "invalid_do_not_use_for_model_comparison",
+  "cause": "Official source texts had CRLF; initial evaluator staged raw bytes while gold offsets refer to LF-normalized Unicode text.",
+  "audit": {
+    "heldout_annotation_rows": 119,
+    "offsets_matching_raw_CRLF": 0,
+    "offsets_matching_LF": 119
+  },
+  "archived_files": [
+    {
+      "file": "official_original.json",
+      "sha256": "672002ea8eb6f8511a156384a0b7dfa11d0bd027b131275e16552e86542194c0"
+    },
+    {
+      "file": "official_v1.json",
+      "sha256": "50a840d54aca45fc5fa1a1fd2cfa8a8b8b487db020ceec984511945bb72ee1de"
+    },
+    {
+      "file": "official_v2.json",
+      "sha256": "aeb5ad6ba3034ac3dff95aa36bd0a62a4015b8d38ad22de653e5a103802ed4d4"
+    },
+    {
+      "file": "official_original_spans.json",
+      "sha256": "62b27f7120a2905777c71da6d73ca6aba82723c78fcb9c71334e7ca6a3537e8f"
+    },
+    {
+      "file": "official_v1_spans.json",
+      "sha256": "b332d204ca532414a62f091209f0e7f23282612178952fd6093e675032687aba"
+    },
+    {
+      "file": "official_v2_spans.json",
+      "sha256": "c8094027af90abb9dce0ae78db16a411e3895a0a025cec71021f7d2c5e612aa9"
+    },
+    {
+      "file": "official_comparison.json",
+      "sha256": "dea6b5bdafe0398d027c1e6d2db3da6a619286212d6cf65a50fdcdefc8c4e290"
+    }
+  ],
+  "action": "Normalize staged evaluation copies to UTF-8 LF and rerun original, v1, v2 before publishing final metrics."
+}

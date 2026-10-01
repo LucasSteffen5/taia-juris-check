@@ -1,0 +1,30 @@
+{
+  "data_manifest_sha256": "800c599488f1cd040a0b58075ac1bb89e8b4698910ab845d1d1c800a0ec0d1a7",
+  "derived_from_finetuned_checkpoint": true,
+  "files": {
+    "README.md": "6bc9033d6391a74c734c5315272d8064acc30f9dff19ba4b6a09cf877b5c39ee",
+    "config.json": "4a7e09dbe2df58452917ac2a716ebbb183a7c413e3ab662be8491c9822e0722d",
+    "experiment_manifest.json": "ec722d58193e3fba189e5517c73b30dfce4d6e16288badcd3675debb06326e24",
+    "model.safetensors": "79ab819ef03afa691701b41e8bf1d73855c3f25101f50c4e3d086c3c6947f877",
+    "model_report.json": "f8d7b3089fca41d75bd42e1314cece00892562835d7dd646e13c971bbd64912a",
+    "model_report.md": "62c8e6985a07d3ac68170b3594b821a03cc0f98803a303eabed67e9cd8b45367",
+    "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+    "tokenizer.json": "45ccb3e514665f3b11b5e2a8e1a3e29765d94330bc7232aa46c4cdc485bc8881",
+    "tokenizer_config.json": "d2333f9badb2305d545b0702c09f81369e254558d0bf5bb1f1f79182a36e01ce",
+    "training_config.resolved.json": "547d69a042f0586da48815449ff026c7c3f8b8a653d1255d926fc6779c0df10a",
+    "vocab.txt": "69c28584c67a0e5018f85ca734aa272cc38e26b5dd0d33fffa28059299f21707"
+  },
+  "license": "CC-BY-4.0",
+  "license_attribution": "Maicon Domingues; CC BY 4.0; derived checkpoint fine-tuned from the pinned legal NER model.",
+  "model_card": "https://huggingface.co/dominguesm/legal-bert-ner-base-cased-ptbr/tree/44210927c925448df025985e0ed48081bb5ac57c",
+  "revision": "44210927c925448df025985e0ed48081bb5ac57c",
+  "selected_experiment": "lr_3e-5",
+  "source_model": "dominguesm/legal-bert-ner-base-cased-ptbr",
+  "training_revision": "79ab819ef03afa691701b41e8bf1d73855c3f25101f50c4e3d086c3c6947f877",
+  "training_run_id": "ft-20260930-prod2",
+  "upstream_model_sha256": "dea15cbbe0935ec20da635f6861ffdcad0d737a648ad48dff1affd686cf776a6",
+  "validation_and_test_metrics_sha256": {
+    "local_test": "350c50327643ed0116bd97346043cab050cb171f64d558de8249e86485c8104c",
+    "validation": "3bcfe6ca7fd022e1800ed8db8e3687b7a742896291a37054b79ec874427472d9"
+  }
+}

@@ -1,0 +1,24 @@
+FROM python:3.11.11-slim-bookworm@sha256:081075da77b2b55c23c088251026fb69a7b2bf92471e491ff5fd75c192fd38e5
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    TRANSFORMERS_OFFLINE=1 \
+    HF_HUB_OFFLINE=1 \
+    HF_HOME=/tmp/huggingface-finetuning \
+    TOKENIZERS_PARALLELISM=false \
+    PYTHONPATH=/workspace/fine-tuning
+
+WORKDIR /workspace/fine-tuning
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libgomp1 ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY fine-tuning/requirements.train.txt ./requirements.train.txt
+RUN python -m pip install --no-cache-dir --disable-pip-version-check -r requirements.train.txt
+
+COPY fine-tuning/train ./train
+COPY fine-tuning/stage_sources.py ./stage_sources.py
+COPY fine-tuning/official_gold.py ./official_gold.py
+COPY fine-tuning/tests ./tests
+
+ENTRYPOINT ["python", "-m", "train.cli"]

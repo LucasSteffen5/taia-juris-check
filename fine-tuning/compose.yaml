@@ -1,0 +1,180 @@
+name: juris-check-finetuning
+
+services:
+  trainer:
+    build:
+      context: ..
+      dockerfile: fine-tuning/Dockerfile.trainer
+    image: juris-check-finetuning-trainer:local
+    network_mode: none
+    gpus: all
+    working_dir: /workspace/fine-tuning
+    environment:
+      FT_LOCAL_TEXT: /source/local/txt
+      FT_LOCAL_GOLD: /source/local/goldenset_offsets.csv
+      FT_OFFICIAL_TEXT: /source/official/txt
+      FT_OFFICIAL_GOLD: /source/official/goldenset_offsets.csv
+      FT_SOURCE_MODEL: /source/model
+      FT_V1_MODEL: /source/v1
+      FT_RUNS_ROOT: /runs
+      FT_TEST_LOCAL_DIR: /source/local
+      FT_TEST_SOURCE_MODEL: /source/model
+      FT_DOCKER_IMAGE: juris-check-finetuning-trainer:local
+      FT_GIT_COMMIT: ${FT_GIT_COMMIT:-unknown}
+      FT_DOCKER_IMAGE_ID: ${FT_DOCKER_IMAGE_ID:-unknown}
+    volumes:
+      - type: bind
+        source: ${RUNS_HOST_DIR:?Defina RUNS_HOST_DIR no wrapper}
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/dataset/txt
+        target: /source/local/txt
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/dataset/goldenset_offsets.csv
+        target: /source/local/goldenset_offsets.csv
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${OFFICIAL_TRAIN_HOST_DIR:?Execute o stager oficial antes do treino}
+        target: /source/official
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/models/ner_legal_large
+        target: /source/model
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${FT_V1_HOST_DIR:?Defina FT_V1_HOST_DIR no wrapper}
+        target: /source/v1
+        read_only: true
+        bind:
+          create_host_path: false
+
+  stager:
+    build:
+      context: ..
+      dockerfile: fine-tuning/Dockerfile.trainer
+    image: juris-check-finetuning-trainer:local
+    network_mode: none
+    working_dir: /workspace/fine-tuning
+    environment:
+      FT_RUNS_ROOT: /runs
+    volumes:
+      - type: bind
+        source: ${RUNS_HOST_DIR:?Defina RUNS_HOST_DIR no wrapper}
+        target: /runs
+        bind:
+          create_host_path: true
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/desafio-jusbrasil-bracis-2026/txt
+        target: /source/raw/official/txt
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/desafio-jusbrasil-bracis-2026/goldenset_offsets.csv
+        target: /source/raw/official/goldenset_offsets.csv
+        read_only: true
+        bind:
+          create_host_path: false
+    entrypoint: ["python", "/workspace/fine-tuning/stage_sources.py"]
+
+  evaluator:
+    build:
+      context: ..
+      dockerfile: fine-tuning/Dockerfile.evaluate
+    image: juris-check-finetuning-evaluator:local
+    network_mode: none
+    gpus: all
+    environment:
+      PROTECTED_DATA_DIR: /input
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_OFFLINE: "1"
+    volumes:
+      - type: bind
+        source: ${RUNS_HOST_DIR:?Defina RUNS_HOST_DIR no wrapper}
+        target: /runs
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${MODEL_HOST_DIR:?Defina MODEL_HOST_DIR no wrapper}
+        target: /app/models/ner_legal_large
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/dataset/desafio1_bracis.db
+        target: /input/reference.sqlite
+        read_only: true
+        bind:
+          create_host_path: false
+
+  official-evaluator:
+    profiles: [final-evaluation]
+    build:
+      context: ..
+      dockerfile: fine-tuning/Dockerfile.evaluate
+    image: juris-check-finetuning-evaluator:local
+    network_mode: none
+    gpus: all
+    environment:
+      PROTECTED_DATA_DIR: /input/official
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_OFFLINE: "1"
+    volumes:
+      - type: bind
+        source: ${RUNS_HOST_DIR:?Defina RUNS_HOST_DIR no wrapper}
+        target: /runs
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${MODEL_HOST_DIR:?Defina MODEL_HOST_DIR no wrapper}
+        target: /app/models/ner_legal_large
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/desafio-jusbrasil-bracis-2026/txt
+        target: /input/official/txt
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/desafio-jusbrasil-bracis-2026/goldenset_offsets.csv
+        target: /input/official/goldenset_offsets.csv
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${REPO_ROOT:?Defina REPO_ROOT}/data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db
+        target: /input/official/desafio1_bracis.db
+        read_only: true
+        bind:
+          create_host_path: false
+
+  publisher:
+    profiles: [publish]
+    build:
+      context: ..
+      dockerfile: fine-tuning/Dockerfile.trainer
+    image: juris-check-finetuning-trainer:local
+    working_dir: /workspace/fine-tuning
+    environment:
+      HF_TOKEN:
+    volumes:
+      - type: bind
+        source: ${CHECKPOINT_HOST_DIR:-.}
+        target: /model
+        read_only: true
+        bind:
+          create_host_path: false
+    entrypoint: ["python", "-m", "train.cli", "upload", "--checkpoint-dir", "/model"]
