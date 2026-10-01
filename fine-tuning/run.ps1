@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory = $true, Position = 0)]
-    [ValidateSet('train', 'campaign', 'resume', 'evaluate-official', 'predict', 'upload')]
+    [ValidateSet('train', 'campaign', 'resume', 'evaluate-official', 'predict', 'validate-export', 'upload')]
     [string]$Mode,
     [ValidatePattern('^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$')]
     [string]$RunId,
@@ -465,6 +465,15 @@ try {
             & docker @arguments
             if ($LASTEXITCODE -ne 0) { throw "Predição com checkpoint selecionado falhou ($LASTEXITCODE)." }
             Write-Output "Submissão gerada com o checkpoint selecionado: $outputFull"
+        }
+        'validate-export' {
+            if ([string]::IsNullOrWhiteSpace($CheckpointPath)) { throw 'validate-export exige -CheckpointPath.' }
+            $checkpointFull = (Resolve-Path -LiteralPath $CheckpointPath).Path
+            if (-not (Test-Path -LiteralPath $checkpointFull -PathType Container)) { throw "Checkpoint inválido: $checkpointFull" }
+            $env:CHECKPOINT_HOST_DIR = $checkpointFull
+            Initialize-ComposeEnvironment
+            Invoke-Compose -Arguments @('build', 'validator')
+            Invoke-Compose -Arguments @('--profile', 'validation', 'run', '--rm', 'validator')
         }
         'upload' {
             if ([string]::IsNullOrWhiteSpace($CheckpointPath) -or [string]::IsNullOrWhiteSpace($RepoId)) {

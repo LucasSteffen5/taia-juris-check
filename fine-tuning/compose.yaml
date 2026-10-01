@@ -167,9 +167,11 @@ services:
       context: ..
       dockerfile: fine-tuning/Dockerfile.trainer
     image: juris-check-finetuning-trainer:local
+    network_mode: bridge
     working_dir: /workspace/fine-tuning
     environment:
       HF_TOKEN:
+      HF_HUB_OFFLINE: "0"
     volumes:
       - type: bind
         source: ${CHECKPOINT_HOST_DIR:-.}
@@ -178,3 +180,24 @@ services:
         bind:
           create_host_path: false
     entrypoint: ["python", "-m", "train.cli", "upload", "--checkpoint-dir", "/model"]
+
+  validator:
+    profiles: [validation]
+    build:
+      context: ..
+      dockerfile: fine-tuning/Dockerfile.evaluate
+    image: juris-check-finetuning-evaluator:local
+    network_mode: none
+    working_dir: /app
+    environment:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      TOKENIZERS_PARALLELISM: "false"
+    volumes:
+      - type: bind
+        source: ${CHECKPOINT_HOST_DIR:-.}
+        target: /model
+        read_only: true
+        bind:
+          create_host_path: false
+    entrypoint: ["python", "/opt/fine-tuning/validate_export.py", "/model"]

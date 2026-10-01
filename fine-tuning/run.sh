@@ -16,6 +16,7 @@ Uso:
   bash fine-tuning/run.sh evaluate-official <run-id>
   bash fine-tuning/run.sh resume <run-id> <experimento> <caminho/checkpoint-N>
   bash fine-tuning/run.sh predict <checkpoint-exportado> <diretorio-txt> <banco.sqlite> <saida.csv>
+  bash fine-tuning/run.sh validate-export <checkpoint-exportado>
   bash fine-tuning/run.sh upload <checkpoint-exportado> <usuario/repositorio> [--private]
 EOF
 }
@@ -353,6 +354,15 @@ upload_checkpoint() {
   fi
 }
 
+validate_checkpoint() {
+  local checkpoint="$1"
+  checkpoint="$(cd -- "$checkpoint" && pwd)"
+  init_compose_environment
+  export CHECKPOINT_HOST_DIR="$checkpoint"
+  compose build validator
+  compose --profile validation run --rm validator
+}
+
 main() {
   local mode="${1:-}"
   [[ -n "$mode" ]] || { usage; exit 2; }
@@ -392,6 +402,10 @@ main() {
     predict)
       [[ $# -eq 4 ]] || { usage; exit 2; }
       predict_with_checkpoint "$1" "$2" "$3" "$4"
+      ;;
+    validate-export)
+      [[ $# -eq 1 ]] || { usage; exit 2; }
+      validate_checkpoint "$1"
       ;;
     upload)
       [[ $# -ge 2 && $# -le 3 ]] || { usage; exit 2; }

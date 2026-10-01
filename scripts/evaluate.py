@@ -52,13 +52,25 @@ def evaluate(submission_path: Path | str, golden_path: Path | str) -> dict:
 def verify_frozen_run(submission_path: Path | str, manifest_path: Path | str) -> None:
     """Recusa pontuar saídas se o CSV, código, dependências ou checkpoint mudaram."""
     manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
+    if manifest.get("offset_policy") != "LF" or manifest.get("submission_offset_space") != "LF":
+        raise ValueError(
+            "A execução não declara offsets LF. Gere novamente a submissão com o pipeline atualizado."
+        )
+    if manifest.get("offset_policy_version") != 1:
+        raise ValueError("Versão de política de offsets incompatível; gere novamente a submissão.")
+
+    output_dir = Path(submission_path).resolve().parent
     current = {
         "source_sha256": HeaderIndex.fingerprint(ROOT_DIR / "src"),
         "scripts_sha256": HeaderIndex.fingerprint(ROOT_DIR / "scripts"),
         "dependencies_sha256": HeaderIndex.fingerprint(ROOT_DIR / "requirements.txt"),
         "checkpoint_sha256": HeaderIndex.fingerprint(NER_MODEL_DIR),
+        "model_weights_sha256": HeaderIndex.fingerprint(NER_MODEL_DIR / "model.safetensors"),
         "metric_sha256": HeaderIndex.fingerprint(OFFICIAL_METRIC_DIR / "kaggle_metric.py"),
         "submission_sha256": hashlib.sha256(Path(submission_path).read_bytes()).hexdigest(),
+        "normalized_texts_sha256": HeaderIndex.fingerprint(output_dir / "text_lf"),
+        "lf_json_sha256": HeaderIndex.fingerprint(output_dir / "json"),
+        "original_json_sha256": HeaderIndex.fingerprint(output_dir / "json_original"),
     }
     for key, digest in current.items():
         if manifest.get(key) != digest:

@@ -7,4 +7,4 @@
 - **Dados de desenvolvimento**: créditos a Eduardo Osti e Thiago Meirelles Ventura pela disponibilização dos dados brutos. A base e os arquivos do desafio seguem os termos de seus respectivos provedores.
 - **Métrica da competição**: `data/desafio-jusbrasil-bracis-2026/kaggle_metric.py` é o arquivo oficial fornecido com o desafio e é incluído para reproduzir a avaliação. Seus termos seguem os do provedor do desafio.
 
-O checkpoint local é verificado no build Docker contra os hashes em `models/ner_legal_large/provenance.json`. A atribuição do modelo é exigida pela licença CC BY 4.0.
+O checkpoint original e o fine-tuning v2 são verificados pelos hashes em seus manifestos de procedência no build e antes da publicação. O v2 deriva da revisão acima e mantém a atribuição exigida pela licença CC BY 4.0. O modelo NER extrai entidades; a classificação e resolução das citações dependem do pipeline deste repositório e de sua base canônica.

@@ -1,4 +1,5 @@
 run.sh text eol=lf
+data/desafio-jusbrasil-bracis-2026/txt/** -text
 models/ner_legal_large/model.safetensors filter=lfs diff=lfs merge=lfs -text
 fine-tuning/artifacts/** -text whitespace=cr-at-eol,-blank-at-eof
 fine-tuning/artifacts/*/model.safetensors filter=lfs diff=lfs merge=lfs -text

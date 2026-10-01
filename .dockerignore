@@ -6,6 +6,9 @@
 output
 fine-tuning/runs
 fine-tuning/artifacts
+!fine-tuning/artifacts
+!fine-tuning/artifacts/v2-selected
+!fine-tuning/artifacts/v2-selected/**
 data/dataset
 data/desafio-jusbrasil-bracis-2026/txt
 data/desafio-jusbrasil-bracis-2026/desafio1_bracis.db

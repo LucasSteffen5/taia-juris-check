@@ -267,7 +267,8 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
     for name in ("prepare", "train", "select", "finalize", "validate-export", "predict"):
         child = subparsers.add_parser(name)
-        child.add_argument("--run-id", required=True)
+        if name != "validate-export":
+            child.add_argument("--run-id", required=True)
         if name in {"train", "predict"}:
             child.add_argument("--experiment")
         if name == "predict":
@@ -878,8 +879,6 @@ Hash dos pesos selecionados: `{selection.get('selected_checkpoint_sha256', '—'
 def _upload(checkpoint_dir: Path, repo_id: str, private: bool) -> None:
     if not os.environ.get("HF_TOKEN"):
         raise RuntimeError("Defina HF_TOKEN no ambiente sem o imprimir para autenticar o upload.")
-    from huggingface_hub import HfApi
-
     provenance = _read_json(checkpoint_dir / "provenance.json")
     if not provenance.get("files", {}).get("model.safetensors"):
         raise ValueError("Pacote sem hashes de pesos; gere a exportação final antes do upload.")
@@ -887,6 +886,14 @@ def _upload(checkpoint_dir: Path, repo_id: str, private: bool) -> None:
         path = checkpoint_dir / relative
         if not path.is_file() or sha256_file(path) != expected:
             raise ValueError(f"Hash do pacote mudou após a validação: {relative}.")
+    from .validate_export import validate
+
+    report = validate(checkpoint_dir)
+    if not report.get("valid") or not report.get("offline_load_and_smoke_inference"):
+        raise ValueError("Pacote não passou pela validação offline e inferência de teste.")
+
+    from huggingface_hub import HfApi
+
     allow_patterns = [
         "README.md", "REPRODUCE.md", "model_report.md", "config.json", "model.safetensors", "special_tokens_map.json",
         "tokenizer.json", "tokenizer_config.json", "vocab.txt", "provenance.json",
@@ -969,6 +976,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "upload":
         _upload(args.checkpoint_dir, args.repo_id, args.private)
         return 0
+    if args.command == "validate-export":
+        from .validate_export import validate
+
+        report = validate(args.checkpoint_dir)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0
     run_dir = Paths.from_environment().run_dir(args.run_id)
     if args.command == "prepare":
         prepare_run(args.run_id)
@@ -988,8 +1001,6 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(selection))
     elif args.command == "finalize":
         print(json.dumps(_finalize(run_dir, args.experiment), ensure_ascii=False, indent=2))
-    elif args.command == "validate-export":
-        raise RuntimeError("Use validate_export.py no contêiner de avaliação para validar o checkpoint.")
     elif args.command == "predict":
         raise RuntimeError("Use run.ps1 predict ou run.sh predict para uma predição Docker isolada.")
     return 0

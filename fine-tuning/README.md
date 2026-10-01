@@ -1,6 +1,6 @@
 # Fine-tuning isolado do extrator NER
 
-Este módulo produz um checkpoint derivado de `dominguesm/legal-bert-ner-base-cased-ptbr` para melhorar a extração de spans de jurisprudência e legislação no desafio descrito em `DESAFIO.md`. O fluxo fica em `fine-tuning/`, usa imagem, projeto Compose, cache e diretório de execução próprios e não importa o pacote `src` durante o treinamento. A predição padrão da banca continua apontando para `models/ner_legal_large`; só o comando explícito `predict` monta outro checkpoint, somente para leitura, no caminho esperado pelo pipeline.
+Este módulo produz e avalia checkpoints derivados de `dominguesm/legal-bert-ner-base-cased-ptbr` para a extração de spans de jurisprudência e legislação no desafio descrito em `DESAFIO.md`. O treino usa imagem, projeto Compose, cache e diretório de execução próprios e não importa o pacote `src`. O pipeline principal carrega por padrão o v2 congelado em `fine-tuning/artifacts/v2-selected`; os avaliadores continuam recebendo explicitamente cada checkpoint que devem comparar.
 
 O modelo mantém a cabeça NER de 13 rótulos. Ele identifica limites e tipos de entidades; a classificação final em `real`, `inventada` e `incompleta` continua sendo decidida pela resolução na base canônica do pipeline.
 
@@ -85,7 +85,7 @@ Depois de congelar a escolha local, o wrapper avalia o original, o v1 e o v2 nos
 
 ## Predição explícita com um checkpoint derivado
 
-O pipeline padrão continua usando o checkpoint original. Para uma execução que escolher explicitamente o artefato derivado:
+O comando principal e os comandos de predição deste módulo validam o pacote antes de executar. Para comparar outra exportação derivada de forma explícita:
 
 ```powershell
 .\fine-tuning\run.ps1 predict -CheckpointPath .\fine-tuning\runs\<run-id>\candidates\<rodada> -InputDirectory .\caminho\para\txt -DatabasePath .\data\dataset\desafio1_bracis.db -OutputPath .\saida\submission.csv
@@ -95,25 +95,13 @@ O pipeline padrão continua usando o checkpoint original. Para uma execução qu
 bash fine-tuning/run.sh predict fine-tuning/runs/<run-id>/candidates/<rodada> caminho/para/txt data/dataset/desafio1_bracis.db saida/submission.csv
 ```
 
-O launcher valida o pacote offline, monta o checkpoint selecionado como somente leitura e grava um manifesto com o hash efetivamente usado. Para reverter, continue usando o comando atual da banca; ele mantém o caminho original.
+O launcher valida o pacote offline, monta o checkpoint selecionado como somente leitura e grava um manifesto com o hash efetivamente usado. O uso do v1, de outra exportação ou do modelo original fica disponível pela escolha explícita do checkpoint nos comandos de avaliação.
 
-## Exportação e publicação posterior no Hugging Face
+## Exportação e publicação no Hugging Face
 
-O diretório `candidates/<rodada>` selecionado contém `model.safetensors`, configuração e tokenizer, model card em português, procedência com revisão e hashes, configuração completa, manifestos dos dados e da campanha, histórico JSONL, métricas local/oficial e `REPRODUCE.md`. O arquivo de reprodução identifica a dependência do checkpoint anterior e esclarece que os estados grandes do otimizador, scheduler e GradScaler foram compactados após a seleção, com seus hashes preservados; o pacote público contém os pesos para inferência e novo treinamento. O validador próprio confere hashes, 13 rótulos, procedência e inferência offline. A atribuição e licença CC BY 4.0 do modelo-base são mantidas somente nos metadados derivados.
+O diretório exportado contém pesos de inferência, tokenizer, model card em português, procedência e hashes, configuração completa, manifestos, relatórios e `REPRODUCE.md`. Os estados grandes do otimizador, scheduler e GradScaler foram compactados após a seleção e não entram no pacote. O comando de upload valida de novo os hashes, a procedência, os 13 rótulos, o tokenizer e uma inferência local offline antes de chamar o Hub.
 
-Para publicar deliberadamente depois de revisar o pacote, defina `HF_TOKEN` no ambiente sem colocá-lo na linha de comando e informe o destino somente ao executar o upload:
-
-```powershell
-$env:HF_TOKEN = '<token>'
-.\fine-tuning\run.ps1 upload -CheckpointPath .\fine-tuning\runs\<run-id>\candidates\<rodada> -RepoId <usuario>/<repositorio> -Private
-```
-
-```bash
-export HF_TOKEN='<token>'
-bash fine-tuning/run.sh upload fine-tuning/runs/<run-id>/candidates/<rodada> <usuario>/<repositorio> --private
-```
-
-O comando envia apenas os arquivos do pacote exportado. Dataset, CSV de anotações, SQLite, cache e estado do otimizador não entram no upload.
+Execute `validate-export` para revisar um pacote e `upload` para publicá-lo. O [tutorial de publicação no Hugging Face](PUBLICAR_HUGGING_FACE.md) cobre autenticação, publicação privada ou pública, arquivos enviados e carregamento por revisão fixa. O serviço de publicação recebe rede; treino e avaliação permanecem em contêineres offline.
 
 ## Testes e falhas comuns
 

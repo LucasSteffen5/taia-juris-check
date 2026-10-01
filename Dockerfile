@@ -15,10 +15,11 @@ COPY requirements.txt ./requirements.txt
 RUN python -m pip install --no-cache-dir --disable-pip-version-check -r requirements.txt
 
 COPY src ./src
-COPY scripts/evaluate.py scripts/smoke_ner.py scripts/verify_model.py scripts/prepare_model.py ./scripts/
+COPY scripts/evaluate.py scripts/smoke_ner.py ./scripts/
 COPY tests ./tests
-COPY models/ner_legal_large ./models/ner_legal_large
+COPY fine-tuning/artifacts/v2-selected ./models/ner_legal_large
+COPY fine-tuning/train/validate_export.py /opt/fine-tuning/validate_export.py
 COPY data/desafio-jusbrasil-bracis-2026/kaggle_metric.py ./data/desafio-jusbrasil-bracis-2026/kaggle_metric.py
-RUN python scripts/prepare_model.py && python scripts/verify_model.py
+RUN python /opt/fine-tuning/validate_export.py ./models/ner_legal_large
 
 ENTRYPOINT ["python", "-m", "src.pipeline"]
