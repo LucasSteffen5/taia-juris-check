@@ -2,6 +2,14 @@
 
 Solução para resolver e classificar citações jurídicas em documentos judiciais como **reais**, **inventadas** ou **incompletas**.
 
+## Modelo utilizado e licença
+
+A extração de entidades usa o **Legal-BERT NER em português jurídico**, de **Maicon Domingues**, disponível no Hugging Face: [dominguesm/legal-bert-ner-base-cased-ptbr](https://huggingface.co/dominguesm/legal-bert-ner-base-cased-ptbr).
+
+O modelo é disponibilizado sob a licença **Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)**. O texto da licença está disponível em [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+O projeto utiliza a [revisão `44210927c925448df025985e0ed48081bb5ac57c`](https://huggingface.co/dominguesm/legal-bert-ner-base-cased-ptbr/tree/44210927c925448df025985e0ed48081bb5ac57c). A procedência e os hashes dos arquivos estão registrados em [models/ner_legal_large/provenance.json](models/ner_legal_large/provenance.json), e a atribuição também consta em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 ## Pré-requisitos
 
 - Docker Desktop ou Docker Engine configurado para contêineres Linux.
