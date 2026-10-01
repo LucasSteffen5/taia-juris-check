@@ -20,7 +20,12 @@ from src.output.submission_builder import generate_submission_csv
 from src.resolution.canonical_db import get_connection
 from src.resolution.header_index import HeaderIndex, PARSER_VERSION
 from src.resolution.resolver import UnifiedResolver
-from src.utils_data import load_all_documents
+from src.utils_data import (
+    LineEndingOffsetMap,
+    load_all_documents,
+    map_span_to_original,
+    normalize_line_endings,
+)
 
 
 def process_document(
@@ -30,7 +35,8 @@ def process_document(
     ner_model: Any,
     tokenizer: Any,
 ) -> dict[str, Any]:
-    """Processa um documento sem alterar o texto usado nos offsets."""
+    """Normaliza para LF e processa usando offsets Unicode da representação LF."""
+    text, _, _ = normalize_line_endings(text)
     regex_citations = extract_regex_citations(text)
     ner_citations = extract_ner_citations(text, ner_model, tokenizer)
     citations = fuse_extractions(text, regex_citations, ner_citations)
@@ -59,6 +65,21 @@ def _documents_fingerprint(documents: dict[str, str]) -> str:
         digest.update(text.encode("utf-8"))
         digest.update(b"\0")
     return digest.hexdigest()
+
+
+def _remap_document_to_original(
+    document: dict[str, Any], original_text: str, boundaries: LineEndingOffsetMap
+) -> dict[str, Any]:
+    """Cria o mesmo documento com offsets que apontam para o arquivo original."""
+    remapped = {"documento_id": document["documento_id"], "citacoes": []}
+    for citation in document["citacoes"]:
+        start, end = map_span_to_original(citation["inicio"], citation["fim"], boundaries)
+        item = dict(citation)
+        item["inicio"], item["fim"] = start, end
+        item["trecho"] = original_text[start:end]
+        remapped["citacoes"].append(item)
+    validate_document_json(remapped, original_text)
+    return remapped
 
 
 def _versions() -> dict[str, str | None]:
@@ -97,9 +118,31 @@ def run_pipeline(
     output_path.mkdir(parents=True, exist_ok=True)
     json_dir = output_path / "json"
     json_dir.mkdir(exist_ok=True)
+    original_json_dir = output_path / "json_original"
+    original_json_dir.mkdir(exist_ok=True)
+    normalized_text_dir = output_path / "text_lf"
+    normalized_text_dir.mkdir(exist_ok=True)
     for old_json in json_dir.glob("*.json"):
         if old_json.stem not in documents:
             old_json.unlink()
+    for old_json in original_json_dir.glob("*.json"):
+        if old_json.stem not in documents:
+            old_json.unlink()
+    for old_text in normalized_text_dir.glob("*.txt"):
+        if old_text.stem not in documents:
+            old_text.unlink()
+
+    normalized_documents: dict[str, str] = {}
+    line_endings: dict[str, dict[str, int]] = {}
+    original_boundaries: dict[str, LineEndingOffsetMap] = {}
+    for doc_id, original_text in documents.items():
+        normalized_text, boundaries, counts = normalize_line_endings(original_text)
+        normalized_documents[doc_id] = normalized_text
+        original_boundaries[doc_id] = boundaries
+        line_endings[doc_id] = counts
+        (normalized_text_dir / f"{doc_id}.txt").write_text(
+            normalized_text, encoding="utf-8", newline="\n"
+        )
 
     print(f"[Pipeline] Lendo SQLite somente para leitura: {database_path}")
     database_sha = HeaderIndex.fingerprint(database_path)
@@ -130,10 +173,15 @@ def run_pipeline(
 
         print(f"[Pipeline] Dispositivo: {device}; documentos: {len(documents)}")
         payloads = {}
-        for doc_id, text in documents.items():
+        for doc_id, original_text in documents.items():
+            text = normalized_documents[doc_id]
             payload = process_document(doc_id, text, resolver, model, tokenizer)
             payloads[doc_id] = payload
             save_document_json(payload, json_dir / f"{doc_id}.json")
+            original_payload = _remap_document_to_original(
+                payload, original_text, original_boundaries[doc_id]
+            )
+            save_document_json(original_payload, original_json_dir / f"{doc_id}.json")
     finally:
         connection.close()
 
@@ -149,6 +197,15 @@ def run_pipeline(
     manifest = {
         "database_sha256": database_sha,
         **frozen,
+        "offset_policy": "LF",
+        "offset_policy_version": 1,
+        "submission_offset_space": "LF",
+        "input_documents_original_sha256": _documents_fingerprint(documents),
+        "input_documents_lf_sha256": _documents_fingerprint(normalized_documents),
+        "input_line_endings": line_endings,
+        "normalized_texts_sha256": HeaderIndex.fingerprint(normalized_text_dir),
+        "lf_json_sha256": HeaderIndex.fingerprint(json_dir),
+        "original_json_sha256": HeaderIndex.fingerprint(original_json_dir),
         "input_documents_sha256": _documents_fingerprint(documents),
         "submission_sha256": HeaderIndex.fingerprint(submission_path),
         "parser_version": PARSER_VERSION,

@@ -25,7 +25,7 @@ No Windows PowerShell:
 
 O script constrói a imagem a partir do Dockerfile, valida CUDA dentro do contêiner e executa o pipeline com GPU NVIDIA. Na primeira execução, o build pode demorar enquanto baixa as dependências e os pesos. Execuções seguintes reaproveitam o cache do Docker.
 
-O CSV é salvo exatamente no terceiro caminho informado.. O contêiner é removido ao terminar; banco e documentos são montados somente para leitura.
+O CSV é salvo exatamente no terceiro caminho informado. O contêiner é removido ao terminar; banco e documentos são montados somente para leitura.
 
 
 

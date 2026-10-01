@@ -124,8 +124,13 @@ def test_pipeline_persists_outputs_and_rebuilds_old_index(tmp_path, monkeypatch)
     assert submission.name == "submission custom.csv"
     assert not (output / "submission.csv").exists()
     assert (output / "json" / "fixture.json").is_file()
+    assert (output / "json_original" / "fixture.json").is_file()
+    assert (output / "text_lf" / "fixture.txt").read_text(encoding="utf-8") == "Súmula 999 do STJ."
     manifest = json.loads((output / "run_manifest.json").read_text(encoding="utf-8"))
     assert manifest["documents_processed"] == 1
+    assert manifest["offset_policy"] == "LF"
+    assert manifest["submission_offset_space"] == "LF"
+    assert manifest["input_documents_lf_sha256"] == manifest["input_documents_original_sha256"]
     assert manifest["device"] == "cpu"
     assert manifest["confidence_policy_version"] == "evidence-rules-v2"
     assert "heurísticos" in manifest["confidence_policy"]
